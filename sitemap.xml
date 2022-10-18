@@ -6,6 +6,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://design-web-victo.github.io/exercices/ex11_font/ex11_enonce/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/exercices/ex12_animation/ex12_enonce/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/exercices/ex13_variables/ex13_enonce/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/exercices/ex14_bootstrap/ex14_enonce/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://design-web-victo.github.io/exercices/ex15_horlogeJS/ex15_enonce/</loc>
          <lastmod>2022-10-18</lastmod>
          <changefreq>daily</changefreq>
