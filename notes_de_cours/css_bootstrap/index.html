@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js_basics/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/css_bootstrap/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
     
     
       
-        <title>Les bases - Design Web 420-1E6-VI</title>
+        <title>Bootstrap - Design Web 420-1E6-VI</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#javascript-les-bases" class="md-skip">
+        <a href="#bootstrap" class="md-skip">
           Aller au contenu
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les bases
+              Bootstrap
             
           </span>
         </div>
@@ -518,12 +518,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
       
       
       
@@ -544,11 +546,114 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../css_bootstrap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bootstrap
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Bootstrap
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telechargement-des-fichiers-de-styles" class="md-nav__link">
+    Téléchargement des fichiers de styles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-via-cdn" class="md-nav__link">
+    Utilisation via CDN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-et-inconvenients" class="md-nav__link">
+    Avantages et inconvénients
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation" class="md-nav__link">
+    Utilisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-breakpoints" class="md-nav__link">
+    Les "breakpoints"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-conteneurs-container" class="md-nav__link">
+    Les conteneurs (container)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-systeme-de-grille" class="md-nav__link">
+    Le système de grille
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources-et-references" class="md-nav__link">
+    Sources et références
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -565,14 +670,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
       
       
@@ -593,201 +696,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Les bases
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../js_basics/" class="md-nav__link">
         Les bases
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ou-ajouter-nos-scripts" class="md-nav__link">
-    Où ajouter nos scripts
-  </a>
-  
-    <nav class="md-nav" aria-label="Où ajouter nos scripts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dans-un-fichier-html" class="md-nav__link">
-    Dans un fichier HTML
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dans-un-fichier-externe" class="md-nav__link">
-    Dans un fichier externe
-  </a>
-  
-    <nav class="md-nav" aria-label="Dans un fichier externe">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilisation-de-lattribut-defer-et-async-de-la-balise-script" class="md-nav__link">
-    Utilisation de l'attribut defer et async de la balise script
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
-    Hello, World
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-du-code" class="md-nav__link">
-    Structure du code
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure du code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#terminaison-dune-ligne-de-code" class="md-nav__link">
-    Terminaison d'une ligne de code
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#commentaires" class="md-nav__link">
-    Commentaires
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#declaration-et-assignation" class="md-nav__link">
-    Déclaration et assignation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#constantes" class="md-nav__link">
-    Constantes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bien-nommer-ses-variables" class="md-nav__link">
-    Bien nommer ses variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
-    Exercice
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interaction" class="md-nav__link">
-    Interaction
-  </a>
-  
-    <nav class="md-nav" aria-label="Interaction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alert" class="md-nav__link">
-    Alert
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#prompt" class="md-nav__link">
-    Prompt
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#confirm" class="md-nav__link">
-    Confirm
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exercice_1" class="md-nav__link">
-    Exercice
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -881,70 +794,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ou-ajouter-nos-scripts" class="md-nav__link">
-    Où ajouter nos scripts
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
-    <nav class="md-nav" aria-label="Où ajouter nos scripts">
+    <nav class="md-nav" aria-label="Installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dans-un-fichier-html" class="md-nav__link">
-    Dans un fichier HTML
+  <a href="#telechargement-des-fichiers-de-styles" class="md-nav__link">
+    Téléchargement des fichiers de styles
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dans-un-fichier-externe" class="md-nav__link">
-    Dans un fichier externe
-  </a>
-  
-    <nav class="md-nav" aria-label="Dans un fichier externe">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilisation-de-lattribut-defer-et-async-de-la-balise-script" class="md-nav__link">
-    Utilisation de l'attribut defer et async de la balise script
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
-    Hello, World
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structure-du-code" class="md-nav__link">
-    Structure du code
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure du code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#terminaison-dune-ligne-de-code" class="md-nav__link">
-    Terminaison d'une ligne de code
+  <a href="#utilisation-via-cdn" class="md-nav__link">
+    Utilisation via CDN
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commentaires" class="md-nav__link">
-    Commentaires
+  <a href="#avantages-et-inconvenients" class="md-nav__link">
+    Avantages et inconvénients
   </a>
   
 </li>
@@ -955,84 +828,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
+  <a href="#utilisation" class="md-nav__link">
+    Utilisation
   </a>
-  
-    <nav class="md-nav" aria-label="Variables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#declaration-et-assignation" class="md-nav__link">
-    Déclaration et assignation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#constantes" class="md-nav__link">
-    Constantes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bien-nommer-ses-variables" class="md-nav__link">
-    Bien nommer ses variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exercice" class="md-nav__link">
-    Exercice
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interaction" class="md-nav__link">
-    Interaction
-  </a>
-  
-    <nav class="md-nav" aria-label="Interaction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#alert" class="md-nav__link">
-    Alert
+  <a href="#les-breakpoints" class="md-nav__link">
+    Les "breakpoints"
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#prompt" class="md-nav__link">
-    Prompt
+      
+        <li class="md-nav__item">
+  <a href="#les-conteneurs-container" class="md-nav__link">
+    Les conteneurs (container)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#confirm" class="md-nav__link">
-    Confirm
+      
+        <li class="md-nav__item">
+  <a href="#le-systeme-de-grille" class="md-nav__link">
+    Le système de grille
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#exercice_1" class="md-nav__link">
-    Exercice
+      
+        <li class="md-nav__item">
+  <a href="#sources-et-references" class="md-nav__link">
+    Sources et références
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1050,186 +876,165 @@
                 
                   
 
-  <a href="https://github.com/Design-Web-Victo/Design-Web-Victo.github.io/edit/master/docs/notes_de_cours/js_basics.md" title="Editer cette page" class="md-content__button md-icon">
+  <a href="https://github.com/Design-Web-Victo/Design-Web-Victo.github.io/edit/master/docs/notes_de_cours/css_bootstrap.md" title="Editer cette page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="javascript-les-bases">Javascript - Les bases</h1>
-<p>Développé initialement pour ajouter un peu de dynamisme aux pages web, Javascript est devenu aujourd'hui un incontournable du développement web. Il peut être utilisé à la fois du côté client (depuis un navigateur) ou bien du côté serveur.  C'est un langage de script qui n'a pas besoin d'être compilé, il est exécuté directement par le navigateur. Les scripts (nom donné aux "programmes" javascript) peuvent être écris directement dans un fichier HTML et exécuté automatiquement au chargement de la page.</p>
-<h2 id="ou-ajouter-nos-scripts">Où ajouter nos scripts</h2>
-<h3 id="dans-un-fichier-html">Dans un fichier HTML</h3>
-<p>On peut ajouter un script un peu n'importe où dans un fichier html avec la balise <strong>script</strong>, dans la balise <strong>head</strong>, dans le <strong>body</strong>, etc. C'est une question de préférence. Personnellement j'ajoute mes scripts à l'intérieur de la balise <strong>head</strong>.  La syntaxe est la suivante : </p>
-<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot;&gt;
-    alert('Hello, world!');
-&lt;/script&gt;
+<h1 id="bootstrap">Bootstrap</h1>
+<p>Bootstrap est un <em>framework</em> CSS axé sur les composants. Il nous permet de rapidement créer un site <em>responsive</em> sans avoir trop de connaissance en css. On peut en effet arrivé à un résultat très décent sans écrire une seule ligne de css. Son utilisation se fait par des classes qu'on ajoute à nos élément. Je vous conseille fortement d'installer l'extension <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css">HTML CSS Support</a> pour ajouté à VSCode une complétion automatique des classes. Ce qui est génial avec cette extension c'est qu'elle fonctionne même avec nos propres fichiers css.</p>
+<h2 id="installation">Installation</h2>
+<p>Il y a plusieurs façon d'ajouter Bootstrap à nos projet, on va voir comment l'installer via le téléchargement des fichiers ou par CDN.</p>
+<h3 id="telechargement-des-fichiers-de-styles">Téléchargement des fichiers de styles</h3>
+<p>Téléchargez les fichiers "compilés" sur le site officiel de bootstrap : <a href="https://getbootstrap.com/docs/5.2/getting-started/download/">https://getbootstrap.com/docs/5.2/getting-started/download/</a></p>
+<p>Copiez ensuite ces fichiers dans votre projet, préférablement dans un dossier css. Pour l'instant vous pouvez uniquement copier le fichier bootstrap.css. Vous devez ensuite faire une référence vers ce fichier avec la balise link dans le fichier html où vous voulez utiliser Bootstrap : </p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.css&quot;&gt;
 </code></pre>
-<p>Dans cette exemple, une message s'affichera à l'écran avec le texte <strong>Hello, world!</strong>. L'attribut type dans la balise n'est plus vraiment nécessaire aujourd'hui, on peut l'omettre sans problème.</p>
-<p>Idéalement, on va réserver l'ajout de script directement dans un fichier html à des utilisations simples et brèves. La plupart du temps les scripts contenu dans des fichiers externes.</p>
-<h3 id="dans-un-fichier-externe">Dans un fichier externe</h3>
-<p>Un peu comme avec le css, on peut écrire nos scripts dans un ou des fichiers externes et les appelés depuis nos page html. Pour ce faire on va aussi utiliser la balise <strong>script</strong> mais en ajoutant l'attribut <strong>src</strong>.</p>
-<pre><code class="language-html">&lt;script src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
-
-&lt;!-- Pour ajouter plus d'un fichier, on répète avec les autres fichiers --&gt;
-&lt;script src=&quot;deuxieme_script.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>La maintenance et la clarté du code est une raison d'extraire les scripts dans des fichiers externe. Mais l'avantage majeure est que le navigateur va télécharger les fichiers en cache. Ensuite si une autre page html fait référence à un des fichiers téléchargés, il sera lu depuis le cache et non pas téléchargé à nouveau, ce qui réduit le trafic et permet à la page de s'afficher plus rapidement.</p>
-<h4 id="utilisation-de-lattribut-defer-et-async-de-la-balise-script">Utilisation de l'attribut defer et async de la balise script</h4>
-<p>Par défaut, quand on charge un script depuis un fichier externe, il sera exécuté immédiatement. Ça peut poser un problème si notre script interagit avec des éléments du DOM car ceux-ci peuvent ne pas être encore "chargé" (accessible) lors de exécution du script. Pour palier à ce problème on peut soit charger nos scripts à la toute fin de notre fichier HTML ou bien plus utiliser l'attribut defer ou async de la balise <strong>script</strong>. </p>
-<ul>
-<li>defer sera utilisé quand on veut manipuler des éléments de la page et être sur qu'ils sont chargés.</li>
-<li>async sera utilisé pour un script qui est totalement indépendant de la page html.</li>
-</ul>
-<p>Attention par contre car en utilisant ces deux attributs, la page peut se terminé de charger avant que les scripts soient exécuté. Ça peut créer de petits problème visuel selon la nature des scripts. </p>
-<p><strong>Exemple</strong></p>
-<pre><code class="language-html">&lt;script defer src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
-&lt;script async src=&quot;mon_script_async.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>Source : https://javascript.info/script-async-defer</p>
-<h2 id="hello-world">Hello, World</h2>
-<p>Et oui, on n'y échappera pas :smiling_imp:, on va faire un premier exemple avec un bon vieux Hello, World. </p>
-<ul>
-<li>Dans le répertoire du cours, créez vous un sous-dossier nommé helloworld_js.</li>
-<li>Dans ce sous-répertoire créez un fichier nommé helloworld.html et ajoutez-y les balises de base d'une page html.</li>
-<li>On va utiliser la fonction <strong>alert()</strong> pour afficher un message de votre choix. (Et non vous n'êtes pas obligé d'afficher Hello, World).</li>
-<li>Ajouter à l'aide de la balise <strong>script</strong> le code javascript pour faire afficher votre message. Essayer d'inclure la balise à différent endroit du fichier.</li>
-</ul>
-<p>Bon maintenant on va refaire la même chose mais depuis un fichier externe. </p>
-<ul>
-<li>Toujours dans le répertoire <strong>exercices_js</strong>, créez un nouveau sous-répertoire nommé <strong>js</strong>.</li>
-<li>Dans ce sous-répertoire, créez un fichier nommé <strong>helloworld.js</strong>.</li>
-<li>Ajouter le code dans ce nouveau fichier. (Uniquement la ligne alert('Mon message'), pas la balise <strong>script</strong>).</li>
-<li>Faites référence à ce fichier en ajoutant une deuxième balise <strong>script</strong>.</li>
-<li>Rechargez la page pour voir le résultat.</li>
-</ul>
-<p>Vous devriez avoir comme résultat deux messages qui s'affichent à l'écran, un depuis le fichier html et un autre depuis le fichier js externe. On va profiter du moment pour afficher un troisième message, mais cette fois dans la console du navigateur avec la fonction <strong>console.log()</strong>. Chaque navigateur nous donne accès à une console qui affiche différents messages (d'avertissements, d'erreurs, etc.). Les messages affichés dans la console ne sont pas vu par l'usager qui consulte la page web. Il faut ouvrir la console pour les visualiser. La console est un outil très utilisé pour suivre vos scripts et les "débugger". On va parler plus longuement plus tard mais pour l'instant on va s'en servir pour afficher un petit message de bienvenue.</p>
-<ul>
-<li>Ouvrez la console en faisant un clique droit dans la page, ensuite inspecter dans le menu contextuel et l'onglet console (valide pour Firefox et Chrome, à voir pour les autres navigateurs).</li>
-<li>À l'endroit que vous voulez, ajouter un message dans la console avec la fonction console.log('Mon message');</li>
-<li>Rechargez la page pour voir le résultat.</li>
-</ul>
-<h2 id="structure-du-code">Structure du code</h2>
-<h3 id="terminaison-dune-ligne-de-code">Terminaison d'une ligne de code</h3>
-<p>Chaque ligne de code doit se terminer par un point-virgule ( ; )! En fait ce n'est pas entièrement vrai. Javascript est un langage assez permissif, et on peut ne pas en ajouter la plupart du temps sans créer d'erreurs.</p>
-<pre><code class="language-js">// Ici les deux messages vont s'afficher même s'il n'y a pas de point-virgule
-alert('Bonjour')
-alert('tout le monde')
-</code></pre>
-<p>Par contre, c'est une bonne pratique de toujours en ajouter, et je veux que vous le fassiez toujours.</p>
-<h3 id="commentaires">Commentaires</h3>
-<p>Pour ajouter un commentaire sur une ligne, on utilise //. Pour les blocs de commentaires, on va plutôt utiliser /<em> </em>/</p>
-<pre><code class="language-js">// Commentaire sur une ligne
-alert('Coucou!!');
-/*
-    Commentaire sur
-    plusieurs lignes
-*/
-console.log('Hola');
-</code></pre>
-<h2 id="variables">Variables</h2>
-<h3 id="declaration-et-assignation">Déclaration et assignation</h3>
-<p>En javascript les variables n'ont pas de type. Pour en déclarer un, il suffit d'utiliser le mot <strong>let</strong> ou <strong>var</strong> suivi du nom de la variable. Nous verrons la différence entre let et var plus loin, pour l'instant on va toujours utiliser let. Ensuite pour assigner une valeur à notre variable on va utiliser le symbole = suivi de la valeur. On peut aussi faire les deux étapes sur la même ligne.</p>
-<pre><code class="language-js">// Déclaration d'une variable
-let message;
-// Assignation de la variable
-message = 'Bonjour tout le monde';
-// La même chose sur une ligne
-let message = 'Bonjour tout le monde';
-
-alert (message);
-</code></pre>
-<p>Attention, déclarer une variable plus d'une fois va provoquer une erreur.</p>
-<pre><code class="language-js">let message = 'Bonjour';
-let message = 'Au revoir'; // On va avoir une erreur de syntaxe ici
-</code></pre>
-<p>Les variables n'ayant pas de type, on peut passer plusieurs type de valeur à une même variable. Par contre ce n'est pas une bonne pratique et on devrait l'éviter.</p>
-<pre><code class="language-js">let message = 'Allo';
-alert(message) // Va afficher Allo
-message = 5;
-alert(message * 2) // Va afficher 10;
-</code></pre>
-<h3 id="constantes">Constantes</h3>
-<p>Une constante est une variable dont la valeur ne peut être changé après son assignation. On utilise le mot <strong>const</strong> pour la déclarer.</p>
-<pre><code class="language-js">const COULEUR_ORANGE = '#ffaa00';
-
-COULEUR_ORANGE = '#ffffff'; // Va provoquer une erreur
-</code></pre>
-<h3 id="bien-nommer-ses-variables">Bien nommer ses variables</h3>
-<p>Un nom de variable peut être composé de lettre, chiffre et des caractères $ et _. Le premier caractère ne doit pas être un chiffre. Si le nom de la variable comporte plus d'un mot, on va utiliser la notation <em>camelCase</em>, c'est-à-dire le premier mot sera en minuscule mais que les suivants commenceront par une lettre majuscule. Attention, le nom de variable est aussi sensible à la case.</p>
-<pre><code class="language-js">// Exemple de nom en camelCase
-let nomEnCamelCase = 'Hallo!';
-// Les deux variables sont différentes
-let message = 'Message 1';
-let messAge = 'Message 2';
-</code></pre>
-<p>Pour les constantes, la norme veux qu'on mettre le nom tout en majuscule avec les différents mots séparer par un _ quand la valeur est "hardcodé". Sinon on utilise le camelCase comme avec les variables.</p>
-<pre><code class="language-js">// La valeur est ici hardcodé
-const COULEUR_ORANGE = '#ffaa00';
-// On assigne la constant avec le résultat de la fonction calculAge()
-const monAge = calculAge(dateDeNaissance);
-</code></pre>
-<p>En règle générale éviter les noms de variable trop court ou non significatif.</p>
-<pre><code class="language-js">// Le nom ne veut rien dire
-let a = 'Mon titre';
-// C'est beaucoup plus significatif avec ce nom
-let texteTitre = 'Mon titre'
+<h3 id="utilisation-via-cdn">Utilisation via CDN</h3>
+<p>Encore depuis le site officiel de Bootstrap, allez récupérer les urls de la section "Include via CDN" directement depuis la page accueil. Pour l'instant vous pouvez seulement utiliser le lien pour le css. Ajouter ensuite se lien dans la section head de votre fichier html.</p>
+<pre><code class="language-html">&lt;!-- CSS only --&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT&quot; crossorigin=&quot;anonymous&quot;&gt;
 
 </code></pre>
-<h3 id="exercice">Exercice</h3>
-<p>En reprenant ce que vous avez fait dans la section <strong>Hello, World</strong>, modifier votre code pour utiliser des variables dans les fonctions alert() et console.log().</p>
-<h2 id="interaction">Interaction</h2>
-<p>Il y a plusieurs fonctions natives en javascript pour interagir avec le visiteur de notre site. Nous avons déjà vu <strong>alert()</strong> qui affiche un message à l'écran. On va en voir deux autres : </p>
-<ul>
-<li>prompt(titre, valeur par défaut) : Demande à l'usager de saisir une valeur.</li>
-<li>confirm() : Affiche une fenêtre avec un texte et deux boutons, Ok et Cancel.</li>
-</ul>
-<h3 id="alert">Alert</h3>
-<p>Comme nous l'avons vu plus haut, une façon simple d'afficher un message à l'usager est d'utiliser la commande <strong>alert()</strong>.</p>
-<p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">alert('Mon message');
+<p>Note : J'ai mis le liens plus haut qu'à titre d'exemple, il est toujours préférable d'aller chercher le liens le plus à jour.</p>
+<h3 id="avantages-et-inconvenients">Avantages et inconvénients</h3>
+<p>En téléchargeant les fichiers css, on accélère l'utilisation de Bootstrap sur notre site mais on "alourdi" légèrement sa taille en terme d'espace disque. Un utilisant un CDN on télécharge les fichiers depuis un serveur distant, ça peut ralentir un peu l'affichage et on est dépendant de ce serveur. D'un autre côté on s'assure d'avoir une version la plus à jour et ça nous évite d'avoir à maintenir des fichiers supplémentaires pour notre site.</p>
+<p>Un chose à faire attention, Bootstrap "reset" certaines propriétés des éléments html, comme par exemple la marge de la balise <strong>body</strong> qui est changé à 0px au lieu de 8px. Il est toujours préférable d'ajouter les liens vers Bootstrap <u>AVANT</u> les autres fichiers css. </p>
+<h2 id="utilisation">Utilisation</h2>
+<p>Comme on disait plus haut, l'utilisation de Bootstrap se fait à l'aide de classes prédéfinis qu'on ajoute à l'élément qu'on veut "stylisé". Prenons par exemple les deux boutons suivants :</p>
+<p><img alt="bootstrap" src="\assets\images\bootstrap.png" /> </p>
+<p>Le rendu est similaire à part pour la couleur. Voici le code html et css que j'ai utilisé pour les créés : </p>
+<p><strong>HTLM</strong></p>
+<pre><code class="language-html">&lt;button class=&quot;bouton-css&quot;&gt;Bouton CSS&lt;/button&gt;  
+&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Bouton bootstrap&lt;/button&gt;          
 </code></pre>
-<p><strong>Exemple</strong></p>
-<pre><code class="language-js">alert('Bonjour tout le monde!!');
+<p><strong>CSS</strong></p>
+<pre><code class="language-css">.bouton-css {
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+}
 
-// Affichera Bonjour Mathieu
-let nom = 'Mathieu';
-alert('Bonjour ' + nom);
-</code></pre>
-<h3 id="prompt">Prompt</h3>
-<p>Avec <strong>prompt()</strong> on demande à l'usager de saisir une valeur qu'on assignera à une variable.</p>
-<p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">prompt(&quot;Message à afficher&quot;, &quot;Valeur optionnelle par défaut&quot;);
-</code></pre>
-<p><strong>Exemple</strong></p>
-<pre><code class="language-js">let message = 'Veuillez entrer votre nom';
-// On affiche le message et récupère la valeur dans la variable nom
-let nom = prompt(message);
-// La valeur affiché sera ce qui a été saisie par l'usager
-alert(nom);
-
-// On peut aussi déclarer une valeur par défaut qui sera afficher dans la case de saisie.
-// Ici Mathieu sera inscrit dans la case à l'affichage
-let nomAvecDefaut = prompt(message, 'Mathieu');
-</code></pre>
-<h3 id="confirm">Confirm</h3>
-<p>On peut aussi poser une question à l'usager et récupérer une valeur True ou False avec la commande <strong>confirm()</strong>.</p>
-<p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">confirm(&quot;Texte à afficher&quot;);
-</code></pre>
-<p><strong>Exemple</strong></p>
-<pre><code class="language-js">let resultat = confirm(&quot;Voulez-vous continuer?&quot;);
-// resultat prendra la valeur True ou False selon le choix de l'usager
-if (resultat) {
-    alert('Ok on continue.');
-} else {
-    alert('On arrête déjà.');
+.bouton-css:hover {
+    background-color: rgb(104, 92, 186);
+    box-shadow: 0px 0px 5px gray;
 }
 </code></pre>
-<h3 id="exercice_1">Exercice</h3>
+<p>Comme vous pouvez le voir, aucune règle css n'a été requise pour créer mon bouton Bootstrap. C'est avec les trois classes ajoutées qu'il a été créé. (btn indique que c'est un bouton, btn-primary pour la couleur bleu et btn-lg pour avoir un plus gros bouton). Merveilleux non? On ne le vois pas dans ma capture d'écran mais il y a aussi un effet quand on survol le bouton. </p>
+<p>C'est une des forces de Bootstrap. En ajoutant quelques classes à un élément on peut rapidement le transformer en quelque chose de plus stylisé. Ça nous assure aussi une certaine conformité dans notre site: les composantes auront tous le même style. On a par contre moins de contrôle sur nos éléments. Si on a des modifications à faire c'est un peu plus compliqué. </p>
+<p>Alors si on veux rapidement créer un site qui "parait" bien sans trop se compliquer la vie avec le css, Bootstrap est une bonne solution. Si on commence à modifier un par un nos élément pour modifier le style que l'on veut donner à notre site on devrait peut-être revenir à du css "pure".</p>
+<h2 id="les-breakpoints">Les "breakpoints"</h2>
+<p>Bootstrap a été développé avec comme objectif de nous donner une méthode facile de créer des sites "responsive". Les breakpoints sont des valeurs prédéfinies qui représentent des largeurs en pixels. Vous vous rappeler quand on faisait des media query, on utilisait des dimensions en pixels avec min-width. C'est un peu le même principe avec les breakpoints. On peux souvent les ajouter à une classe bootstrap pour la rafiner.</p>
+<p><strong>Liste des breakpoints</strong></p>
+<p><img alt="bootstrap02" src="\assets\images\bootstrap02.png" /></p>
+<h2 id="les-conteneurs-container">Les conteneurs (container)</h2>
+<p>Un peu comme on l'a vu avec flexbox et grid, les conteneurs sont l'élément de base à utiliser quand on fait de la disposition avec Bootstrap. Il y a trois différent type de conteneur, représenté par les classes suivantes : </p>
 <ul>
-<li>Demander le nom de l'usager et afficher comme résultat le nom saisie suivi de ", bienvenue sur mon site!".</li>
-<li>Posez la question suivante à l'usager : "Est-ce que vous aimez le Javascript?". Afficher le message "Super!" si la réponse est affirmative et "J'espère que ça va changer." si c'est négatif.</li>
+<li>.container, sa largeur sera fixe et va dépendre de la dimension de l'écran.</li>
+<li>.container-fluid, sa largeur sera toujours de 100%</li>
+<li>.container-{breakpoint}, sa largeur sera de 100% tant que la dimension de l'écran ne dépassera pas la valeur du breakpoint. </li>
+</ul>
+<pre><code class="language-html">&lt;div class=&quot;container-lg&quot;&gt;
+    ...
+&lt;/div&gt;
+</code></pre>
+<p>Vous pouvez voir un exemple en action ici : <a href="https://getbootstrap.com/docs/5.2/examples/grid/#containers">https://getbootstrap.com/docs/5.2/examples/grid/#containers</a></p>
+<h2 id="le-systeme-de-grille">Le système de grille</h2>
+<p>On peut utiliser avec Bootstrap utilise un système de conteneur, ligne et colonne pour faire la disposition de nos éléments. En plus, c'est flexbox :astonished: qui est utilisé "en dessous de la couverture". Pas de panique vous allez voir l'utilisation est quand même assez simple. On va utiliser des éléments div auxquelles ont va donner les classes appropriées. On commence par créer une div "conteneur", ensuite on crée une autre div qui va être la première ligne. Dans cette div on va créer le nombre de div égale au nombre de colonne voulue. La beauté de la chose est qu'on n'est pas obligé d'avoir le même nombre de colonne par ligne, chaque ligne est indépendante des autres.</p>
+<p>Dans cette exemple je crée une ligne de 2 colonne et un autre de 3. Les deux lignes auront la même dimension en largeur, les cases de chaque ligne vont s'ajuster en conséquence.</p>
+<pre><code class="language-html">&lt;div class=&quot;container text-center&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      1 of 2
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      2 of 2
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      1 of 3
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      2 of 3
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      3 of 3
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img alt="bootstrap04" src="\assets\images\bootstrap04.png" /></p>
+<p>Par défaut les colonnes se partageront équitablement l'espace disponible. On peut aussi définir des dimensions pour certaine ou toutes les colonnes. Chaque ligne est divisé en 12 parties égales. On peut attribuer à une colonne une valeur de 1 à 12 déterminant ainsi la proportion de l'espace que cette colonne va prendre, une valeur de 6 équivaut à 50% de la dimension totale par exemple. Si la somme de ces valeurs dépassent 12, les colonnes excédentaire vont déborder sur une  autre ligne.</p>
+<pre><code class="language-html">&lt;div class=&quot;container text-center&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-8&quot;&gt;1 of 2&lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;2 of 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;1 of 3&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;2 of 3&lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;3 of 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img alt="bootstrap03" src="\assets\images\bootstrap03.png" /></p>
+<p>On peut aussi spécifier un breakpoint à la classe ainsi qu'une valeur pour modifier les colonnes selon la dimension de l'écran.</p>
+<pre><code class="language-html">&lt;div class=&quot;container text-center&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col col-md-4&quot;&gt;1 of 2&lt;/div&gt;
+        &lt;div class=&quot;col col-md-8&quot;&gt;2 of 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col col-md-12&quot;&gt;1 of 3&lt;/div&gt;
+        &lt;div class=&quot;col col-md-6&quot;&gt;2 of 3&lt;/div&gt;
+        &lt;div class=&quot;col col-md-6&quot;&gt;3 of 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>ici tant que la dimension de l'écran ne dépassera pas 768px (le breakpoint md) les colonnes seront égales entre elles. Ensuite les proportions seront celle après le breakpoint.</p>
+<p><img alt="bootstrap05" src="\assets\images\bootstrap05.png" /></p>
+<p><img alt="bootstrap06" src="\assets\images\bootstrap06.png" /></p>
+<p>Une dernière chose, j'ai dis plus tôt que le système de grille utilisait Flexbox. On peut donc se servir de ce qu'on a appris et l'appliquer ici à l'aide de classes Bootstrap.</p>
+<pre><code class="language-html">&lt;div class=&quot;container text-center&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;Ligne 1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-7&quot;&gt;Ligne 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-2&quot;&gt;1 of 3&lt;/div&gt;
+        &lt;div class=&quot;col-2&quot;&gt;2 of 3&lt;/div&gt;
+        &lt;div class=&quot;col-2&quot;&gt;3 of 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img alt="bootstrap08" src="\assets\images\bootstrap08.png" /></p>
+<pre><code class="language-html">&lt;div class=&quot;container text-center&quot;&gt;
+        &lt;div class=&quot;row justify-content-center&quot;&gt;
+            &lt;div class=&quot;col-4&quot;&gt;Ligne 1&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row justify-content-end&quot;&gt;
+            &lt;div class=&quot;col-7&quot;&gt;Ligne 2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row justify-content-between&quot;&gt;
+            &lt;div class=&quot;col-2&quot;&gt;1 of 3&lt;/div&gt;
+            &lt;div class=&quot;col-2&quot;&gt;2 of 3&lt;/div&gt;
+            &lt;div class=&quot;col-2&quot;&gt;3 of 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<p><img alt="bootstrap07" src="\assets\images\bootstrap07.png" /></p>
+<p>Voilà la base du système de grille de Bootstrap, pour aller plus loin consultez la documentation officielle ici : <a href="https://getbootstrap.com/docs/5.2/layout/grid/">https://getbootstrap.com/docs/5.2/layout/grid/</a></p>
+<h2 id="sources-et-references">Sources et références</h2>
+<ul>
+<li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
 </ul>
 
 
@@ -1256,7 +1061,7 @@ if (resultat) {
     <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
         
-        <a href="../css_bootstrap/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Bootstrap" rel="prev">
+        <a href="../css_animation/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Animation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1265,20 +1070,20 @@ if (resultat) {
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Bootstrap
+              Animation
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../exercices/ex15_horlogeJS/ex15_enonce/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exercice 15 - Horloge Javascript" rel="next">
+        <a href="../js_basics/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les bases" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Exercice 15 - Horloge Javascript
+              Les bases
             </div>
           </div>
           <div class="md-footer__button md-icon">
