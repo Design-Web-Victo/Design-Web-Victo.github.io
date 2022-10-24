@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercice 15 - Horloge JS</title>
+
+    <link rel="stylesheet" href="asset/css/font-awesome.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+
+    <script defer src="asset/js/clock.js"></script>
+  </head>
+
+  <body>
+    <div class="conteneur-principal">
+      <!-- Section de l'affichage de l'horloge -->
+      <div class="conteneur-horloge">
+        <div id="affichage-date">17 octobre 2022</div>
+        <div id="affichage-heure">02:29:01 PM</div>
+      </div>
+    </div>
+
+    <!-- Section des icones de configuration -->
+    <div id="settings">
+      <div class="tooltip tooltip_periode">
+        <i
+          id="icon_periode"
+          class="far fa-clock"
+          onclick="changerAffichage12h(this)"
+        ></i>
+        <span class="tooltiptext" id="texteAfficher24h"
+          >Afficher sur 24 heures</span
+        >
+      </div>
+      <div class="tooltip tooltip_date">
+        <i
+          id="icon_calendrier"
+          class="far fa-calendar-alt"
+          onclick="masquerDate(this)"
+        ></i>
+        <span class="tooltiptext" id="texte-masquer-date">Masquer la date</span>
+      </div>
+    </div>
+  </body>
+</html>
