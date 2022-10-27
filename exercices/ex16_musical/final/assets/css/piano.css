@@ -1,0 +1,79 @@
+:root {
+    --aide-note: rgb(30, 144, 255); 
+    --select-touche: rgb(138, 194, 249);
+}
+
+body {
+    background-color: #000000;
+}
+
+.piano {
+    position: relative;
+    /* width: 100%; */
+    max-width: 880px;
+    height: 350px;
+    margin: 10px auto 10px ;
+}
+
+.note {
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    border: 4px solid #000000;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: all 140ms ease;
+    text-align: center;
+}
+
+.blanche {
+    float: left;
+    background-color: white;
+    width: 10%;
+    height: 100%;
+}
+
+.noire {
+    position: absolute;
+    background-color: #000000;
+    width: 6%;
+    height: 60%;
+    z-index: 3;
+}
+
+.note[data-key="87"] { left: 7%; }
+.note[data-key="69"] { left: 17%; }
+.note[data-key="84"] { left: 37%; }
+.note[data-key="89"] { left: 47%; }
+.note[data-key="85"] { left: 57%; }
+.note[data-key="79"] { left: 77%; }
+.note[data-key="80"] { left: 87%; }
+
+.selection {
+    transform: scale(0.95);
+    background-color: var(--select-touche);
+    border-color: var(--select-touche);
+    box-shadow: 0 0 16px var(--select-touche);
+}
+
+.aide-touche {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    font-size: 16px;
+}
+
+.aide-note {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 7px;
+    font-size: 26px;
+    color: var(--aide-note);
+}
+
+.noire .aide-touche {
+    color: white;
+}
+
+
