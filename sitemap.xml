@@ -2,97 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://design-web-victo.github.io/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex11_font/ex11_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex12_animation/ex12_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex13_variables/ex13_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex14_bootstrap/ex14_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex15_horlogeJS/ex15_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/exercices/ex16_musical/ex16_enonce/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/exercices/ex17_portfolio/ex17_enonce/</loc>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_animation/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_basics/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_bootstrap/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_flexbox/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_grid/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_variable/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/notes_de_cours/form/</loc>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/html_basics/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/html_font/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/html_mediaquery/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/js_attribute/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/js_basics/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/notes_de_cours/js_function/</loc>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/js_getelement/</loc>
-         <lastmod>2022-10-24</lastmod>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/notes_de_cours/web_hebergement/</loc>
+         <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

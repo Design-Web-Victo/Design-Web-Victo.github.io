@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js_getelement/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/form/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
     
     
       
-        <title>Sélectionner un élément HTML - Design Web 420-1E6-VI</title>
+        <title>Les formulaires HTML - Design Web 420-1E6-VI</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#selectionner-un-element-html-en-js" class="md-skip">
+        <a href="#les-formulaires-html" class="md-skip">
           Aller au contenu
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sélectionner un élément HTML
+              Les formulaires HTML
             
           </span>
         </div>
@@ -203,8 +203,6 @@
         
   
   
-    
-  
 
 
   
@@ -216,7 +214,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../html_basics/" class="md-tabs__link md-tabs__link--active">
+      <a href="../html_basics/" class="md-tabs__link">
         Notes de cours
       </a>
     </li>
@@ -312,14 +310,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -565,14 +561,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
       
       
@@ -607,73 +601,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Sélectionner un élément HTML
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../js_getelement/" class="md-nav__link">
         Sélectionner un élément HTML
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getelementbyid" class="md-nav__link">
-    getElementById()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getelementsbyclassname" class="md-nav__link">
-    getElementsByClassName()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#queryselector" class="md-nav__link">
-    querySelector()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#queryselectorall" class="md-nav__link">
-    querySelectorAll()
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -912,29 +844,224 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getelementbyid" class="md-nav__link">
-    getElementById()
+  <a href="#structure-dun-formulaire" class="md-nav__link">
+    Structure d'un formulaire
   </a>
+  
+    <nav class="md-nav" aria-label="Structure d'un formulaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lelement-form" class="md-nav__link">
+    L'élément form
+  </a>
+  
+    <nav class="md-nav" aria-label="L'élément form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    method
+  </a>
+  
+    <nav class="md-nav" aria-label="method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    GET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    POST
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lelement-button" class="md-nav__link">
+    L'élément button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getelementsbyclassname" class="md-nav__link">
-    getElementsByClassName()
+  <a href="#les-elements-de-saisies-de-donnees" class="md-nav__link">
+    Les éléments de saisies de données
   </a>
+  
+    <nav class="md-nav" aria-label="Les éléments de saisies de données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lelement-label" class="md-nav__link">
+    L'élément label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lelement-input" class="md-nav__link">
+    L'élément input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lelement-textarea" class="md-nav__link">
+    L'élément textarea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lelement-select" class="md-nav__link">
+    L'élément select
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#queryselector" class="md-nav__link">
-    querySelector()
+  <a href="#mise-en-forme-du-formulaire" class="md-nav__link">
+    Mise en forme du formulaire
   </a>
+  
+    <nav class="md-nav" aria-label="Mise en forme du formulaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudo-classe" class="md-nav__link">
+    Pseudo-classe
+  </a>
+  
+    <nav class="md-nav" aria-label="Pseudo-classe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#focus" class="md-nav__link">
+    :focus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required" class="md-nav__link">
+    :required
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalid" class="md-nav__link">
+    :invalid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#queryselectorall" class="md-nav__link">
-    querySelectorAll()
+  <a href="#validation-de-formulaire-en-html" class="md-nav__link">
+    Validation de formulaire en HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation de formulaire en HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lattribut-type" class="md-nav__link">
+    L'attribut type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lattribut-required" class="md-nav__link">
+    L'attribut required
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lattribut-pattern" class="md-nav__link">
+    L'attribut pattern
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-de-formulaire-en-javascript" class="md-nav__link">
+    Validation de formulaire en Javascript
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation de formulaire en Javascript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onsubmit" class="md-nav__link">
+    onsubmit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preventdefault" class="md-nav__link">
+    preventDefault
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    Références
   </a>
   
 </li>
@@ -953,56 +1080,152 @@
                 
                   
 
-  <a href="https://github.com/Design-Web-Victo/Design-Web-Victo.github.io/edit/master/docs/notes_de_cours/js_getelement.md" title="Editer cette page" class="md-content__button md-icon">
+  <a href="https://github.com/Design-Web-Victo/Design-Web-Victo.github.io/edit/master/docs/notes_de_cours/form.md" title="Editer cette page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="selectionner-un-element-html-en-js">Sélectionner un élément HTML en JS</h1>
-<p>On peut sélectionner un ou plusieurs élément HTML par différente fonction de l'objet <strong>document</strong></p>
-<p>Prenons pour exemple le html suivant</p>
-<pre><code class="language-html">&lt;div class=&quot;conteneur-horloge&quot;&gt;
-    &lt;div id=&quot;affichage-date&quot; class=&quot;boite&quot;&gt;&lt;/div&gt;
-    &lt;div id=&quot;affichage-heure&quot; class=&quot;boite&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+<h1 id="les-formulaires-html">Les formulaires HTML</h1>
+<p>Les formulaires HTML sont utiliss pour échanger de l'informations entre les usagers et le site web qu'ils visitent. Ils sont composés de plusieurs éléments html (input, select) qui permettent à l'utilisateur de saisir l'information à envoyer. Elle sera ensuite transmise vers un serveur web où elle sera traitée.</p>
+<h2 id="structure-dun-formulaire">Structure d'un formulaire</h2>
+<h3 id="lelement-form">L'élément form</h3>
+<p>Élément essentiel à tout formulaire, la balise form est en quelque sorte le conteneur de notre formulaire. Tous ce qui si retrouve sera traité comme faisant partie du formulaire. Elle a deux attributs spécifiques qui dictent la façon dont le formulaire va envoyer l'information au serveur : action et method.</p>
+<p><strong>Exemple</strong></p>
+<pre><code class="language-html">&lt;form id=&quot;formulaire_contact&quot; method=&quot;post&quot; action=&quot;/traitement.php&quot;&gt;
+    &lt;!-- Contenu de mon formulaire --&gt;
+&lt;/form&gt;
 </code></pre>
-<h2 id="getelementbyid">getElementById()</h2>
-<p>Pour sélectionner un élément par son id qu'on doit lui passer en paramêtre. La fonction retourne un HTLMElement</p>
-<pre><code class="language-js">let affichageDate = document.getElementById('affichage-date);
+<h4 id="action">action</h4>
+<p>L'attribut action prend comme valeur une URL vers laquelle les données seront acheminées. </p>
+<h4 id="method">method</h4>
+<p>L'attribut method défini de quelle façon les données seront acheminées. Les valeurs possibles sont GET ou POST. </p>
+<h5 id="get">GET</h5>
+<p>Les données sont incluses dans l'URL défini par l'attribut action. l'URL se termine par un symbole ? suivi d'une série de paire nom/valeur pour chaque contrôle, le tout séparé par le symbole &amp;. Étant donné que les informations envoyées au serveur sont lisible directement dans l'url de la requête, cette méthode n'est pas très sécuritaire au niveau de la protection des données et devraient être utilisé dans certain cas précis, comme par exemple une recherche de produits dans un magasin en ligne. Voici un exemple de requête d'une recherche Google où on peut très bien le voir : https://www.google.com/search?client=firefox-b-d&amp;q=petit+chats. La requête est envoyé à l'adresse www.google.com/search avec les informations client=firefox-b-d (mon navigateur) et q=petit+chats (ma recherche).</p>
+<h5 id="post">POST</h5>
+<p>Sans entrer dans les détails, dans une requête post les données sont incluses dans le corps de la requête. Les données ne sont pas explicitement vu par l'usager et ça nous permet d'envoyer une plus grande quantité d'informations. C'est cette méthode que nous allons privilégiée.</p>
+<h3 id="lelement-button">L'élément button</h3>
+<p>Pour permettre à l'usager de soumettre son formulaire, l'usage le plus courant est d'ajouter un bouton à la toute fin de notre formulaire, juste avant la fermeture de la balise form. Le bouton à un attribut type qu'on va utiliser pour définir son comportement dans le formulaire : </p>
+<ul>
+<li>submit : En cliquant sur un bouton avec le type submit, les données du formulaire seront envoyées vers la page définie par l'attribut action de l'élément form.</li>
+<li>reset : Tous les contrôles du formulaire seront réinitialisés à leur valeur par défaut.</li>
+<li>button : À utiliser pour créer un bouton régulier.</li>
+</ul>
+<p>Maintenant qu'on a un élément form et un bouton pour soumettre notre formulaire, on va ajouter les différents éléments de saisies d'informations.</p>
+<h2 id="les-elements-de-saisies-de-donnees">Les éléments de saisies de données</h2>
+<p>Il existe plusieurs éléments HTML qu'on peut utiliser pour saisir les données de l'utilisateurs : input, textarea, select, etc... L'important à se rappeler est que peut importe l'élément utilisé, on doit <u>toujours lui définir l'attribut <strong>name</strong></u> avec une valeur unique au formulaire, sinon les informations ne seront pas transmissent au serveur.</p>
+<h3 id="lelement-label">L'élément label</h3>
+<p>L'élément label n'est pas essentiel mais c'est une bonne pratique de toujours en associé un à chacun de nos éléments de saisie. </p>
+<ul>
+<li>Le label est utilisé par les options d'accessibilité comme les lecteurs d'écran.</li>
+<li>En cliquant sur le label, on donne le focus à l'élément qui lui est lié.</li>
+</ul>
+<p>Pour relier un label à un élément, on utilise la balise <strong>for</strong> qui doit correspondre à la valeur de la balise <strong>id</strong> de l'élément à lier. </p>
+<pre><code class="language-html">&lt;!-- La valeur nom est utilié pour l'attribut for du label et id du input, les deux 
+éléments sont ainsi liés --&gt;
+&lt;label for=&quot;nom&quot;&gt;Nom :&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;nom&quot; name=&quot;nom_usager&quot;&gt;
 </code></pre>
-<h2 id="getelementsbyclassname">getElementsByClassName()</h2>
-<p>Pour sélectionner un élément par sa classe qu'on doit lui passer en paramêtre. La fonction retourne un HTLMCollection d'éléments (une sorte de tableau)</p>
-<pre><code class="language-js">let listeBoites = document.getElementsByClassName('boite');
+<h3 id="lelement-input">L'élément input</h3>
+<p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input.</p>
+<h3 id="lelement-textarea">L'élément textarea</h3>
+<p>Un textarea est un élément qui nous permet de saisir du texte sur plusieurs lignes. Un particularité de cet élément est qu'au contraire de la balise input, ou doit ajouter une fermeture de la balise.</p>
+<pre><code class="language-html">&lt;!-- input ne demande pas de fermeture de balise --&gt;
+&lt;label for=&quot;nom&quot;&gt;Nom :&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;nom&quot; name=&quot;nom_usager&quot;&gt;
+&lt;!-- textarea en requiert une --&gt;
+&lt;label for=&quot;message&quot;&gt;Message :&lt;/label&gt;
+&lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+<h3 id="lelement-select">L'élément select</h3>
+<p>Select permet d'afficher une liste déroulante de choix prédéfinis. Pour ajouter les options de la liste, on utilise la balise <strong>option</strong></p>
+<pre><code class="language-html">&lt;select name=&quot;classe_perso&quot; id=&quot;classe_perso&quot;&gt;
+  &lt;option value=&quot;1&quot;&gt;Guerrier&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Healer&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Sniper&lt;/option&gt;
+  &lt;option value=&quot;4&quot;&gt;Rogue&lt;/option&gt;
+&lt;/select&gt; 
+</code></pre>
+<h2 id="mise-en-forme-du-formulaire">Mise en forme du formulaire</h2>
+<p>On peut modifier apparence de notre formulaire et la plupart de ses éléments avec des règles css. Tout ce qui touche le texte et les polices de caractères sont utilisable. On aussi facilement modifier l'apparence des "boites" des éléments avec les propriétés associées comme padding, marging, border, etc.</p>
+<p>On ne fera pas le tour de toutes les possibilités mais voici quelques ressources pour vous guider : </p>
+<ul>
+<li>https://developer.mozilla.org/fr/docs/Learn/Forms/Styling_web_forms</li>
+<li>https://www.w3schools.com/css/css_form.asp</li>
+<li>https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/</li>
+</ul>
+<h3 id="pseudo-classe">Pseudo-classe</h3>
+<p>On peut aussi utiliser des pseudo-classes pour modifier l'apparence des éléments du formulaire selon leur état. Les plus pertinentes sont les suivantes : </p>
+<h4 id="focus">:focus</h4>
+<p>Applicable quand l'élément est sélectionné. Peut nous permettre par exemple de donner un effet "de surlignement" de l'élément que l'usager est en train de remplir.</p>
+<h4 id="required">:required</h4>
+<p>Applicable uniquement quand l'élément à l'attribut <strong>required</strong> et qu'il à comme valeur True. Peut être utile si on veut avoir une mise en forme différente pour les éléments obligatoires.</p>
+<h4 id="invalid">:invalid</h4>
+<p>Applicable quand l'usager à saisie une valeur invalide, comme par exemple une adresse courriel non conforme dans un élément input de type courriel.</p>
+<h2 id="validation-de-formulaire-en-html">Validation de formulaire en HTML</h2>
+<p>On peut en HTML uniquement implémenter une première "couche" de validation en utilisant certain attributs spécifiques. Il faut garder à l'esprit que cette validation est basique et ne devrait pas être utilisé seule.</p>
+<h4 id="lattribut-type">L'attribut type</h4>
+<p>Il existe maintenant pour l'attribut <strong>type</strong> de l'élément input une multitude de valeur possible qui permet de spécifier le type de valeur souhaité et en même temps de faire une validation.</p>
+<pre><code class="language-html">&lt;!-- Input qui demande une adresse de courriel --&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email_usager&quot; placeholder=&quot;Entrez une adresse courriel valide&quot;&gt;
+</code></pre>
+<p><img alt="" src="C:\Users\mfrechette\Pictures\Screenshots\screenshot.416.png" /></p>
+<h4 id="lattribut-required">L'attribut required</h4>
+<p>Indique qu'une valeur doit être saisie pour l'élément avant l'envoi du formulaire. Selon le navigateur utilisé un message d'erreur sera affiché.</p>
+<pre><code class="language-html">&lt;label for=&quot;email&quot;&gt;e-mail&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email_usager&quot; required&gt;
+</code></pre>
+<p>Résultat lors de l'envoi du formulaire</p>
+<p><img alt="" src="C:\Users\mfrechette\Pictures\Screenshots\screenshot.415.png" /></p>
+<h4 id="lattribut-pattern">L'attribut pattern</h4>
+<p>On peut avec l'attribut pattern définir notre propre format de texte accepté. Pattern prend comme valeur une expression régulière. Il est très important d'informer l'utilisateur du format à respecter, soit avec la balise title ou en ajoutant un court texte explicatif.</p>
+<pre><code class="language-html">&lt;label for=&quot;ipv4&quot;&gt;Courriel&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;ipv4&quot; name=&quot;ipv4&quot; pattern=&quot;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&quot; required title=&quot;Adresse IPv4&quot;&gt;
+&lt;p&gt;Veuillez entrer une adresse IPv4 au format xxx.xxx.xxx.xxx&lt;/p&gt;
+</code></pre>
+<p>Référence : https://regexr.com/</p>
+<h2 id="validation-de-formulaire-en-javascript">Validation de formulaire en Javascript</h2>
+<p>Il y a plusieurs méthode pour valider nos formulaire en Javascript. Nous allons nous en tenir à deux méthodes qui se rapproche de ce qu'on fait déjà en utilisant l'action submit du formulaire. L'avantage majeur d'utiliser Javascript est que ça nous permet de faire une validation beaucoup plus précise et efficace.</p>
+<h3 id="onsubmit">onsubmit</h3>
+<p>La première méthode est d'utiliser onsubmit dans la balise form pour appeler une fonction Javascript lors du "submit" du formulaire. La fonction doit être appeler de la façon suivante et retourner true ou false : </p>
+<p><strong>HTML</strong></p>
+<pre><code class="language-html">&lt;form action=&quot;traitement.php&quot; method=&quot;post&quot; onsubmit=&quot;return ValidationOnSubmit()&quot;&gt;
+</code></pre>
+<p><strong>Javascript</strong></p>
+<pre><code class="language-js">function ValidationOnSubmit() 
+{
+    let formValide = false;
 
-// Pour parcourir la collection on peut faire une boucle standart
-for (let i = 0; i &lt; listeBoites.length; i++) {
-    console.log(listeBoites[i]);
-}
-// On peut aussi utiliser une boucle for
-for (let boite of listeBoites) {
-    console.log(boite);
-}
-</code></pre>
-<h2 id="queryselector">querySelector()</h2>
-<p>Retourne le premier élément qui correspont au sélecteur passé en paramêtre. On peut utiliser les sélecteurs qu'on a appris en css. Retourne un HTMLElement</p>
-<pre><code class="language-js">// Je sélectionne toutes les divs qui sont enfant de l'élément avec la classe conteneur-horloge mais la fonction va me retourner que la première
-let listeBoites = document.querySelector('.conteneur-horloge div');
-</code></pre>
-<h2 id="queryselectorall">querySelectorAll()</h2>
-<p>La même chose que pour querySelector mais retourne tous les éléments correspondants sous forme de <strong>NodeList</strong> (un array)</p>
-<pre><code class="language-js">// Je sélectionne toutes les divs qui sont enfant de l'élément avec la classe conteneur-horloge
-let listeBoites = document.querySelector('.conteneur-horloge div');
+    // Traitement de validation
 
-// Je peux parcourir le résultat comme un tableau
-for (let boite of listeBoites) {
-    console.log(boite);
+    return formValide;
 }
-// mais aussi avec une boucle foreach
-listeBoites.forEach(boite =&gt; {
-    console.log(boite);
+</code></pre>
+<p>Un retour de la valeur false va empêcher le submit et une valeur true va au contraire l'autoriser.</p>
+<h3 id="preventdefault">preventDefault</h3>
+<p>La seconde méthode est d'utiliser la méthode preventDefault associée au formulaire pour bloqué le comportement du "submit" et ensuite faire notre validation. Un fois la validation effectuée, on peut relancer un submit depuis notre script. La fonction de validation sera appelé quand l'événement submit de notre formulaire sera déclenché. On utilisera un addEventListener pour ce faire : </p>
+<pre><code class="language-js">monFormulaire.addEventListener('submit', function ValidationFormulaire(e) 
+{
+    // Annule le comportement par défaut du submit
+    e.preventDefault();
+
+    let formValide = false;
+
+    // Traitement de validation
+
+    if (formValide) {
+        // On relance un submit
+        monFormulaire.submit();
+    }
 });
 </code></pre>
+<h2 id="references">Références</h2>
+<ul>
+<li>https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation</li>
+<li>https://www.tutorialspoint.com/javascript/javascript_form_validations.htm</li>
+<li>https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/</li>
+<li>https://www.w3schools.com/js/js_validation.asp</li>
+</ul>
 
 
 
@@ -1023,42 +1246,6 @@ listeBoites.forEach(boite =&gt; {
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-      
-        
-        <a href="../js_basics/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Les bases" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              Les bases
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../js_attribute/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Manipuler les attributs HTML" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Manipuler les attributs HTML
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
