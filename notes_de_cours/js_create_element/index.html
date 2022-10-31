@@ -995,12 +995,12 @@ let monContainer = document.getElementById(&quot;containerExemple&quot;);
 <h3 id="creer-des-elements">Créer des éléments</h3>
 <p>On peut créer un élément en Javascript en utilisant la méthode <strong>createElement</strong>.</p>
 <p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">document.createElement(&quot;nodename&quot;)
+<pre><code class="language-js">document.body.createElement(&quot;nodename&quot;)
 // nodename réprésente le nom de la balise html
 </code></pre>
 <p><strong>Exemple</strong></p>
 <pre><code class="language-js">// Créer une nouvelle balise h1
-let titre = document.createElement(&quot;h1&quot;);
+let titre = document.body.createElement(&quot;h1&quot;);
 </code></pre>
 <h3 id="ajouter-des-elements">Ajouter des éléments</h3>
 <p>Les méthodes <strong>append()</strong> et <strong>appendChild()</strong> sont utilisés pour ajouter des éléments dans le DOM, on va voir la méthode <strong>append()</strong>. Cette méthode prend en paramètre un élément HTLM ou du texte. On peut utiliser <strong>append()</strong> avec l'objet <strong>document</strong> ou avec un autre élément.</p>

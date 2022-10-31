@@ -23,7 +23,7 @@ function afficheHeure(){
         "Vendredi",
         "Samedi",
     ];
-
+   
     let displayDate = document.getElementById('affichage-date');
     let displayHour = document.getElementById('affichage-heure');
 

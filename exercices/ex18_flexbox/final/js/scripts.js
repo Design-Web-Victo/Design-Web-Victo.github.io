@@ -24,8 +24,11 @@ function ajouteItem() {
     
     let lastItem = maDiv.querySelector("div:last-child");
     let newItem = document.createElement("div");
+    // Ici si la variable lastItem n'est pas null, je prends son texte et je le 
+    // converti en integer pour ensuite ajouté 1, sinon j'attribue la valeur 1 (Ça voudrait dire que je 
+    // n'ai plus d'item dans la div.);
+    newItem.innerHTML = lastItem ? parseInt(lastItem.innerHTML) + 1 : 1;
 
-    newItem.innerHTML = parseInt(lastItem.innerHTML) + 1;
     newItem.classList.add("item");
     newItem.addEventListener('click', supprimeItem);
     maDiv.append(newItem);
