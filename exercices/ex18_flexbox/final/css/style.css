@@ -1,0 +1,149 @@
+/* 
+#main_container {
+    display: flex;
+    padding: 10px 50px;
+}
+
+#options {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+#options * {
+    margin: 5px;
+}
+
+#colonne_resultat {
+    flex-basis: 80%;
+    height: 120px;
+    padding: 10px;
+}
+
+#resultat {
+    height: 120px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    font-size: 2em;
+    border-radius:5px;
+    height: 50px;
+    width: 50px;
+} */
+
+/* button {
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+
+} */
+
+body {
+    font-family: Georgia, serif;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 1.7em;
+    font-weight: 470;
+    color: #555;
+}
+
+a {
+    color: #555;
+    margin-bottom: 1.5em;
+    display: inline-block;
+}
+
+.flex-cheat {
+    width: 800px;
+}
+
+.bouton-choix {
+    background-color: #646464;
+    color: #e6e6e6;
+    border-radius: 3px;
+    border: 0;
+    padding: 5px 10px;
+    text-transform: none;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+
+.bouton-select {
+    background-color: #242424;
+    color: #fff;
+}
+
+.conteneur-resultat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px
+}
+
+.resultat-visuel {
+    border: 2px solid #888;
+    padding: 8px;
+}
+
+.madiv {
+    border: 1px dashed #555;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.item {
+    background-color: #cecece;
+    color: #696969;
+    font-size: 2em;
+    padding: 10px;
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.resultat-code {
+    background-color: #dddddd;
+    border-radius: 10px;
+    font-family: monospace;
+    padding: 16px;
+    color: #555;
+
+}
+
+.code-ligne {
+    margin-left: 16px;
+}
+
+.ligne-justify-content {
+    background-color: #464646;
+    color: #fcfcfc;
+}
