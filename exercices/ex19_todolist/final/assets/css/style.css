@@ -1,0 +1,170 @@
+@font-face {
+    font-family: chalk;
+    src: url(../webfonts/Chalk-Regular.ttf);
+}
+
+:root {
+    --couleur-texte:#fff;
+    --couleur-texte-fait: #989898;
+    --couleur-fond-boite:rgba(0, 0, 0, 0.70);
+    --couleur-lien: rgb(191, 191, 191);
+    --couleur-saisie: rgb(42, 41, 41);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: chalk, sans-serif;
+    color: var(--couleur-texte);
+
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.ligne {
+    background-color: var(--couleur-texte);
+    height: 1px;
+    width: 300px;
+}
+
+
+/* ======================================== */
+/* Conteneur Todo                           */
+/* ======================================== */
+.conteneur-todo {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--couleur-fond-boite);
+
+    border-radius: 8px;
+    outline: 1px solid var(--couleur-texte);
+    outline-offset: -6px;
+
+    background-image: url(../images/background-todo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ======================================== */
+/* Entête                                   */
+/* ======================================== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#saisie-tache {
+    width: 80%;
+    font-size: 1.10em;
+    padding: 5px;
+    background-color: var(--couleur-saisie);
+
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: chalk, sans-serif;
+    color: var(--couleur-texte);
+
+    transition: all 100ms;
+}
+
+#saisie-tache:focus {
+    outline: 1px solid var(--couleur-texte);
+    outline-offset: 4px;
+}
+
+.zone-saisie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-ajout {
+    color: var(--couleur-saisie);
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.icone-ajout:hover {
+    text-shadow: 0 0 5px var(--couleur-texte);
+}
+
+
+/* ======================================== */
+/* Liste tâches                             */
+/* ======================================== */
+.conteneur-tache {
+    text-align: left;
+    padding: 0 10px;
+    font-size: 1.25em;
+    min-height: 150px;
+}
+
+.liste {
+    list-style-type: "- ";
+}
+
+.tache {
+    cursor: pointer;
+}
+
+.fait {
+    text-decoration: line-through;
+    color: var(--couleur-texte-fait);
+    cursor: default;
+}
+
+.titre-tache-fait {
+    display: flex;
+    align-items: baseline;
+}
+
+.icone-trash {
+    color: var(--couleur-texte);
+}
+
+.icone-trash {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.icone-trash:hover {
+    color: var(--couleur-texte-fait);
+}
+
+
+/* ======================================== */
+/* Crédit photo                             */
+/* ======================================== */
+.credit-photo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond-boite);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    z-index: -999;
+}
+.credit-photo a{
+    color: var(--couleur-lien);
+}
