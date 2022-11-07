@@ -657,6 +657,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js_local_storage/" class="md-nav__link">
+        Stocker des informations dans le navigateur
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -769,6 +783,13 @@
         <li class="md-nav__item">
   <a href="#lelement-select" class="md-nav__link">
     L'élément select
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lelement-radio" class="md-nav__link">
+    L'élément radio
   </a>
   
 </li>
@@ -1098,6 +1119,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lelement-radio" class="md-nav__link">
+    L'élément radio
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1127,13 +1155,16 @@
 <li>En cliquant sur le label, on donne le focus à l'élément qui lui est lié.</li>
 </ul>
 <p>Pour relier un label à un élément, on utilise la balise <strong>for</strong> qui doit correspondre à la valeur de la balise <strong>id</strong> de l'élément à lier. </p>
-<pre><code class="language-html">&lt;!-- La valeur nom est utilié pour l'attribut for du label et id du input, les deux 
-éléments sont ainsi liés --&gt;
+<pre><code class="language-html">&lt;!-- La valeur nom est utilié pour l'attribut for du label et id du input, les 
+     deux éléments sont ainsi liés --&gt;
 &lt;label for=&quot;nom&quot;&gt;Nom :&lt;/label&gt;
 &lt;input type=&quot;text&quot; id=&quot;nom&quot; name=&quot;nom_usager&quot;&gt;
 </code></pre>
 <h2 id="lelement-input">L'élément input</h2>
-<p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a>.</p>
+<p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a>. Parmi les plus utilisés on retrouve le type <strong>text</strong>, <strong>password</strong>, <strong>date</strong>, <strong>email</strong></p>
+<pre><code class="language-html">&lt;label for=&quot;text-eleve&quot;&gt;Nom de l'élève&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;nom-eleve&quot; id=&quot;text-eleve&quot;&gt;
+</code></pre>
 <h2 id="lelement-textarea">L'élément textarea</h2>
 <p>Un textarea est un élément qui nous permet de saisir du texte sur plusieurs lignes. Une particularité de cet élément est qu'au contraire de la balise input, ou doit ajouter une fermeture de la balise.</p>
 <pre><code class="language-html">&lt;!-- input ne demande pas de fermeture de balise --&gt;
@@ -1152,6 +1183,30 @@
   &lt;option value=&quot;4&quot;&gt;Rogue&lt;/option&gt;
   &lt;option value=&quot;5&quot;&gt;Barde&lt;/option&gt;
 &lt;/select&gt; 
+</code></pre>
+<h2 id="lelement-radio">L'élément radio</h2>
+<p>L'élément radio est un type spécial de la balise input qui affiche un choix sous forme de cercle selectionnable. On peut regrouper plusieurs élément radio ensemble en leur donnant la même valeur à l'attribut <strong>name</strong>. Dans ce cas on ne pourra que sélectionner qu'un élément du groupe à la fois. On doit utiliser l'attribut <strong>value</strong> à chaque input pour indiquer quelle valeur sera transmis avec le formulaire. Finalement on peut utiliser l'attribut <strong>checked</strong> pour indiquer quel input sera sélectionné au chargemenent de la page. <em>Pour que ça fonctionne avec Firefox on doit aussi ajouter l'attribut autocomplete="off" à chaque input.</em></p>
+<pre><code class="language-html">&lt;!-- Pour plus de lisibilité j'ai inscrit mes attributs sur plusieurs lignes --&gt;
+&lt;label for='choix1'&gt;Premier choix&lt;/label&gt;
+&lt;input type='radio' 
+      id='choix1' 
+      name='choix_radio' 
+      value=&quot;choix1&quot; 
+      autocomplete=&quot;off&quot;&gt;
+
+&lt;label for='choix2'&gt;Deuxième choix&lt;/label&gt;
+&lt;input type='radio' 
+      id='choix2' 
+      name='choix_radio' 
+      value=&quot;choix2&quot; 
+      checked autocomplete=&quot;off&quot;&gt;
+
+&lt;label for='choix3'&gt;Troisième choix&lt;/label&gt;
+&lt;input type='radio' 
+      id='choix3' 
+      name='choix_radio' 
+      value=&quot;choix3&quot; 
+      autocomplete=&quot;off&quot;&gt;
 </code></pre>
 
 
