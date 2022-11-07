@@ -675,12 +675,115 @@
       
       
         <label class="md-nav__link" for="__nav_2_5">
+          Formulaire
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Formulaire" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Formulaire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes_de_cours/form_structure/" class="md-nav__link">
+        Struture d'un formulaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes_de_cours/form_element/" class="md-nav__link">
+        Les éléments de saisie de données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes_de_cours/form_css/" class="md-nav__link">
+        Mise en forme d'un formulaire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes_de_cours/form_validation_html/" class="md-nav__link">
+        Validation de formulaire en HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes_de_cours/form_validation_js/" class="md-nav__link">
+        Validation de formulaire en JS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
           Hébergement et mise en ligne
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Hébergement et mise en ligne" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_5">
+        <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Hébergement et mise en ligne
         </label>
@@ -940,6 +1043,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#grille-de-correction" class="md-nav__link">
+    Grille de correction
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -982,9 +1092,9 @@
 <p>Faites les validations suivantes en Javascript sur la valeur saisie dans la zone de texte du code de produit.</p>
 <ol>
 <li>Le code de produit doit être sous le format #####-#####-##### ou #####-#####-#####-#####-##### (# correspond à un chiffre de 0 à 9 ou une lettre de a à z en majuscule ou minuscule). Dans le fichier <strong>script.js</strong> je vous fournis une constante <strong>REGEX_CODE_PRODUIT</strong> qui contient l'expression régulière pour confirmer le code de produit.</li>
-<li>Le code du produit doit exister dans le tableau <strong>listeProduits</strong> qui est déjà dans le fichier <strong>script.js</strong>. </li>
+<li>Le code du produit doit exister dans le tableau <strong>listeProduits</strong> qui est déjà dans le fichier <strong>script.js</strong>.</li>
 </ol>
-<p>La validation sera faite quand l'usager cliquera sur le bouton "Activer", donc quand le formulaire sera soumis. La Si le code de produit n'est pas conforme, affichez le message d'erreur correspondant dans la balise div qui porte le id <strong>message-erreur</strong>. Cette balise est masqué par défaut et ne devra être visible que si un message d'erreur est affiché. Les messages d'erreurs sont contenu dans le tableau <strong>erreurValidation</strong> qui se retrouve dans le fichier <strong>script.js</strong></p>
+<p>La validation sera faite quand l'usager cliquera sur le bouton "Activer", donc quand le formulaire sera soumis. Si le code de produit n'est pas conforme, affichez le message d'erreur correspondant dans la balise div qui porte le id <strong>message-erreur</strong>. Cette balise est masqué par défaut et ne devra être visible que si un message d'erreur est affiché. Les messages d'erreurs sont contenu dans le tableau <strong>erreurValidation</strong> qui se retrouve dans le fichier <strong>script.js</strong></p>
 <ul>
 <li>Si le format est invalide, afficher le message "Le code produit que vous avez saisie est invalide, il ne respecte pas le format requis.".</li>
 </ul>
@@ -996,12 +1106,120 @@
 <h3 id="point-3-validation-finale-du-formulaire-50-points">Point #3 - Validation finale du formulaire (50 points)</h3>
 <p>La validation du formulaire se fera lors de l'événement <strong>submit</strong> du formulaire qui est déclenché lors d'un clique sur le bouton "Activer".</p>
 <ul>
-<li>Reliez une fonction Javascript au formulaire lorsque l'événement <strong>submit</strong> est déclenché.</li>
-<li>Tous les messages d'erreurs doivent être réinitialisé et masqué. </li>
+<li>Reliez une fonction Javascript au formulaire lorsque l'événement <strong>submit</strong> du formulaire est déclenché. Les différentes validations ainsi que l'envoie ou non du formulaire se feront dans cette fonction.</li>
+<li>La section qui affiche le message d'erreur doit être réinitialisée (le texte doit être supprimé) et masquée au début de la fonction.</li>
 <li>Si le format du code de produit est invalide ou que le code de produit est inexistant dans le tableau <strong>listeProduits</strong>, empêchez la transmission du formulaire.</li>
+<li>Ajoutez dans un <em>input</em> masqué avec comme valeur le nom du produit correspondant au code de produit saisie pour qu'il soit transmis avec les autres informations du formulaire. Si le code de produit est invalide, entrez la valeur "-" à la place. L'attribut <em>name</em> de ce <em>input</em> doit être <strong>nom_produit</strong>.</li>
 <li>Si la case "J'accepte les termes de ..." n'est pas cochée, affichez dans la div <strong>message-erreur</strong> le message d'erreur "Vous devez accepter les termes de l’Accord de souscription Vapeur pour finaliser la transaction." et empêchez la transmission du formulaire. Le texte de la case à cocher doit aussi changer de couleur. Le code de la couleur est dans la variable <strong>--couleur-texte-invalide</strong> qui est dans le fichier <strong>style.css</strong></li>
 </ul>
 <p><img alt="examen02_03" src="C:\Program Files\Ampps\www\design_web\site_cours\docs\assets\images\examen02_03.png" /> </p>
+<h2 id="grille-de-correction">Grille de correction</h2>
+<table>
+<thead>
+<tr>
+<th>ÉlÉments</th>
+<th>Critères</th>
+<th align="right">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>Point 1 - Envoi du formulaire</strong></td>
+<td></td>
+<td align="right"><strong>/10</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Les données sont envoyées à la bonne adresse.</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td></td>
+<td>Les données sont envoyées selon la bonne méthode.</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>Point 2 - Validation du code</strong></td>
+<td></td>
+<td align="right"><strong>/40</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Le code de produit respecte le format requis.</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>Le code de produit correspond à un produit du tableau <strong>listeProduits</strong></td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>La fonction de validation est lancé lorsqu'on clique sur le bouton "Activer".</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>Le bon message d'erreur s'affiche dans la section demandée quand le format du code produit est invalide.</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td></td>
+<td>Le bon message d'erreur s'affiche dans la section demandée quand le produit est inexistant.</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>Point 4 - Validation du formulaire</strong></td>
+<td></td>
+<td align="right"><strong>/50</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>La fonction de validation est appelée depuis l'événement onsubmit de la balise form.</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>Un message d'erreur est affiché dans la balise small si le numéro de DA est invalide.</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>La case "J'ai bien lu la déclaration ci-dessus" doit être coché pour que le formulaire soit soumis.</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>Le formulaire n'est pas envoyé si au moins une des validations échoues.</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td align="right"><strong>/100</strong></td>
+</tr>
+</tbody>
+</table>
 
 
 
