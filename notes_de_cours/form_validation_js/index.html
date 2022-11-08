@@ -822,6 +822,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#valider-un-texte-selon-une-expression-reguliere" class="md-nav__link">
+    Valider un texte selon une expression régulière
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1045,6 +1052,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex20_formulaire/ex20_enonce/" class="md-nav__link">
+        Exercice 20 - Formuaires HTML
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1094,6 +1115,13 @@
         <li class="md-nav__item">
   <a href="#references" class="md-nav__link">
     Références
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valider-un-texte-selon-une-expression-reguliere" class="md-nav__link">
+    Valider un texte selon une expression régulière
   </a>
   
 </li>
@@ -1160,6 +1188,14 @@
 <li><a href="https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/">https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/</a></li>
 <li><a href="https://www.w3schools.com/js/js_validation.asp">https://www.w3schools.com/js/js_validation.asp</a></li>
 </ul>
+<h2 id="valider-un-texte-selon-une-expression-reguliere">Valider un texte selon une expression régulière</h2>
+<p>On peut utiliser une expression régulière pour tester si un texte correspond à un certain format, comme une adresse courriel par exemple. Un variable ou un string l'expression régulière suivie de la fonction <strong>test(monTexte)</strong> avec le texte en paramètre retournera <strong>true</strong> si le texte correspond au motif de l'expression.</p>
+<pre><code class="language-js">function estCourriel(valeur) {
+    const regex_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return regex_email.test(valeur);
+}
+</code></pre>
+<p>Pour vous aider avec les regex : <a href="https://regexr.com/">https://regexr.com/</a></p>
 
 
 
