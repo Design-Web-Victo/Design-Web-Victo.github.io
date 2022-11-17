@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://design-web-victo.github.io/exercices/ex21_rainbowMode/ex21_enonce/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://design-web-victo.github.io/notes_de_cours/css_animation/</loc>
          <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
