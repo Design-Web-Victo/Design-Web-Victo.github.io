@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Exercice 20</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script defer src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="main-conteneur">
+            <h1 class="titre">Concours de beauté caprin<br> de Montpellier <span id="date-concours">2022</span></h1>
+            <h2>Fiche d'inscription du participant</h2>
+            
+            <form id="formulaire-inscription" action="https://mathieufrechette.ca/validation.php" method="post">
+                <div class="zone-input">
+                    <fieldset class="proprietaire-information">
+                        <legend>Informations propriétaire</legend>
+
+                        <div>
+                            <label for='proprietaire_nom'>Nom</label>
+                            <input type='text' id='proprietaire_nom' name='proprietaire_nom' required>
+                            <span class="message-erreur hidden"></span>
+                        </div>
+                        
+                        <div>
+                            <label for='proprietaire_prenom'>Prénom</label>
+                            <input type='text' id='proprietaire_prenom' name='proprietaire_prenom' required>
+                            <span class="message-erreur hidden"></span>
+                        </div>
+                            
+                        <div>
+                            <label for='proprietaire_adresse'>Adresse</label>
+                            <input type='text' id='proprietaire_adresse' name='proprietaire_adresse' maxlength="50">
+                            <span class="message-erreur hidden"></span>
+                        </div>
+                            
+                        <div>
+                            <label for='proprietaire_ville'>Ville</label>
+                            <input type='text' id='proprietaire_ville' name='proprietaire_ville' maxlength="30">
+                            <span class="message-erreur hidden"></span>
+                        </div>
+                            
+                        <div>
+                            <label for='proprietaire_courriel'>Courriel</label>
+                            <input type='email' id='proprietaire_courriel' name='proprietaire_courriel' required>
+                            <span class="message-erreur hidden"></span>
+                        </div>   
+                        
+                    </fieldset>
+
+                    <fieldset class="participant-information">
+                        <legend>Informations participant</legend>
+                        
+                        <div>
+                            <label for='participant_nom'>Nom</label>
+                            <input type='text' id='participant_nom' name='participant_nom' required>
+                            <span class="message-erreur hidden"></span>
+                        </div>
+
+                        <div>
+                            <label>Sexe</label>
+                            
+                            <div class="choix-sexe">
+                                <input type='radio' id='sexe_male' name='participant_sexe' checked autocomplete="off">
+                                <label for='sexe_male'>Male</label>
+
+                                <input type='radio' id='sexe_femelle' name='participant_sexe' autocomplete="off">
+                                <label for='sexe_femelle'>Femelle</label>    
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for='participant_race'>Race</label>
+                            <select name="participant_race" id="participant_race" autocomplete="off">
+                                <option value="alpine" selected>Alpine</option>
+                                <option value="lamancha">Lamancha</option>
+                                <option value="nubienne">Nubienne</option>
+                                <option value="saanen">Saanen</option>
+                                <option value="toggenbourg">Toggenbourg</option>
+                            </select>
+                        </div>
+
+                        <div class="boite-photo">
+                            <img src="images/race_alpine.jpg" id="photo-race">
+                        </div>
+                        
+                    </fieldset>
+                </div>
+                
+                <button type="submit">Inscrivez-moi!!</button> 
+
+            </form>
+
+        </div>
+        
+
+
+
+        <div class="credit-photo">
+            Photo by <a href="https://unsplash.com/@natinati?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nati Melnychuk</a> on <a href="https://unsplash.com/s/photos/goat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>  
+    </body>
+
+</html>

@@ -735,6 +735,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#visualiser-les-valeurs-depuis-le-navigateur" class="md-nav__link">
+    Visualiser les valeurs depuis le navigateur
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -991,20 +998,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how_parralax/" class="md-nav__link">
-        Ajouter un effet de parralax
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1193,6 +1186,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex22_password/ex22_enonce/" class="md-nav__link">
+        Exercice 22 - Formulaire de réinitialisation de mot de passe
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1246,6 +1253,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#visualiser-les-valeurs-depuis-le-navigateur" class="md-nav__link">
+    Visualiser les valeurs depuis le navigateur
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1269,11 +1283,11 @@
 <h1 id="stocker-de-linformation-dans-le-navigateur">Stocker de l'information dans le navigateur</h1>
 <p>On peut stocker de l'information directement dans le navigateur avec les objets <strong>localStorage</strong> et <strong>sessionStorage</strong>. La différence entre les deux est que les informations stockés avec <strong>localStorage</strong> survivent même si on redémarre le navigateur alors qu'avec <strong>sessionStorage</strong> les données peuvent survivre à un rafraichissement de la page uniquement. Ces deux objets fonctionnent un peu comme un cookie mais avec certaines différences. On utilise les cookies surtout au niveau "serveur" du site internet alors que les objets "storage" seront utilisés du côté client. </p>
 <p>Qu'on utilise <strong>localStorage</strong> ou <strong>sessionStorage</strong> les données à sauvegarder sont saisie sous la forme clé/valeur. La valeur à sauvegarder doit être du texte (string). Dans le cas contraire (un nombre, un booléen, un objet, etc...) la valeur sera convertie automatiquement en texte.</p>
-<h3 id="ajouter-une-valeur">Ajouter une valeur</h3>
+<h2 id="ajouter-une-valeur">Ajouter une valeur</h2>
 <p>La fonction <strong>setItem(clé, valeur)</strong> permet d'ajouter une valeur</p>
 <pre><code class="language-js">localStorage.setItem('prenom', 'Mathieu');
 </code></pre>
-<h3 id="recuperer-une-valeur">Récupérer une valeur</h3>
+<h2 id="recuperer-une-valeur">Récupérer une valeur</h2>
 <p>La fonction <strong>getItem(clé)</strong> permet de récupérer une valeur. Elle retournera NULL si la clé n'est pas trouvé. On peut donc s'en servir aussi pour tester si la clé existe dans le stockage local.</p>
 <pre><code class="language-js">// Retourne la valeur de la clé prenom 
 let prenom = localStorage.getItem('prenom');
@@ -1283,7 +1297,7 @@ if (localStorage.getItem('prenom') === null) {
   // ...
 }
 </code></pre>
-<h3 id="supprimer-une-valeur">Supprimer une valeur</h3>
+<h2 id="supprimer-une-valeur">Supprimer une valeur</h2>
 <p>La fonction <strong>removeItem(clé)</strong> permet de supprimer une valeur du stockage. On peu aussi supprimer toutes les valeurs avec <strong>clear()</strong>.</p>
 <pre><code class="language-js">// Supprime l'entrée prenom du stockage
 localStorage.removeItem('prenom');
@@ -1291,6 +1305,9 @@ localStorage.removeItem('prenom');
 // Supprime toutes les entrées
 localStorage.clear;
 </code></pre>
+<h2 id="visualiser-les-valeurs-depuis-le-navigateur">Visualiser les valeurs depuis le navigateur</h2>
+<p>On peut voir les valeurs qui sont enregistrées depuis notre navigateur. Ouvrez l'inspecteur et allez dans l'onglet <strong>Stockage</strong> pour Firefox ou <strong>Application</strong> pour Chrome. </p>
+<p><img alt="js_local_storage_01.png" src="\assets\images\js_local_storage_01.png" /></p>
 
 
 

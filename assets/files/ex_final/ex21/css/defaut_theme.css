@@ -1,0 +1,12 @@
+.nav-logo {
+    color: #482ff7;
+}
+
+.nav-link{
+    color: #475569;
+}
+
+.nav-link:hover, #icone-theme:hover{
+    color: #482ff7;
+}
+

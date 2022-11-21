@@ -935,24 +935,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Créer un bouton qui affiche le mot de passe
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Créer un bouton qui affiche le mot de passe
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
   
-    <li class="md-nav__item">
-      <a href="../how_parralax/" class="md-nav__link">
-        Ajouter un effet de parralax
-      </a>
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-controle-avec-le-bouton" class="md-nav__link">
+    Le contrôle avec le bouton
+  </a>
+  
+    <nav class="md-nav" aria-label="Le contrôle avec le bouton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    HTML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    CSS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-code-javascript" class="md-nav__link">
+    Le code Javascript
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1146,6 +1190,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex22_password/ex22_enonce/" class="md-nav__link">
+        Exercice 22 - Formulaire de réinitialisation de mot de passe
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1172,6 +1230,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-controle-avec-le-bouton" class="md-nav__link">
+    Le contrôle avec le bouton
+  </a>
+  
+    <nav class="md-nav" aria-label="Le contrôle avec le bouton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    HTML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    CSS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-code-javascript" class="md-nav__link">
+    Le code Javascript
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1191,6 +1291,45 @@
 
 
 <h1 id="creer-un-bouton-qui-affiche-le-mot-de-passe">Créer un bouton qui affiche le mot de passe</h1>
+<p>Dans les zones de saisie de mot de passe on voit souvent un bouton ou icone qui nous permet de voir le mot de passe "en clair". C'est quand même facile à implémenter. On a vu qu'en utilisant l'attribut <strong>type="password"</strong> dans une balise input, ça masque les caractères qu'on entre. Notre bouton va changer la valeur de cet attribut de <strong>password</strong> pour masquer le texte à <strong>text</strong> pour l'afficher.</p>
+<h2 id="le-controle-avec-le-bouton">Le contrôle avec le bouton</h2>
+<p>On va créer le contrôle suivant à l'aide d'une balise input et d'un icone de font Awesome:</p>
+<p><img alt="how_password_reveal_01" src="\assets\images\how_password_reveal_01.png" />
+<img alt="how_password_reveal_02" src="\assets\images\how_password_reveal_02.png" /></p>
+<h3 id="html">HTML</h3>
+<p>En html on va ajouter une balise input avec par défaut l'attribut <strong>type='password'</strong>. On va ensuite ajouter une icone avec la classe fa-eye, qui nous donnera l'icone avec un oeil.</p>
+<pre><code class="language-html">&lt;input type='password' id='password' name='password'&gt;
+&lt;i class=&quot;fas fa-eye icone-reveal&quot;&gt;&lt;/i&gt;
+</code></pre>
+<h3 id="css">CSS</h3>
+<p>En css on va positionner l'icone par-dessus le <strong>input</strong> en jouant avec ça marge de gauche. On a vu que la marge représente l'espace entre un élément et son voisin. Si on applique une marge négative, l'élément va se rapprocher au lieu de s'éloigner. En ayant une valeur assez petite, l'élément va finir par s'afficher par-dessus son voisin. On n'a pas besoin d'utiliser d'autres propriétés, c'est de la magie css. Pour que ça soit plus "propre" on va aussi ajouter un padding à droite à notre <strong>input</strong> pour ne pas que le texte qu'on y entre soit en-dessous de l'icone.</p>
+<pre><code class="language-css">.icone-reveal {
+    margin-left: -30px;
+    cursor: pointer;
+    color: rgb(58, 109, 152);
+}
+
+#password {
+    padding-right: 30px;
+}
+</code></pre>
+<h2 id="le-code-javascript">Le code Javascript</h2>
+<p>Maintenant en javascript on va écouter l'événement <strong>click</strong> de l'icone et changer le type du <strong>input</strong> et la classe du bouton quand il est détecté.</p>
+<pre><code class="language-js">const iconeReveal = document.querySelector('.icone-reveal');
+
+iconeReveal.addEventListener('click', (e) =&gt; {
+    let icone = e.target;
+    let inputPassword = document.querySelector('#input_password');
+    // Modifie l'icone
+    icone.classList.toggle('fa-eye');
+    icone.classList.toggle('fa-eye-slash');
+    // Modifie le type du input, si c'est text on le met à password et vice versa
+    let nouveauType = inputPassword.getAttribute('type') == &quot;text&quot; ? &quot;password&quot; : &quot;text&quot;;
+
+    inputPassword.setAttribute('type', nouveauType);
+
+});
+</code></pre>
 
 
 
@@ -1232,13 +1371,13 @@
       
       
         
-        <a href="../how_parralax/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Ajouter un effet de parralax" rel="next">
+        <a href="../../exercices/ex11_font/ex11_enonce/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exercice 11 - Font" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Ajouter un effet de parralax
+              Exercice 11 - Font
             </div>
           </div>
           <div class="md-footer__button md-icon">

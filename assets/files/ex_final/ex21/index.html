@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Exercice 21 - Rainbow Mode</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/default_theme.css" id="lien-theme">
+
+        <!-- CDN Font Awesome -->
+        <script defer src="https://kit.fontawesome.com/80e9d74121.js" crossorigin="anonymous"></script>
+
+        <!-- script local -->
+        <script defer src="js/nav.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Exercice 21 - Rainbow Mode</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-toggle-off" id="icone-theme" data-theme="defaut_theme" title="Activer le rainbow mode"></i>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <main id="conteneur_principale">
+            <section id="conteneur_contenu">
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox_localeStorage" id="checkbox_localeStorage">
+                    <label for="checkbox_localeStorage">Enregistrer dans le stockage locale</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox_sessionStorage" id="checkbox_sessionStorage">
+                    <label for="checkbox_sessionStorage">Enregistrer dans le stockage de session</label>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>
