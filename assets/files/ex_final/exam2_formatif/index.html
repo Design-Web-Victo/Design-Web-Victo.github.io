@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Examen 2 - Javascript</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+
+        <script defer src="js/validation.js"></script>
+
+    </head>
+
+    <body>
+            
+        <main id="conteneur_principale">
+
+            <div id="conteneur_formulaire">
+
+                <h1 id="titre_formulaire">Grille d'auto-évaluation</h1>
+
+                <form id="formulaire_examen" 
+                        action="https://mathieufrechette.ca/examen2.php" 
+                        method="post">
+                    
+                    <div class="ligne_formulaire ligne_deux_colonnes">
+                        <div class="colonne_gauche">
+                            <label for='numero_da' class="titre_saisie">Numéro de DA</label>
+                            <input type='text' id='numero_da' name='numero_da'>
+                            <small id="message_numero_da"></small>    
+                        </div>
+                        <div class="colonne_droite conteneur_icone_validation">
+                            <div id="da_icone_erreur">
+                                <div class="tooltip">
+                                    <i class="fas fa-exclamation-circle icone_erreur"></i>
+                                    <span class="tooltiptext">Le numéro de DA doit être composé d'exactement 7 chiffres et débuté par 1 ou 2</span>
+                                </div>
+                            </div>
+                            <div id="da_icone_succes" class="hidden">
+                                <i class="fas fa-check-circle icone_succes"></i> 
+                            </div>
+                        </div>
+                        
+                    </div>    
+                  
+                    <div class="ligne_formulaire ligne_deux_colonnes">
+                        <div class="colonne_gauche">
+                            <label for='note_estime' class="titre_saisie" id="titre_note_estime">Ma note estimée = 60 %</label>
+                            <input type='range' 
+                                id='note_estime' 
+                                name='note_estime' 
+                                min="0" 
+                                max="100" 
+                                step="1" 
+                                value="60">
+                        </div>
+                        <div class="colonne_droite conteneur_icone_note">
+                            <i class="far fa-smile" id="icone_note"></i>
+                        </div>
+                    </div> 
+
+                    <div class="ligne_formulaire ligne_deux_colonnes">
+                        <div>
+                            <p>J'atteste avoir pris le temps de bien lire toutes les questions et y avoir répondu au meilleur de mes connaissances. </p>
+                            <p>Je comprends que malgré toutes les offrandes que je pourrais faire aux dieux du Web, la note que je me suis attribué ne représentera pas nécessairement ma note finale.</p>
+                            
+                            <input type='checkbox' id='declaration' name='declaration'>
+                            <label for='declaration'>J'ai bien lu la déclaration ci-dessus. </label>
+                            <small id="message_declaration"></small>
+                        </div>
+                    </div>
+                    
+                    <button type="submit">Soumettre le formulaire</button>
+
+                </form>
+
+                
+                <i class="fas fa-images" id="bouton_changer_image_fond"></i>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>

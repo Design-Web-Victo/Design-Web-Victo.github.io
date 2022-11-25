@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    margin: 0px;
+  }
+
+#conteneur_principale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    height: 100%;
+
+    background-color: black;
+    background-image: url("../images/background02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#conteneur_formulaire {
+    width: 500px;
+    padding: 20px;
+    border:0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(56, 56, 56, 0.4);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.ligne_formulaire {
+    margin-bottom: 10px;
+}
+
+.ligne_deux_colonnes {
+    display: flex;
+}
+
+.ligne_deux_colonnes .colonne_gauche 
+{
+    flex-basis: 100%;
+}
+
+.ligne_deux_colonnes .colonne_droite {
+    flex-basis: 80px;
+}
+.conteneur_icone_validation {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.conteneur_icone_note {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 60px;
+}
+
+.icone_erreur {
+    color: red;
+    cursor: pointer;
+}
+
+.icone_succes {
+    color: green;
+}
+
+#titre_formulaire {
+    margin-top: 0px;
+    text-align: center;
+}
+.titre_saisie {
+    display: block;
+}
+
+input[type=text],
+input[type=range] {
+    padding:10px;
+    margin:10px 0 5px 0;
+    border:0;
+    display: inline;
+    border-radius:5px;
+    width: 100%;
+}
+
+small {
+    color: red;
+    min-height: 30px;
+    display: block;
+    max-width: 100%;
+}
+
+#bouton_changer_image_fond{
+    position: absolute; 
+    left: 20px;
+    bottom: 20px;
+    font-size: 3em;
+    color: #fc8100;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+#bouton_changer_image_fond:hover {
+    color: #fdb86d;
+    transform: scale(1.2);
+}
+
+button {
+    appearance:none;
+    -webkit-appearance:none;
+
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.hidden {
+    display: none;
+}
