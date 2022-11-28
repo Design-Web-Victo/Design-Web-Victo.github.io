@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Réinitialisation du mot de passe</title>
+
+        <!-- La version de Font Awesome utilisé est 5.15.4 -->
+        <!-- Pour faire une recherche d'icone : https://fontawesome.com/v5/search?o=r&m=free -->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Source : https://github.com/dropbox/zxcvbn -->
+        <!-- https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation -->
+        <script src="assets/js/zxcvbn.js"></script>
+
+        <script defer src="assets/js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <h1>Réinitialisation de votre mot de passe</h1>
+
+            <form action="#" method="post" id="form-password">
+                <div class="entete-formulaire">
+
+                    <div class="zone-input">
+                        <div class="ligne-input line-password">
+                            <label for='password'>Nouveau mot de passe</label>
+                            <input type='password' id='password' name='password'>
+                            <i class="fas fa-eye icone-reveal"></i>
+                            <div class="password-meter">
+                                <div class="password-meter-unit"></div>
+                                <div class="password-meter-unit"></div>
+                                <div class="password-meter-unit"></div>
+                                <div class="password-meter-unit"></div>
+                                <div class="password-meter-unit"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="ligne-input line-confirm-password">
+                            <label for='confirm-password'>Confirmer votre mot de passe</label>
+                            <input type='password' id='confirm-password' name='confirm-password'>
+                            <i class="fas fa-eye icone-reveal"></i>    
+                            <div class="message-erreur hidden invalide">Le mot de passe est différent</div>  
+                        </div>    
+                    </div>
+    
+                    <div class="message-validation">
+                        <div class="message validation-longueur">
+                            <i class="fas"></i> 
+                            Le mot de passe doit contenir au minimum 8 caractères
+                        </div>
+                        
+                        <div class="message validation-majuscule"><i class="fas"></i> Le mot de passe doit contenir au moins une majuscule et une minuscule</div>
+                        <div class="message validation-caractere"><i class="fas"></i> Le mot de passe doit contenir un caractère spécial</div>
+                    </div>
+
+                </div>
+
+                <button class="bouton-soumettre" type="submit">Réinitialiser</button>
+            </form>
+
+        </main>
+        
+    </body>
+
+</html>

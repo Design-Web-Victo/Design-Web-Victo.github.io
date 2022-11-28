@@ -1613,10 +1613,10 @@
 <p>Idéalement, on va réserver l'ajout de script directement dans un fichier html à des utilisations simples et brèves. La plupart du temps les scripts contenu dans des fichiers externes.</p>
 <h3 id="dans-un-fichier-externe">Dans un fichier externe</h3>
 <p>Un peu comme avec le css, on peut écrire nos scripts dans un ou des fichiers externes et les appelés depuis nos page html. Pour ce faire on va aussi utiliser la balise <strong>script</strong> mais en ajoutant l'attribut <strong>src</strong>.</p>
-<pre><code class="language-html">&lt;script src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script defer src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
 
 &lt;!-- Pour ajouter plus d'un fichier, on répète avec les autres fichiers --&gt;
-&lt;script src=&quot;deuxieme_script.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;deuxieme_script.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>La maintenance et la clarté du code est une raison d'extraire les scripts dans des fichiers externe. Mais l'avantage majeure est que le navigateur va télécharger les fichiers en cache. Ensuite si une autre page html fait référence à un des fichiers téléchargés, il sera lu depuis le cache et non pas téléchargé à nouveau, ce qui réduit le trafic et permet à la page de s'afficher plus rapidement.</p>
 <h4 id="utilisation-de-lattribut-defer-et-async-de-la-balise-script">Utilisation de l'attribut defer et async de la balise script</h4>

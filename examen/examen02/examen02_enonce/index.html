@@ -1307,11 +1307,11 @@
 </ul>
 <h2 id="directives-generales">Directives Générales</h2>
 <p>Cliquez sur le lien Github classroom que je vais vous fournir et clonez le dépôt créé sur votre portable. Répondez de votre mieux aux points suivants et une fois terminé faites un <em>commit</em> et un <em>push</em> de votre dépôt cloné. </p>
-<p>Toutes les validations doivent être faites en javascript. Il n'est pas nécessaire d'ajouter une validation dans les balises html de la page comme ajouter par exemple <strong>required</strong> à une balise dont on ne veut pas qu'elle soit "vide".</p>
+<p><u>Toutes les validations doivent être faites en javascript</u>. Il n'est pas nécessaire d'ajouter une validation dans les balises html de la page comme ajouter par exemple <strong>required</strong> à une balise dont on ne veut pas qu'elle soit "vide".</p>
 <h3 id="point-1-envoi-du-formulaire-10-points">Point #1 - Envoi du formulaire (10 points)</h3>
 <p>Configurez le formulaire pour qu'il envoie les données du formulaire de la façon suivante : </p>
 <ul>
-<li>Les données seront envoyées à l'adresse suivante : <a href="https://mathieufrechette.ca/examen2.php">https://mathieufrechette.ca/examen2.php</a></li>
+<li>Les données seront envoyées à l'adresse suivante : https://designweb-examen2.mathieufrechette.ca/</li>
 <li>La méthode d'envoie sera par requête POST</li>
 </ul>
 <h3 id="point-2-validation-du-code-de-produit-40-points">Point #2 - Validation du code de produit (40 points)</h3>
@@ -1320,7 +1320,7 @@
 <li>Le code de produit doit être sous le format #####-#####-##### ou #####-#####-#####-#####-##### (# correspond à un chiffre de 0 à 9 ou une lettre de a à z en majuscule ou minuscule). Dans le fichier <strong>script.js</strong> je vous fournis une constante <strong>REGEX_CODE_PRODUIT</strong> qui contient l'expression régulière pour confirmer le code de produit.</li>
 <li>Le code du produit doit exister dans le tableau <strong>listeProduits</strong> qui est déjà dans le fichier <strong>script.js</strong>.</li>
 </ol>
-<p>La validation sera faite quand l'usager cliquera sur le bouton "Activer", donc quand le formulaire sera soumis. Si le code de produit n'est pas conforme, affichez le message d'erreur correspondant dans la balise div qui porte le id <strong>message-erreur</strong>. Cette balise est masqué par défaut et ne devra être visible que si un message d'erreur est affiché. Les messages d'erreurs sont contenu dans le tableau <strong>erreurValidation</strong> qui se retrouve dans le fichier <strong>script.js</strong></p>
+<p>La validation sera faite quand l'usager cliquera sur le bouton "Activer", donc quand le <u>formulaire sera soumis</u>. Si le code de produit n'est pas conforme, affichez le message d'erreur correspondant dans la balise div qui porte le id <strong>message-erreur</strong>. Cette balise est masqué par défaut et ne devra être visible que si un message d'erreur est affiché. Les messages d'erreurs sont contenu dans le tableau <strong>erreurValidation</strong> qui se retrouve dans le fichier <strong>script.js</strong></p>
 <ul>
 <li>Si le format est invalide, afficher le message "Le code produit que vous avez saisie est invalide, il ne respecte pas le format requis.".</li>
 </ul>
@@ -1335,7 +1335,6 @@
 <li>Reliez une fonction Javascript au formulaire lorsque l'événement <strong>submit</strong> du formulaire est déclenché. Les différentes validations ainsi que l'envoie ou non du formulaire se feront dans cette fonction.</li>
 <li>La section qui affiche le message d'erreur doit être réinitialisée (le texte doit être supprimé) et masquée au début de la fonction.</li>
 <li>Si le format du code de produit est invalide ou que le code de produit est inexistant dans le tableau <strong>listeProduits</strong>, empêchez la transmission du formulaire.</li>
-<li>Ajoutez dans un <em>input</em> masqué avec comme valeur le nom du produit correspondant au code de produit saisie pour qu'il soit transmis avec les autres informations du formulaire. Si le code de produit est invalide, entrez la valeur "-" à la place. L'attribut <em>name</em> de ce <em>input</em> doit être <strong>nom_produit</strong>.</li>
 <li>Si la case "J'accepte les termes de ..." n'est pas cochée, affichez dans la div <strong>message-erreur</strong> le message d'erreur "Vous devez accepter les termes de l’Accord de souscription Vapeur pour finaliser la transaction." et empêchez la transmission du formulaire. Le texte de la case à cocher doit aussi changer de couleur. Le code de la couleur est dans la variable <strong>--couleur-texte-invalide</strong> qui est dans le fichier <strong>style.css</strong></li>
 </ul>
 <p><img alt="examen02_03" src="C:\Program Files\Ampps\www\design_web\site_cours\docs\assets\images\examen02_03.png" /> </p>
@@ -1417,17 +1416,17 @@
 <tr>
 <td></td>
 <td>La fonction de validation est appelée depuis l'événement onsubmit de la balise form.</td>
-<td align="right">10</td>
-</tr>
-<tr>
-<td></td>
-<td>Un message d'erreur est affiché dans la balise small si le numéro de DA est invalide.</td>
-<td align="right">10</td>
+<td align="right">15</td>
 </tr>
 <tr>
 <td></td>
 <td>La case "J'ai bien lu la déclaration ci-dessus" doit être coché pour que le formulaire soit soumis.</td>
 <td align="right">10</td>
+</tr>
+<tr>
+<td></td>
+<td>Le texte de la case à cocher change pour la bonne couleur si celle-ci n'est pas cochée quand le formulaire est soumis.</td>
+<td align="right">5</td>
 </tr>
 <tr>
 <td></td>

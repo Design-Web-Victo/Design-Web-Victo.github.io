@@ -1,0 +1,129 @@
+:root {
+    --couleur-bas: rgb(205, 24, 24);
+    --couleur-moyen: rgb(255, 255, 0);
+    --couleur-haut: rgb(0, 128, 0);
+    --couleur-bouton: rgb(58, 109, 152);
+    --couleur-bouton-hover: rgb(75, 141, 195);
+    --largeur-line-input: 200px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-left: 40px;
+    margin-top: 40px;
+
+}
+
+.entete-formulaire {
+    display: flex;
+    gap: 20px;
+}
+
+.zone-input {
+    padding-right: 20px;
+    border-right: 1px solid gray;
+}
+
+.ligne-input {
+    margin-bottom: 20px;
+    width: var(--largeur-line-input);
+}
+
+.ligne-input label {
+    display: block;
+    line-height: 2em;
+}
+
+.ligne-input input {
+    padding: 5px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.icone-reveal {
+    margin-left: -30px;
+    cursor: pointer;
+    color: var(--couleur-bouton);
+}
+
+.icone-reveal:hover {
+    color: var(--couleur-bouton-hover);
+}
+
+
+.ligne-vertical {
+    margin-top: 15px;
+    width: 2px;
+    height: 150px;
+    background-color: #000000;
+}
+
+.message-validation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 400px; */
+}
+
+.message {
+    padding: 10px 0;
+}
+
+
+.password-meter {
+    display: flex;
+    margin-top: 5px;
+}
+
+.password-meter-unit {
+    width: 20%;
+    margin: 0px;
+    height: 10px;
+    /* border: 1px solid gray; */
+}
+
+.bas {
+    background-color: var(--couleur-bas);
+}
+
+.moyen {
+    background-color: var(--couleur-moyen);
+}
+
+.haut {
+    background-color: var(--couleur-haut);
+}
+
+.valide {
+    color: var(--couleur-haut);
+}
+
+.invalide {
+    color: var(--couleur-bas);
+}
+
+.hidden {
+    display: none;
+}
+
+.bouton-soumettre {
+    border: none;
+    padding: 0.75em 1em;
+    width: var(--largeur-line-input);
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--couleur-bouton);
+    color: white;
+}
+
+.bouton-soumettre:hover {
+    background-color: var(--couleur-bouton-hover);
+}
+
