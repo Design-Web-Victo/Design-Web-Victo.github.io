@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script defer src="assets/js/script.js"></script>
+
+
+    </head>
+
+    <body>
+        <div class="zone-activation">
+
+            <h1 class="titre-principale">Activer un produit sur vapeur</h1>
+
+            <div class="col-gauche">
+                <form 
+                    id="form-activation"
+                    method="post" 
+                    action="https://designweb-examen2.mathieufrechette.ca/">
+
+                    <div id="message-erreur" class="hidden"></div>
+                    <h2 class="sous-titre">Saisissez votre code produit pour l’activer sur Steam</h2>
+
+                    <div class="zone-saisie">
+                        <label for='cle-activation' class="label-activation texte-darker">Code produit</label>
+                        <input type='text' id='cle-activation' name='cle_activation'>
+                        <button type="submit" class="bouton-activation">Activer</button>
+                    </div>
+                    
+                    <input type='checkbox' id='declaration' name='declaration'>
+                    <label for='declaration' class="texte-darker label-declaration">
+                        J'accepte les termes de l'
+                        <a href="#">Accord de souscripton Vapeur</a> 
+                        (dernière modification à jour le 24 févr. 2022).
+                    </label>
+                </form>
+
+                <p>
+                    Pour enregistrer votre produit auprès de Vapeur et l'ajouter à votre bibliothèque Vapeur, 
+                    saisissez ici le code produit fourni avec le CD-DVD ou une autre clé produit Vapeur.
+                    <br>Cliquez sur Continuer pour valider le code produit.
+                </p>
+
+                <div class="aide-code texte-darker">
+                    Liste de codes valide pour vos tests
+                    <ul class="liste-code">
+                        <li>Q1JBC-3ZPX8-TVHUH</li>
+                        <li>P3CJN-JNGJM-XYYT4</li>
+                        <li>2RCWA-XPRPX-GJHPR</li>
+                        <li>H4LS8-L1L3T-08D9X</li>
+                        <li>KBZB7-PQYDY-D5TMZ-MUABS-JNGJM</li>
+                        <li>VPTU1-9UZXA-X4ED4-F596J-XPRPX</li>
+                        <li>SUY17-21D57-5QYJU-UE6PN-HZ452</li>
+                    </ul>
+                </div>    
+            </div>
+            
+
+        </div>
+    </body>
+
+</html>
