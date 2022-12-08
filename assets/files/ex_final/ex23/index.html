@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Exercice 23 - Révision</title>
+
+        <!-- La version de Font Awesome utilisé est 5.15.4 -->
+        <!-- Pour faire une recherche d'icone : https://fontawesome.com/v5/search?o=r&m=free -->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script defer src="assets/js/script.js"></script>
+
+    </head>
+
+    <body>
+        <main class="conteneur-principal">
+
+            <section class="colonne-gauche">
+                <header class="entete">
+                    <img src="assets/images/entete_transparent.png" alt="" srcset="">
+                    <h2 class="sous-titre">Lot de livres</h2>
+                </header>
+
+                <!-- Notes sur la relation entre les boutons filtres, montants et les images -->
+                <!-- J'ai utilisé l'attribut data-lot aux boutons filtres, images et boutons montants pour les relier ensemble dans le script.-->
+                <!-- J'ai aussi utilisé l'attribut data-montant pour connaître le montant donné et l'envoyer dans la valeur du input "montant-reel" -->
+                <!-- Finalement l'attribut data-nb sert à afficher le nombre de livres du lot dans le titre -->
+                <section class="filtre">
+                    <legend>Filtres de lots</legend>
+                    <button class="btn-filtre btn-filtre-selected" data-montant="24.37" data-nb="14" data-lot="3">Lot complet de 14 articles</button>
+                    <button class="btn-filtre" data-montant="13.54" data-nb="10" data-lot="2">Lot de 10 articles</button>
+                    <button class="btn-filtre" data-montant="1.35"  data-nb="5" data-lot="1">Lot de 5 articles</button>
+                    <div class="titre-montant">Payez au moins <span id="montant-lot">24,37</span> $CA pour ces <span id="nb-lot"></span> articles</div>
+                </section>
+                
+                <section class="affichage-livres">
+                    <!-- Ici pour chaque livres j'ai utilisé la balise figure qui est la même chose qu'une div mais 
+                         qui indique qu'on y affiche une image -->
+                    <!-- Ensuite figcation sert à afficher un sous-titre à l'image. On aurait pu arriver au même résultat 
+                         avec une span qui englobe le texte et une règle css (display:block;) sur le span -->
+                    <!-- Dans la "vrai vie" le bloc de code pour chaque image serait générer par programmation mais on en est
+                         pas rendu là, alors vive le copier / coller -->
+                    <figure class="livre" data-lot="1">
+                        <img src="assets/images/livres/livre01.avif" alt="">
+                        <figcaption>Angular Up & Running</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="1">
+                        <img src="assets/images/livres/livre02.avif" alt="">
+                        <figcaption>HTML5 Hacks</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="1">
+                        <img src="assets/images/livres/livre03.avif" alt="">
+                        <figcaption>Data Visualization with Python & JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="1">
+                        <img src="assets/images/livres/livre04.avif" alt="">
+                        <figcaption>Learning PHP, MySQL & JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="1">
+                        <img src="assets/images/livres/livre05.avif" alt="">
+                        <figcaption>FLask Web Development</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="2">
+                        <img src="assets/images/livres/livre06.avif" alt="">
+                        <figcaption>Learning GraphQL</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="2">
+                        <img src="assets/images/livres/livre07.avif" alt="">
+                        <figcaption>Distributed System with Node.js</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="2">
+                        <img src="assets/images/livres/livre08.avif" alt="">
+                        <figcaption>Programming PHP</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="2">
+                        <img src="assets/images/livres/livre09.avif" alt="">
+                        <figcaption>Learning JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="2">
+                        <img src="assets/images/livres/livre10.avif" alt="">
+                        <figcaption>Programming TypeScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="3">
+                        <img src="assets/images/livres/livre11.avif" alt="">
+                        <figcaption>Multithreaded JavaScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="3">
+                        <img src="assets/images/livres/livre12.avif" alt="">
+                        <figcaption>Effective TypeScript</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="3">
+                        <img src="assets/images/livres/livre13.avif" alt="">
+                        <figcaption>React Cookbook</figcaption>
+                    </figure>
+
+                    <figure class="livre" data-lot="3">
+                        <img src="assets/images/livres/livre14.avif" alt="">
+                        <figcaption>Learning PHP, MySQL & JavaScript</figcaption>
+                    </figure>
+
+                    
+                </section>
+            </section>
+            
+            <section class="colonne-droite">
+                <h2 class="sous-titre">Maitrisez le développement d'application Web</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, cupiditate. Est pariatur eveniet itaque atque illum libero ut. Magni ipsam quasi alias eos vel? Excepturi non, eos esse veritatis voluptatibus blanditiis veniam doloremque officiis vitae, sapiente corrupti. Praesentium eos cumque, saepe, nesciunt nobis facilis rerum libero soluta repellat odit neque.</p>
+
+                <div class="information">
+                    <div class="item">
+                        <i class="fas fa-dollar-sign"></i>
+                        Payez 1,35 $CA ou plus
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-people-carry"></i>
+                        6 534 Vendus
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-book-open"></i>
+                        Utiliser sur n'importe quel appareil
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-file"></i>
+                        PDF, ePUB et MOBI
+                    </div>
+                </div>
+
+                <div class="montant-collect">
+                    <i class="fas fa-heart"></i>
+                    Ce lot a permis de collecter 12 889 $CA pour une association caritative ! 
+                </div>
+
+                <h2>Valeur de 808,58 $CA • Payez ce que vous voulez</h2>
+                <p>Payez moins pour obtenir moins d'articles, ou payez plus pour donner plus aux éditeurs, à Humble et aux associations caritatives. </p>
+                
+                <form class="montant-paye" action="https://mathieufrechette.ca/exercice23.php" method="post">
+                    <!-- Ce input est masqué mais étant donnée qu'il a un attribut name ça valeur sera envoyé par le formulaire -->
+                    <input type="hidden" name="montant-reel" id="montant-reel" value="24.37">
+
+                    <div class="mnt montant1" data-montant="1.35" data-lot="1">1,35 $CA</div>
+                    <div class="mnt montant2" data-montant="13.54" data-lot="2">13,54 $CA</div>
+                    <div class="mnt mnt-select montant3" data-montant="24.37" data-lot="3">24,37 $CA</div>
+                    <div class="mnt montant4" data-montant="30" data-lot="3">30 $CA</div>
+                    <div class="mnt montant5" data-montant="35" data-lot="3">35 $CA</div>
+                    <div class="mnt montant6" data-montant="40" data-lot="3">40 $CA</div>
+                    <div class="montant-autre">
+                        <div class="mnt" id="label-montant-autre">$CA</div>
+                        <input type="number" name="montant-manuel" id="montant-manuel" placeholder="Autre montant">
+                    </div>
+
+                    <button type="submit" class="bouton-valider">Validation</button>
+
+                </form>
+
+            </section>
+
+        </main>
+        
+    </body>
+
+</html>
