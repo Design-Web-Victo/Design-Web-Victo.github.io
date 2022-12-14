@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+#containeur_principal {
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    height: 100%;
+    border:0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(56, 56, 56, 0.4);
+    background-color: rgba(255,255,255,0.8);
+}
+
+#titre_question {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 0px;
+    color: #0080ab;
+}
+#numero_question {
+    color: #00bfff
+}
+
+#description_question {
+    text-align: justify;
+}
+
+#choix_reponse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "choix1 choix2"
+    "choix3 choix4";
+    gap: 10px;
+}
+
+#validation_reponse {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bouton {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 200ms;
+}
+
+.bouton_choix {
+    background-color: lightblue;
+}
+
+.bouton_choix:hover {
+    /* transform: scale(1.1); */
+    box-shadow:0 0 15px 4px rgba(56, 56, 56, 0.4);
+    background-color: #28b4e2;
+}
+
+#triche {
+    margin-top: 10px;
+    background-color: rgb(250, 53, 93);
+}
+
+#choix1 { grid-area: choix1;}
+#choix2 { grid-area: choix2;}
+#choix3 { grid-area: choix3;}
+#choix4 { grid-area: choix4;}
+
+.hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 720px){
+    #choix_reponse {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "choix1"
+        "choix2"
+        "choix3"
+        "choix4";
+    }
+}
