@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Épreuve finale</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script defer src="assets/js/script.js"></script>
+
+    </head>
+
+    <body>
+        
+        <div class="conteneur-principale">
+
+            <header>
+                <h1 class="titre">Dé<span>-</span>R<img src="assets/images/d0.png" alt="">ule</h1>
+            </header>
+            
+            <section class="selection-des">
+                <img src="assets/images/d4.png" alt="image d'un d4" class="de d4" data-de="4">
+                <img src="assets/images/d6.png" alt="image d'un d6" class="de d6" data-de="6">
+                <img src="assets/images/d8.png" alt="image d'un d8" class="de d8" data-de="8">
+                <img src="assets/images/d10.png" alt="image d'un d10" class="de d10" data-de="10">
+                <img src="assets/images/d12.png" alt="image d'un d12" class="de d12" data-de="12">
+                <img src="assets/images/d20.png" alt="image d'un d20" class="de d20 selected" data-de="20">
+                <img src="assets/images/d100.png" alt="image d'un d100" class="de d100" data-de="100">
+            </section>
+
+            <section class="option-jet">
+                <span class="texte-nombre-jet">1x</span>
+                <input type="range" name="nombre-jet" id="choix-nombre-jet" min="1" max="10" value="1" autocomplete="off">
+                <span class="texte-type-de">d20</span>
+                <button class="bouton-jet">Lancer</button>
+            </section>
+
+            <h2>Résultats</h2>
+            <section class="resultats">
+            </section>
+
+        </div>
+        
+        <footer>
+            Crédit pour les icônes de dés : 
+            <a href="https://www.flaticon.com/free-icons/d20" title="d20 icons">D20 icons created by Freepik - Flaticon</a>
+        </footer>
+
+    </body>
+
+</html>
