@@ -1,0 +1,28 @@
+:root {
+    --md-accent-fg-color: #ff8c00;
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* Centrer un élément (une image) */
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Met en forme les blocs de citations
+ * En markdown utiliser  le symbole > pour définir une citation
+ */
+[dir="ltr"] .md-typeset blockquote {
+    border: .1rem solid var(--md-accent-fg-color);
+    border-left: 1rem solid var(--md-accent-fg-color);
+    background-color: rgba(255, 140, 0, 0.4);
+    padding: 1px .6rem ;
+}
+
+.emphase {
+    color: red !important;
+}
