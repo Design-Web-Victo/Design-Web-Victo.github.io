@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/html_boxmodel/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/css_boxmodel/">
       
       
-        <link rel="prev" href="../html_structure/">
+        <link rel="prev" href="../css_basics/">
       
       
-        <link rel="next" href="../css_basics/">
+        <link rel="next" href="../css_font/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
@@ -449,16 +449,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
       
       
       
@@ -467,7 +465,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           HTML
@@ -516,6 +514,56 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          CSS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_basics/" class="md-nav__link">
+        Les bases
+      </a>
+    </li>
+  
+
+            
+          
             
               
   
@@ -556,6 +604,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#deux-modeles-de-boites" class="md-nav__link">
+    Deux modèles de boîtes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#block-vs-inline" class="md-nav__link">
     Block vs Inline
   </a>
@@ -582,58 +637,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-          CSS
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          CSS
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../css_basics/" class="md-nav__link">
-        Les bases
-      </a>
     </li>
   
 
@@ -647,20 +661,6 @@
     <li class="md-nav__item">
       <a href="../css_font/" class="md-nav__link">
         Polices de caractères
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../css_variable/" class="md-nav__link">
-        Variables
       </a>
     </li>
   
@@ -689,6 +689,20 @@
     <li class="md-nav__item">
       <a href="../css_grid/" class="md-nav__link">
         Grid
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../css_variable/" class="md-nav__link">
+        Variables
       </a>
     </li>
   
@@ -1654,6 +1668,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#deux-modeles-de-boites" class="md-nav__link">
+    Deux modèles de boîtes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#block-vs-inline" class="md-nav__link">
     Block vs Inline
   </a>
@@ -1680,6 +1701,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1699,15 +1727,73 @@
 
 
 <h1 id="le-modele-de-boite">Le modèle de boite</h1>
-<blockquote>
-<p><strong>À venir</strong></p>
-</blockquote>
+<p>En css chaque élément est disposé sous forme de boite, c'est ce qu'on appele le "<em>box model</em>". Une boîte comporte quatre propriété qui vont définir son apparence dans le navigateur : </p>
+<ul>
+<li>content : La zone où le contenu est affiché, qu'on peut ajuster avec <code>width</code> et <code>height</code>.</li>
+<li>padding : Un espacement situé à l'intérieur de la boite. On utilise <code>padding</code> pour dimensionner cet espacement.</li>
+<li>border : La bordure de la boite. On peut ajuster son épaisseur, sa couleur, etc..</li>
+<li>margin : Un espacement situé à l'extérieur de la boîte. On utilise <code>margin</code> pour dimensionner cet espacement.</li>
+</ul>
+<p>Les propriétés sont résumées dans cette image </p>
+<p><img align="center" alt="box_model" src="/assets/images/css_boxModel01.png" /></p>
+<h2 id="deux-modeles-de-boites">Deux modèles de boîtes</h2>
+<p>Quand on défini une largeur et une hauteur à notre boîte, c'est dimension sont en fait appliqué à la zone de contenu (content). Si on veut calculer l'espace réel que prendra la boîte, on doit additionner le contenu, le padding et la bordure. Prenons par exemple le code suivant : </p>
+<pre><code class="language-css">.maboite {
+    witdh : 100px;
+    padding: 10px;
+    border 1px solide purple;
+}
+</code></pre>
+<p>La dimension réel sera 122px, 100 en largeur + 10 de padding gauche + 10 de padding droite + 1 de bordure gauche + 1 de bordure droite.</p>
+<p>On peut modifier se comportement avec la propriété css <code>box-sizing</code>. En lui donnant la valeur <strong>border-box</strong> au lieu du défaut <strong>content-box</strong> le calcul se fera différamment. La largeur donnée représentera la <u>largeur total</u> de la boite, c'est-à-dire le contenu + le padding + la bordure. Donc si on reprend l'exemple plus haut en modifiant le <code>box-sizing</code> : </p>
+<pre><code class="language-css">.maboite {
+    box-sizing: border-box;
+    witdh : 100px;
+    padding: 10px;
+    border 1px solide purple;
+}
+</code></pre>
+<p>La dimension de la boite sera de 100px comme défini par la propriété <code>width</code>. Par contre le contenu aura une largeur de 78px (la largeur - le padding - la bordure).</p>
+<p>Plusieurs développeurs trouvent plus simple de travailler avec la deuxième méthode. Si on veut l'appliquer à tout notre document, on peut ajouter les règles suivantes en début de notre fichier css.</p>
+<pre><code class="language-css">html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+</code></pre>
 <h2 id="block-vs-inline">Block vs Inline</h2>
 <p>Les éléments HTML ne sont pas tous affiché de la même façon par le navigateur. Il y a deux dispositions possibles, <strong>block</strong> ou <strong>inline</strong>, et chaque élément en a un des deux par défaut.</p>
 <h3 id="block">Block</h3>
-<p>Un élément ayant la valeur <strong>block</strong> commence toujours une nouvelle ligne et prendra toute la largeur disponible. Ex : <strong>div</strong>, <strong>p</strong>.</p>
+<p>Avec un élément ayant la disposé en <strong>block</strong> : </p>
+<ul>
+<li>On provoque un saut de ligne.</li>
+<li>On peut lui spécifier une hauteur (<strong>height</strong>) et une largeur (<strong>width</strong>)</li>
+<li>Si aucune largeur n'est donnée, l'élément prendra toute la largeur disponible.</li>
+</ul>
+<p>Exemple de balise : <strong>div</strong>, <strong>p</strong>, <strong>h1</strong> à <strong>h6</strong></p>
 <h3 id="inline">Inline</h3>
-<p>Avec Inline l'élément est disposé à la suite des autres sans commencer une nouvelle ligne. Ex : <strong>a</strong>, <strong>span</strong>.</p>
+<p>Avec <strong>Inline</strong>,  l'élément </p>
+<ul>
+<li>est disposé à la suite des autres sans commencer une nouvelle ligne. </li>
+<li>ne peut recevoir de hauteur ou de largeur (à part la balise <strong>img</strong> mais c'est un cas particulier).</li>
+<li>ignore le <em>padding</em> et la marge en haut et en bas.</li>
+</ul>
+<p>Exemple de balise : <strong>a</strong>, <strong>span</strong>.</p>
+<p>La balise <strong>img</strong> est un cas particulier et on va y revenir. Elle est disposé en <em>Inline</em> mais obéit aux règles de la disposition en <em>Block</em>.</p>
+<p>On peut modifier la dispositon d'un élément en css avec la propriété <code>display</code> et les valeurs <code>block</code> et <code>inline</code> : </p>
+<pre><code class="language-css">/* Toutes les balises span vont être disposé en block */
+span {
+    display: block;
+}
+</code></pre>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank">https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model</a></li>
+<li><a href="https://edu.gcfglobal.org/en/basic-css/the-css-box-model/1/#" target="_blank">https://edu.gcfglobal.org/en/basic-css/the-css-box-model/1/#</a></li>
+</ul>
 
 
 
