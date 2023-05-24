@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1688,38 +1688,38 @@
 
 <h1 id="creer-ajouter-et-supprimer-un-element">Créer, ajouter et supprimer un élément</h1>
 <p>Quand le chargement d'un fichier html est terminé, on a accès à un objet <strong>document</strong> qui représente la "node" principale du document, c'est-à-dire l'élément le plus haut dans la hiérarchie des éléments de la page. En Javascript on utilise <strong>document</strong> pour accéder à ces méthodes. </p>
-<pre><code class="language-js">// Sélectionner la balise ayant le id container avec l'objet document
-let monContainer = document.getElementById(&quot;containerExemple&quot;);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Sélectionner la balise ayant le id container avec l&#39;objet document</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">monContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;containerExemple&quot;</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="creer-des-elements">Créer des éléments</h3>
 <p>On peut créer un élément en Javascript en utilisant la méthode <strong>createElement</strong>.</p>
 <p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">document.body.createElement(&quot;nodename&quot;)
-// nodename réprésente le nom de la balise html
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;nodename&quot;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">// nodename réprésente le nom de la balise html</span>
+</span></code></pre></div>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-js">// Créer une nouvelle balise h1
-let titre = document.body.createElement(&quot;h1&quot;);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Créer une nouvelle balise h1</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="ajouter-des-elements">Ajouter des éléments</h3>
 <p>Les méthodes <strong>append()</strong> et <strong>appendChild()</strong> sont utilisés pour ajouter des éléments dans le DOM, on va voir la méthode <strong>append()</strong>. Cette méthode prend en paramètre un élément HTLM ou du texte. On peut utiliser <strong>append()</strong> avec l'objet <strong>document</strong> ou avec un autre élément.</p>
-<pre><code class="language-js">// Récupère l'élément avec le id containerExemple (c'est un élément div pour l'exemple)
-let monContainer = document.getElementById(&quot;containerExemple&quot;);
-// Créer un élément h1
-let titre = document.createElement(&quot;h1&quot;);
-
-// Ajouter l'élément créé dans le document, dans la page. La balise h1 sera ajouté à la suite des autres éléments à l'intérieur de la balise body.
-document.append(titre);
-// Ajouter l'élément créé dans l'élément monContainer. La balise h1 sera ajouté à la suite des autres éléments à l'intérieur de l'élément avec le id containerExemple.
-monContainer.append(titre);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Récupère l&#39;élément avec le id containerExemple (c&#39;est un élément div pour l&#39;exemple)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">monContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;containerExemple&quot;</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">// Créer un élément h1</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1">// Ajouter l&#39;élément créé dans le document, dans la page. La balise h1 sera ajouté à la suite des autres éléments à l&#39;intérieur de la balise body.</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">document</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">titre</span><span class="p">);</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1">// Ajouter l&#39;élément créé dans l&#39;élément monContainer. La balise h1 sera ajouté à la suite des autres éléments à l&#39;intérieur de l&#39;élément avec le id containerExemple.</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nx">monContainer</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">titre</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="supprimer-des-elements">Supprimer des éléments</h3>
 <p>Pour supprimer un élément il suffit de le sélectionner et d'utiliser la méthode <strong>remove()</strong></p>
-<pre><code class="language-js">// Récupère l'élément avec le id containerExemple
-let monContainer = document.getElementById(&quot;containerExemple&quot;);
-// Supprime l'élément. Attention tous les éléments qui étaient à l'intérieur de cet élément seront aussi supprimé.
-monContainer.remove();
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Récupère l&#39;élément avec le id containerExemple</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">monContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;containerExemple&quot;</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1">// Supprime l&#39;élément. Attention tous les éléments qui étaient à l&#39;intérieur de cet élément seront aussi supprimé.</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">monContainer</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+</span></code></pre></div>
 
 
 

@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1825,26 +1825,26 @@
 <h2 id="syntaxe">Syntaxe</h2>
 <p>Une règle CSS consiste en un sélecteur et un bloc de déclaration formé d'une série de déclarations "propriété - valeur". Le bloc de déclaration début par une accolade <strong>{</strong> et est suivi par une série de déclarations séparées par un point-virgule. Elle se termine par la fermeture de l'accolade. </p>
 <p>Prenons l'exemple suivant </p>
-<pre><code class="language-css">h1 {
-    color: red;
-    font-size: 5em;
-}
-</code></pre>
-<p>Le sélecteur ici est la balise h1, donc la règle sera appliquée à toutes les balises h1 du fichier HTML. Ensuite dans le bloc de déclaration, la première ligne applique la valeur <strong>red</strong> à la propriété <strong>color</strong>, le texte dans les balises h1 sera de couleur rouge. Finalement la deuxième ligne indique d'augmenter la taille de la police à 5em, une valeur relative qui indique de l'augmenter de 5 fois la taille courante. (Nous verrons les unités de mesure CSS plus loin)</p>
+<p><div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">em</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</span></code></pre></div>
+Le sélecteur ici est la balise h1, donc la règle sera appliquée à toutes les balises h1 du fichier HTML. Ensuite dans le bloc de déclaration, la première ligne applique la valeur <strong>red</strong> à la propriété <strong>color</strong>, le texte dans les balises h1 sera de couleur rouge. Finalement la deuxième ligne indique d'augmenter la taille de la police à 5em, une valeur relative qui indique de l'augmenter de 5 fois la taille courante. (Nous verrons les unités de mesure CSS plus loin)</p>
 <p>Quand le css est inclus en attribut directement dans la balise, on dit <em>inline</em>, la syntaxe est un peu différente. on indique seulement les paires propriétés-valeur sans spécifier de sélecteur et sans les accolades. L'attribut à utiliser est <strong>style</strong>.</p>
 <p>La même règle que plus haut, mais directement ajouté dans la balise</p>
-<pre><code class="language-css">&lt; h1 style=&quot;color:red;font-size:5em;&quot; &gt;
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&lt;</span><span class="w"> </span><span class="nt">h1</span><span class="w"> </span><span class="nt">style</span><span class="o">=</span><span class="s2">&quot;color:red;font-size:5em;&quot;</span><span class="w"> </span><span class="o">&gt;</span>
+</span></code></pre></div>
 <p>On peut ajouter des commentaires en encadrant notre texte par les symboles /<em> et </em>/</p>
-<pre><code class="language-css">/* Un commentaire sur une ligne */
-
-/* Un commentaire sur 
-plusieurs lignes */
-
-h1 {
-    color: red; /* Un commentaire à la fin d'une ligne */
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">/* Un commentaire sur une ligne */</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c">/* Un commentaire sur </span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c">plusieurs lignes */</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"> </span><span class="c">/* Un commentaire à la fin d&#39;une ligne */</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="comment-et-ou-linclure-dans-nos-pages">Comment et où l'inclure dans nos pages</h2>
 <p>Il existe trois méthodes pour ajouter des règles css à un fichier HTLM : </p>
 <ul>
@@ -1855,50 +1855,50 @@ h1 {
 <h3 id="feuille-de-style-externe">Feuille de style externe</h3>
 <p>Les règles sont inscrites dans un fichier portant l'extension <strong>css</strong>. C'est la méthode la plus commune et efficace d'inclure du css dans les pages web. Le fichier css peut être relié à plus d'un fichier html, ce qui facilite l'uniformité d'un site internet et évite beaucoup de répétition.</p>
 <p>fichier <strong>style.css</strong></p>
-<pre><code class="language-css">h1 {
-    color: red;
-    font-size: 5em;
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">em</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>On lie le ou les fichiers css au fichier HTML avec la balise <strong>link</strong> qu'on ajoute dans la balise <strong>head</strong>. L'attribut <strong>href</strong> donnera le chemin vers le fichier css et l'attribut <strong>rel</strong> indiquera vers quel type de ressource un fais le lien, ici stylesheet pour feuille de style.</p>
-<pre><code class="language-css">&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Mon portfolio&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt; /* Le lien se fait ici */
-&lt;/head&gt;
-</code></pre>
-<p>Dans cette exemple, on lie le fichier styles.css à notre fichier HTML.</p>
+<p><div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">&lt;</span><span class="nt">head</span><span class="o">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">meta</span><span class="w"> </span><span class="nt">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">title</span><span class="o">&gt;</span><span class="nt">Mon</span><span class="w"> </span><span class="nt">portfolio</span><span class="o">&lt;/</span><span class="nt">title</span><span class="o">&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">link</span><span class="w"> </span><span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="w"> </span><span class="nt">href</span><span class="o">=</span><span class="s2">&quot;styles.css&quot;</span><span class="o">&gt;</span><span class="w"> </span><span class="c">/* Le lien se fait ici */</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
+</span></code></pre></div>
+Dans cette exemple, on lie le fichier styles.css à notre fichier HTML.</p>
 <h3 id="feuille-de-style-interne">Feuille de style interne</h3>
-<p>On peut aussi ajouter les règles directement dans le fichier HTML en utilisant la balise <strong>style</strong>. Pour plus de clarté et de lisibilité je vous suggère d'ajouter votre code à l'intérieur de la balise <strong>head</strong> mais on peut aussi l'ajouter n'importe où dans la page. </p>
-<pre><code class="language-css">&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Mon portfolio&lt;/title&gt;
-    /* Les règles css sont ajoutées ici */
-    &lt;style&gt;
-        h1 {
-            color: red;
-            font-size: 5em;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-</code></pre>
+<p>On peut aussi ajouter les règles directement dans le fichier HTML en utilisant la balise <strong>style</strong>. Pour plus de clarté et de lisibilité je vous suggère d'ajouter votre code à l'intérieur de la balise <strong>head</strong> mais on peut aussi l'ajouter n'importe où dans la page. 
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&lt;</span><span class="nt">head</span><span class="o">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">meta</span><span class="w"> </span><span class="nt">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">title</span><span class="o">&gt;</span><span class="nt">Mon</span><span class="w"> </span><span class="nt">portfolio</span><span class="o">&lt;/</span><span class="nt">title</span><span class="o">&gt;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="c">/* Les règles css sont ajoutées ici */</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">em</span><span class="p">;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
+</span></code></pre></div></p>
 <h3 id="styles-en-ligne">Styles en ligne</h3>
 <p>La dernière méthode consiste à inclure les règles directement dans une balise html en utilisant l'attribut style. Cette méthode n'est à utiliser qu'en <strong>dernier recours</strong>, quand il n'y a vraiment pas d'autres alternatives. Le code est beaucoup plus difficile à maintenir et à uniformiser quand les règles sont déclarées de cette façon.</p>
-<pre><code class="language-css">&lt;h1 style=&quot;color:red;font-size:5em&quot;&gt;
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">&lt;</span><span class="nt">h1</span><span class="w"> </span><span class="nt">style</span><span class="o">=</span><span class="s2">&quot;color:red;font-size:5em&quot;</span><span class="o">&gt;</span>
+</span></code></pre></div>
 <h2 id="les-selecteurs-css">Les sélecteurs CSS</h2>
 <p>Un sélecteur est une expression qui cible une entité HTML sur laquelle on va appliquer des règles CSS. Comme nous l'avons vu dans la section syntaxe, le sélecteur est la première information défini quand on défini notre série de règles.</p>
-<pre><code class="language-css">    .hautPage { /* Le sélecteur est ici la classe hautPage */
-        color: purple;
-    }
-</code></pre>
-<p>Dans cet exemple, toutes les balises qui ont en attribut la classe "hautPage" seront affectées par la règle. </p>
+<p><div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="w">    </span><span class="p">.</span><span class="nc">hautPage</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c">/* Le sélecteur est ici la classe hautPage */</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div>
+Dans cet exemple, toutes les balises qui ont en attribut la classe "hautPage" seront affectées par la règle. </p>
 <p>On peut regrouper plusieurs sélecteurs qui partage les mêmes règles en les séparant par une virgule.</p>
-<pre><code class="language-css">h1, h2, .titre {
-    font-size: 2em;
-}
-</code></pre>
-<p>Dans cet exemple, toutes les balises h1, h2 ainsi que celle ayant en attribut la classe titre seront ciblées. <strong>Attention</strong>, si un des sélecteurs regroupés est invalide, la règle ne sera pas appliqué. <em>Ce qui veux dire que même les autres sélecteurs valides seront ignorés</em>. </p>
+<p><div class="language-css highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">h1</span><span class="o">,</span><span class="w"> </span><span class="nt">h2</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">titre</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">}</span>
+</span></code></pre></div>
+Dans cet exemple, toutes les balises h1, h2 ainsi que celle ayant en attribut la classe titre seront ciblées. <strong>Attention</strong>, si un des sélecteurs regroupés est invalide, la règle ne sera pas appliqué. <em>Ce qui veux dire que même les autres sélecteurs valides seront ignorés</em>. </p>
 <h3 id="type-de-selecteur">Type de sélecteur</h3>
 <p>Il existe plusieurs type de sélecteurs qu'on peut classer en différents groupes. </p>
 <ul>
@@ -1908,30 +1908,30 @@ h1 {
 <li>On peut aussi combiner des sélecteurs pour préciser encore plus notre sélection.</li>
 </ul>
 <p>Quelques exemples</p>
-<pre><code class="language-css">/* Sélecteur de balise */
-h1 { ... }
-
-/* Sélecteur de classe */
-.titre { ... }
-
-/* Sélecteur d'id */
-#hautPage { ... }
-
-/* Sélectionne toutes les balises img qui ont l'attribut alt */
-img[alt] { ... }
-
-/* Sélectionne toutes les balises input dont l'attribut type est égale à &quot;text&quot; */
-input[type=&quot;text&quot;] { ... }
-
-/* La règle sera appliquée sur les balises img quand on les survole */
-img:hover { ... }
-
-/* La règle sera appliquée sur la première ligne de texte des balises p */
-p::first-line { ... }
-
-/* Sélectionne toutes les balises p dont le parent immédiat est une balise div */
-div &gt; p { ... }
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c">/* Sélecteur de balise */</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c">/* Sélecteur de classe */</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">.</span><span class="nc">titre</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c">/* Sélecteur d&#39;id */</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">#</span><span class="nn">hautPage</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c">/* Sélectionne toutes les balises img qui ont l&#39;attribut alt */</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nt">img</span><span class="o">[</span><span class="nt">alt</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c">/* Sélectionne toutes les balises input dont l&#39;attribut type est égale à &quot;text&quot; */</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c">/* La règle sera appliquée sur les balises img quand on les survole */</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="nt">img</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="c">/* La règle sera appliquée sur la première ligne de texte des balises p */</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="nt">p</span><span class="p">::</span><span class="nd">first-line</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="c">/* Sélectionne toutes les balises p dont le parent immédiat est une balise div */</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="nt">div</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
 <p>Pour plus de détails et d'exemples : </p>
 <ul>
 <li>https://www.w3schools.com/cssref/css_selectors.asp</li>
@@ -1940,38 +1940,38 @@ div &gt; p { ... }
 <h2 id="ordre-de-priorite-des-regles">Ordre de priorité des règles</h2>
 <p>Quand plusieurs règles css ciblent le même élément HTML, et qu'en plus elles utilisent la même propriété CSS il y a un conflit. La résolution de ce conflit se fera selon la priorité des règles utilisées.</p>
 <p>Commençons par un exemple : </p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Le titre de ma page&lt;/title&gt;
-
-    &lt;style&gt;
-        body {
-            font-size: 14px;
-        }
-        p {
-            font-size: 16px;
-        }
-        .titre {
-            font-size  : 20px;
-        }
-    &lt;/style&gt;
-
-  &lt;/head&gt;
-
-  &lt;body&gt;
-        &lt;span class=&quot;titre&quot;&gt;Priorité des règles CSS&lt;/span&gt;
-        &lt;div&gt;
-            &lt;p style=&quot;font-size: 12px;&quot;&gt;De quel taille sera ma police??&lt;/p&gt;
-            &lt;p&gt;Et ici?&lt;/p&gt;
-            Et là?
-        &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le titre de ma page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">        </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">            </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">        </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">            </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">        </span><span class="p">.</span><span class="nc">titre</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">            </span><span class="k">font-size</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;titre&quot;</span><span class="p">&gt;</span>Priorité des règles CSS<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>            <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;font-size: 12px;&quot;</span><span class="p">&gt;</span>De quel taille sera ma police??<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Et ici?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>            Et là?
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>La propriété font-size est utilisé dans 3 règles qui entre en conflit, notamment avec l'élément p. Êtes-vous capable de déterminé en lisant le code de qu'elle taille sera la police de chacun des paragraphes et du texte qui suit dans l'élément div?</p>
 <p>Les priorités de résolution du conflit peuvent être résumé comme ceci : </p>
 <ol>
@@ -1980,20 +1980,20 @@ div &gt; p { ... }
 </ol>
 <h3 id="le-mot-cle-important">Le mot-clé !important</h3>
 <p>Une règle se terminant par le mot-clé !important aura toujours la plus haute priorité. S'il y a un conflit avec de multiples !important, alors on va utiliser ensuite la spécificité pour déterminer la priorité.</p>
-<pre><code class="language-html">&lt;style&gt;
-    div {
-        font-size: 16px !important;
-        }
-    .textePlusGros {
-        font-size: 18px;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;textePlusGros&quot;&gt;
-    Voici mon texte.
-&lt;/div&gt;
-</code></pre>
-<p>Dans l'exemple suivant, en temps normal la règle avec le sélecteur .textePlusGros aurait préséance mais c'est la règle avec le sélecteur div qui sera appliquée à cause de l'utilisation de !important.</p>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">div</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="p">.</span><span class="nc">textePlusGros</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;textePlusGros&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    Voici mon texte.
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Dans l'exemple suivant, en temps normal la règle avec le sélecteur .textePlusGros aurait préséance mais c'est la règle avec le sélecteur div qui sera appliquée à cause de l'utilisation de !important.</p>
 <p>L'utilisation du mot-clé !important devrait être éviter le plus possible, c'est un mauvaise pratique. Ça "brise" les principes de base du CSS et rend le débogage plus difficile. </p>
 <h3 id="la-specificite-du-selecteur-css">La spécificité du sélecteur CSS</h3>
 <p>Plus le sélecteur est précis, plus la priorité sera élevée. En partant de la priorité la moins élevée : </p>

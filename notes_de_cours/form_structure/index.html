@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1771,10 +1771,10 @@
 <h2 id="lelement-form">L'élément form</h2>
 <p>Élément essentiel à tout formulaire, la balise form est en quelque sorte le conteneur de notre formulaire. Tous ce qui si retrouve sera traité comme faisant partie du formulaire. Elle a deux attributs spécifiques qui dictent la façon dont le formulaire va envoyer l'information au serveur : action et method.</p>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-html">&lt;form id=&quot;formulaire_contact&quot; method=&quot;post&quot; action=&quot;/traitement.php&quot;&gt;
-    &lt;!-- Contenu de mon formulaire --&gt;
-&lt;/form&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;formulaire_contact&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/traitement.php&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="cm">&lt;!-- Contenu de mon formulaire --&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h3 id="action">action</h3>
 <p>L'attribut action prend comme valeur une URL vers laquelle les données seront acheminées. </p>
 <h3 id="method">method</h3>
@@ -1814,18 +1814,18 @@
 <p>Maintenant qu'on a un élément form et un bouton pour soumettre notre formulaire, on va ajouter les différents éléments de saisies d'informations.</p>
 <h2 id="lelement-fieldset">L'élément fieldset</h2>
 <p>Avec cet élément on peut regrouper ensemble plusieurs autres éléments. Une bordure sera affiché par défaut autour de ces éléments On peut aussi ajouter la balise <strong>legend</strong> à l'intérieur d'un <strong>fieldset</strong> pour donner un titre à notre "regroupement".</p>
-<pre><code class="language-html">&lt;fieldset&gt;
-    &lt;legend&gt;Information de l'élève&lt;/legend&gt;
-
-    &lt;label for=&quot;nom-eleve&quot;&gt;Nom&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;nom-eleve&quot; id=&quot;nom-eleve&quot;&gt;
-
-    &lt;label for=&quot;prenom-eleve&quot;&gt;Prénom&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;prenom-eleve&quot; id=&quot;prenom-eleve&quot;&gt;
-
-&lt;/fieldset&gt;
-</code></pre>
-<p>Résultat</p>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Information de l&#39;élève<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Résultat</p>
 <p><img alt="form_structure_01" src="\assets\images\form_structure_01.png" /></p>
 
 

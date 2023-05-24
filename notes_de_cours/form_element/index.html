@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1723,59 +1723,59 @@
 <li>En cliquant sur le label, on donne le focus à l'élément qui lui est lié.</li>
 </ul>
 <p>Pour relier un label à un élément, on utilise la balise <strong>for</strong> qui doit correspondre à la valeur de la balise <strong>id</strong> de l'élément à lier. </p>
-<pre><code class="language-html">&lt;!-- La valeur nom est utilié pour l'attribut for du label et id du input, les 
-     deux éléments sont ainsi liés --&gt;
-&lt;label for=&quot;nom&quot;&gt;Nom :&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;nom&quot; name=&quot;nom_usager&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">&lt;!-- La valeur nom est utilié pour l&#39;attribut for du label et id du input, les </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm">     deux éléments sont ainsi liés --&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom&quot;</span><span class="p">&gt;</span>Nom :<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom_usager&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h2 id="lelement-input">L'élément input</h2>
 <p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a>. Parmi les plus utilisés on retrouve le type <strong>text</strong>, <strong>password</strong>, <strong>date</strong>, <strong>email</strong></p>
-<pre><code class="language-html">&lt;label for=&quot;text-eleve&quot;&gt;Nom de l'élève&lt;/label&gt;
-&lt;input type=&quot;text&quot; name=&quot;nom-eleve&quot; id=&quot;text-eleve&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;text-eleve&quot;</span><span class="p">&gt;</span>Nom de l&#39;élève<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;text-eleve&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h2 id="lelement-textarea">L'élément textarea</h2>
 <p>Un textarea est un élément qui nous permet de saisir du texte sur plusieurs lignes. Une particularité de cet élément est qu'au contraire de la balise input, ou doit ajouter une fermeture de la balise.</p>
-<pre><code class="language-html">&lt;!-- input ne demande pas de fermeture de balise --&gt;
-&lt;label for=&quot;nom&quot;&gt;Nom :&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;nom&quot; name=&quot;nom_usager&quot;&gt;
-&lt;!-- textarea en requiert une --&gt;
-&lt;label for=&quot;message&quot;&gt;Message :&lt;/label&gt;
-&lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">&lt;!-- input ne demande pas de fermeture de balise --&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom&quot;</span><span class="p">&gt;</span>Nom :<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom_usager&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cm">&lt;!-- textarea en requiert une --&gt;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;</span>Message :<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h2 id="lelement-select">L'élément select</h2>
 <p>Select permet d'afficher une liste déroulante de choix prédéfinis. Pour ajouter les options de la liste, on utilise la balise <strong>option</strong></p>
-<pre><code class="language-html">&lt;select name=&quot;classe_perso&quot; id=&quot;classe_perso&quot;&gt;
-  &lt;option value=&quot;1&quot;&gt;Guerrier&lt;/option&gt;
-  &lt;option value=&quot;2&quot;&gt;Healer&lt;/option&gt;
-  &lt;option value=&quot;3&quot;&gt;Sniper&lt;/option&gt;
-  &lt;option value=&quot;4&quot;&gt;Rogue&lt;/option&gt;
-  &lt;option value=&quot;5&quot;&gt;Barde&lt;/option&gt;
-&lt;/select&gt; 
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;classe_perso&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;classe_perso&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>Guerrier<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">&gt;</span>Healer<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">&gt;</span>Sniper<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;4&quot;</span><span class="p">&gt;</span>Rogue<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">&gt;</span>Barde<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span> 
+</span></code></pre></div>
 <h2 id="lelement-radio">L'élément radio</h2>
 <p>L'élément radio est un type spécial de la balise input qui affiche un choix sous forme de cercle selectionnable. On peut regrouper plusieurs élément radio ensemble en leur donnant la même valeur à l'attribut <strong>name</strong>. Dans ce cas on ne pourra que sélectionner qu'un élément du groupe à la fois. On doit utiliser l'attribut <strong>value</strong> à chaque input pour indiquer quelle valeur sera transmis avec le formulaire. Finalement on peut utiliser l'attribut <strong>checked</strong> pour indiquer quel input sera sélectionné au chargemenent de la page. <em>Pour que ça fonctionne avec Firefox on doit aussi ajouter l'attribut autocomplete="off" à chaque input.</em></p>
-<pre><code class="language-html">&lt;!-- Pour plus de lisibilité j'ai inscrit mes attributs sur plusieurs lignes --&gt;
-&lt;label for='choix1'&gt;Premier choix&lt;/label&gt;
-&lt;input type='radio' 
-      id='choix1' 
-      name='choix_radio' 
-      value=&quot;choix1&quot; 
-      autocomplete=&quot;off&quot;&gt;
-
-&lt;label for='choix2'&gt;Deuxième choix&lt;/label&gt;
-&lt;input type='radio' 
-      id='choix2' 
-      name='choix_radio' 
-      value=&quot;choix2&quot; 
-      checked autocomplete=&quot;off&quot;&gt;
-
-&lt;label for='choix3'&gt;Troisième choix&lt;/label&gt;
-&lt;input type='radio' 
-      id='choix3' 
-      name='choix_radio' 
-      value=&quot;choix3&quot; 
-      autocomplete=&quot;off&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cm">&lt;!-- Pour plus de lisibilité j&#39;ai inscrit mes attributs sur plusieurs lignes --&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;choix1&#39;</span><span class="p">&gt;</span>Premier choix<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> 
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>      <span class="na">id</span><span class="o">=</span><span class="s">&#39;choix1&#39;</span> 
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>      <span class="na">name</span><span class="o">=</span><span class="s">&#39;choix_radio&#39;</span> 
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>      <span class="na">value</span><span class="o">=</span><span class="s">&quot;choix1&quot;</span> 
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>      <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;choix2&#39;</span><span class="p">&gt;</span>Deuxième choix<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> 
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>      <span class="na">id</span><span class="o">=</span><span class="s">&#39;choix2&#39;</span> 
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>      <span class="na">name</span><span class="o">=</span><span class="s">&#39;choix_radio&#39;</span> 
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>      <span class="na">value</span><span class="o">=</span><span class="s">&quot;choix2&quot;</span> 
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>      <span class="na">checked</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;choix3&#39;</span><span class="p">&gt;</span>Troisième choix<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> 
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>      <span class="na">id</span><span class="o">=</span><span class="s">&#39;choix3&#39;</span> 
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>      <span class="na">name</span><span class="o">=</span><span class="s">&#39;choix_radio&#39;</span> 
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>      <span class="na">value</span><span class="o">=</span><span class="s">&quot;choix3&quot;</span> 
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>      <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 
 

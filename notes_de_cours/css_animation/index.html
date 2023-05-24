@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1860,51 +1860,51 @@
 <li>transition-delay</li>
 </ul>
 <p>Il existe aussi une propriété "raccourci" qui englobe ces 4 propriétés, transition.</p>
-<pre><code class="language-css">.bouton {
-  transition: [property] [duration] [timing-function] [delay];
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">property</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">duration</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">timing-function</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">delay</span><span class="p">];</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="transition-property">Transition-property</h3>
 <p>Permet de spécifier sur quelle propriété css la transition va être appliqué. On peut utilser la valeur <strong>all</strong> pour appliquer la transition sur toutes les propriétés.</p>
-<pre><code class="language-css">.bouton {
-    /* On applique la transition sur toutes les propriétés */
-    transition-property: all;
-    /* Ici elle sera appliqué uniquement sur le changement de couleur de fond */
-    transition-property: background-color;
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c">/* On applique la transition sur toutes les propriétés */</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">transition-property</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="c">/* Ici elle sera appliqué uniquement sur le changement de couleur de fond */</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">transition-property</span><span class="p">:</span><span class="w"> </span><span class="k">background-color</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>### Transition-duration</p>
 <p>On défini avec transition-duration la durée de la transition. Elle peut être exprimé en millisecondes ou en secondes.</p>
-<pre><code class="language-css">.bouton {
-    transition-duration: 700ms;
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">transition-duration</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="kt">ms</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="transition-timing-function">Transition-timing-function</h3>
 <p>Permet de définir la vitesse de la transition par rapport à sa durée. Par défaut la valeur est <strong>ease</strong>:  la transition débute tranquillement, accélère et ralenti vers la fin. Il y a plusieurs valeurs possible, je vous laisse les explorer. Mais à moins de besoin précis, habituellement on laisse la valeur par défaut.</p>
-<pre><code class="language-css">.bouton {
-    /* La transition va aller en s'accélérant */
-    transition-timing-function: ease-in; 
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="c">/* La transition va aller en s&#39;accélérant */</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">transition-timing-function</span><span class="p">:</span><span class="w"> </span><span class="kc">ease-in</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Vous pouvez voir les différentes méthodes en action sur ce site : <a href="https://cssreference.io/property/transition-timing-function/">https://cssreference.io/property/transition-timing-function/</a></p>
 <h3 id="transition-delay">Transition-delay</h3>
 <p>Permet de retarder le début de la transition. La valeur peut être exprimé en millisecondes ou en secondes.</p>
-<pre><code class="language-css">.bouton {
-    /* La transition va commencer après 1 seconde */
-    transition-delay: 1s;
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="c">/* La transition va commencer après 1 seconde */</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">transition-delay</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="la-transformation">La transformation</h2>
 <p>On peut transformer nos éléments facilement avec la propriété css <strong>transform</strong>. Les quatres transformations possibles sont la rotation, le déplacement, la déformation et l'agrandissement/diminution, respectivement rotate, translate, skew, scale.</p>
 <h3 id="rotate">Rotate</h3>
 <p>Effectue une rotation de l'élément en spécifiant une valeur en degré. La valeur peut être positive pour une rotation dans le sens horaire ou négative pour un sens anti-horaire.</p>
-<pre><code class="language-css">.bouton:hover {
-    /* Effectue un tour sur lui-même dans le sens horaire */
-    transform: rotate(360deg);
-    /* Effectue un tour sur lui-même dans le sens anti-horaire */
-    transform: rotate(-360deg);
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="c">/* Effectue un tour sur lui-même dans le sens horaire */</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">rotate</span><span class="p">(</span><span class="mi">360</span><span class="kt">deg</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="c">/* Effectue un tour sur lui-même dans le sens anti-horaire */</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">rotate</span><span class="p">(</span><span class="mi">-360</span><span class="kt">deg</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="translate">Translate</h3>
 <p>Déplace l'élément selon une valeur sur l'axe des x et l'axe des y. Une valeur positive à x déplace l'élément vers la droite et vers la gauche pour une valeur négative. Une valeur négative à l'axe des y déplace l'élément vers le haut et vers le bas pour une valeur positive. On peut utiliser les propriétés suivantes pour effectuer la translation. </p>
 <ul>
@@ -1913,15 +1913,15 @@
 <li>translate(valeurX, ValeurY) </li>
 </ul>
 <p>La valeur peut être exprimé en pixels ou bien en poucentage. Quand elle est en pourcentage, elle représente le poucentage de la taille de l'élément. Ex si mon bouton à une largeur de 600 pixels et que je lui donne 50% comme valeur de x, le bouton sera déplacé de 300 pixels vers la droite sur l'axe des x.</p>
-<pre><code class="language-css">.bouton:hover {
-    /* Le bouton sera déplacé de 400 pixels vers la droite */
-    transform: translateX(400px);
-    /* Le bouton sera déplacé de 1 fois et demi sa hauteur vers le haut */
-    transform: translateY(-150%);
-    /* Le résultat sera le même que les deux lignes précédentes */
-    transform: translate(400px, -150%);
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="c">/* Le bouton sera déplacé de 400 pixels vers la droite */</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateX</span><span class="p">(</span><span class="mi">400</span><span class="kt">px</span><span class="p">);</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="c">/* Le bouton sera déplacé de 1 fois et demi sa hauteur vers le haut */</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-150</span><span class="kt">%</span><span class="p">);</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="c">/* Le résultat sera le même que les deux lignes précédentes */</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translate</span><span class="p">(</span><span class="mi">400</span><span class="kt">px</span><span class="p">,</span><span class="w"> </span><span class="mi">-150</span><span class="kt">%</span><span class="p">);</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="scale">Scale</h3>
 <p>On peut avec scale aggrandir ou diminuer un élément. La valeur est un poucentage exprimé par un nombre décimal positif, 1 étant la taille actuelle de l'élément. Donc les valeurs de 0 à 0.99 diminueront l'élément alors que les valeurs supérieures à 1 l'augmenteront. On peut utiliser les propriétés suivantes : </p>
 <ul>
@@ -1930,17 +1930,17 @@
 <li>scale(valeurXY)</li>
 <li>scale(valeurX, valeurY)</li>
 </ul>
-<pre><code class="language-css">.bouton:hover {
-    /* Élargis de 2x horizontalement */
-    transform: scaleX(2);
-    /* Élargis de 2x verticalement */
-    transform: scaleY(2);
-    /* Élargis de 2x horizontalement et verticalement */
-    transform: scale(2);
-    /* Élargis de 2x horizontalement et verticalement */
-    transform: scale(2,2);
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="c">/* Élargis de 2x horizontalement */</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scaleX</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="c">/* Élargis de 2x verticalement */</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scaleY</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="c">/* Élargis de 2x horizontalement et verticalement */</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="c">/* Élargis de 2x horizontalement et verticalement */</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="skew">Skew</h3>
 <p>La propriété skew sert à incliner l'élément selon l'axe des x et des y. Tout comme rotate et translate, une valeur négatif déplace à gauche pour les x ou en haut pour les y, alors qu'une valeur positive inclinera à droite pour les x et en bas pour les y. On peut utiliser les propriétés suivantes :</p>
 <ul>
@@ -1948,52 +1948,52 @@
 <li>skewY(valeurY)</li>
 <li>skew(valeurX, valeurY)</li>
 </ul>
-<pre><code class="language-css">.bouton:hover {
-    /* Incline de 25 degrées vers la gauche */
-    transform: skewX(-25deg);
-    /* Incline de 25 degrées vers le bas */
-    transform: skewY(25deg);
-    /* Incline de 25 degrées vers la droite */
-    transform: skew(25deg,0);
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="c">/* Incline de 25 degrées vers la gauche */</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">skewX</span><span class="p">(</span><span class="mi">-25</span><span class="kt">deg</span><span class="p">);</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="c">/* Incline de 25 degrées vers le bas */</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">skewY</span><span class="p">(</span><span class="mi">25</span><span class="kt">deg</span><span class="p">);</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="c">/* Incline de 25 degrées vers la droite */</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nf">skew</span><span class="p">(</span><span class="mi">25</span><span class="kt">deg</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="transform-origin">Transform-origin</h3>
 <p>Par défaut, la transformation de l'élément s'effectue à partir du centre de celui-ci. On peut modifier ce comportement avec la propriété transform-origin. On donne deux valeurs à la propriété, la position de l'origine sur l'axe des x et sur l'axe des y. On peut exprimé les valeurs en pourcentage, qui représente la dimension de l'élément (0% correspond à l'extrème gauche alors que 100% la droite de l'élément). On peut aussi utiliser les mots-clés left, right, top, bottom, center. Sinon les autres unités de mesure CSS sont acceptés. Cette propriété doit être définie au même niveau que la transition.</p>
-<pre><code class="language-css">.bouton {
-    transform-origin: left bottom;
-    /* Cette ligne est égale à la précédente*/
-    transform-origin: 0% 100%;
-    transition: all 1s; 
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="k">transform-origin</span><span class="p">:</span><span class="w"> </span><span class="kc">left</span><span class="w"> </span><span class="kc">bottom</span><span class="p">;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="c">/* Cette ligne est égale à la précédente*/</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="k">transform-origin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">%</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="des-animations-plus-evoluees-avec-keyframes">Des animations plus évoluées avec @keyframes</h2>
 <p>Avec la commande @keyframe ont peut aller beaucoup plus loin qu'avec transform. @keyframe nous permet en effet de séparer notre animation en plusieurs étapes. En fait, on peut voir l'animation fait avec @keyframe comme une suite de transformation. </p>
 <p>La première étape est de définir l'animation en soit avec @keyframe. Ensuite on va ajouter les "étapes" de notre animation, les tranformations à faire. Celle-ci son composé d'une ou plusieurs rêgles css. Pour chaque étape on doit aussi définir un pourcentage qui indique à qu'elle moment durant l'animation l'étape s'enclenche. (La durée de l'animation sera déclaré plus loin) La syntaxe est la suivante : </p>
-<pre><code class="language-css">@keyframes nom_animation {
-    0% {
-        /* Règle de l'étape 1 */
-    }
-    50% {
-        /* Règle de l'étape 2 */
-    }
-    100% {
-        /* Règle de l'étape 3 */
-    }
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">nom_animation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nt">0</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">        </span><span class="c">/* Règle de l&#39;étape 1 */</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="nt">50</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">        </span><span class="c">/* Règle de l&#39;étape 2 */</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="nt">100</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">        </span><span class="c">/* Règle de l&#39;étape 3 */</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Voici un exemple qui va modifier la couleur de fond, en partant du cyan on va jusqu'à mi-chemin aller vers le jaune pour ensuite glisser vers le orange.</p>
-<pre><code class="language-css">@keyframes color_change {
-    0% {
-        background-color: cyan;
-    }
-    50% {
-        background-color: yellow;
-    }
-    100% {
-        background-color: orange;
-    }
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">color_change</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">0</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">cyan</span><span class="p">;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="nt">50</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="nt">100</span><span class="o">%</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">orange</span><span class="p">;</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Ensuite on va "lancer" notre animation en l'associant à un sélecteur css. L'animation sera déclenchée automatiquement au chargement de la page, à moins d'utiliser le sélecteur :hover qui se fera lors du survol de la souris sur l'élément. La propriété à utiliser est <strong>animation</strong>, un "raccourci" qui englobe 8 autres propriétées : </p>
 <ul>
 <li>animation-delay</li>
@@ -2007,10 +2007,10 @@
 </ul>
 <p>On n'est pas obligé de définir une valeur pour toutes ces propriétés, elles en ont tous une par défaut. Pour plus de détail sur ces propriétés : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation">https://developer.mozilla.org/en-US/docs/Web/CSS/animation</a></p>
 <p>Au minimum on va définir le nom de l'animation, sa durée et le nombre répétition : </p>
-<pre><code class="language-css">html {
-    animation: nom_animation durée nombre_repetition;
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="n">nom_animation</span><span class="w"> </span><span class="n">durée</span><span class="w"> </span><span class="n">nombre_repetition</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Le nom de l'animation est celui défini dans le @keyframe, la durée est défini en secondes (s) ou en millisecondes (ms). Enfin la répétition est un nombre qui peut être fractionnaire. On peut aussi utiliser <strong>infinite</strong> pour répéter l'animation à l'infini. </p>
 <h3 id="pour-aller-plus-loin-avec-les-animations">Pour aller plus loin avec les animations</h3>
 <ul>

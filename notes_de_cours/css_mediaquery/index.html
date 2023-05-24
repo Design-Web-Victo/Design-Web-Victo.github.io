@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1863,10 +1863,10 @@
 <h1 id="media-queries">Media queries</h1>
 <p>Il est possible avec les requêtes média (media queries) de définir une séries de règles css différentes en fonction de l'appareil ou de son type d'affichage (la taille de l'écran par exemple).  On pourrait très bien avoir des règles pour les écrans d'ordinateur, pour l'impression et pour les cellulaires.</p>
 <h2 id="syntaxe">Syntaxe</h2>
-<pre><code class="language-css">@media not|only type_de_media and (caracteristique_media) {
-  /* Mon code css */
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">not</span><span class="o">|</span><span class="nt">only</span><span class="w"> </span><span class="nt">type_de_media</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">caracteristique_media</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c">/* Mon code css */</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="type-de-media">Type de media</h3>
 <p>Le type de média est optionnel, par défaut il prendra la valeur <strong>all</strong> qui correspond à tous les médias. </p>
 <table>
@@ -1898,63 +1898,63 @@
 <h3 id="operateurs-logiques">Opérateurs logiques</h3>
 <h4 id="and">and</h4>
 <p>Permet de combiner plusieurs sous-requête en une seule. Pour que la requête soit évalué comme vrai, toutes les sous-requêtes doivent aussi être vrai.</p>
-<pre><code class="language-css">@media screen and (min-width: 320px) and (max-width: 768px) {
-  ...
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">320px</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="o">...</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Dans cet exemple les règles seront utilisées sur tous les appareils possédant un écran dont la dimension de la zone d'affichage est située entre 320 et 768 pixels.</p>
 <h4 id="or">or</h4>
 <p>On peut aussi en séparant les sous-requêtes par une virgule, utiliser le <strong>ou</strong> logique. Dès qu'une sous-requête est vrai, la requête média sera vrai.</p>
-<pre><code class="language-css">@media (min-height: 680px), screen and (orientation: portrait) { 
-    ... 
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">min-height</span><span class="o">:</span><span class="w"> </span><span class="nt">680px</span><span class="o">),</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">orientation</span><span class="o">:</span><span class="w"> </span><span class="nt">portrait</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="o">...</span><span class="w"> </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Dans cet exemple, les règles seront appliquées si la taille de la zone d'affichage est d'une hauteur supérieur à 680 pixels ou si l'écran est en mode portrait.</p>
 <h4 id="not">not</h4>
 <p>Permet d'inverser le résultat d'une requête. </p>
-<pre><code class="language-css">@media print and ( not(color) ) {
-  ...
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">print</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="nt">not</span><span class="o">(</span><span class="nt">color</span><span class="o">)</span><span class="w"> </span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="o">...</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Dans cet exemple, les règles seront appliquées si l'appareil est une imprimante et ne peut pas afficher de couleur.</p>
 <h2 id="utilisation-des-requetes-media">Utilisation des requêtes média</h2>
 <h3 id="dans-un-fichier-html">Dans un fichier HTML</h3>
 <h4 id="avec-la-balise-link">Avec la balise link</h4>
 <p>On peut ajouter l'attribut media à la balise link pour importer un fichier css seulement quand la requête est vrai.</p>
-<pre><code class="language-html">&lt;html&gt;
-  &lt;head&gt;
-    &lt;!-- Va être importer si la taille de l'écran à une largeur supérieur à 600 pixels --&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;extra-large.css&quot; media=&quot;(min-width: 600px)&quot; /&gt;
-  &lt;/head&gt;
-
-&lt;/html&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="cm">&lt;!-- Va être importer si la taille de l&#39;écran à une largeur supérieur à 600 pixels --&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;extra-large.css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;(min-width: 600px)&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h4 id="avec-lattribut-media-de-la-balise-style">Avec l'attribut media de la balise style</h4>
 <p>On peut aussi utiliser l'attribut media de la balise style.</p>
-<pre><code class="language-css">&lt;style&gt;
-  p {
-    background-color: blue;
-    color: white;
-  }
-&lt;/style&gt;
-
-&lt;style media=&quot;all and (max-width: 500px)&quot;&gt;
-  p {
-    background-color: yellow;
-    color: blue;
-  }
-&lt;/style&gt;
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="o">&lt;</span><span class="nt">style</span><span class="w"> </span><span class="nt">media</span><span class="o">=</span><span class="s2">&quot;all and (max-width: 500px)&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></code></pre></div>
 <p>Ici la couleur du texte des paragraphes changera selon la dimension de l'écran.</p>
 <h3 id="dans-un-fichier-css">Dans un fichier CSS</h3>
 <p>L'utilisation dans un fichier css ce fait en englobant la règle par la requête.</p>
-<pre><code class="language-css">@media screen and (min-width: 320px) and (max-width: 768px) {
-  p {
-    background-color: yellow;
-    color: blue;
-  }
-}
-</code></pre>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">320px</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="sources">sources</h2>
 <ul>
 <li><a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/">https://css-tricks.com/a-complete-guide-to-css-media-queries/</a></li>

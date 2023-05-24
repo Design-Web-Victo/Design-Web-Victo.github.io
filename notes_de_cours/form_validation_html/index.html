@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1704,29 +1704,29 @@
 <p>On peut en HTML uniquement implémenter une première "couche" de validation en utilisant certain attributs spécifiques. Il faut garder à l'esprit que cette validation est basique et ne devrait pas être utilisé seule.</p>
 <h2 id="lattribut-type">L'attribut type</h2>
 <p>Il existe maintenant pour l'attribut <strong>type</strong> de l'élément input une multitude de valeur possible qui permet de spécifier le type de valeur souhaité et en même temps de faire une validation.</p>
-<pre><code class="language-html">&lt;!-- Input qui demande une adresse de courriel --&gt;
-&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email_usager&quot; placeholder=&quot;Entrez une adresse courriel valide&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">&lt;!-- Input qui demande une adresse de courriel --&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email_usager&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Entrez une adresse courriel valide&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Résultat lors de l'envoi du formulaire, le message d'erreur varie d'un navigateur à l'autre.</p>
 <p><img alt="form_validation_html_01" src="\assets\images\form_validation_html_01.png" /></p>
 <h2 id="lattribut-required">L'attribut required</h2>
 <p>Indique qu'une valeur doit être saisie pour l'élément avant l'envoi du formulaire. Selon le navigateur utilisé un message d'erreur sera affiché.</p>
-<pre><code class="language-html">&lt;label for=&quot;email&quot;&gt;e-mail&lt;/label&gt;
-&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email_usager&quot; required&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>e-mail<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email_usager&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Résultat lors de l'envoi du formulaire</p>
 <p><img alt="form_validation_html_02" src="\assets\images\form_validation_html_02.png" /></p>
 <h2 id="lattribut-pattern">L'attribut pattern</h2>
 <p>On peut avec l'attribut pattern définir notre propre format de texte accepté. Pattern prend comme valeur une expression régulière. Il est très important d'informer l'utilisateur du format à respecter, soit avec la balise <strong>title</strong> ou en ajoutant un court texte explicatif.</p>
-<pre><code class="language-html">&lt;label for=&quot;ipv4&quot;&gt;Courriel&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;ipv4&quot; name=&quot;ipv4&quot; pattern=&quot;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&quot; required title=&quot;Adresse IPv4&quot;&gt;
-&lt;p&gt;Veuillez entrer une adresse IPv4 au format xxx.xxx.xxx.xxx&lt;/p&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;ipv4&quot;</span><span class="p">&gt;</span>Courriel<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ipv4&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;ipv4&quot;</span> <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&quot;</span> <span class="na">required</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Adresse IPv4&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Veuillez entrer une adresse IPv4 au format xxx.xxx.xxx.xxx<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Pour vous aider avec les regex : <a href="https://regexr.com/">https://regexr.com/</a></p>
 <h2 id="les-attributs-minlength-et-maxlength">Les attributs minlength et maxlength</h2>
 <p>On peut utiliser pour une balise input de type <strong>text</strong> les attributs minlength et maxlength pour déterminer une nombre minimum et maximum de caractères</p>
-<pre><code class="language-html">&lt;input type='text' id='adresse' name='adresse' maxlength=&quot;50&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;adresse&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;adresse&#39;</span> <span class="na">maxlength</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 
 

@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1961,19 +1961,19 @@
 <h2 id="ou-ajouter-nos-scripts">Où ajouter nos scripts</h2>
 <h3 id="dans-un-fichier-html">Dans un fichier HTML</h3>
 <p>On peut ajouter un script un peu n'importe où dans un fichier html avec la balise <strong>script</strong>, dans la balise <strong>head</strong>, dans le <strong>body</strong>, etc. C'est une question de préférence. Personnellement j'ajoute mes scripts à l'intérieur de la balise <strong>head</strong>.  La syntaxe est la suivante : </p>
-<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot;&gt;
-    alert('Hello, world!');
-&lt;/script&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, world!&#39;</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Dans cette exemple, une message s'affichera à l'écran avec le texte <strong>Hello, world!</strong>. L'attribut type dans la balise n'est plus vraiment nécessaire aujourd'hui, on peut l'omettre sans problème.</p>
 <p>Idéalement, on va réserver l'ajout de script directement dans un fichier html à des utilisations simples et brèves. La plupart du temps les scripts contenu dans des fichiers externes.</p>
 <h3 id="dans-un-fichier-externe">Dans un fichier externe</h3>
 <p>Un peu comme avec le css, on peut écrire nos scripts dans un ou des fichiers externes et les appelés depuis nos page html. Pour ce faire on va aussi utiliser la balise <strong>script</strong> mais en ajoutant l'attribut <strong>src</strong>.</p>
-<pre><code class="language-html">&lt;script defer src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
-
-&lt;!-- Pour ajouter plus d'un fichier, on répète avec les autres fichiers --&gt;
-&lt;script defer src=&quot;deuxieme_script.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mes_scripts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">&lt;!-- Pour ajouter plus d&#39;un fichier, on répète avec les autres fichiers --&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;deuxieme_script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>La maintenance et la clarté du code est une raison d'extraire les scripts dans des fichiers externe. Mais l'avantage majeure est que le navigateur va télécharger les fichiers en cache. Ensuite si une autre page html fait référence à un des fichiers téléchargés, il sera lu depuis le cache et non pas téléchargé à nouveau, ce qui réduit le trafic et permet à la page de s'afficher plus rapidement.</p>
 <h4 id="utilisation-de-lattribut-defer-et-async-de-la-balise-script">Utilisation de l'attribut defer et async de la balise script</h4>
 <p>Par défaut, quand on charge un script depuis un fichier externe, il sera exécuté immédiatement. Ça peut poser un problème si notre script interagit avec des éléments du DOM car ceux-ci peuvent ne pas être encore "chargé" (accessible) lors de exécution du script. Pour palier à ce problème on peut soit charger nos scripts à la toute fin de notre fichier HTML ou bien plus utiliser l'attribut defer ou async de la balise <strong>script</strong>. </p>
@@ -1983,9 +1983,9 @@
 </ul>
 <p>Attention par contre car en utilisant ces deux attributs, la page peut se terminé de charger avant que les scripts soient exécuté. Ça peut créer de petits problème visuel selon la nature des scripts. </p>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-html">&lt;script defer src=&quot;mes_scripts.js&quot;&gt;&lt;/script&gt;
-&lt;script async src=&quot;mon_script_async.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mes_scripts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mon_script_async.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Source : https://javascript.info/script-async-defer</p>
 <h2 id="hello-world">Hello, World</h2>
 <p>Et oui, on n'y échappera pas :smiling_imp:, on va faire un premier exemple avec un bon vieux Hello, World. </p>
@@ -2012,70 +2012,69 @@
 <h2 id="structure-du-code">Structure du code</h2>
 <h3 id="terminaison-dune-ligne-de-code">Terminaison d'une ligne de code</h3>
 <p>Chaque ligne de code doit se terminer par un point-virgule ( ; )! En fait ce n'est pas entièrement vrai. Javascript est un langage assez permissif, et on peut ne pas en ajouter la plupart du temps sans créer d'erreurs.</p>
-<pre><code class="language-js">// Ici les deux messages vont s'afficher même s'il n'y a pas de point-virgule
-alert('Bonjour')
-alert('tout le monde')
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Ici les deux messages vont s&#39;afficher même s&#39;il n&#39;y a pas de point-virgule</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Bonjour&#39;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;tout le monde&#39;</span><span class="p">)</span>
+</span></code></pre></div>
 <p>Par contre, c'est une bonne pratique de toujours en ajouter, et je veux que vous le fassiez toujours.</p>
 <h3 id="commentaires">Commentaires</h3>
 <p>Pour ajouter un commentaire sur une ligne, on utilise //. Pour les blocs de commentaires, on va plutôt utiliser /<em> </em>/</p>
-<pre><code class="language-js">// Commentaire sur une ligne
-alert('Coucou!!');
-/*
-    Commentaire sur
-    plusieurs lignes
-*/
-console.log('Hola');
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Commentaire sur une ligne</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Coucou!!&#39;</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="cm">/*</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="cm">    Commentaire sur</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="cm">    plusieurs lignes</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="cm">*/</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hola&#39;</span><span class="p">);</span>
+</span></code></pre></div>
 <h2 id="variables">Variables</h2>
 <h3 id="declaration-et-assignation">Déclaration et assignation</h3>
 <p>En javascript les variables n'ont pas de type. Pour en déclarer un, il suffit d'utiliser le mot <strong>let</strong> ou <strong>var</strong> suivi du nom de la variable. Nous verrons la différence entre let et var plus loin, pour l'instant on va toujours utiliser let. Ensuite pour assigner une valeur à notre variable on va utiliser le symbole = suivi de la valeur. On peut aussi faire les deux étapes sur la même ligne.</p>
-<pre><code class="language-js">// Déclaration d'une variable
-let message;
-// Assignation de la variable
-message = 'Bonjour tout le monde';
-// La même chose sur une ligne
-let message = 'Bonjour tout le monde';
-
-alert (message);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// Déclaration d&#39;une variable</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">// Assignation de la variable</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bonjour tout le monde&#39;</span><span class="p">;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1">// La même chose sur une ligne</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bonjour tout le monde&#39;</span><span class="p">;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nx">alert</span><span class="w"> </span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</span></code></pre></div>
 <p>Attention, déclarer une variable plus d'une fois va provoquer une erreur.</p>
-<pre><code class="language-js">let message = 'Bonjour';
-let message = 'Au revoir'; // On va avoir une erreur de syntaxe ici
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Bonjour&#39;</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Au revoir&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// On va avoir une erreur de syntaxe ici</span>
+</span></code></pre></div>
 <p>Les variables n'ayant pas de type, on peut passer plusieurs type de valeur à une même variable. Par contre ce n'est pas une bonne pratique et on devrait l'éviter.</p>
-<pre><code class="language-js">let message = 'Allo';
-alert(message) // Va afficher Allo
-message = 5;
-alert(message * 2) // Va afficher 10;
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Allo&#39;</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nx">alert</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="c1">// Va afficher Allo</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nx">alert</span><span class="p">(</span><span class="nx">message</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// Va afficher 10;</span>
+</span></code></pre></div>
 <h3 id="constantes">Constantes</h3>
 <p>Une constante est une variable dont la valeur ne peut être changé après son assignation. On utilise le mot <strong>const</strong> pour la déclarer.</p>
-<pre><code class="language-js">const COULEUR_ORANGE = '#ffaa00';
-
-COULEUR_ORANGE = '#ffffff'; // Va provoquer une erreur
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">COULEUR_ORANGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#ffaa00&#39;</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nx">COULEUR_ORANGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#ffffff&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Va provoquer une erreur</span>
+</span></code></pre></div>
 <h3 id="bien-nommer-ses-variables">Bien nommer ses variables</h3>
 <p>Un nom de variable peut être composé de lettre, chiffre et des caractères $ et _. Le premier caractère ne doit pas être un chiffre. Si le nom de la variable comporte plus d'un mot, on va utiliser la notation <em>camelCase</em>, c'est-à-dire le premier mot sera en minuscule mais que les suivants commenceront par une lettre majuscule. Attention, le nom de variable est aussi sensible à la case.</p>
-<pre><code class="language-js">// Exemple de nom en camelCase
-let nomEnCamelCase = 'Hallo!';
-// Les deux variables sont différentes
-let message = 'Message 1';
-let messAge = 'Message 2';
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// Exemple de nom en camelCase</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nomEnCamelCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Hallo!&#39;</span><span class="p">;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1">// Les deux variables sont différentes</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Message 1&#39;</span><span class="p">;</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">messAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Message 2&#39;</span><span class="p">;</span>
+</span></code></pre></div>
 <p>Pour les constantes, la norme veux qu'on mettre le nom tout en majuscule avec les différents mots séparer par un _ quand la valeur est "hardcodé". Sinon on utilise le camelCase comme avec les variables.</p>
-<pre><code class="language-js">// La valeur est ici hardcodé
-const COULEUR_ORANGE = '#ffaa00';
-// On assigne la constant avec le résultat de la fonction calculAge()
-const monAge = calculAge(dateDeNaissance);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">// La valeur est ici hardcodé</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">COULEUR_ORANGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#ffaa00&#39;</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1">// On assigne la constant avec le résultat de la fonction calculAge()</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">monAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">calculAge</span><span class="p">(</span><span class="nx">dateDeNaissance</span><span class="p">);</span>
+</span></code></pre></div>
 <p>En règle générale éviter les noms de variable trop court ou non significatif.</p>
-<pre><code class="language-js">// Le nom ne veut rien dire
-let a = 'Mon titre';
-// C'est beaucoup plus significatif avec ce nom
-let texteTitre = 'Mon titre'
-
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">// Le nom ne veut rien dire</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Mon titre&#39;</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1">// C&#39;est beaucoup plus significatif avec ce nom</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">texteTitre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Mon titre&#39;</span>
+</span></code></pre></div>
 <h3 id="exercice">Exercice</h3>
 <p>En reprenant ce que vous avez fait dans la section <strong>Hello, World</strong>, modifier votre code pour utiliser des variables dans les fonctions alert() et console.log().</p>
 <h2 id="interaction">Interaction</h2>
@@ -2087,45 +2086,45 @@ let texteTitre = 'Mon titre'
 <h3 id="alert">Alert</h3>
 <p>Comme nous l'avons vu plus haut, une façon simple d'afficher un message à l'usager est d'utiliser la commande <strong>alert()</strong>.</p>
 <p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">alert('Mon message');
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Mon message&#39;</span><span class="p">);</span>
+</span></code></pre></div>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-js">alert('Bonjour tout le monde!!');
-
-// Affichera Bonjour Mathieu
-let nom = 'Mathieu';
-alert('Bonjour ' + nom);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Bonjour tout le monde!!&#39;</span><span class="p">);</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1">// Affichera Bonjour Mathieu</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Mathieu&#39;</span><span class="p">;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Bonjour &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nom</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="prompt">Prompt</h3>
 <p>Avec <strong>prompt()</strong> on demande à l'usager de saisir une valeur qu'on assignera à une variable.</p>
 <p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">prompt(&quot;Message à afficher&quot;, &quot;Valeur optionnelle par défaut&quot;);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Message à afficher&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Valeur optionnelle par défaut&quot;</span><span class="p">);</span>
+</span></code></pre></div>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-js">let message = 'Veuillez entrer votre nom';
-// On affiche le message et récupère la valeur dans la variable nom
-let nom = prompt(message);
-// La valeur affiché sera ce qui a été saisie par l'usager
-alert(nom);
-
-// On peut aussi déclarer une valeur par défaut qui sera afficher dans la case de saisie.
-// Ici Mathieu sera inscrit dans la case à l'affichage
-let nomAvecDefaut = prompt(message, 'Mathieu');
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Veuillez entrer votre nom&#39;</span><span class="p">;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1">// On affiche le message et récupère la valeur dans la variable nom</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1">// La valeur affiché sera ce qui a été saisie par l&#39;usager</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="nx">alert</span><span class="p">(</span><span class="nx">nom</span><span class="p">);</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="c1">// On peut aussi déclarer une valeur par défaut qui sera afficher dans la case de saisie.</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="c1">// Ici Mathieu sera inscrit dans la case à l&#39;affichage</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nomAvecDefaut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathieu&#39;</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="confirm">Confirm</h3>
 <p>On peut aussi poser une question à l'usager et récupérer une valeur True ou False avec la commande <strong>confirm()</strong>.</p>
 <p><strong>Syntaxe</strong></p>
-<pre><code class="language-js">confirm(&quot;Texte à afficher&quot;);
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nx">confirm</span><span class="p">(</span><span class="s2">&quot;Texte à afficher&quot;</span><span class="p">);</span>
+</span></code></pre></div>
 <p><strong>Exemple</strong></p>
-<pre><code class="language-js">let resultat = confirm(&quot;Voulez-vous continuer?&quot;);
-// resultat prendra la valeur True ou False selon le choix de l'usager
-if (resultat) {
-    alert('Ok on continue.');
-} else {
-    alert('On arrête déjà.');
-}
-</code></pre>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">resultat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">confirm</span><span class="p">(</span><span class="s2">&quot;Voulez-vous continuer?&quot;</span><span class="p">);</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1">// resultat prendra la valeur True ou False selon le choix de l&#39;usager</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">resultat</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Ok on continue.&#39;</span><span class="p">);</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;On arrête déjà.&#39;</span><span class="p">);</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="exercice_1">Exercice</h3>
 <ul>
 <li>Demander le nom de l'usager et afficher comme résultat le nom saisie suivi de ", bienvenue sur mon site!".</li>

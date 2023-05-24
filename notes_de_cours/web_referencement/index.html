@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     
@@ -123,7 +123,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -133,7 +133,7 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
             
               <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -1800,24 +1800,24 @@
 <p>Les balises suivantes doivent être contenu dans la section head de votre page.</p>
 <h3 id="la-balise-title">La balise title</h3>
 <p>Non la balise title ne sert pas uniquement à afficher un texte dans l'onglet du navigateur. C'est une balise très importante qui va indiquer au moteur de recherche le sujet de votre page. En plus Google utilise le texte de cette balise dans ses résultats de recherche. </p>
-<pre><code class="language-html">&lt;title&gt;L'Épatante patate du Québec&lt;/title&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>L&#39;Épatante patate du Québec<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h3 id="la-balise-meta">La balise meta</h3>
 <p>Elle contient un attribut <strong>name</strong> qui peut prendre plusieurs valeurs et un attribut <strong>content</strong> qui contient le texte descriptif.</p>
 <h4 id="namedescription">name="description"</h4>
 <p>Cette valeur sert à décrire brièvement votre page. Elle est aussi utilisé dans la description de votre site dans les résultats de recherche.</p>
-<pre><code class="language-html">&lt;meta name=&quot;description&quot; content=&quot;Découvrez la patate du Québec, ce légume nutritif qu'on peut cuisiner de multiples façons. Recettes, trucs de cuisson, moyens de conservation, tout y est!&quot;&gt;
-</code></pre>
-<p><img alt="web_referencement_01" src="\assets\images\web_referencement_01.png" /></p>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Découvrez la patate du Québec, ce légume nutritif qu&#39;on peut cuisiner de multiples façons. Recettes, trucs de cuisson, moyens de conservation, tout y est!&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<img alt="web_referencement_01" src="\assets\images\web_referencement_01.png" /></p>
 <h4 id="namerobots">name="robots"</h4>
 <p>Elle va définir la façon dont les moteurs de recherche vont indexer votre page. Par défaut si on ne spécifie pas cette balise les robots vont indexer toute votre page. On peut avec l'attribut <strong>content</strong> modifier et préciser ce comportement. On pourrait par exemple ne pas vouloir que les images de notre page soit indexé et utilisant la valeur <strong>noimageindex</strong>.</p>
-<pre><code class="language-html">&lt;meta name=&quot;robots&quot; content=&quot;noimageindex&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;robots&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;noimageindex&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>Pour plus de détail sur les possibles valeurs : <a href="https://developers.google.com/search/docs/advanced/robots/robots_meta_tag?hl=fr#directives">https://developers.google.com/search/docs/advanced/robots/robots_meta_tag?hl=fr#directives</a></p>
 <h4 id="nameviewport">name="viewport"</h4>
 <p>Définie la zone de la fenêtre du navigateur où votre page sera affichée. Par défault on va utiliser la valeur suivante : </p>
-<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p>où <strong>with</strong> correspond à la largeur de la fenêtre (ici elle sera égale à la taille de l'écran) et <strong>initial-scale</strong> correspond au niveau de zoom lors de l'affichage initiale de la page.</p>
 <p>Pour plus de détail : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag">https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag</a></p>
 <h4 id="meta-og">meta OG</h4>
@@ -1825,20 +1825,20 @@
 <p>voici un petit exemple qui affichera les prévisualisations suivantes sur Facebook et Discord</p>
 <p><img alt="web_referencement_03" src="\assets\images\web_referencement_03.png" />
 <img alt="web_referencement_04" src="\assets\images\web_referencement_04.png" /></p>
-<pre><code class="language-html">&lt;meta property=&quot;og:site_name&quot; content=&quot;Vive les licornes&quot; /&gt;
-&lt;meta property=&quot;og:title&quot; content=&quot;Une page sur les licornes magiques&quot;&gt;
-&lt;meta property=&quot;og:url&quot; content=&quot;https://prof.mathieufrechette.ca/&quot;&gt;
-&lt;meta property=&quot;og:description&quot; content=&quot;Il faut écrire ici un texte intelligent qui décrit votre page&quot; /&gt;
-&lt;meta property=&quot;og:image&quot; content=&quot;/assets/images/cover_social.jpg&quot; /&gt;
-&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:site_name&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Vive les licornes&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:title&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Une page sur les licornes magiques&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:url&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;https://prof.mathieufrechette.ca/&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Il faut écrire ici un texte intelligent qui décrit votre page&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;og:image&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;/assets/images/cover_social.jpg&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;twitter:card&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;summary_large_image&quot;</span> <span class="p">/&gt;</span>
+</span></code></pre></div>
 <h2 id="les-balises-de-titres-h1-h2-etc">Les balises de titres (h1, h2, etc...)</h2>
 <p>L'utilisation de ces balises aide aussi les robots d'indexation à comprendre la structure de votre page et à bien faire leur travail. N'utilisez qu'une seule balise h1 par page et de préférence utilisez des termes précis dans ces balises.</p>
 <h2 id="lattribut-alt-de-la-balise-img">L'attribut alt de la balise img</h2>
 <p>Cet attribut permet au moteur de recherche de connaître le contenu d'une image. Il est préférable d'utiliser un court texte qui décrit l'image. Cette information est aussi utilisée par Google Images.</p>
 <p><img alt="web_referencement_02" src="\assets\images\web_referencement_02.jpg" /></p>
-<pre><code class="language-html">&lt;img src=&quot;assets/images/licorne.jpg&quot; alt=&quot;Licorne qui péte un arc-en-ciel&quot;&gt;
-</code></pre>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;assets/images/licorne.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Licorne qui péte un arc-en-ciel&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 
 
