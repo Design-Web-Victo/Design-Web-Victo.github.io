@@ -8,6 +8,12 @@
     --md-code-hl-color: rgba(255, 140, 0, 0.4);
 }
 
+/* Pour bypasser la couleur du texte en hover sur les cards */
+.nt-card a:hover, 
+.nt-card a:focus {
+    color: #ff8c00 !important;
+}
+
 p {
     text-align: justify;
 }
@@ -27,10 +33,6 @@ p {
     border-left: 1rem solid var(--md-accent-fg-color);
     background-color: rgba(255, 140, 0, 0.4);
     padding: 1px .6rem ;
-}
-
-.emphase {
-    color: red !important;
 }
 
 #mkdocs-content-password {
