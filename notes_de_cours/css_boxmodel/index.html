@@ -504,6 +504,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html_site/" class="md-nav__link">
+        Organisation des fichiers d'un site internet
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1296,6 +1310,48 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex04_enonce/" class="md-nav__link">
+        Exercice 04 - Sélecteur CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex05_enonce/" class="md-nav__link">
+        Exercice 05 - CSS Diner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ex06_enonce/" class="md-nav__link">
+        Exercice 06 - Flexbox
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1399,16 +1455,12 @@
 <p><img align="center" alt="box_model" src="/assets/images/css_boxModel01.png" /></p>
 <h2 id="deux-modeles-de-boites">Deux modèles de boîtes</h2>
 <p>Quand on défini une largeur et une hauteur à notre boîte, c'est dimension sont en fait appliqué à la zone de contenu (content). Si on veut calculer l'espace réel que prendra la boîte, on doit additionner le contenu, le padding et la bordure. Prenons par exemple le code suivant : </p>
-<div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">.</span><span class="nc">maboite</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="n">witdh</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="n">solide</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
-</span></code></pre></div></td></tr></table></div>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.</span><span class="nc">maboite</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">witdh</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="n">solide</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>La dimension réel sera 122px, 100 en largeur + 10 de padding gauche + 10 de padding droite + 1 de bordure gauche + 1 de bordure droite.</p>
 <p>On peut modifier se comportement avec la propriété css <code>box-sizing</code>. En lui donnant la valeur <strong>border-box</strong> au lieu du défaut <strong>content-box</strong> le calcul se fera différamment. La largeur donnée représentera la <u>largeur total</u> de la boite, c'est-à-dire le contenu + le padding + la bordure. Donc si on reprend l'exemple plus haut en modifiant le <code>box-sizing</code> : </p>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">maboite</span><span class="w"> </span><span class="p">{</span>
