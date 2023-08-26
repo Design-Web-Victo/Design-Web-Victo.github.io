@@ -1,0 +1,65 @@
+{% extends "main.html" %} 
+  
+ <!-- Content --> 
+ {% block content %} 
+
+    <!-- Source : https://codepen.io/Navedkhan012/pen/vrWQMY -->
+
+    <style>
+        .page_404 { 
+            padding:40px 0; 
+            background:#fff; 
+            font-family: 'Arvo', serif;
+            text-align: center;
+        }
+
+        .four_zero_four_bg{
+            background-image: url("{{ base_url }}\\assets\\images\\404.gif");
+            height: 400px;
+            background-position: center;
+        }
+    
+        .four_zero_four_bg h1{
+            font-size:80px;
+        }
+    
+        .four_zero_four_bg h3{
+            font-size:80px;
+        }
+                
+        .contant_box_404 { 
+            margin-top:-50px;
+        }
+
+        /* Pour overrider une règle sur toutes les p */
+        #content_404_description { 
+            text-align: center;
+        }
+    </style>
+
+    <section class="page_404">
+        <div class="container">
+            <div class="row">	
+            <div class="col-sm-12 ">
+            <div class="col-sm-10 col-sm-offset-1  text-center">
+            <div class="four_zero_four_bg">
+                <h1 class="text-center ">404</h1>
+            
+            
+            </div>
+            
+            <div class="contant_box_404">
+            <h3 class="h2">
+            Oups, on dirait que vous êtes perdu
+            </h3>
+            
+            <p id="content_404_description">La page que vous cherchez n'est pas accessible!</p>
+            
+        </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+ {% endblock %} 
