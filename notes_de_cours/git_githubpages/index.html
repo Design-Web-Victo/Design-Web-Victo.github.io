@@ -14,7 +14,7 @@
         <link rel="prev" href="../git_basics/">
       
       
-        <link rel="next" href="../ressources/">
+        <link rel="next" href="../git_githubclassroom/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
@@ -1191,6 +1191,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_githubclassroom/" class="md-nav__link">
+        Github Classroom
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1408,6 +1422,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ff_enonce/" class="md-nav__link">
+        Formatif Formel
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1515,7 +1543,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/username/username.github.io
 </span></code></pre></div>
 <h3 id="2-lier-un-projet-existant">2. Lier un projet existant</h3>
-<p>Si votre projet est déjà commencé et qu'un dépôt Git est déjà créé en local (sur votre portable), vous pouvez l'associer avec le dépôt créé sur GitHub. Allez dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnez <strong>git bash here</strong> dans le menu. Dans la console, entrez la commande suivante en remplaçant l'url par celui du dépôt sur GitHub : </p>
+<p>Si votre projet est déjà commencé et qu'un dépôt Git est déjà créé en local (sur votre portable), vous pouvez l'associer avec le dépôt créé sur GitHub, sinon vous devez commencer par initialiser un <a href="\notes_de_cours\git_basics#initialiser-un-depot">dépot</a>. Allez dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnez <strong>git bash here</strong> dans le menu. Dans la console, entrez la commande suivante en remplaçant l'url par celui du dépôt sur GitHub : </p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/username/username.github.io
 </span></code></pre></div>
 <p>Pour valider que le liaison fonctionne, vous pouvez utiliser la commande </p>
@@ -1535,13 +1563,14 @@ Si tout a fonctionné vous allez voir à l'écran l'url du dépôt GitHub</p>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># effectue le commit</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Premiere mise en ligne&quot;</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Copie les fichiers vers le dépôt Github</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>nom_de_la_branche_local
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># main est égale au nom de la branche sur votre portable</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </span></code></pre></div>
 <p>Si vous avez une erreur avec la dernière commande git push, essayer de forcer le push avec la commande suivante </p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-F<span class="w"> </span>origin<span class="w"> </span>nom_de_la_branche_local
 </span></code></pre></div>
 <h2 id="acceder-a-mon-site">Accéder à mon site</h2>
-<p>Pour accéder à la version en ligne de votre site, vous n'avez qu'a utiliser l'url https://LeNomDuDépôt. Dans l'exemple plus haut l'url serait donc https://designweb-a2021.github.io/</p>
+<p>Pour accéder à la version en ligne de votre site, vous n'avez qu'a utiliser l'url <code>https://LeNomDuDépôt</code>. Dans l'exemple plus haut l'url serait donc <code>https://designweb-a2021.github.io/</code></p>
 
 
 

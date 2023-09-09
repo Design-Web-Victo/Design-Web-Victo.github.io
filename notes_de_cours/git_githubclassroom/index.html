@@ -8,16 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js_function/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/git_githubclassroom/">
       
       
+        <link rel="prev" href="../git_githubpages/">
+      
+      
+        <link rel="next" href="../ressources/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
     
     
       
-        <title>Les fonctions en Javascript - Design Web 420-1E6-VI</title>
+        <title>Github Classroom - Design Web 420-1E6-VI</title>
       
     
     
@@ -77,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-fonctions-en-javascript" class="md-skip">
+        <a href="#github-classroom" class="md-skip">
           Aller au contenu
         </a>
       
@@ -112,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les fonctions en Javascript
+              Github Classroom
             
           </span>
         </div>
@@ -232,6 +236,8 @@
         
   
   
+    
+  
 
 
   
@@ -243,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../html_basics/" class="md-tabs__link">
+      <a href="../html_basics/" class="md-tabs__link md-tabs__link--active">
         Notes de cours
       </a>
     </li>
@@ -418,14 +424,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -434,7 +442,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Notes de cours
@@ -1055,14 +1063,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
       
       
       
@@ -1071,7 +1081,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_7">
           <span class="md-nav__icon md-icon"></span>
           Git
@@ -1110,11 +1120,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../git_githubclassroom/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Github Classroom
       </a>
+      
     </li>
   
 
@@ -1377,35 +1397,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#declarer-une-fonction" class="md-nav__link">
-    Déclarer une fonction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lancer-une-fonction" class="md-nav__link">
-    Lancer une fonction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parametres-de-fonction" class="md-nav__link">
-    Paramètres de fonction
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1422,15 +1413,20 @@
   
 
 
-<h1 id="les-fonctions-en-javascript">Les fonctions en Javascript</h1>
-<h2 id="declarer-une-fonction">Déclarer une fonction</h2>
-<p>Pour déclarer une fonction, un utilise la commande <strong>function</strong> suivi du nom de la fonction. Ensuite on peut accepter des paramètres dont on va indiquer le nom entre parenthèse.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">maFonction</span><span class="p">(</span><span class="nx">param1</span><span class="p">,</span><span class="w"> </span><span class="nx">param2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="lancer-une-fonction">Lancer une fonction</h2>
-<h2 id="parametres-de-fonction">Paramètres de fonction</h2>
+<h1 id="github-classroom">Github Classroom</h1>
+<p>Github Classroom est un site qui permet aux enseignants de proposer des travaux (assignments) sous forme de dépôt Github. L'élève accède au travail depuis un lien url et un dépôt est automatiquement créé dans son compte Github. L'enseignant y a aussi accès pour lui permettre d'évaluer le travail.</p>
+<p>Première étape, on accède à Github Classroom depuis un lien url et on se connecte à notre compte Github si ce n'est pas déjà fait</p>
+<p><img alt="image 1" class="center shadow" src="\assets\images\git_classroom_01.png" /></p>
+<p>La première fois que vous allez accéder à la "classe", vous devez associer votre compte Github à votre nom </p>
+<p><img alt="image 2" class="center shadow" src="\assets\images\git_classroom_02.png" /></p>
+<p>Ensuite vous devez accepter le travail en cliquant sur "Accept this assignment"</p>
+<p><img alt="image 3" class="center shadow" src="\assets\images\git_classroom_03.png" /></p>
+<p>Maintenant le dépôt va se créer. Après quelques secondes cliquez sur le bouton rafraichir de votre navigateur.</p>
+<p><img alt="image 4" class="center shadow" src="\assets\images\git_classroom_04.png" /></p>
+<p>Votre dépôt est maintenant prêt. Vous pouvez cliquer sur le lien pour y accéder.</p>
+<p><img alt="image 5" class="center shadow" src="\assets\images\git_classroom_05.png" /></p>
+<p>Il ne vous reste qu'à cloner le dépôt et commencer votre travail.</p>
+<p><img alt="image 6" class="center shadow" src="\assets\images\git_classroom_06.png" /></p>
 
 
 

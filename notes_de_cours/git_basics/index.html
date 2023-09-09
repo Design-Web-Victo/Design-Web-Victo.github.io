@@ -1169,6 +1169,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pousser-le-commit-vers-un-depot-distant-optionnel" class="md-nav__link">
+    Pousser le commit vers un dépôt distant (Optionnel)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume-des-commandes-principales" class="md-nav__link">
+    Résumé des commandes principales
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1186,6 +1200,20 @@
     <li class="md-nav__item">
       <a href="../git_githubpages/" class="md-nav__link">
         Hébergement d'un site statique avec Github Pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_githubclassroom/" class="md-nav__link">
+        Github Classroom
       </a>
     </li>
   
@@ -1409,6 +1437,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercices/ff_enonce/" class="md-nav__link">
+        Formatif Formel
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1483,6 +1525,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pousser-le-commit-vers-un-depot-distant-optionnel" class="md-nav__link">
+    Pousser le commit vers un dépôt distant (Optionnel)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resume-des-commandes-principales" class="md-nav__link">
+    Résumé des commandes principales
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1539,6 +1595,20 @@ On peut utiliser le point au lieu des noms de fichiers pour ajouter tout les fic
 <h2 id="creer-un-commit">Créer un commit</h2>
 <p>Pour finaliser et officialiser les changements aux fichiers modifiés, on va créer un "commit" avec la commande git commit. Il est très important d'ajouter un message explicit de la raison du commit.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Message court mais explicite de la raison du commit&quot;</span>
+</span></code></pre></div>
+<h2 id="pousser-le-commit-vers-un-depot-distant-optionnel">Pousser le commit vers un dépôt distant (Optionnel)</h2>
+<p>Si votre dépôt local est associé à un dépôt distant (sur Github par exemple), vous devez aussi faire une dernière commande pour envoyer le commit.</p>
+<p>La première fois que vous lancé la commande, vous devez ajouter l'option -u suivi de "origin" et de "main" qui est le nom de la branche de votre commit.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<p>Les fois suivantes vous pouvez uniquement faire git push</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>push
+</span></code></pre></div>
+<h2 id="resume-des-commandes-principales">Résumé des commandes principales</h2>
+<p>Une fois votre dépôt bien configuré, quand vous avez des changements à appliquer, vous n'avez qu'à faire les trois commandes suivantes : </p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Nom du commit&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>git<span class="w"> </span>push
 </span></code></pre></div>
 
 
