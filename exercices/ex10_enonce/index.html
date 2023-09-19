@@ -1810,6 +1810,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercice 10 - Container Queries
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1819,6 +1830,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recuperez-le-depot-github" class="md-nav__link">
+    Récupérez le dépôt Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparez-les-conteneurs" class="md-nav__link">
+    Préparez les conteneurs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premier-cas" class="md-nav__link">
+    Premier cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deuxieme-cas" class="md-nav__link">
+    Deuxième cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troisieme-cas" class="md-nav__link">
+    Troisième cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    Media Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultat-final-attendu-sur-un-ecran-dont-la-resolution-est-superieure-a-1450-pixels" class="md-nav__link">
+    Résultat final attendu, sur un écran dont la résolution est supérieure à 1450 pixels
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1852,6 +1931,63 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recuperez-le-depot-github" class="md-nav__link">
+    Récupérez le dépôt Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparez-les-conteneurs" class="md-nav__link">
+    Préparez les conteneurs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premier-cas" class="md-nav__link">
+    Premier cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deuxieme-cas" class="md-nav__link">
+    Deuxième cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troisieme-cas" class="md-nav__link">
+    Troisième cas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-queries" class="md-nav__link">
+    Media Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultat-final-attendu-sur-un-ecran-dont-la-resolution-est-superieure-a-1450-pixels" class="md-nav__link">
+    Résultat final attendu, sur un écran dont la résolution est supérieure à 1450 pixels
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1869,7 +2005,46 @@
 
 
 <h1 id="exercice-10-container-queries">Exercice 10 - Container Queries</h1>
-<p>À venir!</p>
+<p>L'objectif de cet exercice est d'ajuster la disposition des cartes selon la taille des conteneurs. </p>
+<p><strong>Vous ne pouvez modifier que le fichier container_queries.css.</strong></p>
+<h2 id="recuperez-le-depot-github">Récupérez le dépôt Github</h2>
+<p>À partir du lien Github Classroom que votre enseignant va vous partager, clonez le dépôt de l'exercice. Faites l'exercice et une fois terminé créez un commit de votre projet et faites un "push" de votre exercice. </p>
+<h2 id="preparez-les-conteneurs">Préparez les conteneurs</h2>
+<p>Ajoutez la propriété <em>container-type: inline-size;</em> sur les conteneurs suivants : </p>
+<ul>
+<li>#contenu_droite</li>
+<li>#contenu_gauche</li>
+<li>#contenu_principal</li>
+<li>.carte</li>
+</ul>
+<h2 id="premier-cas">Premier cas</h2>
+<p>Si la largeur du conteneur est plus supérieure à 450 pixels, augmenter la taille des titres h3 à 2em. </p>
+<h2 id="deuxieme-cas">Deuxième cas</h2>
+<p>Si la largeur du conteneur est entre 400 et 500 pixels (bornes incluses), appliquez les styles suivants.</p>
+<ul>
+<li>Pour le titre (h3)<ul>
+<li>dispostition <em>inline-block</em></li>
+<li>texte aligné à gauche</li>
+<li>largeur de 45 cqmin</li>
+<li>alignement vertical en haut </li>
+</ul>
+</li>
+<li>Pour l'image : <ul>
+<li>largeur de 50 cqmin</li>
+</ul>
+</li>
+</ul>
+<p>Cela aura comme effet d'ajuster l'affichage des cartes dans les sections "Les plus populaires" et "Recommandations". </p>
+<h2 id="troisieme-cas">Troisième cas</h2>
+<p>Si la largeur du conteneur est inférieure à 425 pixels, masquez les paragraphes.<br />
+Cela aura comme effet de retirer les descriptions sur toutes les cartes sauf la principale au centre. </p>
+<h2 id="media-queries">Media Queries</h2>
+<ul>
+<li>Si la largeur de l'écran est inférieure ou égale à 1450 pixels, masquez la section "Les plus populaires".</li>
+<li>Si la largeur de l'écran est inférieure ou égale à 950 pixels, masquez la section "Recommandations".</li>
+</ul>
+<h2 id="resultat-final-attendu-sur-un-ecran-dont-la-resolution-est-superieure-a-1450-pixels">Résultat final attendu, sur un écran dont la résolution est supérieure à 1450 pixels</h2>
+<p><img alt="Ex09_02" class="center shadow" src="\assets\images\ex10_resultatfinal.png" /></p>
 
 
 
