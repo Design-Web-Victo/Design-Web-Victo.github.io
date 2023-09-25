@@ -91,6 +91,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://design-web-victo.github.io/exercices/examen1_revision_a/</loc>
+         <lastmod>2023-09-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://design-web-victo.github.io/exercices/examen1_revision_b/</loc>
+         <lastmod>2023-09-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://design-web-victo.github.io/exercices/ff_enonce/</loc>
          <lastmod>2023-09-25</lastmod>
          <changefreq>daily</changefreq>
