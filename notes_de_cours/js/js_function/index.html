@@ -11,13 +11,17 @@
         <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js/js_function/">
       
       
+        <link rel="prev" href="../js_basics/">
+      
+      
+        <link rel="next" href="../js_debug/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
     
     
       
-        <title>Les fonctions en Javascript - Design Web 420-1E6-VI</title>
+        <title>Les fonctions en JS - Design Web 420-1E6-VI</title>
       
     
     
@@ -112,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les fonctions en Javascript
+              Les fonctions en JS
             
           </span>
         </div>
@@ -232,13 +236,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../ressources/" class="md-tabs__link">
+      <a href="../../ressources/" class="md-tabs__link md-tabs__link--active">
         Notes de cours
       </a>
     </li>
@@ -427,14 +433,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -443,7 +451,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Notes de cours
@@ -828,14 +836,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
       
       
       
@@ -844,7 +854,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Javascript
@@ -860,6 +870,96 @@
       <a href="../js_basics/" class="md-nav__link">
         Les bases
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Les fonctions en JS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Les fonctions en JS
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#declarer-une-fonction" class="md-nav__link">
+    Déclarer une fonction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigner-une-fonction-a-une-variable" class="md-nav__link">
+    Assigner une fonction à une variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-une-fonction" class="md-nav__link">
+    Lancer une fonction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-de-callback" class="md-nav__link">
+    Fonction de callback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-flechee-arrow-function" class="md-nav__link">
+    Fonction fléchée (arrow function)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1692,6 +1792,41 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#assigner-une-fonction-a-une-variable" class="md-nav__link">
+    Assigner une fonction à une variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-une-fonction" class="md-nav__link">
+    Lancer une fonction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-de-callback" class="md-nav__link">
+    Fonction de callback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-flechee-arrow-function" class="md-nav__link">
+    Fonction fléchée (arrow function)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1712,14 +1847,105 @@
 
 <h1 id="les-fonctions-en-javascript">Les fonctions en Javascript</h1>
 <h2 id="declarer-une-fonction">Déclarer une fonction</h2>
-<p>Pour déclarer une fonction, un utilise la commande <strong>function</strong> suivi du nom de la fonction. Ensuite on peut accepter des paramètres dont on va indiquer le nom entre parenthèse.</p>
+<p>Pour déclarer une fonction, un utilise la commande <strong>function</strong> suivi du nom de la fonction. Ensuite on peut accepter des paramètres dont on va indiquer le nom entre parenthèse. Les paramètres n'ont pas besoin d'avoir de type de données. On peut aussi retourner une valeur avec la commande <strong>return</strong>. Dès que la fonction rencontre une commande <strong>return</strong>, le traitement s'arrête et la valeur est retournée.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">maFonction</span><span class="p">(</span><span class="nx">param1</span><span class="p">,</span><span class="w"> </span><span class="nx">param2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">resultat</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Différente syntaxe d'une fonction (fléchée)
-Fonction dans une variable
-Exemple de syntaxe d'une fonction callback</p>
+<h2 id="assigner-une-fonction-a-une-variable">Assigner une fonction à une variable</h2>
+<p>On peut aussi stocker la fonction dans une variable. Dans ce cas la syntaxe reste la même mais on n'est pas tenu d'indiquer de nom de fonction.</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">maFonction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">param1</span><span class="p">,</span><span class="w"> </span><span class="nx">param2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="c1">// ...</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">resultat</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="lancer-une-fonction">Lancer une fonction</h2>
+<p>Pour lancer une fonction on utilise le nom de la fonction avec entre parenthèses les paramètres. S'il n'y a aucun paramètre on doit quand même utiliser des parenthèses vides. Quand la fonction retourne un résultat on peut récupérer directement le résultat dans une variable. On peut aussi se servir de la fonction directement dans une condition, comme par exemple si elle retourne une valeur booléenne.</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1">// Lance la fonction test</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nx">test</span><span class="p">();</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1">// Récupère la valeur de retour de la fonction test</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="kd">let</span><span class="w"> </span><span class="nx">valeurTest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">test</span><span class="p">();</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="c1">// Utilise la valeur de retour de la fonction test dans une condition</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">test</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">    </span><span class="c1">// ...</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="fonction-de-callback">Fonction de <em>callback</em></h2>
+<p>En JavaScript il est très fréquent qu'une fonction demande en paramètre une deuxième fonction. On appelle ce type de fonction une fonction de <em>callback</em>. Un exemple qu'on voit fréquemment est la fonction <code>addEventListener</code> qui prend en paramètre le type d'événement à écouter et la fonction a exécuter quand l'événement est détecté. On va se servir de cette fonction pour illustrer la syntaxe. </p>
+<p>On peut utiliser le nom d'une fonction déclaré dans le script
+<div class="language-javascript highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">message</span><span class="p">(</span><span class="nx">texte</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">texte</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nx">monBouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">(</span><span class="s2">&quot;Bonjour!!&quot;</span><span class="p">));</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>On peut aussi déclarer la fonction directement dans le paramètre. On va privilégier ce cas quand la fonction n'aura pas a être exécutée ailleur dans le code. On peut même omettre le nom de la fonction. On va appeler ce type de fonction une fonction anonyme.
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">monBouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Bonjour!!&quot;</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">});</span>
+</span></code></pre></div></td></tr></table></div></p>
+<h2 id="fonction-flechee-arrow-function">Fonction fléchée (arrow function)</h2>
+<p>Il y a une autre syntaxe plus concise d'écrire une fonction, la fonction fléché. Avec cette syntaxe on doit assigner la fonction à une variable ou l'utliser comme fonction de <em>callback</em>. </p>
+<p>Le principe est simple: </p>
+<ul>
+<li>On enlève la commande <strong>function</strong></li>
+<li>On oublie aussi le nom de la fonction</li>
+<li>Les parenthères des paramètres sont obligatoire, même s'il n'y en a pas.</li>
+<li>Après les parenthèses on va utiliser le symbôle <code>=&gt;</code> </li>
+<li>Des accolades contiendront le code de la fonction.</li>
+</ul>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Bonjour!&quot;</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="p">}</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">somme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre1</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre2</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="hll"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">nombre1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre2</span><span class="p">;</span>
+</span></span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="p">}</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="nx">monBouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">somme</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">2</span><span class="p">));</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="p">});</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></li>
+</ul>
 
 
 
