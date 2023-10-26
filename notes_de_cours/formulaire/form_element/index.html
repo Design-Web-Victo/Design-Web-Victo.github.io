@@ -1288,7 +1288,7 @@
         
   
   <span class="md-ellipsis">
-    Struture d'un formulaire
+    Structure d'un formulaire
   </span>
   
 
@@ -1350,6 +1350,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#lelement-button" class="md-nav__link">
+    L'élément button
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lelement-label" class="md-nav__link">
     L'élément label
   </a>
@@ -1380,6 +1387,13 @@
         <li class="md-nav__item">
   <a href="#lelement-radio" class="md-nav__link">
     L'élément radio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lelement-fieldset" class="md-nav__link">
+    L'élément fieldset
   </a>
   
 </li>
@@ -2321,6 +2335,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#lelement-button" class="md-nav__link">
+    L'élément button
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lelement-label" class="md-nav__link">
     L'élément label
   </a>
@@ -2355,6 +2376,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lelement-fieldset" class="md-nav__link">
+    L'élément fieldset
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2374,9 +2402,16 @@
 
 
 <h1 id="les-elements-de-saisies-de-donnees">Les éléments de saisies de données</h1>
-<p>Il existe plusieurs éléments HTML qu'on peut utiliser pour saisir les données de l'utilisateurs : input, textarea, select, etc... L'important à se rappeler est que peut importe l'élément utilisé, on doit <u>toujours lui définir l'attribut <strong>name</strong></u> avec une valeur unique au formulaire, sinon les informations ne seront pas transmissent au serveur.</p>
+<p>Il existe plusieurs éléments HTML qu'on peut utiliser pour saisir les données de l'utilisateur : input, textarea, select, etc... L'important à se rappeler est que peut importe l'élément utilisé, on doit <mark>toujours lui définir l'attribut <strong>name</strong></mark> avec une valeur unique au formulaire, sinon les informations ne seront pas transmissent au serveur.</p>
+<h2 id="lelement-button">L'élément button</h2>
+<p>Pour permettre à l'usager de soumettre son formulaire, l'usage le plus courant est d'ajouter un bouton à la toute fin de notre formulaire, juste avant la fermeture de la balise form. Le bouton a un attribut <strong>type</strong> qu'on va utiliser pour définir son comportement dans le formulaire : </p>
+<ul>
+<li><code>submit</code> : En cliquant sur un bouton avec le type submit, les données du formulaire seront envoyées vers la page définie par l'attribut action de l'élément form.</li>
+<li><code>reset</code> : Tous les contrôles du formulaire seront réinitialisés à leur valeur par défaut.</li>
+<li><code>button</code> : À utiliser pour créer un bouton régulier.</li>
+</ul>
 <h2 id="lelement-label">L'élément label</h2>
-<p>L'élément label n'est pas essentiel mais c'est une bonne pratique de toujours en associé un à chacun de nos éléments de saisie. </p>
+<p>L'élément label n'est pas essentiel mais c'est une bonne pratique de toujours l'associé à chacun de nos éléments de saisie. </p>
 <ul>
 <li>Le label est utilisé par les options d'accessibilité comme les lecteurs d'écran.</li>
 <li>En cliquant sur le label, on donne le focus à l'élément qui lui est lié.</li>
@@ -2388,7 +2423,7 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom_usager&quot;</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <h2 id="lelement-input">L'élément input</h2>
-<p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a>. Parmi les plus utilisés on retrouve le type <strong>text</strong>, <strong>password</strong>, <strong>date</strong>, <strong>email</strong></p>
+<p>L'élément input est le plus utilisé dans la création de formulaire, il peut prendre plusieurs formes grâce à son attribut <strong>type</strong>. Voici un lien qui dresse une liste complète des différentes valeurs que peut prendre type : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a>. Parmi les plus utilisés on retrouve le type <strong>text</strong>, <strong>password</strong>, <strong>date</strong>, <strong>email</strong></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;text-eleve&quot;</span><span class="p">&gt;</span>Nom de l&#39;élève<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;text-eleve&quot;</span><span class="p">&gt;</span>
 </span></code></pre></div>
@@ -2435,6 +2470,21 @@
 </span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>      <span class="na">value</span><span class="o">=</span><span class="s">&quot;choix3&quot;</span> 
 </span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>      <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span><span class="p">&gt;</span>
 </span></code></pre></div>
+<h2 id="lelement-fieldset">L'élément fieldset</h2>
+<p>Avec cet élément on peut regrouper ensemble plusieurs autres éléments. Une bordure sera affiché par défaut autour de ces éléments On peut aussi ajouter la balise <strong>legend</strong> à l'intérieur d'un <strong>fieldset</strong> pour donner un titre à notre "regroupement".</p>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Information de l&#39;élève<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></code></pre></div>
+Résultat</p>
+<p><img alt="form_structure_01" class="center shadow" src="../../../assets/images/form_structure_01.png" /></p>
 
 
 

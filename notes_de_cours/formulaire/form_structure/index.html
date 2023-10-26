@@ -22,7 +22,7 @@
     
     
       
-        <title>Struture d'un formulaire - Design Web 420-1E6-VI</title>
+        <title>Structure d'un formulaire - Design Web 420-1E6-VI</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Struture d'un formulaire
+              Structure d'un formulaire
             
           </span>
         </div>
@@ -1297,7 +1297,7 @@
           
   
   <span class="md-ellipsis">
-    Struture d'un formulaire
+    Structure d'un formulaire
   </span>
   
 
@@ -1308,7 +1308,7 @@
         
   
   <span class="md-ellipsis">
-    Struture d'un formulaire
+    Structure d'un formulaire
   </span>
   
 
@@ -1373,20 +1373,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lelement-button" class="md-nav__link">
-    L'élément button
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lelement-fieldset" class="md-nav__link">
-    L'élément fieldset
-  </a>
   
 </li>
       
@@ -2393,20 +2379,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#lelement-button" class="md-nav__link">
-    L'élément button
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lelement-fieldset" class="md-nav__link">
-    L'élément fieldset
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2426,20 +2398,21 @@
 
 
 <h1 id="structure-dun-formulaire">Structure d'un formulaire</h1>
-<p>Les formulaires HTML sont utilies pour échanger de l'informations entre les usagers et le site web qu'ils visitent. Ils sont composés de plusieurs éléments html (input, select) qui permettent à l'utilisateur de saisir l'information à envoyer. Elle sera ensuite transmise vers un serveur web où elle sera traitée.</p>
+<p>Les formulaires HTML sont utilisés pour échanger de l'informations entre les usagers et le site web qu'ils visitent. Ils sont composés de plusieurs éléments html (input, select) qui permettent à l'utilisateur de saisir l'information à envoyer. Elle sera ensuite transmise vers un serveur web où elle sera traitée.</p>
 <h2 id="lelement-form">L'élément form</h2>
-<p>Élément essentiel à tout formulaire, la balise form est en quelque sorte le conteneur de notre formulaire. Tous ce qui si retrouve sera traité comme faisant partie du formulaire. Elle a deux attributs spécifiques qui dictent la façon dont le formulaire va envoyer l'information au serveur : action et method.</p>
+<p>Élément essentiel à tout formulaire, la balise form est en quelque sorte le conteneur de notre formulaire. Tous ce qui si retrouve sera traité comme faisant partie du formulaire. Elle a deux attributs spécifiques qui dictent la façon dont le formulaire va envoyer l'information au serveur : <strong>action</strong> et <strong>method</strong>.</p>
 <p><strong>Exemple</strong></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;formulaire_contact&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/traitement.php&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="cm">&lt;!-- Contenu de mon formulaire --&gt;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <h3 id="action">action</h3>
-<p>L'attribut action prend comme valeur une URL vers laquelle les données seront acheminées. </p>
+<p>L'attribut action prend comme valeur une URL vers laquelle les données seront acheminées. On peut aussi donner un chemin relatif vers un fichier qui traitera les données du formulaire sur le serveur.</p>
 <h3 id="method">method</h3>
 <p>L'attribut method défini de quelle façon les données seront acheminées. Les valeurs possibles sont GET ou POST. </p>
 <h4 id="get">GET</h4>
-<p>Les données sont incluses dans l'URL défini par l'attribut action. l'URL se termine par un symbole ? suivi d'une série de paire nom/valeur pour chaque contrôle, le tout séparé par le symbole &amp;. Étant donné que les informations envoyées au serveur sont lisible directement dans l'url de la requête, cette méthode n'est pas très sécuritaire au niveau de la protection des données et devraient être utilisé dans certain cas précis, comme par exemple une recherche de produits dans un magasin en ligne. Voici un exemple de requête d'une recherche Google où on peut très bien le voir : <code>https://www.google.com/search?client=firefox-b-d&amp;q=photo+de+petits+chats</code>. La requête est envoyé à l'adresse www.google.com/search avec les informations suivantes : </p>
+<p>Les données sont incluses dans l'URL défini par l'attribut action. L'URL se termine par un symbole ? suivi d'une série de paire "nom/valeur" pour chaque contrôle, le tout séparé par le symbole &amp;. Attention, les informations envoyées au serveur sont lisibles directement dans l'url de la requête. Cette méthode n'est donc pas très sécuritaire au niveau de la protection des données et devraient être utilisé dans certain cas précis, comme par exemple une recherche de produits dans un magasin en ligne. </p>
+<p>Voici un exemple de requête d'une recherche Google où on peut très bien le voir : <code>https://www.google.com/search?client=firefox-b-d&amp;q=photo+de+petits+chats</code>. La requête est envoyé à l'adresse www.google.com/search avec les informations suivantes : </p>
 <table>
 <thead>
 <tr>
@@ -2462,30 +2435,7 @@
 </tbody>
 </table>
 <h4 id="post">POST</h4>
-<p>Dans une requête post les données sont incluses dans le corps de la requête. Les données ne sont pas explicitement vu par l'usager et ça nous permet d'envoyer une plus grande quantité d'informations. C'est cette méthode que nous allons privilégiée.</p>
-<h2 id="lelement-button">L'élément button</h2>
-<p>Pour permettre à l'usager de soumettre son formulaire, l'usage le plus courant est d'ajouter un bouton à la toute fin de notre formulaire, juste avant la fermeture de la balise form. Le bouton a un attribut <strong>type</strong> qu'on va utiliser pour définir son comportement dans le formulaire : </p>
-<ul>
-<li>submit : En cliquant sur un bouton avec le type submit, les données du formulaire seront envoyées vers la page définie par l'attribut action de l'élément form.</li>
-<li>reset : Tous les contrôles du formulaire seront réinitialisés à leur valeur par défaut.</li>
-<li>button : À utiliser pour créer un bouton régulier.</li>
-</ul>
-<p>Maintenant qu'on a un élément form et un bouton pour soumettre notre formulaire, on va ajouter les différents éléments de saisies d'informations.</p>
-<h2 id="lelement-fieldset">L'élément fieldset</h2>
-<p>Avec cet élément on peut regrouper ensemble plusieurs autres éléments. Une bordure sera affiché par défaut autour de ces éléments On peut aussi ajouter la balise <strong>legend</strong> à l'intérieur d'un <strong>fieldset</strong> pour donner un titre à notre "regroupement".</p>
-<p><div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Information de l&#39;élève<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom-eleve&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;prenom-eleve&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></code></pre></div>
-Résultat</p>
-<p><img alt="form_structure_01" src="\assets\images\form_structure_01.png" /></p>
+<p>Dans une requête post les données sont incluses dans le corps de la requête. Les données ne sont pas explicitement vu par l'usager et ça nous permet d'envoyer une plus grande quantité d'informations. <mark>C'est cette méthode que nous allons privilégiée</mark>.</p>
 
 
 

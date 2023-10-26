@@ -1284,7 +1284,7 @@
         
   
   <span class="md-ellipsis">
-    Struture d'un formulaire
+    Structure d'un formulaire
   </span>
   
 
@@ -2415,7 +2415,7 @@
 <h2 id="pseudo-code">Pseudo-code</h2>
 <h3 id="html">HTML</h3>
 <ul>
-<li>Créer une div pour chaque case et lui donner un attribut personnalisé avec la valeur du code de la touche à appuyé. Ex 65 pour la touche a. Pour connaître facilement le code des touches : <a href="https://www.toptal.com/developers/keycode/for/a">https://www.toptal.com/developers/keycode/for/a</a></li>
+<li>Créer une div pour chaque case et lui donner un attribut personnalisé avec la valeur du code de la touche à appuyé. Ex 65 pour la touche a. Pour connaître facilement le code des touches : <a href="https://www.toptal.com/developers/keycode/for/a" target="_blank">https://www.toptal.com/developers/keycode/for/a</a></li>
 <li>Pour chaque case, ajoutez aussi une balise audio avec le même attribut personnalisé ainsi que le fichier son.</li>
 </ul>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">data-key</span><span class="o">=</span><span class="s">&quot;65&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;key&quot;</span><span class="p">&gt;</span>
@@ -2431,7 +2431,7 @@
 <h3 id="css">CSS</h3>
 <ul>
 <li>Faire la disposition et la mise en forme des cases</li>
-<li>Créer une classe qui va faire l'animation de la case. (Un peu comme on le faisait avec :hover mais ça va être dans un classe à part)</li>
+<li>Créer une classe qui va faire l'animation de la case. (Un peu comme on le faisait avec :hover mais ça va être dans une classe à part)</li>
 </ul>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">key</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c">/* ... */</span>
@@ -2502,7 +2502,8 @@
 </span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nx">keys</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">boutonJoue</span><span class="p">))</span>
 </span></code></pre></div>
 <ul>
-<li>Récupérer le code de la touche qui a été pressé
+<li>Récupérer le code de la touche qui a été pressé</li>
+</ul>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">afficheTouchePress</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="c1">// La variable e est un objet qui réprésente l&#39;événement et qui</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="c1">// contient plusieur propriété dont keyCode dans le cas présent.</span>
@@ -2510,8 +2511,7 @@
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
 </span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keydown&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">afficheTouchePress</span><span class="p">);</span>
-</span></code></pre></div></li>
-</ul>
+</span></code></pre></div>
 
 
 
