@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://design-web-victo.github.io/exercices/ex18_enonce/">
       
       
+        <link rel="prev" href="../ex17b_enonce/">
+      
+      
+        <link rel="next" href="../examen1_revision_a/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -284,10 +288,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../ex01_enonce/" class="md-tabs__link">
           
   
@@ -1670,17 +1676,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -1693,7 +1701,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Exercices
@@ -2100,6 +2108,100 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exercice 18 - Formulaire de réinitialisation de mot de passe
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 18 - Formulaire de réinitialisation de mot de passe
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linterface" class="md-nav__link">
+    L'interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-validation" class="md-nav__link">
+    La validation
+  </a>
+  
+    <nav class="md-nav" aria-label="La validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-nouveau-mot-de-passe" class="md-nav__link">
+    Le nouveau mot de passe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-bouton-reinitialiser" class="md-nav__link">
+    Le bouton Réinitialiser
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2316,6 +2418,11 @@
 </ul>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">caractereSpecial_regex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[!@#$%^&amp;*(),.?&quot;:{}|&lt;&gt;]/</span><span class="p">;</span>
 </span></code></pre></div>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>Vous pouvez facilement tester si un texte correspond aux exigences d'une expression régulière avec la fonction <code>test()</code>. La fonction prend le texte en paramètre et retourne True ou False selon le résultat.
+Pour plus de détail : <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test</a></p>
+</div>
 <p>Pour les trois validations, affichez l'icône correspondant et la bonne couleur si c'est vrai ou faux.</p>
 <p>Vous devez aussi afficher une barre de couleur selon la force du mot de passe. Pour connaître sa force, je vous ai fourni dans le template de base une librairie appelée <strong>zxcvbn</strong>. Vous pouvez l'utiliser comme ceci dans votre script JS : </p>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
@@ -2325,14 +2432,21 @@
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultatForce</span><span class="p">.</span><span class="nx">score</span><span class="p">);</span><span class="w"> </span>
 </span></code></pre></div></td></tr></table></div>
 <p>La barre va être divisée en 5 sections. Le nombre de sections colorées correspond au score +1 (1 section colorée pour un score de 0 et toutes les sections pour un score de 4). La couleur des sections va aussi changer selon le score : </p>
-<ul>
-<li>&lt; 2 : rouge</li>
-<li>== 2 : jaune</li>
-<li>&gt; 2 : vert</li>
-</ul>
-<p><img alt="ex18_03" class="center shadow" src="../../assets/images/ex18_03.png" /></p>
-<p><img alt="ex18_04" class="center shadow" src="../../assets/images/ex18_04.png" /></p>
-<p><img alt="ex18_05" class="center shadow" src="../../assets/images/ex18_05.png" /></p>
+<figure>
+<p><img alt="ex18_03" class="center shadow" src="../../assets/images/ex18_03.png" />
+  </p>
+<figcaption>&lt; 2 : rouge</figcaption>
+</figure>
+<figure>
+<p><img alt="ex18_04" class="center shadow" src="../../assets/images/ex18_04.png" />
+  </p>
+<figcaption>== 2 : jaune</figcaption>
+</figure>
+<figure>
+<p><img alt="ex18_05" class="center shadow" src="../../assets/images/ex18_05.png" />
+  </p>
+<figcaption>\&gt; 2 : vert</figcaption>
+</figure>
 <p>Pour la barre à vous de voir comment la faire. J'ai utilisé 5 <strong>div</strong> côte à côte disposées en Flex avec une hauteur et une largeur fixe. Je change ensuite la couleur de fond des <strong>divs</strong> qui doivent être affichées.</p>
 <h3 id="le-bouton-reinitialiser">Le bouton Réinitialiser</h3>
 <p>Quand on clique sur le bouton "Réinitialiser", on doit empêcher l'envoi du formulaire si les validations ne sont pas respectées. En plus des trois qu'on fait lors de la modification du texte, on doit aussi avoir un mot de passe avec un score de force de 3 ou 4. </p>
