@@ -2098,6 +2098,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../exercices/ex02b_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 02b - Balises imbriquées
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../exercices/ex03_enonce/" class="md-nav__link">
         
   
@@ -3418,7 +3439,7 @@
 <h1 id="css">CSS</h1>
 <p>Le CSS (Cascading Style Sheet ou en français feuilles de style en cascade) est un langage utilisé principalement pour faire la mise en forme de pages HTML. Ses capacités ont évolué depuis son lancement et on peut aujourd'hui s'en servir à d'autre fin, par exemple animer des éléments de nos pages (ce qui était réservé au Javascript auparavant).</p>
 <h2 id="syntaxe">Syntaxe</h2>
-<p>Une règle CSS consiste en un sélecteur et un bloc de déclaration formé d'une série de déclarations "propriété - valeur". Le bloc de déclaration début par une accolade <mark class="critic">{</mark> et est suivi par une série de déclarations séparées par un point-virgule. Elle se termine par la fermeture de l'accolade. </p>
+<p>Une règle CSS consiste en un sélecteur et un bloc de déclaration formé d'une série de déclarations "propriété : valeur". Le bloc de déclaration début par une accolade <mark class="critic">{</mark> et est suivi par une série de déclarations séparées par un point-virgule. Elle se termine par la fermeture de l'accolade. </p>
 <p>Prenons l'exemple suivant </p>
 <p><div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
@@ -3574,7 +3595,7 @@ Dans cet exemple, toutes les balises h1, h2 ainsi que celle ayant en attribut la
 <li>La spécificité du sélecteur CSS</li>
 </ol>
 <h3 id="le-mot-cle-important">Le mot-clé !important</h3>
-<p>Une règle se terminant par le mot-clé !important aura toujours la plus haute priorité. S'il y a un conflit avec de multiples !important, alors on va utiliser ensuite la spécificité pour déterminer la priorité.</p>
+<p>Une règle se terminant par le mot-clé !important aura toujours la plus haute priorité. S'il y a un conflit avec de multiples <code>!important</code>, alors on va utiliser ensuite la spécificité pour déterminer la priorité.</p>
 <p><div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">div</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
@@ -3588,8 +3609,8 @@ Dans cet exemple, toutes les balises h1, h2 ainsi que celle ayant en attribut la
 </span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    Voici mon texte.
 </span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
-Dans l'exemple suivant, en temps normal la règle avec le sélecteur .textePlusGros aurait préséance mais c'est la règle avec le sélecteur div qui sera appliquée à cause de l'utilisation de !important.</p>
-<p>L'utilisation du mot-clé !important devrait être éviter le plus possible, c'est un mauvaise pratique. Ça "brise" les principes de base du CSS et rend le débogage plus difficile. </p>
+Dans l'exemple suivant, en temps normal la règle avec le sélecteur <code>.textePlusGros</code> aurait préséance mais c'est la règle avec le sélecteur div qui sera appliquée à cause de l'utilisation de <code>!important</code>.</p>
+<p>L'utilisation du mot-clé <code>!important</code> devrait être éviter le plus possible, c'est un mauvaise pratique. Ça "brise" les principes de base du CSS et rend le débogage plus difficile. </p>
 <h3 id="la-specificite-du-selecteur-css">La spécificité du sélecteur CSS</h3>
 <p>Plus le sélecteur est précis, plus la priorité sera élevée. En partant de la priorité la moins élevée : </p>
 <table>
