@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/css/css_unitesmesure/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/css/css_nesting/">
       
       
-        <link rel="prev" href="../css_font/">
-      
-      
-        <link rel="next" href="../css_flexbox/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Unités de mesure - Design Web 420-1E6-VI</title>
+        <title>Imbrication CSS - Design Web 420-1E6-VI</title>
       
     
     
@@ -82,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unites-de-mesure" class="md-skip">
+        <a href="#imbrication-css" class="md-skip">
           Aller au contenu
         </a>
       
@@ -118,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unités de mesure
+              Imbrication CSS
             
           </span>
         </div>
@@ -252,12 +248,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../ressources/" class="md-tabs__link">
           
   
@@ -503,28 +497,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -535,7 +524,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Notes de cours
@@ -697,8 +686,6 @@
                 
   
   
-    
-  
   
   
     
@@ -708,11 +695,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -726,7 +713,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             CSS
@@ -800,30 +787,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Unités de mesure
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../css_unitesmesure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,86 +799,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#type-dunites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Type d'unités
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Type d'unités">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unites-absolues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités absolues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-relatives-au-texte" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités relatives au texte
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-relatives-au-viewport" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités relatives au viewport
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-en-pourcentage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités en pourcentage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sources:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3263,60 +3150,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#type-dunites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Type d'unités
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Type d'unités">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unites-absolues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités absolues
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-relatives-au-texte" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités relatives au texte
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-relatives-au-viewport" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités relatives au viewport
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unites-en-pourcentage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unités en pourcentage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#sources" class="md-nav__link">
     <span class="md-ellipsis">
-      Sources:
+      Sources
     </span>
   </a>
   
@@ -3340,66 +3176,11 @@
   
 
 
-<h1 id="unites-de-mesure">Unités de mesure</h1>
-<p>Dans une page Web, de nombreux éléments cohabitent ensemble : du texte, des sections, des images, des couleurs, etc.   </p>
-<p>Pour assurer une disposition intéressante, il faut apprendre à définir les dimensions de ces éléments. Pour ce faire, il faut choisir une propriété, une valeur et une unité de mesure. </p>
-<p>Il existe plusieurs types d'unités et chacune répond à un besoin très précis. En début de formation, nous sommes conscients qu'il peut être difficile de choisir la bonne unité, et c'est pour cette raison que nous accampagnons dans cet apprentissage.  </p>
-<p>Voici les grands principes pour faire un choix judicieux. </p>
-<h2 id="type-dunites">Type d'unités</h2>
+<h1 id="imbrication-css">Imbrication CSS</h1>
+<h2 id="sources">Sources</h2>
 <ul>
-<li>Unités absolues : elles sont utilisées pour définir une taille fixe, qui ne varie pas en fonction des autres éléments de la page. </li>
-<li>Unités relatives au texte: elles sont utilisées pour définir la taille d'un élément en fonction de la taille d'un élément textuel.</li>
-<li>Unités relatives au viewport : elles sont utilisées pour permettre aux éléments de s'adapter à la taille de la fenêtre du navigateur (viewport).</li>
-<li>Unités en pourcentage : elles sont utilisées lorsqu'on l'on désire adapter le contenu à la taille de son élément parent. </li>
-</ul>
-<h3 id="unites-absolues">Unités absolues</h3>
-<p>Les valeurs des unités doivent être entières.</p>
-<ul>
-<li><strong>px</strong> : Pixels, l'unité absolue la plus utilisée </li>
-<li><strong>in</strong> : Pouces</li>
-<li><strong>cm</strong> : Centimètres</li>
-<li><strong>mm</strong> : Millimetres</li>
-<li><strong>pc</strong> : Picas</li>
-<li><strong>pt</strong> : Points</li>
-</ul>
-<div class="language-css highlight"><span class="filename">Exemple</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.</span><span class="nc">bouton</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="unites-relatives-au-texte">Unités relatives au texte</h3>
-<p>Les valeurs des unités peuvent être décimales</p>
-<ul>
-<li><strong>em</strong> : Relatif à la taille de la police du parent immédiat</li>
-<li><strong>rem</strong> : Relatif à la taille de la police de l'élément <code>HTML</code>, donc de la taille de la page.</li>
-</ul>
-<div class="language-css highlight"><span class="filename">Exemple</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">titre</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="unites-relatives-au-viewport">Unités relatives au viewport</h3>
-<ul>
-<li><strong>vh</strong> : Hauteur de la zone d'affichage</li>
-<li><strong>vw</strong> : Largeur de la zone d'affichage</li>
-</ul>
-<div class="language-css highlight"><span class="filename">Exemple</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="nc">boite</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="unites-en-pourcentage">Unités en pourcentage</h3>
-<ul>
-<li>%</li>
-</ul>
-<div class="language-css highlight"><span class="filename">Exemple</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">.</span><span class="nc">boite</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="sources">Sources:</h2>
-<ul>
-<li><a href="https://www.w3.org/Style/Examples/007/units.fr.html" target="_blank">https://www.w3.org/Style/Examples/007/units.fr.html</a></li>
-<li><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units</a></li>
-<li><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">https://graphiste.com/blog/unites-mesure-css/</a></li>
-<li><a href="https://www.codeur.com/tuto/css/unite-de-mesure-taille-px-em-rem/" target="_blank">https://www.codeur.com/tuto/css/unite-de-mesure-taille-px-em-rem/</a></li>
+<li>CSS nesting module. W3C. (2023, February 14). <a href="https://www.w3.org/TR/css-nesting-1/">https://www.w3.org/TR/css-nesting-1/</a></li>
+<li>Imbrication CSS. Chrome for Developers. (2023, March 8). <a href="https://developer.chrome.com/docs/css-ui/css-nesting?hl=fr">https://developer.chrome.com/docs/css-ui/css-nesting?hl=fr</a></li>
 </ul>
 
 
