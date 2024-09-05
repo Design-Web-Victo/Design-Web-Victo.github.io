@@ -3435,7 +3435,7 @@
 <p>Un chose à faire attention, Bootstrap "reset" certaines propriétés des éléments html, comme par exemple la marge de la balise <strong>body</strong> qui est changé à 0px au lieu de 8px. Il est toujours préférable d'ajouter les liens vers Bootstrap <u>AVANT</u> les autres fichiers css. </p>
 <h2 id="utilisation">Utilisation</h2>
 <p>Comme on disait plus haut, l'utilisation de Bootstrap se fait à l'aide de classes prédéfinis qu'on ajoute à l'élément qu'on veut "stylisé". Prenons par exemple les deux boutons suivants :</p>
-<p><img alt="bootstrap" src="\assets\images\bootstrap.png" /> </p>
+<p><img alt="bootstrap" src="../../../assets/images/bootstrap.png" /> </p>
 <p>Le rendu est similaire à part pour la couleur. Voici le code html et css que j'ai utilisé pour les créés : </p>
 <p><strong>HTLM</strong></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bouton-css&quot;</span><span class="p">&gt;</span>Bouton CSS<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>  
@@ -3463,7 +3463,7 @@
 <h2 id="les-breakpoints">Les "breakpoints"</h2>
 <p>Bootstrap a été développé avec comme objectif de nous donner une méthode facile de créer des sites "responsive". Les breakpoints sont des valeurs prédéfinies qui représentent des largeurs en pixels. Vous vous rappeler quand on faisait des media query, on utilisait des dimensions en pixels avec min-width. C'est un peu le même principe avec les breakpoints. On peux souvent les ajouter à une classe bootstrap pour la rafiner.</p>
 <p><strong>Liste des breakpoints</strong></p>
-<p><img alt="bootstrap02" src="\assets\images\bootstrap02.png" /></p>
+<p><img alt="bootstrap02" src="../../../assets/images/bootstrap02.png" /></p>
 <h2 id="les-conteneurs-container">Les conteneurs (container)</h2>
 <p>Un peu comme on l'a vu avec flexbox et grid, les conteneurs sont l'élément de base à utiliser quand on fait de la disposition avec Bootstrap. Il y a trois différent type de conteneur, représenté par les classes suivantes : </p>
 <ul>
@@ -3501,7 +3501,7 @@
 </span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p><img alt="bootstrap04" src="\assets\images\bootstrap04.png" /></p>
+<p><img alt="bootstrap04" src="../../../assets/images/bootstrap04.png" /></p>
 <p>Par défaut les colonnes se partageront équitablement l'espace disponible. On peut aussi définir des dimensions pour certaine ou toutes les colonnes. Chaque ligne est divisé en 12 parties égales. On peut attribuer à une colonne une valeur de 1 à 12 déterminant ainsi la proportion de l'espace que cette colonne va prendre, une valeur de 6 équivaut à 50% de la dimension totale par exemple. Si la somme de ces valeurs dépassent 12, les colonnes excédentaire vont déborder sur une  autre ligne.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container text-center&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
@@ -3515,7 +3515,7 @@
 </span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p><img alt="bootstrap03" src="\assets\images\bootstrap03.png" /></p>
+<p><img alt="bootstrap03" src="../../../assets/images/bootstrap03.png" /></p>
 <p>On peut aussi spécifier un breakpoint à la classe ainsi qu'une valeur pour modifier les colonnes selon la dimension de l'écran.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container text-center&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
@@ -3530,8 +3530,8 @@
 </span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>ici tant que la dimension de l'écran ne dépassera pas 768px (le breakpoint md) les colonnes seront égales entre elles. Ensuite les proportions seront celle après le breakpoint.</p>
-<p><img alt="bootstrap05" src="\assets\images\bootstrap05.png" /></p>
-<p><img alt="bootstrap06" src="\assets\images\bootstrap06.png" /></p>
+<p><img alt="bootstrap05" src="../../../assets/images/bootstrap05.png" /></p>
+<p><img alt="bootstrap06" src="../../../assets/images/bootstrap06.png" /></p>
 <p>Une dernière chose, j'ai dis plus tôt que le système de grille utilisait Flexbox. On peut donc se servir de ce qu'on a appris et l'appliquer ici à l'aide de classes Bootstrap.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container text-center&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
@@ -3547,7 +3547,7 @@
 </span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p><img alt="bootstrap08" src="\assets\images\bootstrap08.png" /></p>
+<p><img alt="bootstrap08" src="../../../assets/images/bootstrap08.png" /></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container text-center&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row justify-content-center&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-4&quot;</span><span class="p">&gt;</span>Ligne 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -3562,7 +3562,7 @@
 </span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<p><img alt="bootstrap07" src="\assets\images\bootstrap07.png" /></p>
+<p><img alt="bootstrap07" src="../../../assets/images/bootstrap07.png" /></p>
 <p>Voilà la base du système de grille de Bootstrap, pour aller plus loin consultez la documentation officielle ici : <a href="https://getbootstrap.com/docs/5.2/layout/grid/">https://getbootstrap.com/docs/5.2/layout/grid/</a></p>
 <h2 id="sources-et-references">Sources et références</h2>
 <ul>

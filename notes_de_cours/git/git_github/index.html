@@ -3351,18 +3351,18 @@
 <li>GitHub est une plateforme web intégrant les fonctionnalités Git permettant de collaborer sur des projets de développement.</li>
 </ul>
 <h2 id="publier-un-projet-sur-la-plateforme-github">Publier un projet sur la plateforme GitHub</h2>
-<p>La première étape consiste à se créer un dépôt sur GitHub. Le nom du dépôt est à votre discrétion, mais doit être différent des autres dépôts qui sont associés à votre utilisateur ou une organisation. (<strong>Attention</strong>, si vous créez un dépot pour héberger un site web, vous devez suivre la nomenclature décrite dans les notes de cours portant sur <a href="\notes_de_cours\git_githubpages">GitHub Pages</a>)</p>
+<p>La première étape consiste à se créer un dépôt sur GitHub. Le nom du dépôt est à votre discrétion, mais doit être différent des autres dépôts qui sont associés à votre utilisateur ou une organisation. (<strong>Attention</strong>, si vous créez un dépot pour héberger un site web, vous devez suivre la nomenclature décrite dans les notes de cours portant sur <a href="../git_githubpages/">GitHub Pages</a>)</p>
 <p>Pour créer un nouveau dépôt, allez sur GitHub et cliquez sur l'onglet Repositories.  Cliquez ensuite sur le bouton  <strong>New</strong> qui se situe en haut à droite. </p>
-<p><img alt="github_create_repo" src="\assets\images\git_githubpages_01.png" /></p>
+<p><img alt="github_create_repo" src="../../../assets/images/git_githubpages_01.png" /></p>
 <p>Ensuite vous avez deux choix, selon de que votre projet soit déjà initialisé ou non par git. </p>
 <h3 id="1-commencer-un-projet-a-partir-de-zero">1. Commencer un projet à partir de zéro</h3>
 <p>Si vous n'avez pas commencé le développement de votre projet, le plus simple est de cloner le dépôt que vous venez de créer. Vous devez débuter par récupérer l'url de votre dépôt.  Sur la page GitHub du dépôt cliquez sur le bouton "Code" en haut à droite et copiez l'url affiché.</p>
-<p><img alt="github_clone" src="\assets\images\git_githubpages_02.png" /></p>
+<p><img alt="github_clone" src="../../../assets/images/git_githubpages_02.png" /></p>
 <p>Allez ensuite dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnant <strong>git bash here</strong> dans le menu. Dans la console, clonez maintenant le dépôt avec la commande git clone suivi de l'url que vous avez récupéré.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/utilisateur/nom-du-depot
 </span></code></pre></div>
 <h3 id="2-lier-un-projet-existant">2. Lier un projet existant</h3>
-<p>Si votre projet est déjà commencé et qu'un dépôt Git est déjà créé en local (sur votre portable), vous pouvez l'associer avec le dépôt créé sur GitHub, sinon vous devez commencer par initialiser un <a href="\notes_de_cours\git_basics#initialiser-un-depot">dépot</a>. Allez dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnez <strong>git bash here</strong> dans le menu. Dans la console, entrez la commande suivante en remplaçant l'url par celui du dépôt sur GitHub : </p>
+<p>Si votre projet est déjà commencé et qu'un dépôt Git est déjà créé en local (sur votre portable), vous pouvez l'associer avec le dépôt créé sur GitHub, sinon vous devez commencer par initialiser un <a href="../git_basics/#initialiser-un-depot">dépot</a>. Allez dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnez <strong>git bash here</strong> dans le menu. Dans la console, entrez la commande suivante en remplaçant l'url par celui du dépôt sur GitHub : </p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/utilisateur/nom-du-depot
 </span></code></pre></div>
 <h2 id="soumettre-le-projet-local-sur-un-depot-github">Soumettre le projet local sur un dépôt GitHub</h2>

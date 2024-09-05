@@ -3265,20 +3265,48 @@
 <h2 id="transfert-de-fichiers-par-ftp">Transfert de fichiers par FTP</h2>
 <p>La première chose est d'avoir un client FTP d'installer sur notre ordinateur, un programme qui va nous permettre de se connecter en FTP à une adresse et de transferer nos fichiers. Je vous propose d'utiliser FileZilla : <a href="https://filezilla-project.org/">https://filezilla-project.org/</a>.</p>
 <p>Une fois votre client FTP installé, on va aller créer un utilisateur FTP sur le site de notre hébergeur. Beaucoup d'hébergeur utilise cPanel comme interface utilisateur pour la configuration. Les exemples qui suivent se font avec le cPanel. Si vous n'y avez pas accès, recherchez une section de configuration FTP.</p>
-<p>Dans le cPanel il y a une section <strong>Files</strong> où vous trouverez l'option <strong>FTP Accounts</strong>
-<img alt="web_dns_01" src="\assets\images\web_publish_01.png" /></p>
-<p>Remplissez le formulaire pour ajouter un nouveau utilisateur. Laissez à la section <strong>Domain</strong> sa valeur par défaut et supprimer de  <strong>Directory</strong> tout sauf "public_html\". 
-<img alt="web_dns_02" src="\assets\images\web_publish_02.png" /></p>
-<p>Une fois l'utilisateur créé, il va se retrouver dans la liste <strong>FTP Accounts</strong>. Cliquez sur <strong>Configure FTP Client pour récupérer les informations affichées dans la section </strong>Manual Settings**.
-<img alt="web_dns_03" src="\assets\images\web_publish_03.png" /></p>
-<p>On retourne maintenant dans notre client FTP, FileZilla dans mon exemple. L'information du <strong>FTP Server</strong> est l'hôte à laquelle on va se connecter, le <strong>FTP Username</strong> est le nom d'utilisateur et le mot de passe est celui que vous avez entré dans le formulaire. Dans FileZilla vous n'avez qu'à saisir ces informations dans la zone du haut et cliquer sur <strong>Connexion Rapide</strong>
-<img alt="web_dns_04" src="\assets\images\web_publish_04.png" /></p>
-<p>Vous pouvez aussi aller dans <strong>Fichier -&gt; Gestionnaire de sites</strong> pour enregistrer les informations. Cliquez sur <strong>nouveau site</strong> et remplissez le formulaire à droite. Vous pourrez ensuite cliquer sur le premier icone de la barre de menu et sélectionner votre site.
-<img alt="web_dns_05" src="\assets\images\web_publish_05.png" />
-<img alt="web_dns_06" src="\assets\images\web_publish_06.png" /></p>
+<p>Dans le cPanel il y a une section <strong>Files</strong> où vous trouverez l'option <strong>FTP Accounts</strong></p>
+<figure>
+<p><img alt="web_publish_01.png" class="center shadow" src="../../../assets/images/web_publish_01.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<p>Remplissez le formulaire pour ajouter un nouveau utilisateur. Laissez à la section <strong>Domain</strong> sa valeur par défaut et supprimer de  <strong>Directory</strong> tout sauf "public_html\". </p>
+<figure>
+<p><img alt="web_publish_02.png" class="center shadow" src="../../../assets/images/web_publish_02.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<p>Une fois l'utilisateur créé, il va se retrouver dans la liste <strong>FTP Accounts</strong>. Cliquez sur <strong>Configure FTP Client pour récupérer les informations affichées dans la section </strong>Manual Settings**.</p>
+<figure>
+<p><img alt="web_publish_03.png" class="center shadow" src="../../../assets/images/web_publish_03.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<p>On retourne maintenant dans notre client FTP, FileZilla dans mon exemple. L'information du <strong>FTP Server</strong> est l'hôte à laquelle on va se connecter, le <strong>FTP Username</strong> est le nom d'utilisateur et le mot de passe est celui que vous avez entré dans le formulaire. Dans FileZilla vous n'avez qu'à saisir ces informations dans la zone du haut et cliquer sur <strong>Connexion Rapide</strong></p>
+<figure>
+<p><img alt="web_publish_04.png" class="center shadow" src="../../../assets/images/web_publish_04.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<p>Vous pouvez aussi aller dans <strong>Fichier -&gt; Gestionnaire de sites</strong> pour enregistrer les informations. Cliquez sur <strong>nouveau site</strong> et remplissez le formulaire à droite. Vous pourrez ensuite cliquer sur le premier icone de la barre de menu et sélectionner votre site.</p>
+<figure>
+<p><img alt="web_publish_05.png" class="center shadow" src="../../../assets/images/web_publish_05.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<figure>
+<p><img alt="web_publish_06.png" class="center shadow" src="../../../assets/images/web_publish_06.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
 <p>Une fois connecté, vous aurez une section de gauche qui représente votre ordinateur et une section de droite qui représente le serveur Web. Vous n'avez qu'à glisser les fichiers de votre ordinateur au serveur pour les chargers en ligne ou l'inverse pour les télécharger sur votre ordinateur. On peut aussi le faire en lots en sélectionnant plusieurs fichiers. FileZilla va même vous proposer de charger uniquement les fichiers qui ont été modifiées depuis le dernier chargement.</p>
-<p><strong>Attention</strong> c'est important de copier vos fichiers dans le répertoire <strong>public_html</strong> en respectant l'arborescence des sous-dossiers de votre site. À la racince de <strong>public_html</strong> devra se retrouver votre fichier <strong>index.html</strong>. 
-<img alt="web_dns_06" src="\assets\images\web_publish_07.png" /></p>
+<p><strong>Attention</strong> c'est important de copier vos fichiers dans le répertoire <strong>public_html</strong> en respectant l'arborescence des sous-dossiers de votre site. À la racince de <strong>public_html</strong> devra se retrouver votre fichier <strong>index.html</strong>. </p>
+<figure>
+<p><img alt="web_publish_07.png" class="center shadow" src="../../../assets/images/web_publish_07.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
 
 
 

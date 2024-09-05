@@ -3385,19 +3385,31 @@
 <h2 id="utilisation-de-la-console">Utilisation de la console</h2>
 <h3 id="lecture-des-messages-derreurs">Lecture des messages d'erreurs</h3>
 <p>La première chose à faire quand on soupçonne qu'il y a un problème avec notre script est d'ouvrir la console et de vérifier s'il y a des erreurs d'affichées. Voici un exemple d'une erreur qui s'affiche au chargement d'une page.</p>
-<p><img alt="js_degub_01" src="\assets\images\js_degub_01.png" /></p>
+<figure>
+<p><img alt="js_degub_01" class="center shadow" src="../../../assets/images/js_degub_01.png" /></p>
+</figure>
 <p>On peut voir le message qui indique qu'il y a un problème avec "inputTexteAfficher" qui est null. On nous renseigne aussi que le problème provient de la ligne 17 du fichier modification_texte.js. Si je vais voir dans le code j'ai ceci à la ligne 17 : </p>
-<p><img alt="js_degub_02" src="\assets\images\js_degub_02.png" /></p>
+<figure>
+<p><img alt="js_degub_02" class="center shadow" src="../../../assets/images/js_degub_02.png" /></p>
+</figure>
 <p>J'essaie de changer la valeur de inputTexteAfficher mais selon le message d'erreur il est égale à null, donc ça créer une erreur. Si je remonte dans le script pour vérifier quand inputTexteAfficher est déclaré et assigné, j'ai ceci : </p>
-<p><img alt="js_degub_03" src="\assets\images\js_degub_03.png" /></p>
+<figure>
+<p><img alt="js_degub_03" class="center shadow" src="../../../assets/images/js_degub_03.png" /></p>
+</figure>
 <p>En vérifiant la ligne 2, je trouve que j'ai fait une erreur dans le id de l'élément que j'essaie de récupérer à la 2. Je corrige, recharge la page et voilà! Le problème est réglé. Malheureusement ce n'est pas toujours aussi simple et il faut habituellement chercher plus profondément.</p>
 <h3 id="entrer-des-commandes-a-la-console">Entrer des commandes à la console</h3>
 <p>Avec la console on peut aussi entrer directement du code et interagir avec la page affichée. </p>
-<p><img alt="js_degub_04" src="\assets\images\js_degub_04.png" /></p>
+<figure>
+<p><img alt="js_degub_04" class="center shadow" src="../../../assets/images/js_degub_04.png" /></p>
+</figure>
 <p>J'ai reproduit ici l'erreur précédente. Je peux même essayer de corriger le problème par la console. Les modifications ne seront pas inscrites dans le fichier de script mais ça peut être pratique pour tester une solution rapidement.</p>
-<p><img alt="js_degub_05" src="\assets\images\js_degub_05.png" /></p>
+<figure>
+<p><img alt="js_degub_05" class="center shadow" src="../../../assets/images/js_degub_05.png" /></p>
+</figure>
 <p>Depuis la console on peut accéder à tous les éléments de nos scripts (variables, fonctions, etc.) ainsi que les éléments du DOM.</p>
-<p><img alt="js_degub_06" src="\assets\images\js_degub_06.png" /></p>
+<figure>
+<p><img alt="js_degub_06" class="center shadow" src="../../../assets/images/js_degub_06.png" /></p>
+</figure>
 <h3 id="afficher-des-messages-a-la-console-depuis-nos-scripts">Afficher des messages à la console depuis nos scripts</h3>
 <p>On peut aussi faire afficher nos propres messages dans la console depuis nos scripts avec les commandes suivantes : - - -</p>
 <ul>
@@ -3408,20 +3420,32 @@
 <li>console.error("Message avec console.error");</li>
 </ul>
 <p>La différence entre les différentes commandes sera la façon dont le message sera affiché</p>
-<p><img alt="js_degub_07" src="\assets\images\js_degub_07.png" /></p>
+<figure>
+<p><img alt="js_degub_07" class="center shadow" src="../../../assets/images/js_degub_07.png" /></p>
+</figure>
 <p>On peut autant afficher du texte que la valeur d'une variable : </p>
-<p><img alt="js_degub_08" src="\assets\images\js_degub_08.png" /></p>
-<p><img alt="js_degub_09" src="\assets\images\js_degub_09.png" /></p>
+<figure>
+<p><img alt="js_degub_08" class="center shadow" src="../../../assets/images/js_degub_08.png" /></p>
+</figure>
+<figure>
+<p><img alt="js_degub_09" class="center shadow" src="../../../assets/images/js_degub_09.png" /></p>
+</figure>
 <p>Il est aussi possible d'afficher des données sous forme de tableau avec console.table : </p>
-<p><img alt="js_degub_10" src="\assets\images\js_degub_10.png" /></p>
-<p><img alt="js_degub_11" src="\assets\images\js_degub_11.png" /></p>
+<figure>
+<p><img alt="js_degub_10" class="center shadow" src="../../../assets/images/js_degub_10.png" /></p>
+</figure>
+<figure>
+<p><img alt="js_degub_11" class="center shadow" src="../../../assets/images/js_degub_11.png" /></p>
+</figure>
 <p>Pour plus de détail sur les possibilités de console.table : </p>
 <ul>
-<li>https://developer.mozilla.org/en-US/docs/Web/API/console/table</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/table" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/console/table</a></li>
 </ul>
 <h3 id="utilisation-de-points-darret">Utilisation de points d'arrêt</h3>
 <p>Dans l'onglet source, on retrouve les différents fichiers javascript qui sont utilisés par la page. On peut ajouter des points d'arrêts dans ces fichiers en cliquant sur le numéro de la ligne.</p>
-<p><img alt="js_degub_12" src="\assets\images\js_degub_12.png" /></p>
+<figure>
+<p><img alt="js_degub_12" class="center shadow" src="../../../assets/images/js_degub_12.png" /></p>
+</figure>
 <p>J'ai placé ici un point d'arrêt à la ligne 17 pour tester l'erreur de id dans les exemples plus haut. On peut aussi voir dans la fenêtre de droite à la section <strong>Portées</strong> les valeurs et la portée des variables. On peut immédiatement y voir que la variable inputTextAfficher qui cause le problème est null.</p>
 <h3 id="ajouter-un-point-darret-dans-le-code">Ajouter un point d'arrêt dans le code</h3>
 <p>Dans les scripts on peut utiliser <strong>debugger;</strong> pour forcer l'arrêt de l'exécution du script. L'effet est le même que le point d'arrêt</p>
@@ -3434,7 +3458,9 @@
 <li>Si on est dans une fonction, sortir de la fonction</li>
 </ul>
 <p>On retrouve ses options dans le coin supérieur droit de la fenêtre du débogueur.</p>
-<p><img alt="js_degub_13" src="\assets\images\js_degub_13.png" /></p>
+<figure>
+<p><img alt="js_degub_13" class="center shadow" src="../../../assets/images/js_degub_13.png" /></p>
+</figure>
 
 
 

@@ -3282,7 +3282,10 @@
 <h2 id="comment-organiser-mes-fichiers">Comment organiser mes fichiers</h2>
 <p>On va se créer un répertoire principal qui va contenir tous les fichiers de notre site internet, appelons le par exemple <strong>mon_site</strong>. Directement dans se répertoire on va y créer les fichiers html dont un qui se nommera index.html et qui sera la porte d'entrée de notre site. On dira que c'est fichiers sont à la racine du projet, ils sont au niveau le plus bas du répertoire de base. </p>
 <p>Ensuite on va créer un sous-répertoire <strong>assets</strong>. Dans ce répertoire on va stocker toutes les images, polices de caractères, vidéos, etc. Une bonne pratique est de créer dans assets des sous-répertoires pour chacune des catégories de ressources (les images par exemple). Ensuite, on va stocker les feuilles de styles et les scripts Javascript dans des sous-répertoires séparées créés à la racine du projet. Au final on aura une structure qui ressemble à ceci: </p>
-<p><img alt="Structure de projet" class="center" src="\assets\images\html_site_01.png" /></p>
+<figure>
+<div class="language-text highlight"><pre><span></span><code>![Structure de projet](../../assets/images/html_site_01.png){.center .shadow}
+</code></pre></div>
+</figure>
 <p>Vous êtes libres d'adapter cette structure selon vos goûts et besoins. L'important est d'avoir un fichier index.html à la racine du site et de bien séparer les différentes ressources.</p>
 <h2 id="chemin-relatif-vers-les-ressources">Chemin relatif vers les ressources</h2>
 <p>Quand on indique le chemin vers une ressource de notre site, une image par exemple, c'est important de donner le chemin relatif vers cette ressource et non son chemin absolu. En donnant le chemin relatif, la ressource va toujours être détectée même si le site change d'emplacement ou qu'on le met en ligne. Le chemin absolu indiquera où trouver le fichier à partir de la racine du disque où il est stocké, tandis qu'avec le chemin relatif on démarre à l'emplacement du fichier dans lequel on est. </p>

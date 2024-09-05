@@ -3327,8 +3327,12 @@
 <p>Dans les zones de saisie de mot de passe on voit souvent un bouton ou icone qui nous permet de voir le mot de passe "en clair". C'est quand même facile à implémenter. On a vu qu'en utilisant l'attribut <strong>type="password"</strong> dans une balise input, ça masque les caractères qu'on entre. Notre bouton va changer la valeur de cet attribut de <strong>password</strong> pour masquer le texte à <strong>text</strong> pour l'afficher.</p>
 <h2 id="le-controle-avec-le-bouton">Le contrôle avec le bouton</h2>
 <p>On va créer le contrôle suivant à l'aide d'une balise input et d'un icone de font Awesome:</p>
-<p><img alt="how_password_reveal_01" src="\assets\images\how_password_reveal_01.png" />
-<img alt="how_password_reveal_02" src="\assets\images\how_password_reveal_02.png" /></p>
+<figure>
+<p><img alt="box_model" class="center shadow" src="../../assets/images/how_password_reveal_01.png" /></p>
+</figure>
+<figure>
+<p><img alt="box_model" class="center shadow" src="../../assets/images/how_password_reveal_02.png" /></p>
+</figure>
 <h3 id="html">HTML</h3>
 <p>En html on va ajouter une balise input avec par défaut l'attribut <strong>type='password'</strong>. On va ensuite ajouter l'icone qu'on veut utiliser. Pour cet exemple j'ai utilisé une icone de <a href="https://fontawesome.com/search" target="_blank">Font Awesome</a>.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;password&#39;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;password&#39;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#39;password&#39;</span><span class="p">&gt;</span>

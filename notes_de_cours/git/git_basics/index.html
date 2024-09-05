@@ -3388,13 +3388,13 @@
 <h1 id="le-versionnage-de-fichiers-avec-git">Le versionnage de fichiers avec GIT</h1>
 <p>Git est un logiciel de gestion de version. Son rôle est de suivre les modifications faites dans les fichiers appartenant aux projets qu'il "suit" et de permettre de créer et d'organiser plusieurs version de ces projets. On peut utiliser Git en "local", depuis une installation sur un autre ordinateur ou bien sur un serveur distant. Attention Git n'est pas à confondre avec GitHub, qui est un site internet qui offre l'accès à un serveur GIT distant. </p>
 <h2 id="cycle-de-vie">Cycle de vie</h2>
-<p><img alt="git_workflow" src="\assets\images\git_basics_01.png" /></p>
+<p><img alt="git_workflow" src="../../../assets/images/git_basics_01.png" /></p>
 <p>Le cycle de vie d'un fichier avec Git est le suivant : on travaille sur le fichier dans un répertoire qui contient un dépôt Git. Une fois les modifications terminées, on indique à Git d'ajouter le fichier dans la file d'attente du prochain commit avec la commande <strong>git add</strong>. Quand on est prêt à officialiser les changements, on créer un commit avec la commande <strong>git commit</strong>. Ensuite on peut aussi envoyer le commit à un serveur distant avec la commande <strong>git push</strong>. Les changements sont maintenant inclus dans une nouvelle version et on recommence le cycle.</p>
 <h2 id="installation-de-git">Installation de GIT</h2>
 <p>Pour installer Git sur un poste de travail, on doit le télécharger à l'adresse suivante</p>
 <p><a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></p>
 <p>Vous pouvez conserver tous les paramètres par défaut, sauf peut-être le choix de l'éditeur de texte pour les messages de commit. Au lieu de VIM, sélectionnez l'éditeur que vous utilisez pour le développement de vos projet. (Vscode par exemple)</p>
-<p><img alt="git_install" src="\assets\images\git_basics_02.png" /></p>
+<p><img alt="git_install" src="../../../assets/images/git_basics_02.png" /></p>
 <p>Après l'installation vous aurez accès à une console Git ( Git Bash ) et une interface graphique ( Git GUI ). La méthode la plus simple d'utiliser ces deux applications est d'ouvrir l'explorateur de fichiers et de vous diriger dans le répertoire où vous vous les utiliser ( habituellement le répertoire de votre projet ), de cliquer sur le bouton droit de la souris et de choisir dans le menu soit <strong>Git Bash Here</strong> ou <strong>Git GUI Here</strong>. Sachez qu'on peut faire sensiblement la même chose avec les deux programmes c'est une question de préférences. Les explications qui suivent seront données avec Git Bash.</p>
 <h2 id="initialiser-un-depot">Initialiser un dépôt</h2>
 <p>La première chose à faire quand on veut utiliser Git sur un projet est d'initialiser un dépôt dans le répertoire de ce projet. Pour ce faire, ouvrez Git Bash et dirigez vous à la racine de votre projet. Entrez ensuite la commande suivante</p>
@@ -3405,7 +3405,7 @@ Vous aurez le message "<em>Initialized empty Git repository</em> " qui vous indi
 <p>Avec la commande <strong>git status</strong> on peut voir l'état des fichiers d'un dépôt</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>status
 </span></code></pre></div>
-<p><img alt="git_status" src="\assets\images\git_basics_03.png" /></p>
+<p><img alt="git_status" src="../../../assets/images/git_basics_03.png" /></p>
 <p>On retrouve plusieurs informations dans le résultat. On peut voir qu'aucun commit n'a encore été fait. Dans la section Untracked files on retrouve le fichier index.html, ce qui veux dire que ce fichier est présent dans le projet mais que Git ne suit pas ces modifications.</p>
 <h2 id="ajouter-des-fichiers-dans-le-suivi-de-git">Ajouter des fichiers dans le suivi de Git</h2>
 <p>On doit indiquer à Git quels fichiers il doit ajouter dans le prochain commit. Pour se faire on va utiliser la commande git add suivi du ou des noms de fichiers à suivre : </p>
@@ -3415,7 +3415,7 @@ On peut utiliser le point au lieu des noms de fichiers pour ajouter tout les fic
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
 </span></code></pre></div>
 <p>Maintenant si on refait la commande git status en reprenant le projet plus haut, on aura le résultat suivant : </p>
-<p><img alt="git_status_02" src="\assets\images\git_basics_04.png" /></p>
+<p><img alt="git_status_02" src="../../../assets/images/git_basics_04.png" /></p>
 <p>On peut voir que le fichier index.html est maintenant dans la "file d'attente" du prochain commit. Si on veut enlever un fichier de cette liste, on peut utiliser la commande </p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>index.html
 </span></code></pre></div>
