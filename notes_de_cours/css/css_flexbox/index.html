@@ -2155,32 +2155,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/ex02b_enonce/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercice 02b - Balises imbriquées
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../exercices/ex03_enonce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercice 03 - Github Pages
+    Exercice 03 - Balises imbriquées
   </span>
   
 
@@ -2218,32 +2197,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/ex04b_enonce/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercice 04b - Styliser le portfolio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../exercices/ex05_enonce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercice 05 - CSS Diner
+    Exercice 05 - Styliser le portfolio
   </span>
   
 
@@ -2264,7 +2222,7 @@
         
   
   <span class="md-ellipsis">
-    Exercice 06 - Des grenouilles et des zombies
+    Exercice 06 - CSS Diner
   </span>
   
 
@@ -2285,7 +2243,7 @@
         
   
   <span class="md-ellipsis">
-    Exercice 07 - Flexbox
+    Exercice 07 - Des grenouilles et des zombies
   </span>
   
 
@@ -2306,7 +2264,28 @@
         
   
   <span class="md-ellipsis">
-    Exercice 08 - Grid
+    Exercice 08 - Flexbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex09_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 09 - Grid
   </span>
   
 
@@ -2896,11 +2875,17 @@
 <p>Le "container" à le pouvoir de redimensionner ses items selon l'espace disponible. Utiliser Flexbox est donc une méthode efficace pour créer des pages web "responsive", qui s'adaptent au différent support avec laquelle on la consulte. </p>
 <p>On va utiliser Flexbox pour la mise en page de petite section de nos site, un menu, une section de titre, etc. Pour la disposition plus globale, il y a d'autres méthodes plus appropriées comme <strong>Grid</strong> que nous verrons ultérieurement.</p>
 <h2 id="definition">Définition</h2>
-<p>L'idée générale de Flexbox est qu'on englobe le contenu avec lequel on veut travailler dans un conteneur (container). Les éléments qui se retrouvent dans le conteneur, les items, seront affecté par les propriétés du conteneur et aussi par des règles propres à eux. Attention, seulement les enfants immédiats du conteneur parent sont affectés. Voici un schéma qui résume la disposition des éléments : </p>
+<p>L'idée générale de Flexbox est qu'on englobe le contenu avec lequel on veut travailler dans un conteneur (container). Les éléments qui se retrouvent dans le conteneur, les items, seront affecté par les propriétés du conteneur et aussi par des règles propres à eux. </p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<div class="language-text highlight"><pre><span></span><code>Seulement les enfants immédiats du conteneur parent sont affectés.
+</code></pre></div>
+</div>
+<p>Voici un schéma qui résume la disposition des éléments : </p>
 <p><img alt="css-flexbox01.png" src="../../../assets/images/css-flexbox01.png" /></p>
 <h2 id="les-proprietes-du-conteneur">Les propriétés du conteneur</h2>
 <h3 id="display">display</h3>
-<p>Pour déterminer que l'élément est un conteneur flexbox. Cette propriété est à déclarer en premier car elle va nous permettre d'utiliser les autres propriétés flexbox sur cet élément et tous ses enfants.</p>
+<p>Pour déterminer que l'élément est un conteneur flexbox. Cette propriété va nous permettre d'utiliser les autres propriétés flexbox sur cet élément et tous ses enfants.</p>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
@@ -2957,7 +2942,7 @@
 <p>Définie la capacité pour un item de s'agrandir quand c'est nécessaire. La propriété indique quel quantité d'espace "restant" du conteneur l'item peut utiliser pour s'agrandir. La valeur de la propriété est un entier positif sans unité de mesure qui représente une proportion. Si j'ai par exemple trois items et que je leur défini la propriété flex-grow à 1, les trois items auront la même dimension. Par contre si un des items à une valeur de 2 et les autres 1, le premier item sera 2 fois plus grand que les deux autres.</p>
 <p><img alt="css-flexbox05" src="../../../assets/images/css-flexbox05.png" /></p>
 <h3 id="flex-shrink">flex-shrink</h3>
-<p>Même chose que pour flex-grow, mais au niveau de la diminution de sa taille.</p>
+<p>Quand la taille de tous les items <mark>est plus grande que leur conteneur</mark>, les items peuvent retrécir pour qu'ils soient ajuster au conteneur. Le facteur de rétrécissement est indiqué par la valeur de la propriété <code>flex-shrink</code>. Par défaut la valeur est 1 et une valeur de 0 indique que la taille de l'item ne peut être diminuée.  </p>
 <h3 id="flex-basis">flex-basis</h3>
 <p>Détermine la taille par défaut d'un élément avant que l'espace disponible ne soit distribué. La valeur peut être une unité de mesure ou un mot-clé.</p>
 <h3 id="flex">flex</h3>
@@ -2985,6 +2970,7 @@
 <ul>
 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
 <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</a></li>
+<li><a href="https://ishadeed.com/article/css-flex-property/" target="_blank">https://ishadeed.com/article/css-flex-property/</a></li>
 <li><a href="https://yoksel.github.io/flex-cheatsheet/" target="_blank">https://yoksel.github.io/flex-cheatsheet/</a></li>
 </ul>
 
