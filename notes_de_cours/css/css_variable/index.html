@@ -2307,6 +2307,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex13_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 13 - Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2819,7 +2840,7 @@
 <p>ensuite on utiliser la fonction <strong>var()</strong> pour utiliser la valeur de la variable.</p>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">propriété-css</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nom-variable</span><span class="o">);</span>
 </span></code></pre></div>
-<p>Dans cet exemple on va mettre un couleur dans une variable et l'utiliser pour comme couleur de texte de toutes nos balise h1 : </p>
+<p>Dans cet exemple la variable <code>--couleur-texte</code> contient une valeur de couleur. On utilise ensuite la variable pour modifier la couleur du texte des balises h1. </p>
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -2836,8 +2857,7 @@
 </span></code></pre></div></td></tr></table></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>**:root** représente l&#39;élément &quot;racine&quot; de notre page, le plus haut niveau de visibilité pour notre variable. En effet l&#39;endroit où est déclaré la variable importe sur ça visibilité. C&#39;est les même règles qui s&#39;appliquant pour la priorité des propriétés css.
-</code></pre></div>
+<p><strong>:root</strong> représente l'élément "racine" de notre page, le plus haut niveau de visibilité pour notre variable. En effet l'endroit où est déclaré la variable importe sur ça visibilité. C'est les même règles qui s'appliquant pour la priorité des propriétés css.</p>
 </div>
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
@@ -2859,9 +2879,11 @@
 <p>On peut avec la fonction var() utiliser une valeur par défaut pour résoudre le problème rencontré ici, sinon la couleur du texte restera celle par défaut.</p>
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--couleur-texte</span><span class="p">,</span><span class="w"> </span><span class="kc">red</span><span class="p">);</span><span class="w"> </span><span class="c">/* Si la variable n&#39;est pas trouvé le texte sera rouge */</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">}</span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="c">/* Si la variable n&#39;est pas trouvé le texte sera rouge */</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--couleur-texte</span><span class="p">,</span><span class="w"> </span><span class="kc">red</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="theme-de-couleur">Thème de couleur</h3>
 <p>Les variables CSS sont souvent utilisé pour créer facilement des thèmes de couleur. Dans cet exemple, on défini un style de base pour un bouton en utilisant des variables avec valeur par défaut. Ensuite on crée des classes pour facilement ajuster le style du bouton au besoin</p>
@@ -2924,7 +2946,7 @@
 </span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="comme-nom-de-selecteur-ou-un-nom-de-propriete">Comme nom de sélecteur ou un nom de propriété</h3>
-<p>On ne peut pas mettre le nom d'un sélecteur dans une variable et ensuite l'utiliser</p>
+<p>On ne peut pas mettre le nom d'un sélecteur ou d'une propriété dans une variable et ensuite l'utiliser</p>
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
@@ -2976,7 +2998,7 @@
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="ne-pas-assigner-de-valeur">Ne pas assigner de valeur</h3>
-<p>Quand on initialise une variable, on doit absolument lui assigner une valeur.</p>
+<p>Quand on initialise une variable, <mark>on doit absolument lui assigner une valeur</mark>.</p>
 
 
 
