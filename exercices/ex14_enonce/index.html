@@ -18,7 +18,7 @@
     
     
       
-        <title>Exercice 14 - Liste de tâches - Design Web 420-1E6-VI</title>
+        <title>Exercice 14 - Introduction à JavaScript - Design Web 420-1E6-VI</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-14-liste-de-taches" class="md-skip">
+        <a href="#exercice-14-introduction-a-javascript" class="md-skip">
           Aller au contenu
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 14 - Liste de tâches
+              Exercice 14 - Introduction à JavaScript
             
           </span>
         </div>
@@ -2190,6 +2190,73 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bonus
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Bonus
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bonus/bonus_calculatrice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculatrice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2575,9 +2642,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pour-aller-plus-loin" class="md-nav__link">
+  <a href="#fonction-pour-afficher-du-texte-a-la-console" class="md-nav__link">
     <span class="md-ellipsis">
-      Pour aller plus loin
+      Fonction pour afficher du texte à la console
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulation-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulation de variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableau" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-flechee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonction fléchée
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operateur-logique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opérateur logique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selectionner-des-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sélectionner des éléments
     </span>
   </a>
   
@@ -2601,20 +2713,78 @@
   
 
 
-<h1 id="exercice-14-liste-de-taches">Exercice 14 - Liste de tâches</h1>
-<p>Dans cet exercice nous allons coder les fonctionnalités d'une liste de tâches. La portion HTML et CSS est déjà fait, vous n'avez qu'à cloner le dépôt git disponible à l'adresse Github Classroom que je vais vous fournir. Une fois le dépôt récupéré vous devriez avoir une page qui ressemble à ceci.</p>
-<p><img alt="ex19_01" src="../../assets/images/ex14_01.png" /></p>
-<p>Voici les fonctionnalités à programmer : </p>
+<h1 id="exercice-14-introduction-a-javascript">Exercice 14 - Introduction à JavaScript</h1>
 <ul>
-<li>Quand on appuie sur la touche "Entrée" ou si l'on clique sur le bouton "+", on ajoute le texte saisie dans la section "Tâches à faire". S'il n'y a pas de texte on ajoute rien. Dans la section "Tâche à faire" il y a une balise <strong>ul</strong> vide (une liste à puce). Le texte ajouté sera dans une balise <strong>li</strong> à l'intérieur de la balise <strong>ul</strong>. Vous devez ajouter la classe "tache" au nouvel item.</li>
-<li>Quand on clique sur une tâche de la liste des tâches à faire, on le déplace dans la liste des tâches complétées. On lui ajoute aussi la classe "fait". Pour déplacer la tache d'une liste à l'autre, on n'a juste à récupérer l'élément dans une variable et ensuite de l'ajouter dans la bonne liste.</li>
-<li>Quand on clique sur l'icône de la poubelle, on doit supprimer toutes les tâches de la liste des tâches complétées.</li>
+<li>Créez dans votre dossier <strong>designweb</strong> un nouveau dossier nommé <strong>ex14_introJS</strong>.</li>
+<li>Créez un fichier index.html avec la structure de base d'une page. (La page peut être blanche)</li>
+<li>Créer dans un sous répertoire <strong>js</strong> le fichier <strong>script.js</strong>.</li>
+<li>Reliez le fichier de script au fichier index.html.</li>
 </ul>
-<p>Une fois l'exercice terminé, faites un <strong>commit</strong> de vos modifications et un <strong>push</strong> pour les envoyer sur Github.</p>
-<p>Voici un exemple du résultat final</p>
-<p><img alt="ex19_02" src="../../assets/images/ex14_02.png" /></p>
-<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
-<p>Enregistrez la liste des tâches à faire et des tâches complétées dans le stockage local et réaffichez-les lors du chargement de la page. Référez-vous au notes de cours sur le <a href="../../notes_de_cours/js/js_local_storage/">stockage local</a>. Une bonne stratégie serait de créer un tableau pour les valeurs de chaque liste et d'ensuite les enregistrer dans le stockage dès qu'il y a un changement dans les listes.</p>
+<h2 id="fonction-pour-afficher-du-texte-a-la-console">Fonction pour afficher du texte à la console</h2>
+<ul>
+<li>Créez une fonction qui va afficher un message à la console.</li>
+<li>La fonction va recevoir en paramêtre le texte à afficher.</li>
+<li>Elle n'a aucune valeur de retour.</li>
+<li><a href="../../notes_de_cours/js/js_qualite_code/#documenter-les-fonctions">Documentez la fonction</a></li>
+<li>Pour le reste de l'exercice, quand on vous demande d'afficher du texte à la console utilisez cette fonction.</li>
+</ul>
+<h2 id="manipulation-de-variables">Manipulation de variables</h2>
+<ul>
+<li>Créez une constante qui contiendra votre nom et affichez à la console le texte "Début du script de votre_nom".</li>
+<li>Créez une variable qui contiendra un message de votre choix et afficher ce texte à la console.</li>
+<li>Moifier le texte de la variable et réaffichez le à la console.</li>
+</ul>
+<h2 id="tableau">Tableau</h2>
+<ul>
+<li>Créez un tableau qui contiendra le nom d'au moins 4 étudiants.</li>
+<li>À l'aide d'une boucle, affichez le contenu de votre tableau à la console au format suivant</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Liste des étudiants
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-------------------
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- Étudiant 1
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- Étudiant 2
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- Étudiant 3
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>- Étudiant 4
+</span></code></pre></div>
+<ul>
+<li>Ajoutez la valeur de la constante de votre nom à la suite du tableau.</li>
+<li>Réaffichez à nouveau le tableau.</li>
+</ul>
+<h2 id="fonction-flechee">Fonction fléchée</h2>
+<ul>
+<li>Créez une fonction fléchée qui va prendre le tableau d'élèves en paramêtre et qui retourne le nombre total de lettres de tous les noms.</li>
+<li>Testez votre fonction en affichant le résultat à la console.</li>
+</ul>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>Une chaine de caratère peut être considérée comme un tableau. "Mathieu" est en fait un tableau de 7 items avec le caractère "M" à la première position, "a" à la 2e et ainsi de suite.</p>
+</div>
+<h2 id="operateur-logique">Opérateur logique</h2>
+<ul>
+<li>Créez une nouvelle fonction qui va aussi prendre en paramêtre le tableau d'élèves.</li>
+<li>La fonction va retourner une chaine de caractère qui contiendra le nom du tableau qui contient le plus de lettres.</li>
+<li>S'il y a égalité avec plus d'un nom, retourner tous les noms séparés par une virgule : "Étudiant 1, Étudiant 2"</li>
+</ul>
+<h2 id="selectionner-des-elements">Sélectionner des éléments</h2>
+<ul>
+<li>Copiez le code html suivant dans votre fichier index.html</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;ul id=&quot;listePokemons&quot;&gt;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &lt;li class=&quot;pokemon&quot; id=&quot;no_001&quot;&gt;Bulbizarre&lt;/li&gt;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &lt;li class=&quot;pokemon&quot; id=&quot;no_004&quot;&gt;Salamèche&lt;/li&gt;
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &lt;li class=&quot;pokemon&quot; id=&quot;no_007&quot;&gt;Carapuce&lt;/li&gt;
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>&lt;/ul&gt;
+</span></code></pre></div>
+<ul>
+<li>Créez une variable et initialisez la avec tous les éléments <code>li</code>.</li>
+<li>Affichez le premier item de cette variable à la console.</li>
+<li>Créez une deuxième variable et initialisez la uniquement avec le deuxième <code>li</code> (Salamèche).</li>
+<li>Afficher le texte contenu dans <code>li</code> à la console.</li>
+</ul>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>Pour accéder au contenu de l'élément HTML, vous pouvez utiliser la propriété <code>textContent</code></p>
+</div>
 
 
 

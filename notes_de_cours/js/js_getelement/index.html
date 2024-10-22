@@ -2279,6 +2279,73 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bonus
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Bonus
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/bonus/bonus_calculatrice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculatrice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2726,11 +2793,11 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></code></pre></div></p>
 <h2 id="getelementbyid">getElementById()</h2>
-<p>Pour sélectionner un élément par son id qu'on doit passer en paramètre sous format texte ou avec une variable. La fonction retourne un HTLMElement (un objet qui "contient" l'élément HTML) sur lequel on peut ensuite travailler.</p>
+<p>Pour sélectionner un élément par son id on doit le passer en paramètre sous format texte ou avec une variable. La fonction retourne un HTLMElement (un objet qui "contient" l'élément HTML) sur lequel on peut ensuite travailler.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">affichageDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;affichage-date&#39;</span><span class="p">);</span>
 </span></code></pre></div>
 <h2 id="getelementsbyclassname">getElementsByClassName()</h2>
-<p>Pour sélectionner un élément par sa classe qu'on doit lui passer en paramètre sous format texte ou avec une variable. La fonction retourne un une collection d'éléments HTML (on peut le voir et l'utiliser comme un tableau)</p>
+<p>Pour sélectionner un élément par sa classe on doit la passer en paramètre sous format texte ou avec une variable. La fonction retourne une collection d'éléments HTML (on peut le voir et l'utiliser comme <mark>un tableau</mark>)</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">listeBoites</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;boite&#39;</span><span class="p">);</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// Pour parcourir la collection on peut faire une boucle standard</span>
@@ -2743,7 +2810,7 @@
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="queryselector">querySelector()</h2>
-<p>Retourne le premier élément qui correspond au sélecteur passé en paramètre. On peut utiliser les sélecteurs les mêmes sélecteur qu'on a appris à utiliser css. Retourne uniquement le premier résultat correspondant à la requête sous la forme d'un HTMLElement.
+<p>Retourne uniquement <mark>le premier résultat</mark> correspondant à la requête sous la forme d'un HTMLElement. On peut utiliser les mêmes sélecteur qu'on a appris à utiliser en css.
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">/* Je sélectionne toutes les divs qui sont enfant de l&#39;élément  </span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="cm">   avec la classe conteneur-horloge mais la fonction va me </span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="cm">   retourner que le premier résultat */</span>
