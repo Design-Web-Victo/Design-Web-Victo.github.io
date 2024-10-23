@@ -2427,6 +2427,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex14_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 14 - Introduction à JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3097,59 +3118,58 @@
 
 
 <h1 id="javascript-les-bases">Javascript - Les bases</h1>
-<p>Développé initialement pour ajouter un peu de dynamisme aux pages web, Javascript est devenu aujourd'hui un incontournable du développement web. Il peut être utilisé à la fois du côté client (depuis un navigateur) ou bien du côté serveur.  C'est un langage de script qui n'a pas besoin d'être compilé, il est exécuté directement par le navigateur. Les scripts (nom donné aux "programmes" javascript) peuvent être écris directement dans un fichier HTML ou dans un fichier portant l'extension js.</p>
+<p>Développé initialement pour ajouter un peu de dynamisme aux pages web, Javascript est devenu aujourd'hui un incontournable du développement web. Il peut être utilisé à la fois du côté client (depuis un navigateur) ou bien du côté serveur.  C'est un langage de script qui n'a pas besoin d'être compilé, il est exécuté directement par le navigateur. Les scripts (nom donné aux "programmes" javascript) peuvent être écrits directement dans un fichier HTML ou dans un fichier portant l'extension js.</p>
 <h2 id="ou-ajouter-nos-scripts">Où ajouter nos scripts</h2>
 <h3 id="dans-un-fichier-html">Dans un fichier HTML</h3>
 <ul>
 <li>Utilsez la balise <code>script</code>.</li>
-<li>Elle peut être utilisée dans à l'intérieur de la balise <code>head</code> et <code>body</code>.</li>
+<li>Elle peut être utilisée à l'intérieur de la balise <code>head</code> et <code>body</code>.</li>
 <li>Utilisez qu'une balise <code>script</code> par fichier html pour une meilleure lisibilitée.</li>
 </ul>
-<div class="language-html highlight"><span class="filename">exemple dans un fichier html</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, world!&#39;</span><span class="p">);</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Idéalement, on va réserver l'ajout de script directement dans un fichier html à des utilisations simples et brèves. La plupart du temps les scripts sont contenu dans des fichiers externes.</p>
+<p>Idéalement, on va réserver l'ajout de script directement dans un fichier html à des utilisations simples et brèves. La plupart du temps les scripts sont contenus dans des fichiers externes.</p>
 </div>
 <h3 id="dans-un-fichier-externe">Dans un fichier externe</h3>
 <ul>
 <li>Le fichier portera l'extension <strong>js</strong></li>
-<li>Il faut le relier au fichier html comme on le fait avec nos fichier css</li>
+<li>Il faut le relier au fichier html comme on le fait avec nos fichiers css</li>
 <li>On utilise la balise <code>script</code> mais en lui fournissant le chemin relatif vers le fichier</li>
 </ul>
-<div class="language-html highlight"><span class="filename">Exemple de liens vers un fichier externe</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mes_scripts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mes_scripts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">&lt;!-- Pour ajouter plus d&#39;un fichier, on répète avec les autres fichiers --&gt;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;deuxieme_script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>La maintenance et la clarté du code est une raison d&#39;extraire les scripts dans des fichiers externe. Mais l&#39;avantage majeure est que le navigateur va télécharger les fichiers en cache. Ensuite si une autre page html fait référence à un des fichiers téléchargés, il sera lu depuis le cache et non pas téléchargé à nouveau, ce qui réduit le trafic et permet à la page de s&#39;afficher plus rapidement.
-</code></pre></div>
+<p>La maintenance et la clarté du code est une raison d'extraire les scripts dans des fichiers externes. Mais l'avantage majeure est que le navigateur va télécharger les fichiers en cache. Ensuite si une autre page html fait référence à un des fichiers téléchargés, il sera lu depuis le cache et non pas téléchargé à nouveau, ce qui réduit le trafic et permet à la page de s'afficher plus rapidement.</p>
 </div>
 <h4 id="utilisation-de-lattribut-defer-et-async-de-la-balise-script">Utilisation de l'attribut defer et async de la balise script</h4>
-<p>Par défaut, quand on charge un script depuis un fichier externe, il <mark>sera exécuté immédiatement</mark>. Ça peut poser un problème si notre script interagit avec des éléments du DOM car ceux-ci peuvent ne pas être encore "chargés" (accessible) lors de exécution du script. Pour palier à ce problème on peut soit charger nos scripts à la toute fin de notre fichier HTML ou bien utiliser l'attribut <em>defer</em> ou <em>async</em> de la balise <strong>script</strong>. </p>
+<p>Par défaut, quand on charge un script depuis un fichier externe, il <mark>sera exécuté immédiatement</mark>. Ça peut poser un problème si notre script interagit avec des éléments du DOM car ceux-ci peuvent ne pas être encore "chargés" (accessible) lors de exécution du script. Pour palier à ce problème on peut soit charger nos scripts à la toute fin de notre fichier HTML ou bien utiliser l'attribut <em>defer</em> ou <em>async</em> de la balise <strong>script</strong>.</p>
 <ul>
 <li><strong>defer</strong> sera utilisé quand on veut manipuler des éléments de la page et être sûr qu'ils sont chargés. Le script ne bloquera pas l'affichage de la page et sera exécuté une fois celle-ci chargé en entier.</li>
-<li><strong>async</strong> sera utilisé pour un script qui est totalement indépendant de la page html. L'exécution ne bloquera pas l'affichage de la page et sera lancé une fois le script terminé. </li>
+<li><strong>async</strong> sera utilisé pour un script qui est totalement indépendant de la page html. L'exécution ne bloquera pas l'affichage de la page et sera lancé une fois le script terminé.</li>
 </ul>
-<p>Attention par contre car en utilisant ces deux attributs, la page peut terminer de se charger avant que les scripts ne soient exécutés. Ça peut créer de petits problème visuel selon la nature des scripts. </p>
+<p>Attention par contre car en utilisant ces deux attributs, la page peut terminer de se charger avant que les scripts ne soient exécutés. Ça peut créer de petits problème visuel selon la nature des scripts.</p>
 <p><strong>Exemple</strong></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mes_scripts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mon_script_async.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Source : <a href="https://javascript.info/script-async-defer" target="_blank">https://javascript.info/script-async-defer</a></p>
 <h2 id="hello-world">Hello World</h2>
-<p>Et oui, on n'y échappera pas, on va faire un premier exemple avec un bon vieux Hello World. </p>
+<p>Et oui, on n'y échappera pas, on va faire un premier exemple avec un bon vieux Hello World.</p>
 <ul>
 <li>Dans le répertoire du cours, créez vous un sous-dossier nommé <strong>helloworld_js</strong>.</li>
 <li>Dans ce sous-répertoire créez un fichier nommé <strong>index.html</strong> et ajoutez-y les balises de base d'une page html.</li>
 <li>On va utiliser la fonction <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/alert" target="_blank">alert()</a> pour afficher un message de votre choix. (Et non vous n'êtes pas obligé d'afficher Hello World).</li>
 <li>Ajoutez à l'aide de la balise <strong>script</strong> le code javascript pour faire afficher votre message. Essayer d'inclure la balise à différent endroit du fichier.</li>
 </ul>
-<p>Maintenant on va refaire la même chose mais depuis un fichier externe. </p>
+<p>Maintenant on va refaire la même chose mais depuis un fichier externe.</p>
 <ul>
 <li>Toujours dans le répertoire <strong>exercices_js</strong>, créez un nouveau sous-répertoire nommé <strong>js</strong>.</li>
 <li>Dans ce sous-répertoire, créez un fichier nommé <strong>helloworld.js</strong>.</li>
@@ -3183,7 +3203,7 @@
 </span></code></pre></div>
 <h2 id="variables">Variables</h2>
 <h3 id="declaration-et-assignation">Déclaration et assignation</h3>
-<p>En javascript les variables n'ont pas de type. Pour en déclarer un, il suffit d'utiliser le mot <strong>let</strong> ou <strong>var</strong> suivi du nom de la variable. </p>
+<p>En javascript les variables n'ont pas de type. Pour en déclarer un, il suffit d'utiliser le mot <strong>let</strong> ou <strong>var</strong> suivi du nom de la variable.</p>
 <ul>
 <li><strong>var</strong> : Variable ayant une porté global et accessible à l'extérieur du bloc d'instruction où elle est déclarée</li>
 <li><strong>let</strong> : Variable dont la porté est celle de son bloc d'instruction.</li>
@@ -3191,7 +3211,7 @@
 <p>Pour aller plus loin : <a href="https://laconsole.dev/blog/differences-let-var-const-js/" target="_blank">https://laconsole.dev/blog/differences-let-var-const-js/</a></p>
 <div class="admonition astuce">
 <p class="admonition-title">Astuce</p>
-<p>Je vous conseille de toujours utiliser <strong>let</strong> pour déclarer une variable. Si vous voulez accèder à votre variable de manière plus globale, déclaré là au début de votre fichier de script à l'extérieur des fonctions.</p>
+<p>Je vous conseille de toujours utiliser<strong>let</strong> pour déclarer une variable. Si vous voulez accèder à votre variable de manière plus globale, déclaré là au début de votre fichier de script à l'extérieur des fonctions.</p>
 </div>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">variableVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
@@ -3251,7 +3271,7 @@
 <h3 id="exercice">Exercice</h3>
 <p>En reprenant ce que vous avez fait dans la section <strong>Hello World</strong>, modifiez votre code pour utiliser des variables dans les fonctions alert() et console.log().</p>
 <h2 id="interaction">Interaction</h2>
-<p>Il y a plusieurs fonctions natives en javascript pour interagir avec le visiteur de notre site. Nous avons déjà vu <strong>alert()</strong> qui affiche un message à l'écran. On va en voir deux autres : </p>
+<p>Il y a plusieurs fonctions natives en javascript pour interagir avec le visiteur de notre site. Nous avons déjà vu <strong>alert()</strong> qui affiche un message à l'écran. On va en voir deux autres :</p>
 <ul>
 <li><code>prompt(titre, valeur par défaut)</code> : Demande à l'usager de saisir une valeur.</li>
 <li><code>confirm()</code> : Affiche une fenêtre avec un texte et deux boutons, Ok et Cancel.</li>
