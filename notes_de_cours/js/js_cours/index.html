@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js/js_loop/">
+        <link rel="canonical" href="https://design-web-victo.github.io/notes_de_cours/js/js_cours/">
       
       
+        <link rel="prev" href="../js_local_storage/">
+      
+      
+        <link rel="next" href="../../formulaire/form_structure/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Boucles - Design Web 420-1E6-VI</title>
+        <title>Cours en ligne - Design Web 420-1E6-VI</title>
       
     
     
@@ -78,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#boucles" class="md-skip">
+        <a href="#cours-en-ligne" class="md-skip">
           Aller au contenu
         </a>
       
@@ -114,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boucles
+              Cours en ligne
             
           </span>
         </div>
@@ -248,10 +252,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../ressources/" class="md-tabs__link">
           
   
@@ -497,23 +503,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -524,7 +535,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Notes de cours
@@ -1076,6 +1087,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1085,11 +1098,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1103,7 +1116,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Javascript
@@ -1315,6 +1328,37 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cours en ligne
+  </span>
+  
+
+      </a>
+      
     </li>
   
 
@@ -2656,32 +2700,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#for" class="md-nav__link">
-    <span class="md-ellipsis">
-      for
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#refrences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Réfrences
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2698,18 +2716,14 @@
   
 
 
-<h1 id="boucles">Boucles</h1>
-<p>En JavaScript on peut utiliser les boucles comme dans tout autre langage de programmation pour effectuer un traitement répétitif comme par exemple parcourir le contenu d'un tableau. Voici un petit rappel des différentes syntaxes.</p>
-<h2 id="for">for</h2>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">9</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Affiche à la console la valeur de i à chaque itération</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="refrences">Réfrences</h2>
+<h1 id="cours-en-ligne">Cours en ligne</h1>
+<p>Voici une sélection de cours et d'exercices offert gratuitement en ligne pour vous exercer avec JavaScript.</p>
 <ul>
-<li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Loops_and_iteration</a></li>
-<li><a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">https://www.w3schools.com/js/js_loop_for.asp</a></li>
+<li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">FreeCodeCamp - JavaScript Algorithms and Data Structures </a></li>
+<li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy - Introduction to JavaScript</a></li>
+<li><a href="https://jscodebox.com/" target="_blank">JSCodebox</a></li>
+<li><a href="https://exercism.org/tracks/javascript" target="_blank">Exercism</a></li>
+<li><a href="https://aymeric-auberton.fr/academie/js/exercices" target="_blank">aymeric-auberton.fr - Exercices JavaScript</a></li>
 </ul>
 
 
