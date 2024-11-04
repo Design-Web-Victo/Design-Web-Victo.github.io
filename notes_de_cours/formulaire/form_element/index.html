@@ -2403,6 +2403,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex17b_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 17b - Validation HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2979,7 +3000,7 @@
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <h2 id="lelement-select">L'élément select</h2>
-<p>Select permet d'afficher une liste déroulante de choix prédéfinis. Pour ajouter les options de la liste, on utilise la balise <strong>option</strong></p>
+<p>Select permet d'afficher une liste déroulante de choix prédéfinis. Pour ajouter les options de la liste, on utilise la balise <strong>option</strong>. La valeur qui sera envoyé dans le formulaire est celle qui est inscrite dans l'attribut <code>value</code> de l'option choisi. Dans l'exemple suivant si on choisit l'option "Barde", la valeur envoyée sera 5. Si aucune <strong>value</strong> n'est spécifié, la valeur entre la balise <strong>option</strong> sera utilisé.</p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;classe_perso&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;classe_perso&quot;</span><span class="p">&gt;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>Guerrier<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">&gt;</span>Healer<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
@@ -2989,7 +3010,9 @@
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span> 
 </span></code></pre></div>
 <h2 id="lelement-radio">L'élément radio</h2>
-<p>L'élément radio est un type spécial de la balise input qui affiche un choix sous forme de cercle selectionnable. On peut regrouper plusieurs élément radio ensemble en leur donnant la même valeur à l'attribut <strong>name</strong>. Dans ce cas on ne pourra que sélectionner qu'un élément du groupe à la fois. On doit utiliser l'attribut <strong>value</strong> à chaque input pour indiquer quelle valeur sera transmis avec le formulaire. Finalement on peut utiliser l'attribut <strong>checked</strong> pour indiquer quel input sera sélectionné au chargemenent de la page. <em>Pour que ça fonctionne avec Firefox on doit aussi ajouter l'attribut autocomplete="off" à chaque input.</em></p>
+<p>L'élément radio est un type spécial de la balise input qui affiche un choix sous forme de cercle selectionnable. On peut regrouper plusieurs élément radio ensemble en leur donnant la même valeur à l'attribut <strong>name</strong>. Dans ce cas on ne pourra que sélectionner qu'un élément du groupe à la fois. On doit utiliser l'attribut <strong>value</strong> à chaque input pour indiquer quelle valeur sera transmis avec le formulaire. </p>
+<p>L'élément de type radio ne représente que le cercle qu'on peut sélectionner, si on veut lui joindre un texte descriptif on utilisera une balise <strong>label</strong>. </p>
+<p>Finalement on peut utiliser l'attribut <strong>checked</strong> pour indiquer quel input sera sélectionné au chargemenent de la page. <em>Pour que ça fonctionne avec Firefox on doit aussi ajouter l'attribut autocomplete="off" à chaque input.</em></p>
 <div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cm">&lt;!-- Pour plus de lisibilité j&#39;ai inscrit mes attributs sur plusieurs lignes --&gt;</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#39;choix1&#39;</span><span class="p">&gt;</span>Premier choix<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;radio&#39;</span> 

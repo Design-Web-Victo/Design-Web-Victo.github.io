@@ -2382,6 +2382,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex17b_enonce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 17b - Validation HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2902,8 +2923,8 @@
 
 
 <h1 id="mise-en-forme-du-formulaire">Mise en forme du formulaire</h1>
-<p>On peut modifier apparence de notre formulaire et la plupart de ses éléments avec des règles css. Tout ce qui touche le texte et les polices de caractères sont utilisable. On aussi facilement modifier l'apparence des "boites" des éléments avec les propriétés associées comme padding, marging, border, etc.</p>
-<p>On ne fera pas le tour de toutes les possibilités mais voici quelques ressources pour vous guider : </p>
+<p>On peut modifier apparence de notre formulaire et la plupart de ses éléments avec des règles css. Tout ce qui touche le texte et les polices de caractères est utilisable. On aussi facilement modifier l'apparence des "boites" des éléments avec les propriétés associées comme padding, marging, border, etc.</p>
+<p>Voici quelques ressources pour vous guider : </p>
 <ul>
 <li><a href="https://developer.mozilla.org/fr/docs/Learn/Forms/Styling_web_forms">https://developer.mozilla.org/fr/docs/Learn/Forms/Styling_web_forms</a></li>
 <li><a href="https://www.w3schools.com/css/css_form.asp">https://www.w3schools.com/css/css_form.asp</a></li>
@@ -2913,9 +2934,9 @@
 <p>On peut aussi utiliser des pseudo-classes pour modifier l'apparence des éléments du formulaire selon leur état. Les plus pertinentes sont les suivantes : </p>
 <h3 id="focus">:focus</h3>
 <p>Applicable quand l'élément est sélectionné. Peut nous permettre par exemple de donner un effet "de surlignement" de l'élément que l'usager est en train de remplir.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">/* Jeux que pour tout mes éléments input la couleur de fond devienne rose quand on le sélectionne */</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">/* Je veux que pour tout mes éléments input la couleur de fond devienne rose quand on le sélectionne */</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">input</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">pink</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">pink</span><span class="p">;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <div class="admonition note">
@@ -2938,6 +2959,10 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">153</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
 </span></code></pre></div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Quand on utilise une liste de choix (la balise <code>select</code>), une valeur vide (<code>value=""</code>) est considéré comme si on n'envoie aucune valeur et va déclencher l'événement.</p>
+</div>
 <h3 id="invalid">:invalid</h3>
 <p>Applicable quand l'usager à saisie une valeur invalide, comme par exemple une adresse courriel non conforme dans un élément input de type courriel.</p>
 <p><strong>Html</strong></p>
