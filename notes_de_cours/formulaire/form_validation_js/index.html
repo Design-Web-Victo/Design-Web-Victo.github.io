@@ -2850,9 +2850,12 @@
 <h1 id="validation-de-formulaire-en-javascript">Validation de formulaire en Javascript</h1>
 <p>Il y a plusieurs méthode pour valider nos formulaire en Javascript. Nous allons nous en tenir à deux méthodes qui se rapproche de ce qu'on fait déjà en utilisant l'action submit du formulaire. L'avantage majeur d'utiliser Javascript est que ça nous permet de faire une validation beaucoup plus précise et efficace.</p>
 <h2 id="onsubmit">onsubmit</h2>
-<p>La première méthode est d'utiliser onsubmit dans la balise form pour appeler une fonction Javascript lors du "submit" du formulaire. La fonction doit être appeler de la façon suivante et retourner true ou false : </p>
+<p>La première méthode est d'utiliser <code>onsubmit</code> dans la balise <strong>form</strong> pour appeler une fonction Javascript lors du "submit" du formulaire. La fonction doit être appeler de la façon suivante et retourner true ou false : </p>
 <p><strong>HTML</strong></p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;traitement.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">&quot;return ValidationOnSubmit()&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;mon-formulaire&quot;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="na">action</span><span class="o">=</span><span class="s">&quot;traitement.php&quot;</span> 
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> 
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="na">onsubmit</span><span class="o">=</span><span class="s">&quot;return ValidationOnSubmit()&quot;</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p><strong>Javascript</strong></p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">ValidationOnSubmit</span><span class="p">()</span><span class="w"> </span>
@@ -2866,28 +2869,34 @@
 </span></code></pre></div>
 <p>Un retour de la valeur false va empêcher le submit et une valeur true va au contraire l'autoriser.</p>
 <h2 id="preventdefault">preventDefault</h2>
-<p>La seconde méthode est d'utiliser la méthode preventDefault associée au formulaire pour bloqué le comportement du "submit" et ensuite faire notre validation. Un fois la validation effectuée, on peut relancer un submit depuis notre script. La fonction de validation sera appelé quand l'événement submit de notre formulaire sera déclenché. On utilisera un addEventListener pour ce faire : </p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">monFormulaire</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">ValidationFormulaire</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="c1">// Annule le comportement par défaut du submit</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">formValide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="c1">// Traitement de validation</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">formValide</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="c1">// On relance un submit</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="nx">monFormulaire</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">});</span>
+<p>La seconde méthode est d'utiliser la méthode <code>preventDefault</code> associée au formulaire pour bloqué le comportement du "submit" et ensuite faire notre validation.  La fonction de validation sera appelé quand l'événement submit de notre formulaire sera déclenché. On utilisera un addEventListener pour ce faire. Dans la fonction associée à l'événement, on commence par annuler l'envoi avec <code>preventDefault</code>. Une fois la validation effectuée, on peut relancer un submit depuis notre script.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">monFormulaire</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;mon-formulaire&quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">monFormulaire</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">ValidationFormulaire</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">function</span><span class="w"> </span><span class="nx">ValidationFormulaire</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="c1">// Annule le comportement par défaut du submit</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="c1">// Initialise une variable qui détermine si le </span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="c1">// formulaire doit être envoyé ou non</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">formValide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="c1">// Traitement de validation</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="c1">// Le code de validation va se retrouver ici</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="c1">// Si notre variable est vrai, on envoi le formulaire</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">formValide</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">        </span><span class="c1">// On relance un submit</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="nx">monFormulaire</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="references">Références</h2>
 <ul>
-<li><a href="https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation">https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation</a></li>
-<li><a href="https://www.tutorialspoint.com/javascript/javascript_form_validations.htm">https://www.tutorialspoint.com/javascript/javascript_form_validations.htm</a></li>
-<li><a href="https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/">https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/</a></li>
-<li><a href="https://www.w3schools.com/js/js_validation.asp">https://www.w3schools.com/js/js_validation.asp</a></li>
+<li><a href="https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation" target="_blank">https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_form_validations.htm" target="_blank">https://www.tutorialspoint.com/javascript/javascript_form_validations.htm</a></li>
+<li><a href="https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/" target="_blank">https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/</a></li>
+<li><a href="https://www.w3schools.com/js/js_validation.asp" target="_blank">https://www.w3schools.com/js/js_validation.asp</a></li>
 </ul>
 <h2 id="valider-un-texte-selon-une-expression-reguliere">Valider un texte selon une expression régulière</h2>
 <p>On peut utiliser une expression régulière pour tester si un texte correspond à un certain format, comme une adresse courriel par exemple. Un variable ou un string l'expression régulière suivie de la fonction <strong>test(monTexte)</strong> avec le texte en paramètre retournera <strong>true</strong> si le texte correspond au motif de l'expression.</p>
@@ -2895,6 +2904,16 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">regex_email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/</span><span class="p">;</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">regex_email</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">valeur</span><span class="p">);</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1">// Vrai</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">estCourriel</span><span class="p">(</span><span class="s2">&quot;frechette.mathieu@cegepvicto.ca&quot;</span><span class="p">));</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1">// Faux</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">estCourriel</span><span class="p">(</span><span class="s2">&quot;adresse-invalide&quot;</span><span class="p">));</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">if</span><span class="p">(</span><span class="nx">estCourriel</span><span class="p">(</span><span class="s2">&quot;adresse-invalide&quot;</span><span class="p">)){</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Le courriel est invalide&quot;</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>Pour vous aider avec les regex : <a href="https://regexr.com/">https://regexr.com/</a></p>
 
