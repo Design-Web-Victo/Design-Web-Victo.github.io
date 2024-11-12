@@ -2774,6 +2774,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Modification de l'interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aujout-dune-fenetre-dialog-au-chargement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aujout d'une fenêtre dialog au chargement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2834,8 +2849,9 @@
 <h2 id="directives">Directives</h2>
 <ul>
 <li>Le projet compte pour 10% de la note finale.</li>
-<li>La correction se fera en présence de votre enseignant durant le cours du 7 décembre. Vous pouvez prendre rendez-vous avant cette date si vous êtes prêt a être évalué.</li>
-<li>Vous devez aussi remettre une version de votre code sur Github.</li>
+<li>La correction se fera en présence de votre enseignant durant le cours du <strong>6 décembre</strong>. </li>
+<li>Vous pouvez prendre rendez-vous avant cette date si vous êtes prêt a être évalué.</li>
+<li>Vous devez aussi remettre une version de votre code sur Github. Retourner le devoir Teams avec l'adresse url de votre projet et assurez-vous que le dépôt soit public.</li>
 </ul>
 <h2 id="description-du-projet">Description du projet</h2>
 <p>Vous devez choisir l'un des jeux suivants dont vous allez devoir modifier l'interface comme décrit plus bas et ajouter une fonctionnalité de votre choix.</p>
@@ -2863,19 +2879,45 @@
 </ul>
 <h2 id="initialisation-du-projet">Initialisation du projet</h2>
 <ul>
-<li>Faites une copie du projet que vous avez choisi et hébergez-le dans un dépôt Github Pages. </li>
+<li>Faites une copie du projet que vous avez choisi et hébergez-le dans un dépôt <a href="../../notes_de_cours/git/git_githubpages/" target="_blank">Github Pages</a>. </li>
 <li>Ensuite créez un premier commit et faites un <em>push</em>. <mark class="critic">Le travail sera évalué à partir de ce point</mark>.</li>
 </ul>
 <h2 id="modification-de-linterface">Modification de l'interface</h2>
 <ul>
 <li>Tout le contenu de la page doit être traduit en français.</li>
-<li>Dans le bas de la page ajoutez une section <strong>footer</strong></li>
-<li>Affichez à droite le texte "Inspiration du projet :" et sur une deuxième ligne l'url où vous avez pris votre projet. (Un des quatres jeu cité plus haut)</li>
-<li>Dans le centre ajoutez votre nom et sur la deuxième ligne "Design Web A2023"</li>
-<li>À droite ajoutez une photo de vous qui a la forme d'un cercle. Quand on clique sur la photo, utilisez une lien <em>mailto:</em> pour permettre aux visiteurs de vous envoyer un courriel.</li>
 </ul>
-<p>Voici un exemple de la disposition, à vous de décider du style et des couleurs : </p>
-<p><img alt="projet_perso_01" class="center shadow" src="../../assets/images/projet_perso_01.png" /></p>
+<h3 id="aujout-dune-fenetre-dialog-au-chargement">Aujout d'une fenêtre <em>dialog</em> au chargement</h3>
+<p>Consultez les articles suivants sur l'élément dialog : </p>
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dialog" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTML/Element/dialog</a></li>
+<li><a href="https://web.dev/learn/html/dialog?hl=fr" target="_blank">https://web.dev/learn/html/dialog?hl=fr</a></li>
+<li><a href="https://mayashavin.com/articles/build-a-dialog-with-dialog-element" target="_blank">https://mayashavin.com/articles/build-a-dialog-with-dialog-element</a></li>
+</ul>
+<p>Au chargement de la page la fenêtre de dialogue suivante doit être affiché automatiquement.</p>
+<figure>
+<p><img alt="projetPersonnel_01.png" class="center shadow" src="../../assets/images/projetPersonnel_01.png" />
+  </p>
+<figcaption></figcaption>
+</figure>
+<ul>
+<li>Elle doit être affiché selon la méthode <em>modal</em>, empêchant tout intéraction avec le contenu autre de la page.</li>
+<li>Vous devez respecter la disposition du modèle fourni. </li>
+<li>L'image à utiliser est disponible ici : <a href="../../assets/images/megaman.png" target="_blank">megaman.png</a></li>
+<li>La couleur d'arrière plan (qui va masquer en partie la page) à utiliser est: <ul>
+<li><code>rgba(93, 188, 251, 0.5)</code>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Fonctionnalités de la fenêtre</strong></p>
+<ul>
+<li>Par défaut, elle s'affiche directement au chargement de la page.</li>
+<li>Si on clique sur le bouton "Fermer la fenêtre", la fenêtre se ferme et on a accès à la page.</li>
+<li>Si on clique sur "Ne plus afficher cette fenêtre" elle se ferme aussi, mais à partir de maintenant au chargement de la page elle ne sera plus réaffichée.</li>
+</ul>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>Pour déterminer si on doit ou non afficher la fenêtre au chargement, utilisez une valeur enregistré dans le <a href="../../notes_de_cours/js/js_local_storage/" target="_blank">stockage local</a> du navigateur qui vous indiquera si oui ou non elle doit être affiché.</p>
+</div>
 <h2 id="modification-selon-le-jeu">Modification selon le jeu</h2>
 <p>Faites les modifications suivantes selon le jeu que vous avez choisi : </p>
 <ul>
@@ -2920,15 +2962,15 @@
 <td style="text-align: right;"><strong>/40</strong></td>
 </tr>
 <tr>
-<td>Une section <em>footer</em> est ajouté avec le texte demandé et est situé en bas de page</td>
+<td>Une fenêtre de dialogue s'affiche correctement au chargement de la page</td>
 <td style="text-align: right;">10</td>
 </tr>
 <tr>
-<td>Les textes et l'image sont alignés selon les spécifications</td>
+<td>Tous les éléments du modèle sont présent et alignés selon les spécifications</td>
 <td style="text-align: right;">15</td>
 </tr>
 <tr>
-<td>Un clique sur l'image permet d'envoyer un courriel.</td>
+<td>Un clique sur "Ne plus afficher..." permet de ne pas réafficher la fenêtre au démarrage.</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr>
