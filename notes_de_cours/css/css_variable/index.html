@@ -2503,10 +2503,10 @@
 <p>On peut maintenant utiliser des variables nativement en css, aussi appelé <em>css custom properties</em>.</p>
 <h2 id="declaration-et-utilisation">Déclaration et utilisation</h2>
 <p>On va déclarer la variable comme on le fait avec n'importe quel propriété en css en utilisant deux tirets (--) suivie du nom de la variable.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">--nom-variable</span><span class="o">:</span><span class="w"> </span><span class="nt">valeur-variable</span><span class="o">;</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">--nom-variable</span><span class="o">:</span><span class="w"> </span><span class="nt">valeur-variable</span><span class="o">;</span>
 </span></code></pre></div>
 <p>ensuite on utiliser la fonction <strong>var()</strong> pour utiliser la valeur de la variable.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">propriété-css</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nom-variable</span><span class="o">);</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">propriété-css</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--nom-variable</span><span class="o">);</span>
 </span></code></pre></div>
 <p>Dans cet exemple la variable <code>--couleur-texte</code> contient une valeur de couleur. On utilise ensuite la variable pour modifier la couleur du texte des balises h1. </p>
 <div class="language-css highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
@@ -2549,28 +2549,26 @@
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="c">/* Si la variable n&#39;est pas trouvé le texte sera rouge */</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="c">/* Si la variable n'est pas trouvé le texte sera rouge */</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--couleur-texte</span><span class="p">,</span><span class="w"> </span><span class="kc">red</span><span class="p">);</span><span class="w"> </span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="theme-de-couleur">Thème de couleur</h3>
 <p>Les variables CSS sont souvent utilisé pour créer facilement des thèmes de couleur. Dans cet exemple, on défini un style de base pour un bouton en utilisant des variables avec valeur par défaut. Ensuite on crée des classes pour facilement ajuster le style du bouton au besoin</p>
-<p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="abPYvYL" data-editable="true" data-user="frechettemathieu" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/frechettemathieu/pen/abPYvYL">
+<p class="codepen" data-default-tab="html,result" data-editable="true" data-height="500" data-slug-hash="abPYvYL" data-user="frechettemathieu" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/frechettemathieu/pen/abPYvYL">
   Untitled</a> by Mathieu Fréchette (<a href="https://codepen.io/frechettemathieu">@frechettemathieu</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 <h3 id="dans-une-animation">Dans une animation</h3>
 <p>On peut utiliser aussi utiliser les variables dans les animations et les media queries</p>
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jzPRRL" data-editable="true" data-user="hamzaiqbal" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/hamzaiqbal/pen/jzPRRL">
+<p class="codepen" data-default-tab="html,result" data-editable="true" data-height="300" data-slug-hash="jzPRRL" data-user="hamzaiqbal" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/hamzaiqbal/pen/jzPRRL">
   CSS Vars : Animations</a> by Hamza Iqbal (<a href="https://codepen.io/hamzaiqbal">@hamzaiqbal</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 <p>Source : <a href="https://codepen.io/hamzaiqbal/pen/jzPRRL" target="_blank">https://codepen.io/hamzaiqbal/pen/jzPRRL</a></p>
 <h2 id="ce-quon-ne-peut-pas-faire">Ce qu'on ne peut pas faire</h2>
 <h3 id="inscrire-en-texte-le-chemin-dacces-a-un-fichier">Inscrire en texte le chemin d'accès à un fichier</h3>
@@ -2584,8 +2582,8 @@
 <span class="normal"><a href="#__codelineno-5-7">7</a></span>
 <span class="normal"><a href="#__codelineno-5-8">8</a></span>
 <span class="normal"><a href="#__codelineno-5-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">    </span><span class="nv">--image-fond-invalide</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;img/mon_image.png&#39;</span><span class="p">;</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="nv">--image-fond-valide</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s1">&#39;img/mon_image.png&#39;</span><span class="p">);</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="w">    </span><span class="nv">--image-fond-invalide</span><span class="p">:</span><span class="w"> </span><span class="s1">'img/mon_image.png'</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="nv">--image-fond-valide</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s1">'img/mon_image.png'</span><span class="p">);</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">}</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
@@ -2595,23 +2593,23 @@
 </span></code></pre></div></td></tr></table></div>
 <h3 id="unite-numerique">Unité numérique</h3>
 <p>On ne peut pas définir un nombre comme unité et ensuite lui accolé le type d'unité</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="c">/* Invalide */</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">)</span><span class="n">em</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="c">/* Valide */</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">);</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="c">/* Invalide */</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">)</span><span class="n">em</span><span class="p">;</span>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="p">}</span>
+</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-8"><a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="c">/* Valide */</span>
+</span><span id="__span-6-9"><a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
+</span><span id="__span-6-10"><a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">);</span>
+</span><span id="__span-6-11"><a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>On pourrait contourner le problème avec la fonction <strong>calc()</strong> qui nous permet d'effectuer un calcul et d'utiliser le résultat en valeur : </p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="kt">em</span><span class="p">);</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">}</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">    </span><span class="nv">--taille-police</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--taille-police</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="kt">em</span><span class="p">);</span>
+</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="comme-nom-de-selecteur-ou-un-nom-de-propriete">Comme nom de sélecteur ou un nom de propriété</h3>
 <p>On ne peut pas mettre le nom d'un sélecteur ou d'une propriété dans une variable et ensuite l'utiliser</p>

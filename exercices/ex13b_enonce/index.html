@@ -2330,40 +2330,40 @@
 </ul>
 <h3 id="affichage-sur-24-heures">Affichage sur 24 heures</h3>
 <p>La première option nous permet de basculer l'affichage de l'heure en mode 12 heures ou 24 heures. <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_horaire_sur_12_heures#Correspondance" target="_blank">https://fr.wikipedia.org/wiki/Syst%C3%A8me_horaire_sur_12_heures#Correspondance</a> </p>
-<p><img alt="ex15_part02_a" src="../../assets/images/ex13_part02_a.png" /></p>
+<p><img alt="ex15_part02_a" src="../../assets/images/ex13_part02_a.png"/></p>
 <h3 id="masquer-la-date">Masquer la date</h3>
 <p>La deuxième option nous permet de masquer la date du jour.</p>
-<p><img alt="ex15_part02_b" src="../../assets/images/ex13_part02_b.png" /></p>
+<p><img alt="ex15_part02_b" src="../../assets/images/ex13_part02_b.png"/></p>
 <h3 id="notes">Notes</h3>
 <p>Les options sont cumulatives, on peut masquer la date et avoir un affichage sur 24 heures.</p>
 <h3 id="indices">Indices</h3>
 <ul>
 <li>En javascript, on peut "toggle" une classe sur un élément html, c'est-à-dire l'ajouter si elle n'est pas présente ou l'enlever dans le cas inverse.</li>
 </ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Ici &quot;icone&quot; est un objet qui représente l&#39;icone qui a été cliqué</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">icone</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s2">&quot;selected&quot;</span><span class="p">);</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Ici "icone" est un objet qui représente l'icone qui a été cliqué</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nx">icone</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s2">"selected"</span><span class="p">);</span>
 </span></code></pre></div>
 <ul>
 <li>Pour la bulle d'aide, il y a plusieurs exemples de "tooltip" que vous pouvez trouver en cherchant moindrement. À vous de les adapter à vos besoins.</li>
 <li>Si vous ne voulez pas "détruire" la disposition que vous aviez déjà fait de votre page avec les icones à ajouter, regardez du côté de la propriété css <strong>position: absolute;</strong>.</li>
 <li>On peut associer une fonction javascript à un événement directement dans le html, par exemple si on veut déclencher la fonction quand on clique sur l'élément html, on va utiliser onclick avec la fonction à éxécuter en valeur : </li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cm">&lt;!-- ici sur un clique sur l&#39;icone on va lancer la fonction changerAffichage12h en passant this en paramêtre (voir plus bas pour le paramêtre this) --&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;icon_periode&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;far fa-clock&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;changerAffichage12h(this)&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cm">&lt;!-- ici sur un clique sur l'icone on va lancer la fonction changerAffichage12h en passant this en paramêtre (voir plus bas pour le paramêtre this) --&gt;</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">id</span><span class="o">=</span><span class="s">"icon_periode"</span> <span class="na">class</span><span class="o">=</span><span class="s">"far fa-clock"</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"changerAffichage12h(this)"</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li>Quand on appelle une fonction javascript depuis un élément HTML, on peut "passer" cet élément en paramètre de la fonction avec <strong>this</strong>. Voir exemple plus bas</li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">&lt;!-- Dans votre fichier HTML --&gt;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;maFonction(this)&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cm">&lt;!-- Dans votre fichier HTML --&gt;</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"maFonction(this)"</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Dans votre script</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">maFonction</span><span class="p">(</span><span class="nx">bouton</span><span class="p">){</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="c1">// la variable bouton contient l&#39;élément button qui à appeler la fonction</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="c1">// on peut maintenant l&#39;utiliser, un peut comme on la fait avec getElementById</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="c1">// Ex. Je veux changer le texte du bouton</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nx">bouton</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Cliquez-moi... svp&quot;</span><span class="p">;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">// Dans votre script</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">maFonction</span><span class="p">(</span><span class="nx">bouton</span><span class="p">){</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="c1">// la variable bouton contient l'élément button qui à appeler la fonction</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">    </span><span class="c1">// on peut maintenant l'utiliser, un peut comme on la fait avec getElementById</span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">    </span><span class="c1">// Ex. Je veux changer le texte du bouton</span>
+</span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">    </span><span class="nx">bouton</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cliquez-moi... svp"</span><span class="p">;</span>
+</span><span id="__span-3-7"><a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="p">}</span>
 </span></code></pre></div>
 
 

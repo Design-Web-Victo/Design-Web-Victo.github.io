@@ -2420,42 +2420,42 @@
 <h2 id="creer-un-depot-sur-github">Créer un dépôt sur GitHub</h2>
 <p>La première étape consiste à se créer un dépôt sur GitHub. Le nom du dépôt doit <strong>obligatoirement</strong> avoir la structure suivante : <strong>username.github.io</strong> où username est votre nom d'usager sur GitHub. </p>
 <p>Pour créer un nouveau dépôt, allez sur GitHub et cliquez sur l'onglet Repositories.  Cliquez ensuite sur le bouton  <strong>New</strong> qui se situe en haut à droite. Attention de bien vérifier l'orthographe car à la moindre erreur le site ne sera pas affiché. </p>
-<p><img alt="github_create_repo" src="../../../assets/images/git_githubpages_01.png" /></p>
+<p><img alt="github_create_repo" src="../../../assets/images/git_githubpages_01.png"/></p>
 <p>Le nom du repository (dépôt) serait dans mon exemple <mark class="critic">FrechetteMathieu.github.io</mark>, vous n'avez pas à modifier les autres paramètres. Assurez-vous par contre que le dépôt est public, les dépôts privé ne pourront pas être "transformés" en page web.</p>
 <p>Ensuite vous avez deux choix, selon de que votre projet soit déjà initialisé ou non par git. </p>
 <h2 id="deux-choix-pour-lier-votre-site-a-github">Deux choix pour lier votre site à Github</h2>
 <h3 id="1-commencer-un-site-a-partir-de-zero">1. Commencer un site à partir de zéro</h3>
 <p>Si vous n'avez pas commencé le développement de votre site le plus simple est de cloner le dépôt que vous venez de créer. Vous devez débuter par récupérer l'url de votre dépôt.  Sur la page GitHub du dépôt cliquez sur le bouton "Code" en haut à droite et copiez l'url affiché.</p>
-<p><img alt="github_clone" src="../../../assets/images/git_githubpages_02.png" /></p>
+<p><img alt="github_clone" src="../../../assets/images/git_githubpages_02.png"/></p>
 <p>Allez ensuite dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnant <strong>git bash here</strong> dans le menu. Dans la console, clonez maintenant le dépôt avec la commande git clone suivi de l'url que vous avez récupéré.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/username/username.github.io
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/username/username.github.io
 </span></code></pre></div>
 <h3 id="2-lier-un-projet-existant">2. Lier un projet existant</h3>
 <p>Si votre projet est déjà commencé et qu'un dépôt Git est déjà créé en local (sur votre portable), vous pouvez l'associer avec le dépôt créé sur GitHub, sinon vous devez commencer par initialiser un <a href="../git_basics/#initialiser-un-depot">dépot</a>. Allez dans le répertoire de votre projet et ouvrez une console Git Bash en cliquant avec le bouton droit de la souris et en sélectionnez <strong>git bash here</strong> dans le menu. Dans la console, entrez la commande suivante en remplaçant l'url par celui du dépôt sur GitHub : </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/username/username.github.io
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/username/username.github.io
 </span></code></pre></div>
 <p>Pour valider que le liaison fonctionne, vous pouvez utiliser la commande </p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
 </span></code></pre></div>
 Si tout a fonctionné vous allez voir à l'écran l'url du dépôt GitHub</p>
-<p><img alt="git_remote" src="../../../assets/images/git_githubpages_03.png" /></p>
+<p><img alt="git_remote" src="../../../assets/images/git_githubpages_03.png"/></p>
 <p>Vérifiez ensuite que la branche de votre projet local correspond à la branche par défaut du dépôt Github. </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>branch<span class="w"> </span>--show-current
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>git<span class="w"> </span>branch<span class="w"> </span>--show-current
 </span></code></pre></div>
 <p>Vous indiquera le nom de la branche dans laquelle vous êtes. Si elle est différente renommez là pour avoir le même nom que sur Github avec la commande suivante</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>branch<span class="w"> </span>-m<span class="w"> </span>nom_de_la_nouvelle_branche
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>git<span class="w"> </span>branch<span class="w"> </span>-m<span class="w"> </span>nom_de_la_nouvelle_branche
 </span></code></pre></div>
 <p>Un fois assuré que les noms des branches correspondent, il vous restera à pousser votre site sur le dépôt Github. Faites un commit des changements et de vos fichiers</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># ajoute tous les fichiers dans la file d&#39;attente</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># effectue le commit</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Premiere mise en ligne&quot;</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Copie les fichiers vers le dépôt Github</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># main est égale au nom de la branche sur votre portable</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># ajoute tous les fichiers dans la file d'attente</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1"># effectue le commit</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Premiere mise en ligne"</span>
+</span><span id="__span-5-5"><a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="c1"># Copie les fichiers vers le dépôt Github</span>
+</span><span id="__span-5-6"><a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="c1"># main est égale au nom de la branche sur votre portable</span>
+</span><span id="__span-5-7"><a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </span></code></pre></div>
 <p>Si vous avez une erreur avec la dernière commande git push, essayer de forcer le push avec la commande suivante </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-F<span class="w"> </span>origin<span class="w"> </span>nom_de_la_branche_local
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-F<span class="w"> </span>origin<span class="w"> </span>nom_de_la_branche_local
 </span></code></pre></div>
 <h2 id="acceder-a-mon-site">Accéder à mon site</h2>
 <p>Pour accéder à la version en ligne de votre site, vous n'avez qu'a utiliser l'url <code>https://LeNomDuDépôt</code>. Dans l'exemple plus haut l'url serait donc <code>https://designweb-a2021.github.io/</code></p>

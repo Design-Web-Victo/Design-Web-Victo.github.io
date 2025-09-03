@@ -2507,45 +2507,45 @@
 
 <h1 id="lien-hypertexte">Lien hypertexte</h1>
 <p>La balise <strong><code>&lt;a&gt;</code></strong> en HTML (appelée <strong>balise d’ancrage ou lien hypertexte</strong>) sert principalement à créer des <strong>liens cliquables</strong>, mais elle a beaucoup plus de possibilités qu’on ne le pense. Voici un tour complet :</p>
-<hr />
+<hr/>
 <h2 id="1-creer-un-lien-hypertexte-usage-de-base">1. <strong>Créer un lien hypertexte (usage de base)</strong></h2>
 <p>La forme la plus courante :</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.exemple.com&quot;</span><span class="p">&gt;</span>Visiter le site<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.exemple.com"</span><span class="p">&gt;</span>Visiter le site<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li><strong><code>href</code></strong> : l’URL ou l’adresse vers laquelle le lien pointe.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="2-liens-internes-ancre-dans-la-meme-page">2. <strong>Liens internes (ancre dans la même page)</strong></h2>
 <p>Permet de naviguer à une section spécifique :</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#section2&quot;</span><span class="p">&gt;</span>Aller à la section 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;section2&quot;</span><span class="p">&gt;</span>Section 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#section2"</span><span class="p">&gt;</span>Aller à la section 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">"section2"</span><span class="p">&gt;</span>Section 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li>Utilise <strong><code>id</code></strong> comme repère.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="3-liens-vers-des-fichiers-telechargeables">3. <strong>Liens vers des fichiers téléchargeables</strong></h2>
 <p>Pour permettre le téléchargement direct :</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;document.pdf&quot;</span> <span class="na">download</span><span class="p">&gt;</span>Télécharger le PDF<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"document.pdf"</span> <span class="na">download</span><span class="p">&gt;</span>Télécharger le PDF<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li>L’attribut <strong><code>download</code></strong> force le téléchargement.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="4-lancer-un-e-mail-ou-un-appel">4. <strong>Lancer un e-mail ou un appel</strong></h2>
 <h3 id="envoyer-un-e-mail">Envoyer un e-mail :</h3>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:exemple@mail.com&quot;</span><span class="p">&gt;</span>Envoyer un e-mail<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"mailto:exemple@mail.com"</span><span class="p">&gt;</span>Envoyer un e-mail<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <h3 id="lancer-un-appel-telephonique-sur-mobile">Lancer un appel téléphonique (sur mobile) :</h3>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;tel:+14185551234&quot;</span><span class="p">&gt;</span>Appeler maintenant<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"tel:+14185551234"</span><span class="p">&gt;</span>Appeler maintenant<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<hr />
+<hr/>
 <h2 id="5-ouvrir-un-lien-dans-un-nouvel-onglet-ou-une-nouvelle-fenetre">5. <strong>Ouvrir un lien dans un nouvel onglet ou une nouvelle fenêtre</strong></h2>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.exemple.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;noopener noreferrer&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  Ouvrir dans un nouvel onglet
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.exemple.com"</span> <span class="na">target</span><span class="o">=</span><span class="s">"_blank"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"noopener noreferrer"</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>  Ouvrir dans un nouvel onglet
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li><strong><code>target="_blank"</code></strong> : ouvre dans un nouvel onglet/fenêtre.</li>
@@ -2569,34 +2569,34 @@
 </ol>
 <p>Pour plus de détails sur l'attribut rel : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Attributes/rel" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Attributes/rel</a></p>
 </details>
-<hr />
+<hr/>
 <h2 id="6-transformer-nimporte-quel-element-en-lien">6. <strong>Transformer n’importe quel élément en lien</strong></h2>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.exemple.com&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;image.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Image cliquable&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.exemple.com"</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"image.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Image cliquable"</span><span class="p">&gt;</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li>Les balises <code>&lt;a&gt;</code> peuvent contenir du texte, des images, des icônes, voire des blocs complets (depuis HTML5).</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="7-creer-un-lien-vide-ou-cliquable-sans-navigation">7. <strong>Créer un lien vide ou cliquable sans navigation</strong></h2>
 <ul>
 <li>Avec <code>#</code> :</li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Lien sans destination<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Lien sans destination<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Utilez pour des menus ou des scripts JS. On peut aussi s'en servir pour simuler un retour au début de la page.</p>
-<hr />
+<hr/>
 <h2 id="8-accessibilite-et-bonnes-pratiques">8. <strong>Accessibilité et bonnes pratiques</strong></h2>
 <ul>
 <li><strong>Texte de lien explicite</strong> : éviter les "Cliquez ici". Préférer :</li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/contact&quot;</span><span class="p">&gt;</span>Contactez-nous<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/contact"</span><span class="p">&gt;</span>Contactez-nous<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <ul>
 <li><strong>Utiliser <code>title</code> (avec modération)</strong> :</li>
 </ul>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/info&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Plus d&#39;informations sur ce sujet&quot;</span><span class="p">&gt;</span>Plus d&#39;infos<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/info"</span> <span class="na">title</span><span class="o">=</span><span class="s">"Plus d'informations sur ce sujet"</span><span class="p">&gt;</span>Plus d'infos<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Utile pour ajouter de l'information supplémentaire, mais pas indispensable.</p>
 

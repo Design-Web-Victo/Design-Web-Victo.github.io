@@ -2389,27 +2389,27 @@
 <p>Maintenir une bonne qualité de code est primordial pour la compréhension et le partage avec les pairs. Dans le cadre de ce cours nous allons mettre l'accent sur ces trois facettes: les variables, l'indentation et la documentation des fonctions.</p>
 <h2 id="les-variables">Les variables</h2>
 <p>Un nom de variable peut être composé de lettre, chiffre et des caractères $ et _. Le premier caractère ne doit pas être un chiffre. Si le nom de la variable comporte plus d'un mot, on va utiliser la notation <a href="https://fr.wikipedia.org/wiki/Camel_case" target="_blank">camelCase</a> : on supprime les espaces, le premier mot en minuscule mais les suivants commenceront par une lettre majuscule. Attention, le nom de variable est aussi sensible à la case.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Exemple de nom en camelCase</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nomEnCamelCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Hallo!&#39;</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// Les deux variables sont différentes</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Message 1&#39;</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">messAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Message 2&#39;</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Exemple de nom en camelCase</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nomEnCamelCase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Hallo!'</span><span class="p">;</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1">// Les deux variables sont différentes</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Message 1'</span><span class="p">;</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">messAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Message 2'</span><span class="p">;</span>
 </span></code></pre></div>
 <p>Pour les constantes, la norme veux qu'on mettre le nom entièrement en majuscule avec les différents mots séparés par un _ quand la valeur est "hardcodé" (attribué dans le code lors de la déclaration). Sinon on utilise le camelCase comme avec les variables.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// La valeur est ici hardcodé</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">COULEUR_ORANGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;#ffaa00&#39;</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">// On assigne la constant avec le résultat de la fonction calculAge()</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">monAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">calculAge</span><span class="p">(</span><span class="nx">dateDeNaissance</span><span class="p">);</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// La valeur est ici hardcodé</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">COULEUR_ORANGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'#ffaa00'</span><span class="p">;</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1">// On assigne la constant avec le résultat de la fonction calculAge()</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">monAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">calculAge</span><span class="p">(</span><span class="nx">dateDeNaissance</span><span class="p">);</span>
 </span></code></pre></div>
 <p>En règle générale on doit éviter les noms de variable trop court ou non significatif.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Le nom ne veut rien dire</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Mon titre&#39;</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// C&#39;est beaucoup plus significatif avec ce nom</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">texteTitre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Mon titre&#39;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">// Le nom ne veut rien dire</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Mon titre'</span><span class="p">;</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1">// C'est beaucoup plus significatif avec ce nom</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">texteTitre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Mon titre'</span>
 </span></code></pre></div>
 <h2 id="lindentation">L'indentation</h2>
 <p>L'indentation consiste à insérer des tabulations à des endroits stratégiques pour faciliter la lecture du code et éviter les erreurs. Prenons ces deux extraits de codes, l'un avec une indentation déficiente et l'autre avec une bonne indentation. Selon vous lequel est le plus clair?</p>
-<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple sans indentation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Exemple sans indentation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
@@ -2445,7 +2445,7 @@
 </span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="k">return</span><span class="w"> </span><span class="nx">valeur</span><span class="p">;</span>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Exemple avec indentation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Exemple avec indentation</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
@@ -2510,7 +2510,7 @@
 </ul>
 <p>Ajoutez les lignes <em>@param</em> seulement si la fonction reçoit des paramêtres et <em>@returns</em> si elle retourne une valeur.</p>
 <p>Ensuite quand vous allez inscrire la fonction dans votre code, l'auto-complétion va lire la documentation et vous l'afficher. Voici un exemple avec vsCode.</p>
-<p><img alt="js_qualite_code.png" class="center shadow" src="../../../assets/images/js_qualite_code.png" /></p>
+<p><img alt="js_qualite_code.png" class="center shadow" src="../../../assets/images/js_qualite_code.png"/></p>
 <p>Il y a plusieurs mot-clés qu'on peut utiliser mais dans le cadre du cours nous allons nous en tenir à <em>@param</em> et <em>@returns</em>.</p>
 <h2 id="sources">Sources</h2>
 <ul>

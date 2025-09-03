@@ -2357,11 +2357,11 @@
 <p>Pour la modification du thème, je vous laisse la liberté d'explorer la façon dont vous voulez le faire. Voici un article très complet sur le sujet : <a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/" target="_blank">https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/</a>. Je vous propose ici d'utiliser la méthode des deux fichiers css telle que décrite dans l'article. </p>
 <p>En résumé, créez un fichier css de <em>base</em> qui va contenir ce qui ne change pas d'un thème à l'autre. Ensuite vous allez créer  un fichier css par thème et y placer ce qui est propre à chacun (couleur du texte, du background, etc.) </p>
 <p>Ensuite dans votre fichier html, liez le fichier css du thème de "base" avec la balise link comme on le fait habituellement, mais en y ajoutant un id. </p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;theme_defaut.css&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;theme_css&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"theme_defaut.css"</span> <span class="na">id</span><span class="o">=</span><span class="s">"theme_css"</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Quand on va cliquer sur notre icône, on va intercepter l'événement en javascript et aller la valeur de l'attribut href pour le bon fichier css. </p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#theme_css&quot;</span><span class="p">);</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">theme</span><span class="p">.</span><span class="nx">href</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;theme_rainbow.css&quot;</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"#theme_css"</span><span class="p">);</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nx">theme</span><span class="p">.</span><span class="nx">href</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"theme_rainbow.css"</span><span class="p">;</span>
 </span></code></pre></div>
 <h2 id="enregistrement-du-theme-dans-le-stockage">Enregistrement du thème dans le stockage</h2>
 <p>À chaque fois qu'on clique sur l'icône de basculement de thème, on va sauvegarder lequel est choisi dans le stockage selon les options sélectionnés des cases à cocher. Si une case n'est pas cochée, effacez la valeur dans le stockage correspondant. </p>
@@ -2371,13 +2371,13 @@
 <p>C'est maintenant le temps d'être créatif, créez un thème à votre goût avec plein de couleurs et d'effets d'animation! (Vous pouvez tout aussi bien faire une version "dark mode" de la barre de navigation)</p>
 <h2 id="exemple-de-resultat">Exemple de résultat</h2>
 <figure>
-<p><img alt="ex21_01.png" class="center shadow" src="../../../assets/images/ex21_01.png" />
-  </p>
+<p><img alt="ex21_01.png" class="center shadow" src="../../../assets/images/ex21_01.png"/>
+</p>
 <figcaption>Mode par défaut</figcaption>
 </figure>
 <figure>
-<p><img alt="ex21_01¸2.png" class="center shadow" src="../../../assets/images/ex21_02.png" />
-  </p>
+<p><img alt="ex21_01¸2.png" class="center shadow" src="../../../assets/images/ex21_02.png"/>
+</p>
 <figcaption>Mode Rainbow</figcaption>
 </figure>
 <!-- ## Version finale

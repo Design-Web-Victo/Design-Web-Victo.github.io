@@ -2390,11 +2390,12 @@
 <p>Nous allons créer un tableau qui résume certain endroit où on peut trouver une pioche en fer dans l'édition Java de Minecraft. Les données et l'inspiration du tableau proviennent de <a href="https://fr.minecraft.wiki/w/Pioche#Butin_de_structure" target="_blank">Minecraft Wiki</a></p>
 <p>Voici en image le tableau que vous devez reproduire</p>
 <figure>
-<p><img alt="ex03_tableau_01" class="center shadow" src="../../assets/images/ex03_tableau_01.png" /></p>
+<p><img alt="ex03_tableau_01" class="center shadow" src="../../assets/images/ex03_tableau_01.png"/></p>
 </figure>
 <ol>
-<li>Le titre est de niveau 1 et le sous-titre de niveau 2</li>
+<li>Le titre est de niveau 1</li>
 <li>Structure du tableau : <ul>
+<li>Utilisez la balise <code>&lt;caption&gt;</code> pour donner le titre <em>Butin de structure</em> au tableau</li>
 <li>Les deux premières lignes du tableau sont dans l'entête du tableau</li>
 <li>Les lignes "Pioche en fer" composent le corps du tableau</li>
 <li>La ligne source est dans le pied-de-page</li>
@@ -2414,12 +2415,12 @@
 </ol>
 <h2 id="validation-du-tableau">Validation du tableau</h2>
 <p>Une fois votre travail terminé et identique à l'image plus haut, ajoutez la ligne suivante dans la section <code>head</code> de votre page et rechargez là. (Assurez-vous d'avoir bien copié le fichier style.css dans le répertoire css)</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;./css/style.css&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"./css/style.css"</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Si vous avez bien suivi les consignes, votre tableau devrait maintenant ressembler à ceci</p>
 <figure>
-<p><img alt="ex03_tableau_css" class="center shadow" src="../../assets/images/ex03_tableau_css.png" />
-  </p>
+<p><img alt="ex03_tableau_css" class="center shadow" src="../../assets/images/ex03_tableau_css.png"/>
+</p>
 <figcaption>Version finale avec CSS</figcaption>
 </figure>
 

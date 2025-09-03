@@ -2306,13 +2306,13 @@
 <p>Dans cet exercice, on va créer un formulaire de réinitialisation de mot de passe. L'usager va être invité à choisir un nouveau mot de passe qui correspond à un format qu'on va lui indiquer. Ensuite, il devra le saisir à nouveau pour le confirmer et finalement cliquer sur un bouton réinitialisation. </p>
 <p>Je vais vous fournir un template de base via un lien <mark>Github Classroom</mark> dans un devoir Teams.</p>
 <figure>
-<p><img alt="ex18_01" class="center shadow" src="../../assets/images/ex18_01.png" />
-  </p>
+<p><img alt="ex18_01" class="center shadow" src="../../assets/images/ex18_01.png"/>
+</p>
 <figcaption>Version finale de l'interface au chargement</figcaption>
 </figure>
 <figure>
-<p><img alt="ex18_02" class="center shadow" src="../../assets/images/ex18_02.png" />
-  </p>
+<p><img alt="ex18_02" class="center shadow" src="../../assets/images/ex18_02.png"/>
+</p>
 <figcaption>Version avec les validations</figcaption>
 </figure>
 <h2 id="linterface">L'interface</h2>
@@ -2330,7 +2330,7 @@
 <li>Le mot de passe doit contenir au moins une majuscule et une minuscule.</li>
 <li>Le mot de passe doit contenir un caractère spécial. Pour cette validation vous pouvez utiliser l'expression régulière suivante :</li>
 </ul>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">caractereSpecial_regex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[!@#$%^&amp;*(),.?&quot;:{}|&lt;&gt;]/</span><span class="p">;</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">caractereSpecial_regex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/[!@#$%^&amp;*(),.?":{}|&lt;&gt;]/</span><span class="p">;</span>
 </span></code></pre></div>
 <div class="admonition astuce">
 <p class="admonition-title">Astuce</p>
@@ -2341,31 +2341,31 @@ Pour plus de détail : <a href="https://developer.mozilla.org/en-US/docs/Web/Jav
 <p>Vous devez aussi afficher une barre de couleur selon la force du mot de passe. Pour connaître sa force, je vous ai fourni dans le template de base une librairie appelée <strong>zxcvbn</strong>. Vous pouvez l'utiliser comme ceci dans votre script JS : </p>
 <div class="language-javascript highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultatForce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">zxcvbn</span><span class="p">(</span><span class="s2">&quot;mon_mot_de_passe&quot;</span><span class="p">);</span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultatForce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">zxcvbn</span><span class="p">(</span><span class="s2">"mon_mot_de_passe"</span><span class="p">);</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">// resultatForce.score va retourner une valeur de 0 (faible) à 4 (fort)</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultatForce</span><span class="p">.</span><span class="nx">score</span><span class="p">);</span><span class="w"> </span>
 </span></code></pre></div></td></tr></table></div>
 <p>La barre va être divisée en 5 sections. Le nombre de sections colorées correspond au score +1 (1 section colorée pour un score de 0 et toutes les sections pour un score de 4). La couleur des sections va aussi changer selon le score : </p>
 <figure>
-<p><img alt="ex18_03" class="center shadow" src="../../assets/images/ex18_03.png" />
-  </p>
+<p><img alt="ex18_03" class="center shadow" src="../../assets/images/ex18_03.png"/>
+</p>
 <figcaption>&lt; 2 : rouge</figcaption>
 </figure>
 <figure>
-<p><img alt="ex18_04" class="center shadow" src="../../assets/images/ex18_04.png" />
-  </p>
+<p><img alt="ex18_04" class="center shadow" src="../../assets/images/ex18_04.png"/>
+</p>
 <figcaption>== 2 : jaune</figcaption>
 </figure>
 <figure>
-<p><img alt="ex18_05" class="center shadow" src="../../assets/images/ex18_05.png" />
-  </p>
+<p><img alt="ex18_05" class="center shadow" src="../../assets/images/ex18_05.png"/>
+</p>
 <figcaption> &gt; 2 : vert</figcaption>
 </figure>
 <p>Pour la barre à vous de voir comment la faire. J'ai utilisé 5 <strong>div</strong> côte à côte disposées en Flex avec une hauteur et une largeur fixe. Je change ensuite la couleur de fond des <strong>divs</strong> qui doivent être affichées.</p>
 <h3 id="le-bouton-reinitialiser">Le bouton Réinitialiser</h3>
 <p>Quand on clique sur le bouton "Réinitialiser", on doit empêcher l'envoi du formulaire si les validations ne sont pas respectées. En plus des trois qu'on fait lors de la modification du texte, on doit aussi avoir un mot de passe avec un score de force de 3 ou 4. </p>
 <p>Le mot de passe inscrit dans le <strong>input</strong> "Confirmer votre mot de passe" doit aussi correspondre. S'il est différent, affichez un message d'erreur sous celui-ci.</p>
-<p><img alt="ex18_06" class="center shadow" src="../../assets/images/ex18_06.png" /></p>
+<p><img alt="ex18_06" class="center shadow" src="../../assets/images/ex18_06.png"/></p>
 
 
 

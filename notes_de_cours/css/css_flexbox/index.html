@@ -2655,13 +2655,13 @@
 </code></pre></div>
 </div>
 <p>Voici un schéma qui résume la disposition des éléments : </p>
-<p><img alt="css-flexbox01.png" src="../../../assets/images/css-flexbox01.png" /></p>
+<p><img alt="css-flexbox01.png" src="../../../assets/images/css-flexbox01.png"/></p>
 <h2 id="les-proprietes-du-conteneur">Les propriétés du conteneur</h2>
 <h3 id="display">display</h3>
 <p>Pour déterminer que l'élément est un conteneur flexbox. Cette propriété va nous permettre d'utiliser les autres propriétés flexbox sur cet élément et tous ses enfants.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="flex-direction">flex-direction</h3>
 <p>C'est avec cette propriété qu'on va définir le sens de distribution des items. Les valeurs possibles sont : </p>
@@ -2671,9 +2671,9 @@
 <li>column : de haut en bas (en colonne)</li>
 <li>column : de bas en haut</li>
 </ul>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">row-reverse</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">row-reverse</span><span class="p">;</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="justify-content">justify-content</h3>
 <p><strong>justify-content</strong> permet de définir l'alignement des items suivant le <strong>main-axis</strong>.</p>
@@ -2694,45 +2694,45 @@
 <li>flex-end : les items sont alignés à la fin de l'axe secondaire</li>
 <li>center : les items sont centrés selon l'axe secondaire</li>
 </ul>
-<p><img alt="css-flexbox02" src="../../../assets/images/css-flexbox02.png" /></p>
+<p><img alt="css-flexbox02" src="../../../assets/images/css-flexbox02.png"/></p>
 <p><a href="https://css-tricks.com/almanac/properties/a/align-items/" target="_blank">source</a></p>
 <h3 id="align-content">align-content</h3>
 <p>Cette propriété est effective seulement quand il y a plusieurs lignes d'items dans le conteneur. C'est un peu le même principe que pour la propriété justify-content mais au niveau de l'axe secondaire (cross axis). Les valeurs possibles sont sensiblement les mêmes : flex-start, flex-end, center, space-between, space-around et space-evenly.</p>
-<p><img alt="css-flexbox04" src="../../../assets/images/css-flexbox04.png" /></p>
+<p><img alt="css-flexbox04" src="../../../assets/images/css-flexbox04.png"/></p>
 <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">source</a></p>
 <h3 id="flex-wrap">flex-wrap</h3>
 <p>Les items vont par défaut essayer de tenir sur la même ligne. On peut changer ce comportement et permettre au items de pouvoir "wraper" quand c'est nécessaire.</p>
 <h3 id="flex-flow">flex-flow</h3>
 <p>La propriété <strong>flex-flow</strong> est un raccourci pour définir les propriétés <strong>flex-direction</strong> et <strong>flew-wrap</strong> dans une seule ligne.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">/* Au lieu d&#39;écrire ceci */</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">flex-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="o">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">flex-wrap</span><span class="o">:</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c">/* on peut résumé par cette ligne */</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">flex-flow</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c">/* Au lieu d'écrire ceci */</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">flex-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="o">;</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">flex-wrap</span><span class="o">:</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c">/* on peut résumé par cette ligne */</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">flex-flow</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
 </span></code></pre></div>
 <h2 id="les-proprietes-des-items">Les propriétés des items</h2>
 <h3 id="flex-grow">flex-grow</h3>
 <p>Définie la capacité pour un item de s'agrandir quand c'est nécessaire. La propriété indique quel quantité d'espace "restant" du conteneur l'item peut utiliser pour s'agrandir. La valeur de la propriété est un entier positif sans unité de mesure qui représente une proportion. Si j'ai par exemple trois items et que je leur défini la propriété flex-grow à 1, les trois items auront la même dimension. Par contre si un des items à une valeur de 2 et les autres 1, le premier item sera 2 fois plus grand que les deux autres.</p>
-<p><img alt="css-flexbox05" src="../../../assets/images/css-flexbox05.png" /></p>
+<p><img alt="css-flexbox05" src="../../../assets/images/css-flexbox05.png"/></p>
 <h3 id="flex-shrink">flex-shrink</h3>
 <p>Quand la taille de tous les items <mark>est plus grande que leur conteneur</mark>, les items peuvent retrécir pour qu'ils soient ajuster au conteneur. Le facteur de rétrécissement est indiqué par la valeur de la propriété <code>flex-shrink</code>. Par défaut la valeur est 1 et une valeur de 0 indique que la taille de l'item ne peut être diminuée.  </p>
 <h3 id="flex-basis">flex-basis</h3>
 <p>Détermine la taille par défaut d'un élément avant que l'espace disponible ne soit distribué. La valeur peut être une unité de mesure ou un mot-clé.</p>
 <h3 id="flex">flex</h3>
 <p>C'est un raccourci pour les propriétés <strong>flex-grow</strong>, <strong>flex-shrink</strong> et <strong>flex-basis</strong>. Ces deux derniers sont optionnel, on peut spécifié uniquement une valeur pour <strong>flex-grow</strong>.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">flex</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="w"> </span><span class="nt">1</span><span class="w"> </span><span class="nt">25</span><span class="o">%</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c">/* est équivalent à */</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">flex-grow</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="o">;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nt">flex-shrink</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="o">;</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nt">flex-basis</span><span class="o">:</span><span class="w"> </span><span class="nt">25</span><span class="o">%;</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">flex</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="w"> </span><span class="nt">1</span><span class="w"> </span><span class="nt">25</span><span class="o">%</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="c">/* est équivalent à */</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nt">flex-grow</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="o">;</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="nt">flex-shrink</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="o">;</span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nt">flex-basis</span><span class="o">:</span><span class="w"> </span><span class="nt">25</span><span class="o">%;</span>
 </span></code></pre></div>
 <h3 id="align-self">align-self</h3>
 <p>Permet d'outrepasser l'alignement par défaut pour un item. Les valeurs possible sont les mêmes que pour align-items.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">#</span><span class="nn">item3</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="k">align-self</span><span class="p">:</span><span class="w"> </span><span class="kc">flex-end</span><span class="p">;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">#</span><span class="nn">item3</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">align-self</span><span class="p">:</span><span class="w"> </span><span class="kc">flex-end</span><span class="p">;</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><img alt="css-flexbox03" src="../../../assets/images/css-flexbox03.png" /></p>
+<p><img alt="css-flexbox03" src="../../../assets/images/css-flexbox03.png"/></p>
 <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#align-self" target="_blank">source</a></p>
 <h2 id="tutoriel-sous-forme-de-jeux">Tutoriel sous forme de jeux</h2>
 <ul>

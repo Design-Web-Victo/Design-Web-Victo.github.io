@@ -2460,55 +2460,55 @@
 <h1 id="le-versionnage-de-fichiers-avec-git">Le versionnage de fichiers avec GIT</h1>
 <p>Git est un logiciel de gestion de version. Son rôle est de suivre les modifications faites dans les fichiers appartenant aux projets qu'il "suit" et de permettre de créer et d'organiser plusieurs version de ces projets. On peut utiliser Git en "local", depuis une installation sur un autre ordinateur ou bien sur un serveur distant. Attention Git n'est pas à confondre avec GitHub, qui est un site internet qui offre l'accès à un serveur GIT distant. </p>
 <h2 id="cycle-de-vie">Cycle de vie</h2>
-<p><img alt="git_workflow" src="../../../assets/images/git_basics_01.png" /></p>
+<p><img alt="git_workflow" src="../../../assets/images/git_basics_01.png"/></p>
 <p>Le cycle de vie d'un fichier avec Git est le suivant : on travaille sur le fichier dans un répertoire qui contient un dépôt Git. Une fois les modifications terminées, on indique à Git d'ajouter le fichier dans la file d'attente du prochain commit avec la commande <strong>git add</strong>. Quand on est prêt à officialiser les changements, on créer un commit avec la commande <strong>git commit</strong>. Ensuite on peut aussi envoyer le commit à un serveur distant avec la commande <strong>git push</strong>. Les changements sont maintenant inclus dans une nouvelle version et on recommence le cycle.</p>
 <h2 id="installation-de-git">Installation de GIT</h2>
 <p>Pour installer Git sur un poste de travail, on doit le télécharger à l'adresse suivante</p>
 <p><a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></p>
 <p>Vous pouvez conserver tous les paramètres par défaut, sauf peut-être le choix de l'éditeur de texte pour les messages de commit. Au lieu de VIM, sélectionnez l'éditeur que vous utilisez pour le développement de vos projet. (Vscode par exemple)</p>
-<p><img alt="git_install" src="../../../assets/images/git_basics_02.png" /></p>
+<p><img alt="git_install" src="../../../assets/images/git_basics_02.png"/></p>
 <p>Après l'installation vous aurez accès à une console Git ( Git Bash ) et une interface graphique ( Git GUI ). La méthode la plus simple d'utiliser ces deux applications est d'ouvrir l'explorateur de fichiers et de vous diriger dans le répertoire où vous vous les utiliser ( habituellement le répertoire de votre projet ), de cliquer sur le bouton droit de la souris et de choisir dans le menu soit <strong>Git Bash Here</strong> ou <strong>Git GUI Here</strong>. Sachez qu'on peut faire sensiblement la même chose avec les deux programmes c'est une question de préférences. Les explications qui suivent seront données avec Git Bash.</p>
 <h2 id="initialiser-un-depot">Initialiser un dépôt</h2>
 <p>La première chose à faire quand on veut utiliser Git sur un projet est d'initialiser un dépôt dans le répertoire de ce projet. Pour ce faire, ouvrez Git Bash et dirigez vous à la racine de votre projet. Entrez ensuite la commande suivante</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>init
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>init
 </span></code></pre></div>
 Vous aurez le message "<em>Initialized empty Git repository</em> " qui vous indiquera que l'initialisation a réussi. Un répertoire nommé <strong>.git</strong> sera aussi créé dans le répertoire où vous avez lancé la commande. Dans ce répertoire on retrouve des fichiers utilisés par Git, <u>il ne faut pas le supprimé</u>. À partir de maintenant vous pouvez utiliser Git pour suivre votre projet.</p>
 <h2 id="verifier-le-statut-dun-depot">Vérifier le statut d'un dépôt</h2>
 <p>Avec la commande <strong>git status</strong> on peut voir l'état des fichiers d'un dépôt</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>status
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>status
 </span></code></pre></div>
-<p><img alt="git_status" src="../../../assets/images/git_basics_03.png" /></p>
+<p><img alt="git_status" src="../../../assets/images/git_basics_03.png"/></p>
 <p>On retrouve plusieurs informations dans le résultat. On peut voir qu'aucun commit n'a encore été fait. Dans la section Untracked files on retrouve le fichier index.html, ce qui veux dire que ce fichier est présent dans le projet mais que Git ne suit pas ces modifications.</p>
 <h2 id="ajouter-des-fichiers-dans-le-suivi-de-git">Ajouter des fichiers dans le suivi de Git</h2>
 <p>On doit indiquer à Git quels fichiers il doit ajouter dans le prochain commit. Pour se faire on va utiliser la commande git add suivi du ou des noms de fichiers à suivre : </p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>add<span class="w"> </span>index.html<span class="w"> </span>page2.html
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>git<span class="w"> </span>add<span class="w"> </span>index.html<span class="w"> </span>page2.html
 </span></code></pre></div>
 On peut utiliser le point au lieu des noms de fichiers pour ajouter tout les fichiers du répertoire qui ne sont pas encore suivi.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
 </span></code></pre></div>
 <p>Maintenant si on refait la commande git status en reprenant le projet plus haut, on aura le résultat suivant : </p>
-<p><img alt="git_status_02" src="../../../assets/images/git_basics_04.png" /></p>
+<p><img alt="git_status_02" src="../../../assets/images/git_basics_04.png"/></p>
 <p>On peut voir que le fichier index.html est maintenant dans la "file d'attente" du prochain commit. Si on veut enlever un fichier de cette liste, on peut utiliser la commande </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>index.html
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>index.html
 </span></code></pre></div>
 <p>Vous êtes maintenant prêt à créer un commit</p>
 <h2 id="creer-un-commit">Créer un commit</h2>
 <p>Pour finaliser et officialiser les changements aux fichiers modifiés, on va créer un "commit" avec la commande git commit. Il est très important d'ajouter un message explicit de la raison du commit.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Message court mais explicite de la raison du commit&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Message court mais explicite de la raison du commit"</span>
 </span></code></pre></div>
 <h2 id="pousser-le-commit-vers-un-depot-distant-optionnel">Pousser le commit vers un dépôt distant (Optionnel)</h2>
 <p>Si votre dépôt local est associé à un dépôt distant (sur Github par exemple), vous devez aussi faire une dernière commande pour envoyer le commit.</p>
 <p>La première fois que vous lancez la commande, vous devez ajouter l'option -u suivi de "origin" et de "main" qui est le nom de la branche de votre commit.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </span></code></pre></div>
 <p>Les fois suivantes vous pouvez uniquement faire git push</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>push
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>git<span class="w"> </span>push
 </span></code></pre></div>
 <h2 id="resume-des-commandes-principales">Résumé des commandes principales</h2>
 <p>Une fois votre dépôt bien configuré, quand vous avez des changements à appliquer, vous n'avez qu'à faire les trois commandes suivantes : </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Nom du commit&quot;</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>git<span class="w"> </span>push
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Nom du commit"</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>git<span class="w"> </span>push
 </span></code></pre></div>
 
 

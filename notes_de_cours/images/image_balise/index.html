@@ -2372,23 +2372,23 @@
 <h2 id="img"><code>&lt;img&gt;</code></h2>
 <p>C'est la balise la plus couramment utilisée.</p>
 <p><strong>Syntaxe de base</strong></p>
-<div class="language-text highlight"><span class="filename">Syntaxe de base</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;img src=&quot;chemin/vers/image.jpg&quot; alt=&quot;Description de l&#39;image&quot;&gt;
+<div class="language-text highlight"><span class="filename">Syntaxe de base</span><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>&lt;img src="chemin/vers/image.jpg" alt="Description de l'image"&gt;
 </span></code></pre></div>
 <p><strong>Attributs de la balise <code>&lt;img&gt;</code></strong></p>
 <ul>
 <li><code>src</code> (requis) : chemin vers le fichier image (<mark>toujours utiliser <a href="../../html/html_relative_path/" trget="_blank">un chemin relatif</a></mark>)</li>
 <li><code>alt</code> (requis) : texte alternatif affiché si l'image ne charge pas et lu par les lecteurs d'écran.</li>
 <li><code>width</code> et <code>height</code> : définissent la largeur et la hauteur en pixels. Attention, si les deux valeurs sont données, l'image ne conservera pas ses proportions originales. Donc à moins d'être sûr vous pouvez utiliser qu'un des deux attributs. On peut exprimer la valeur en px ou seulement numériquement (300px ou 300).
-<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./photo.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Une photo&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;300&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"./photo.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Une photo"</span> <span class="na">width</span><span class="o">=</span><span class="s">"300"</span><span class="p">&gt;</span>
 </span></code></pre></div></li>
 <li><code>title</code> : affiche une info-bulle au survol
-<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;logo.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Logo de l&#39;entreprise&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Notre logo officiel&quot;</span><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"logo.png"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Logo de l'entreprise"</span> <span class="na">title</span><span class="o">=</span><span class="s">"Notre logo officiel"</span><span class="p">&gt;</span>
 </span></code></pre></div></li>
 <li><code>loading="lazy"</code> : charge l'image seulement quand elle devient visible dans la fenêtre. Permet d'accélérer le chargement de la page.</li>
 </ul>
 <details class="info">
 <summary>L'attribut loading</summary>
-<p>L’attribut loading="lazy" sur la balise <img> permet de différer le chargement de l’image jusqu’à ce qu’elle soit proche d’apparaître dans la fenêtre de visualisation (viewport) de l’utilisateur.</p>
+<p>L’attribut loading="lazy" sur la balise <img/> permet de différer le chargement de l’image jusqu’à ce qu’elle soit proche d’apparaître dans la fenêtre de visualisation (viewport) de l’utilisateur.</p>
 <p><strong>Avantages :</strong></p>
 <ul>
 <li>Améliore la performance de la page (chargement plus rapide).</li>
@@ -2404,39 +2404,39 @@
 </details>
 <ul>
 <li><code>srcset</code> : Permet de spécifier plusieurs versions d'une même image (dimension variable) optimisées pour différentes résolutions ou tailles d'écran. On va spécifier un nom de fichier suivi d'une taille en pixels et d'un w qui exprime la taille maximal de l'écran pour utiliser cette image. Pour ajouter des images, on doit les séparer par des virgules.
-<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">img</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/mountains-small.jpg&quot;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Montagnes&quot;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="na">srcset</span><span class="o">=</span><span class="s">&quot;</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s">    images/mountains-small.jpg 400w,</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s">    images/mountains-medium.jpg 800w,</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s">    images/mountains-large.jpg 1200w</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="s">    &quot;</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">&gt;</span>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">img</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>  <span class="na">src</span><span class="o">=</span><span class="s">"images/mountains-small.jpg"</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>  <span class="na">alt</span><span class="o">=</span><span class="s">"Montagnes"</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>  <span class="na">srcset</span><span class="o">=</span><span class="s">"</span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="s">    images/mountains-small.jpg 400w,</span>
+</span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="s">    images/mountains-medium.jpg 800w,</span>
+</span><span id="__span-3-7"><a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="s">    images/mountains-large.jpg 1200w</span>
+</span><span id="__span-3-8"><a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="s">    "</span>
+</span><span id="__span-3-9"><a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="p">&gt;</span>
 </span></code></pre></div>
 Dans cette exemple, on donne trois images avec des tailles différentes. Si le navigateur à une largeur d'affichage de 1000 pixels, l'image affichée sera <code>mountains-large.jpg</code> car c'est elle qui à la largeur supérieur la plus proche. On doit quand-même toujours renseigner l'attribut <code>src</code> quand on utilise <code>srcset</code>. Elle sert de valeur par défaut si le navigateur ne supporte pas <code>srcset</code> ou si les fichiers listés dans srcset ne correspondent pas aux conditions. Pour plus de détail : <a href="https://laconsole.dev/blog/attribut-srcset-optimiser-chargement-images-html#des-images-responsive-avec-lattribut-srcset" target="_blank">srcset: Optimiser le chargement des images en html</a></li>
 </ul>
-<hr />
-<div class="language-html highlight"><span class="filename">Exemple complet</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./images/montagne.webp&quot;</span> 
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>       <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Paysage de montagne enneigée&quot;</span> 
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>       <span class="na">width</span><span class="o">=</span><span class="s">&quot;600&quot;</span> 
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>       <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+<hr/>
+<div class="language-html highlight"><span class="filename">Exemple complet</span><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"./images/montagne.webp"</span> 
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>       <span class="na">alt</span><span class="o">=</span><span class="s">"Paysage de montagne enneigée"</span> 
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>       <span class="na">width</span><span class="o">=</span><span class="s">"600"</span> 
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>       <span class="na">loading</span><span class="o">=</span><span class="s">"lazy"</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>L'image <code>montagne.webp</code> situé dans le répertoire images sera d'une largeur de 600 pixels et le navigateur la chargera uniquement quand elle sera visible à l'écran. Le texte alternatif est <code>Paysage de montagne enneigée</code>. </p>
 <h2 id="figure-et-figcation"><code>&lt;figure&gt;</code> et <code>&lt;figcation&gt;</code></h2>
 <p><code>&lt;figure&gt;</code> est une balise sémantique qui sert à regrouper une image à une légende (avec la balise <code>&lt;figcaption</code>). Tout comme les autres balises sémantique, c'est une bonne pratique pour améliorer le référencement et l'accessibilité.</p>
 <p>La légende n'est pas obligatoire, on peut utiliser <code>&lt;figure&gt;</code> seule avec la balise <code>&lt;img&gt;</code>.</p>
-<div class="language-html highlight"><span class="filename">Exemple d'utilisation</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;montagne.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Montagne enneigée&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Vue panoramique des Alpes en hiver.<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+<div class="language-html highlight"><span class="filename">Exemple d'utilisation</span><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"montagne.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Montagne enneigée"</span><span class="p">&gt;</span>
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Vue panoramique des Alpes en hiver.<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <h2 id="picture"><code>&lt;picture&gt;</code></h2>
 <p>La balise <code>&lt;picture&gt;</code> en HTML est utilisée pour offrir des images adaptatives (responsive) en fonction de différents critères comme la taille de l'écran. Elle permet de spécifier plusieurs sources d'images et de laisser le navigateur choisir la plus appropriée. Le navigateur évalue les conditions de la première balise <code>&lt;source&gt;</code>. Si elles sont remplis, c'est cette image qui sera utilisé, sinon on passe à la ligne suivante. Si aucune conditions ne peut être satisfaites, l'image de la balise <code>&lt;img&gt;</code> sera utilisée.</p>
 <p><strong>Fonctionnement de la balise <code>&lt;picture&gt;</code></strong></p>
 <p>Structure de base :</p>
 <ul>
-<li>La balise <code>&lt;picture&gt;</code> contient une ou plusieurs balises <source> suivies d'une balise <img>.</li>
+<li>La balise <code>&lt;picture&gt;</code> contient une ou plusieurs balises <source/> suivies d'une balise <img/>.</li>
 <li>Les balises <code>&lt;source&gt;</code> définissent des images alternatives avec des attributs comme media (requêtes CSS) ou type (format d'image).</li>
 <li>La balise <code>&lt;img&gt;</code> agit comme une image de secours (fallback) si aucune des sources ne correspond.</li>
 </ul>
@@ -2446,12 +2446,12 @@ Dans cette exemple, on donne trois images avec des tailles différentes. Si le n
 <li>type : Permet de spécifier le format de l'image (par exemple, image/webp).</li>
 <li>srcset : Définit une ou plusieurs sources d'images avec des résolutions différentes.</li>
 </ul>
-<div class="language-html highlight"><span class="filename">Exemple d'utilisation</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&quot;image-large.webp&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;(min-width: 800px)&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/webp&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&quot;image-large.jpg&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;(min-width: 800px)&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&quot;image-small.webp&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/webp&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;image-small.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Description de l&#39;image&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
+<div class="language-html highlight"><span class="filename">Exemple d'utilisation</span><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"image-large.webp"</span> <span class="na">media</span><span class="o">=</span><span class="s">"(min-width: 800px)"</span> <span class="na">type</span><span class="o">=</span><span class="s">"image/webp"</span><span class="p">&gt;</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"image-large.jpg"</span> <span class="na">media</span><span class="o">=</span><span class="s">"(min-width: 800px)"</span><span class="p">&gt;</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"image-small.webp"</span> <span class="na">type</span><span class="o">=</span><span class="s">"image/webp"</span><span class="p">&gt;</span>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"image-small.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Description de l'image"</span><span class="p">&gt;</span>
+</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
 </span></code></pre></div>
 <p>Explication de l'exemple :</p>
 <ul>
