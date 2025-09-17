@@ -1130,15 +1130,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#ressources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ressources
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2320,11 +2311,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exercices/ex04_enonce/" class="md-nav__link">
+      <a href="../../../exercices/ex06_selecteur_css/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercice 06 - Les sélecteurs CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex07_font/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 07 - La typographie
   </span>
   
 
@@ -2371,7 +2383,7 @@
 <p>Pour pouvoir afficher du texte avec une police de caractères précise dans une page internet, cette police doit être présente sur l'ordinateur de l'usager. Il existe une liste de polices de caractère qui sont présentent sur pratiquement toutes les systèmes d'opérations et qu'on peut utiliser sans risque. (Le bon vieux Time New Roman par exemple) Vous pouvez consulter cette liste <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#web_safe_fonts" target="_blank">ici</a>.</p>
 <p>Cependant on veut pouvoir sortir de ce cadre et avoir accès à une multitude de style d'écriture différent. Il existe des façons de faire et on va en voir deux.</p>
 <h2 id="les-web-fonts">Les Web Fonts</h2>
-<p>La première option nous est accessible avec CSS. L'idée est d'inclure le fichier de la police que l'on veut utiliser dans les fichiers de notre site et d'ensuite faire une lien avec celui-ci dans nos feuilles de style qui vont l'utiliser.</p>
+<p>La première option, <mark>et celle qui est à prévilégier</mark>, est d'inclure le fichier de la police que l'on veut utiliser dans les fichiers de notre site et d'ensuite faire une lien avec celui-ci dans nos feuilles de style qui vont l'utiliser.</p>
 <p>On va commencer par utiliser la commande <strong>@font-face</strong> pour relier un mot-clé au fichier de la police. On va faire cette déclaration au début de notre fichier CSS.</p>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">@</span><span class="k">font-face</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nt">font-family</span><span class="o">:</span><span class="w"> </span><span class="s2">"nomDeLaPolice"</span><span class="o">;</span><span class="w"> </span><span class="c">/* Le nom de la police qu'on va utiliser plus loin */</span>
@@ -2396,16 +2408,27 @@
 </span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="p">}</span>
 </span></code></pre></div>
 <p>Pour aller plus loin : <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts</a></p>
+<div class="admonition astuce">
+<p class="admonition-title">Où trouver des fonts gratuites?</p>
+<ul>
+<li><a href="https://www.dafont.com/fr/" target="_blank">www.dafont.com</a></li>
+<li><a href="https://fonts.google.com/" target="_blank">Google Font</a> (Vous pouvez télécharger les fichiers de font)</li>
+</ul>
+</div>
 <h2 id="google-font">Google font</h2>
-<p>Une deuxième option est d'utilisé des services de ressources en ligne comme Google Font. L'avantage est qu'on n'est pas obligé d'inclure les fichiers à notre site internet, on va les chercher directement en ligne. Le désavantage est que l'affichage de la page internet est un peu plus lente et qu'on est dépendant du service, si il devient inaccessible notre ressource le sera aussi.</p>
-<p>Voici un exemple d'utilisation avec <a href="https://fonts.google.com/" target="_blank">Google Font</a></p>
-<p>Une fois sur le site, on recherche la police qui nous convient. </p>
-<p><img alt="font01" src="../../../assets/images/font01.png"/></p>
-<p>Ensuite on a parfois à choisir des options et on clique sur l'icone "View selected families" en haut à droite.</p>
-<p><img alt="font02" src="../../../assets/images/font02.png"/></p>
+<p>Une deuxième option est d'utilisé des services de ressources en ligne comme Google Font. L'avantage est qu'on n'est pas obligé d'inclure les fichiers à notre site internet, on va les chercher directement en ligne. Le désavantage est que l'affichage de la page internet est qu'on est dépendant du service, si il devient inaccessible notre ressource le sera aussi.</p>
+<details class="note">
+<summary>Voici un exemple d'utilisation avec Google Font</summary>
+<p>Une fois sur <a href="https://fonts.google.com/" target="_blank">Google Font</a>, on recherche la police qui nous convient. </p>
+<p><img alt="font01" class="center shadow" src="../../../assets/images/font01.png"/></p>
+<p>Ensuite on a parfois à choisir des options et on clique sur l'icone <strong>Get font</strong> en haut à droite.</p>
+<p><img alt="font02" class="center shadow" src="../../../assets/images/font02.png"/></p>
+<p>On peut ensuite choisir de télécharger le fichier (<strong>Download all</strong>) ou de récupérer le code pour l'insérer dans notre css.</p>
+<p><img alt="font03" class="center shadow" src="../../../assets/images/font03.png"/></p>
 <p>On nous donne le code à ajouter dans notre projet pour utiliser la police. On peut le faire avec la balise <strong>link</strong> depuis le fichier HTML ou bien avec <strong>@import</strong> dans le fichier CSS. Ensuite on va utiliser <strong>font-family</strong> comme avec les <strong>web-fonts</strong>.</p>
-<p><img alt="font03" src="../../../assets/images/font03.png"/><img alt="font04" src="../../../assets/images/font04.png"/></p>
-<p>On peut aussi télécharger le fichier de police, dans ce cas on utilisera ensuite la même technique que pour les <strong>web-fonts</strong>.</p>
+<p><img alt="font04" class="center shadow" src="../../../assets/images/font04.png"/></p>
+<p>Si on a décidé de télécharger le fichier de police, on utilisera ensuite la même technique que pour les <strong>web-fonts</strong>.</p>
+</details>
 <p>Un exemple du résultat, uniquement en css</p>
 <div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap'</span><span class="o">)</span><span class="p">;</span>
 </span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>
@@ -2414,35 +2437,37 @@
 </span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="font-awesome">Font Awesome</h2>
-<p>Un autre service qui pourrait être intéressant pour vos projet est <a href="https://fontawesome.com/" target="_blank">font awesome</a>. Il nous offre une sélection de milliers d'icônes à utiliser gratuitement. Pratique quand par exemple vous voulez créer un bouton "enregistrer" avec un icône de disquette. Vous devez en premier lieu vous inscrire sur le site avec une adresse courriel. Une fois la procédure d'inscription terminée, vous aurez accès à un "kit". Dans ce "kit" vous avez un ligne de code à ajouter à votre projet.</p>
-<p><img alt="font05" src="../../../assets/images/font05.png"/></p>
+<p>Un autre service qui pourrait être intéressant pour vos projet est <a href="https://fontawesome.com/" target="_blank">font awesome</a>. Il nous offre une sélection de milliers d'icônes à utiliser gratuitement. Pratique quand vous voulez utiliser plusieurs icônes pour votre site. </p>
+<details class="note">
+<summary>Comment ajouter des icones de Font Awesome</summary>
+<ul>
+<li>Vous devez en premier lieu vous inscrire sur le site avec une adresse courriel. </li>
+<li>Une fois la procédure d'inscription terminée, vous pourrez créer votre premier "kit". </li>
+<li>Sélectionnez tout les styles gratuits et cliquez sur <strong>Next</strong>.</li>
+<li>Laissez Fontawesome se charger de l'hébergement (<strong>Hosted by Us</strong>).</li>
+<li>Ensuite vous pouvez personalisez votre kit et une fois terminé cliquez sur <strong>Make My Kit</strong>.</li>
+<li>Finalement on vous donnera une ligne de code que vous devrez copier dans chaque page html où vous voulez utiliser les icônes.</li>
+<li>Le code doit être ajouter dans la section <code>\&lt;head\&gt;</code> de votre page</li>
+</ul>
+<p><img alt="font05" class="center shadow" src="../../../assets/images/font05.png"/></p>
 <p>Ensuite vous pouvez faire une recherche dans la banque d'icône, pensez à cocher la case "free" pour n'avoir que les icônes gratuit. Une fois l'icône de vos rêves trouvé, on vous donne un code html sous la forme d'une balise <strong>i</strong> à ajouter à votre fichier HTML.</p>
 <p><img alt="font06" src="../../../assets/images/font06.png"/></p>
 <p><img alt="font07" src="../../../assets/images/font07.png"/></p>
-<p>Exemple dans un fichier html</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</details>
+<div class="language-html highlight"><span class="filename">Exemple d'utilisation</span><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
 </span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
-</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple Font-Awesome<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://kit.fontawesome.com/8xxxxxx1.js"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span><span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple Font-Awesome<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>        <span class="cm">&lt;!-- Le CDN de mon kit Font Awesome --&gt;</span>
+</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://kit.fontawesome.com/8xxxxxx1.js"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </span><span id="__span-4-9"><a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>
 </span><span id="__span-4-10"><a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span><span id="__span-4-11"><a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a>        <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"fa-solid fa-floppy-disk"</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span><span id="__span-4-13"><a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a>
-</span><span id="__span-4-14"><a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span><span id="__span-4-15"><a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a>
-</span><span id="__span-4-16"><a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-4-11"><a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a>        <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"fa-solid fa-floppy-disk"</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-4-12"><a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-4-13"><a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></code></pre></div>
-<h2 id="ressources">Ressources</h2>
-<ul>
-<li>Trouver des fichiers de polices de caractères gratuitement : <a href="https://www.dafont.com/fr/" target="_blank">https://www.dafont.com/fr/</a></li>
-<li>Google Font : <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
-<li>Font Awesome : <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a></li>
-</ul>
 
 
 
