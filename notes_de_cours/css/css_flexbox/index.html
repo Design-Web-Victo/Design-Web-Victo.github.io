@@ -2484,6 +2484,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exercices/ex08_intro_flexbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercice 08 - Introduction à Flexbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2518,18 +2539,22 @@
 
 
 <h1 id="flexbox">Flexbox</h1>
-<p>Flexbox est une série de propriétés CSS dont le but est de faciliter la mise en page, l'alignement et la distribution de l'espace entre des items d'un "container". </p>
-<p>Le "container" à le pouvoir de redimensionner ses items selon l'espace disponible. Utiliser Flexbox est donc une méthode efficace pour créer des pages web "responsive", qui s'adaptent au différent support avec laquelle on la consulte. </p>
-<p>On va utiliser Flexbox pour la mise en page de petite section de nos site, un menu, une section de titre, etc. Pour la disposition plus globale, il y a d'autres méthodes plus appropriées comme <strong>Grid</strong> que nous verrons ultérieurement.</p>
+<p>Le <em>Flexible Box Layout</em> (ou Flexbox) est un module CSS qui permet de créer des mises en page simples et flexibles.</p>
+<p>Il est conçu pour distribuer l’espace et aligner des éléments dans un conteneur, même quand la taille de ce conteneur ou de ses enfants est inconnue ou variable.Le conteneur à le pouvoir de redimensionner ses items enfants selon l'espace disponible.</p>
+<p>Flexbox est donc une méthode efficace pour créer des pages web "responsive", qui s'adaptent au différent support avec laquelle on la consulte. </p>
+<p>Nous allons l'utiliser principalement pour la mise en page de petite section de nos site, un menu, une section de titre, etc. Pour des mises en page plus globale et rigide, il y a d'autres méthodes plus appropriées comme <strong>Grid</strong> que nous verrons ultérieurement.</p>
 <h2 id="definition">Définition</h2>
-<p>L'idée générale de Flexbox est qu'on englobe le contenu avec lequel on veut travailler dans un conteneur (container). Les éléments qui se retrouvent dans le conteneur, les items, seront affecté par les propriétés du conteneur et aussi par des règles propres à eux. </p>
+<p>L'idée générale de Flexbox est qu'on englobe le contenu avec lequel on veut travailler dans un conteneur. N'importe quelle élément HTML (balise) peut faire office de conteneur, mais certains sont plus approprié que d'autres. Les éléments qui se retrouvent dans le conteneur, les items, seront affecté par les propriétés du conteneur et aussi par des règles propres à eux. </p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<div class="language-text highlight"><pre><span></span><code>Seulement les enfants immédiats du conteneur parent sont affectés.
-</code></pre></div>
+<p>Seulement les enfants immédiats du conteneur parent sont affectés. </p>
 </div>
 <p>Voici un schéma qui résume la disposition des éléments : </p>
-<p><img alt="css-flexbox01.png" src="../../../assets/images/css-flexbox01.png"/></p>
+<figure>
+<p><img alt="css-flexbox01.png" class="center shadow" src="../../../assets/images/css-flexbox01.png"/>
+</p>
+<figcaption></figcaption>
+</figure>
 <h2 id="les-proprietes-du-conteneur">Les propriétés du conteneur</h2>
 <h3 id="display">display</h3>
 <p>Pour déterminer que l'élément est un conteneur flexbox. Cette propriété va nous permettre d'utiliser les autres propriétés flexbox sur cet élément et tous ses enfants.</p>
@@ -2540,74 +2565,83 @@
 <h3 id="flex-direction">flex-direction</h3>
 <p>C'est avec cette propriété qu'on va définir le sens de distribution des items. Les valeurs possibles sont : </p>
 <ul>
-<li>row: par défaut, en ligne de gauche à droite</li>
-<li>row-reverse : en ligne, de droite à gauche</li>
-<li>column : de haut en bas (en colonne)</li>
-<li>column : de bas en haut</li>
+<li><code>row</code>: <strong>par défaut</strong>, en ligne de gauche à droite</li>
+<li><code>row-reverse</code> : en ligne, de droite à gauche</li>
+<li><code>column</code> : en colonne, de haut en bas </li>
+<li><code>column</code> : en colonne, de bas en haut</li>
 </ul>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">.</span><span class="nc">container_titre</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">row-reverse</span><span class="p">;</span>
-</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
-</span></code></pre></div>
 <h3 id="justify-content">justify-content</h3>
 <p><strong>justify-content</strong> permet de définir l'alignement des items suivant le <strong>main-axis</strong>.</p>
 <ul>
-<li>flex-start : par défaut, les items sont alignés au début selon le sens de <strong>flex-direction</strong>.</li>
-<li>flex-end : Les items sont aligné à la fin selon le sens de <strong>flex-direction</strong></li>
-<li>center : Les items sont centrés</li>
-<li>space-between : Le premier et dernier items sont alignés respectivement au début et à la fin, les autres items sont distribués de façon égale sur la ligne.</li>
-<li>space-around : Les items sont distribué uniformément le long de l'axe et un espace égale au début et à la fin.</li>
-<li>space-evenly : Les items sont distribuéé pour que l'espace entre chaque soit la même.</li>
+<li><code>flex-start</code> : par défaut, les items sont alignés au début selon le sens de <strong>flex-direction</strong>.</li>
+<li><code>flex-end</code> : Les items sont aligné à la fin selon le sens de <strong>flex-direction</strong></li>
+<li><code>center</code> : Les items sont centrés</li>
+<li><code>space-between</code> : Le premier et dernier items sont alignés respectivement au début et à la fin, les autres items sont distribués de façon égale sur la ligne.</li>
+<li><code>space-around</code> : Les items sont distribué uniformément le long de l'axe et un espace égale au début et à la fin.</li>
+<li><code>space-evenly</code> : Les items sont distribuéé pour que l'espace entre chaque soit la même.</li>
 </ul>
-<p><a href="https://academy.pega.com/topic/flexbox-capability/v1" target="_blank">source</a></p>
+<figure>
+<p><img alt="css-flexbox04" class="center shadow" src="../../../assets/images/css-flexbox04.png"/>
+</p>
+<figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-justify-content" target="_blank">CSS-Tricks - justify-content</a></figcaption>
+</figure>
 <h3 id="align-items">align-items</h3>
 <p>Détermine comment les items seront alignés selon l'axe secondaire (cross axis).</p>
 <ul>
-<li>stretch : par défaut, les items seront étirés pour remplir l'espace disponible dans le conteneur</li>
-<li>flex-start : les items sont alignés au début de l'axe secondaire</li>
-<li>flex-end : les items sont alignés à la fin de l'axe secondaire</li>
-<li>center : les items sont centrés selon l'axe secondaire</li>
+<li><code>stretch</code> : par défaut, les items seront étirés pour remplir l'espace disponible dans le conteneur</li>
+<li><code>flex-start</code> : les items sont alignés au début de l'axe secondaire</li>
+<li><code>flex-end</code> : les items sont alignés à la fin de l'axe secondaire</li>
+<li><code>center</code> : les items sont centrés selon l'axe secondaire</li>
 </ul>
-<p><img alt="css-flexbox02" src="../../../assets/images/css-flexbox02.png"/></p>
-<p><a href="https://css-tricks.com/almanac/properties/a/align-items/" target="_blank">source</a></p>
+<figure>
+<p><img alt="css-flexbox02" class="center shadow" src="../../../assets/images/css-flexbox02.png"/>
+</p>
+<figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-align-items" target="_blank">CSS-Tricks - align-items</a></figcaption>
+</figure>
 <h3 id="align-content">align-content</h3>
-<p>Cette propriété est effective seulement quand il y a plusieurs lignes d'items dans le conteneur. C'est un peu le même principe que pour la propriété justify-content mais au niveau de l'axe secondaire (cross axis). Les valeurs possibles sont sensiblement les mêmes : flex-start, flex-end, center, space-between, space-around et space-evenly.</p>
-<p><img alt="css-flexbox04" src="../../../assets/images/css-flexbox04.png"/></p>
-<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">source</a></p>
+<p>Cette propriété est effective <mark>seulement quand il y a plusieurs lignes d'items dans le conteneur</mark>. C'est un peu le même principe que pour la propriété justify-content mais au niveau de l'axe secondaire (cross axis). Les valeurs possibles sont les suivantes: </p>
+<figure>
+<p><img alt="css-flexbox04" class="center shadow" src="../../../assets/images/css-flexbox04.png"/>
+</p>
+<figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-align-content" target="_blank">CSS-Tricks - align-content</a></figcaption>
+</figure>
 <h3 id="flex-wrap">flex-wrap</h3>
-<p>Les items vont par défaut essayer de tenir sur la même ligne. On peut changer ce comportement et permettre au items de pouvoir "wraper" quand c'est nécessaire.</p>
+<p>Les items vont par défaut essayer de tenir sur la même ligne. On peut changer ce comportement et permettre au items de pouvoir se disposer sur une autre ligne quand c'est nécessaire et possible.</p>
 <h3 id="flex-flow">flex-flow</h3>
 <p>La propriété <strong>flex-flow</strong> est un raccourci pour définir les propriétés <strong>flex-direction</strong> et <strong>flew-wrap</strong> dans une seule ligne.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c">/* Au lieu d'écrire ceci */</span>
-</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">flex-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="o">;</span>
-</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">flex-wrap</span><span class="o">:</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
-</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c">/* on peut résumé par cette ligne */</span>
-</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">flex-flow</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c">/* Au lieu d'écrire ceci */</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nt">flex-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="o">;</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nt">flex-wrap</span><span class="o">:</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c">/* on peut résumé par cette ligne */</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">flex-flow</span><span class="o">:</span><span class="w"> </span><span class="nt">row-reverse</span><span class="w"> </span><span class="nt">wrap</span><span class="o">;</span>
 </span></code></pre></div>
 <h2 id="les-proprietes-des-items">Les propriétés des items</h2>
 <h3 id="flex-grow">flex-grow</h3>
 <p>Définie la capacité pour un item de s'agrandir quand c'est nécessaire. La propriété indique quel quantité d'espace "restant" du conteneur l'item peut utiliser pour s'agrandir. La valeur de la propriété est un entier positif sans unité de mesure qui représente une proportion. Si j'ai par exemple trois items et que je leur défini la propriété flex-grow à 1, les trois items auront la même dimension. Par contre si un des items à une valeur de 2 et les autres 1, le premier item sera 2 fois plus grand que les deux autres.</p>
-<p><img alt="css-flexbox05" src="../../../assets/images/css-flexbox05.png"/></p>
+<figure>
+<p><img alt="css-flexbox05" class="center shadow" src="../../../assets/images/css-flexbox05.png"/>
+</p>
+<figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-grow" target="_blank">CSS-Tricks - flex-grow</a></figcaption>
+</figure>
 <h3 id="flex-shrink">flex-shrink</h3>
-<p>Quand la taille de tous les items <mark>est plus grande que leur conteneur</mark>, les items peuvent retrécir pour qu'ils soient ajuster au conteneur. Le facteur de rétrécissement est indiqué par la valeur de la propriété <code>flex-shrink</code>. Par défaut la valeur est 1 et une valeur de 0 indique que la taille de l'item ne peut être diminuée.  </p>
+<p>Quand la taille de tous les items <mark>est plus grande que leur conteneur</mark>, les items peuvent retrécir pour qu'ils soient ajustés au conteneur. Le facteur de rétrécissement est indiqué par la valeur de la propriété <code>flex-shrink</code>. Par défaut la valeur est 1 et une valeur de 0 indique que la taille de l'item ne peut être diminuée.  </p>
 <h3 id="flex-basis">flex-basis</h3>
-<p>Détermine la taille par défaut d'un élément avant que l'espace disponible ne soit distribué. La valeur peut être une unité de mesure ou un mot-clé.</p>
+<p>Détermine la taille par défaut d'un élément avant que l'espace disponible ne soit distribué.</p>
 <h3 id="flex">flex</h3>
 <p>C'est un raccourci pour les propriétés <strong>flex-grow</strong>, <strong>flex-shrink</strong> et <strong>flex-basis</strong>. Ces deux derniers sont optionnel, on peut spécifié uniquement une valeur pour <strong>flex-grow</strong>.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nt">flex</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="w"> </span><span class="nt">1</span><span class="w"> </span><span class="nt">25</span><span class="o">%</span>
-</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="c">/* est équivalent à */</span>
-</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nt">flex-grow</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="o">;</span>
-</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="nt">flex-shrink</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="o">;</span>
-</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nt">flex-basis</span><span class="o">:</span><span class="w"> </span><span class="nt">25</span><span class="o">%;</span>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">flex</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="w"> </span><span class="nt">1</span><span class="w"> </span><span class="nt">25</span><span class="o">%</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c">/* est équivalent à */</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">flex-grow</span><span class="o">:</span><span class="w"> </span><span class="nt">2</span><span class="o">;</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nt">flex-shrink</span><span class="o">:</span><span class="w"> </span><span class="nt">1</span><span class="o">;</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">flex-basis</span><span class="o">:</span><span class="w"> </span><span class="nt">25</span><span class="o">%;</span>
 </span></code></pre></div>
 <h3 id="align-self">align-self</h3>
 <p>Permet d'outrepasser l'alignement par défaut pour un item. Les valeurs possible sont les mêmes que pour align-items.</p>
-<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">#</span><span class="nn">item3</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">align-self</span><span class="p">:</span><span class="w"> </span><span class="kc">flex-end</span><span class="p">;</span>
-</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><img alt="css-flexbox03" src="../../../assets/images/css-flexbox03.png"/></p>
-<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#align-self" target="_blank">source</a></p>
+<figure>
+<p><img alt="css-flexbox06" class="center shadow" src="../../../assets/images/css-flexbox06.png"/>
+</p>
+<figcaption><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#align-self" target="_blank">CSS-Tricks - align-self</a></figcaption>
+</figure>
 <h2 id="tutoriel-sous-forme-de-jeux">Tutoriel sous forme de jeux</h2>
 <ul>
 <li><a href="https://codepip.com/games/flexbox-froggy/" target="_blank">Flexbox Froggy</a></li>
