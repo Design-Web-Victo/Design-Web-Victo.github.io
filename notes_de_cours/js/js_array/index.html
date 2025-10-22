@@ -3108,31 +3108,6 @@ Chaque valeur a une position appelée index qui commence à 0.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Le prix du </span><span class="si">${</span><span class="nx">produits</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">nom</span><span class="si">}</span><span class="sb"> est de </span><span class="si">${</span><span class="nx">produits</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">prix</span><span class="si">}</span><span class="sb"> dollars`</span><span class="p">);</span>
 </span></code></pre></div></p>
 </div>
-<p><strong>Exercice 6 - Tableau à deux dimensions</strong></p>
-<p>On souhaite représenter les notes d’étudiants dans trois matières :</p>
-<ul>
-<li>Mathématiques</li>
-<li>Français</li>
-<li>Informatique</li>
-</ul>
-<p>Crée un tableau notes contenant les données suivantes :
-<div class="language-js highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">notes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-18-2"><a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">  </span><span class="p">[</span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">72</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 1</span>
-</span><span id="__span-18-3"><a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">  </span><span class="p">[</span><span class="mf">60</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">,</span><span class="w"> </span><span class="mf">75</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 2</span>
-</span><span id="__span-18-4"><a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">  </span><span class="p">[</span><span class="mf">95</span><span class="p">,</span><span class="w"> </span><span class="mf">88</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 3</span>
-</span><span id="__span-18-5"><a href="#__codelineno-18-5" id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="w">  </span><span class="p">[</span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">52</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span><span class="p">]</span><span class="w">   </span><span class="c1">// Étudiant 4</span>
-</span><span id="__span-18-6"><a href="#__codelineno-18-6" id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="p">];</span>
-</span></code></pre></div>
-Chaque sous-tableau représente les notes d’un étudiant dans l’ordre : <code>[Math, Français, Informatique]</code>.</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Partie 1 — Afficher toutes les notes</li>
-</ul>
-<p>Affiche dans la console chaque note de chaque étudiant formaté de cette façon :</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="nx">Étudiant</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">72</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span>
-</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="nx">Étudiant</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">60</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">,</span><span class="w"> </span><span class="mf">75</span>
-</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="nx">Étudiant</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">95</span><span class="p">,</span><span class="w"> </span><span class="mf">88</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span>
-</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="nx">Étudiant</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">52</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span>
-</span></code></pre></div>
 <h2 id="references">Références</h2>
 <ul>
 <li><a href="https://fr.javascript.info/array" target="_blank">Le Tutoriel JavaScript Moderne - Arrays</a></li>
