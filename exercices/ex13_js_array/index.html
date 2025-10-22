@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/exercices/ex13a_enonce/">
+        <link rel="canonical" href="https://design-web-victo.github.io/exercices/ex13_js_array/">
       
       
+        <link rel="prev" href="../ex12_media_query/">
+      
+      
+        <link rel="next" href="../bonus/bonus_calculatrice/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Exercice 13a - Horloge en javascript - Design Web 420-1E6-VI</title>
+        <title>13 - Tableau en JavaScript - Design Web 420-1E6-VI</title>
       
     
     
@@ -78,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-13a-horloge-en-javascript" class="md-skip">
+        <a href="#exercice-13-tableau-en-javascript" class="md-skip">
           Aller au contenu
         </a>
       
@@ -114,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 13a - Horloge en javascript
+              13 - Tableau en JavaScript
             
           </span>
         </div>
@@ -266,10 +270,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../ex01_text_structure/" class="md-tabs__link">
           
   
@@ -1557,6 +1563,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../notes_de_cours/js/js_array/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les tableaux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../notes_de_cours/js/js_function/" class="md-nav__link">
         
   
@@ -2190,23 +2217,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2217,7 +2249,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Exercices
@@ -2471,6 +2503,136 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    13 - Tableau en JavaScript
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    13 - Tableau en JavaScript
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-et-remise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialisation et remise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enonce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Énoncé
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Énoncé">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partie-1-afficher-toutes-les-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 1 - Afficher toutes les notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partie-2-calculer-la-moyenne-de-chaque-etudiant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 2 - Calculer la moyenne de chaque étudiant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partie-3-suivi-de-la-reussite-des-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 3 - Suivi de la réussite des étudiants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partie-4-calculer-la-moyenne-par-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 4 - Calculer la moyenne par cours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultat-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Résultat final
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2730,46 +2892,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#caracteristiques" class="md-nav__link">
+  <a href="#initialisation-et-remise" class="md-nav__link">
     <span class="md-ellipsis">
-      Caractéristiques
+      Initialisation et remise
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notions-dont-vous-aurez-besoin" class="md-nav__link">
+  <a href="#enonce" class="md-nav__link">
     <span class="md-ellipsis">
-      Notions dont vous aurez besoin
+      Énoncé
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Notions dont vous aurez besoin">
+    <nav class="md-nav" aria-label="Énoncé">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fonctions-de-date" class="md-nav__link">
+  <a href="#partie-1-afficher-toutes-les-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Fonctions de date
+      Partie 1 - Afficher toutes les notes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selectionner-une-balise-html" class="md-nav__link">
+  <a href="#partie-2-calculer-la-moyenne-de-chaque-etudiant" class="md-nav__link">
     <span class="md-ellipsis">
-      Sélectionner une balise html
+      Partie 2 - Calculer la moyenne de chaque étudiant
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lancer-une-fonction-de-maniere-periodique" class="md-nav__link">
+  <a href="#partie-3-suivi-de-la-reussite-des-etudiants" class="md-nav__link">
     <span class="md-ellipsis">
-      Lancer une fonction de manière périodique
+      Partie 3 - Suivi de la réussite des étudiants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partie-4-calculer-la-moyenne-par-cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partie 4 - Calculer la moyenne par cours
     </span>
   </a>
   
@@ -2781,9 +2952,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#noublions-pas-le-css" class="md-nav__link">
+  <a href="#resultat-final" class="md-nav__link">
     <span class="md-ellipsis">
-      N'oublions pas le css
+      Résultat final
     </span>
   </a>
   
@@ -2807,62 +2978,97 @@
   
 
 
-<h1 id="exercice-13a-horloge-en-javascript">Exercice 13a - Horloge en javascript</h1>
-<p>Comme premier exercice en javascript, on va créer une horloge digitale qui affichera la date sur une première ligne et l'heure actuelle sur une seconde.</p>
-<h2 id="caracteristiques">Caractéristiques</h2>
+<h1 id="exercice-13-tableau-en-javascript">Exercice 13 - Tableau en JavaScript</h1>
+<h2 id="initialisation-et-remise">Initialisation et remise</h2>
 <ul>
-<li>La date doit être sous la forme <strong>nomDuJour aaaa-mm-dd</strong> (Vendredi 2021-10-01).</li>
-<li>Le format de l'heure doit être <strong>hh:mm:ss [AM/PM]</strong> (00:31:45 AM). Vous allez devoir faire un calcul pour "ramener" l'heure sur 12 heures et afficher AM ou PM selon le cas.</li>
-<li>L'horloge doit être rafraichi à toute les secondes.</li>
-<li>Astuce, créez une division pour la date et une autre pour l'heure. Ensuite en javascript allez modifier le texte à l'intérieur des divisions à l'aide de <strong>innerHTML</strong>.</li>
+<li>Créez un dépôt nommé <strong>dw_ex13_arrays</strong> sur Github</li>
+<li>Clonez le dépôt sur votre portable et réalisez l'exercice</li>
+<li>Vous devez créer un fichier JavaScript qui contiendra le script et le relier à une page html.</li>
+<li>Une fois terminé, créez une version de votre exercice (add, commit) et poussez le (push) sur Github.</li>
+<li>Remettez le devoir Teams avec l'url vers votre dépot.</li>
 </ul>
-<h2 id="notions-dont-vous-aurez-besoin">Notions dont vous aurez besoin</h2>
-<h3 id="fonctions-de-date">Fonctions de date</h3>
-<p>La classe <strong>Date</strong> nous permet de créer un objet qui contient la date et l'heure du système si on l'initialise sans aucun paramètre. Ensuite on peut utiliser des fonctions pour récupérer uniquement la partie de la date qu'on veut, comme l'heure par exemple.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Récupérer la date et l'heure actuelle dans une variable</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">dateActuel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1">// Isoler une partie de la date ou de l'heure</span>
-</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">heure</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">dateActuel</span><span class="p">.</span><span class="nx">getHours</span><span class="p">();</span>
-</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">mois</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">dateActuel</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">();</span>
-</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">// Il y a des fonctions pour chaque "élément" de la date</span>
-</span></code></pre></div>
-<p>Pour cet exercice vous pourriez récupérer chaque valeur de l'heure et de la date dans des variables distinctes. Ensuite vous pouvez les afficher ensemble en les <mark>concaténant</mark> avec le symbole +. Voici un exemple où j'aurais une variable heure, minute et seconde : </p>
-<div class="language-javascript highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">script.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// Affiche à la console la valeur des trois variables séparée par des :</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">heure</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">':'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">minute</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">':'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">seconde</span><span class="p">);</span>
-</span></code></pre></div></td></tr></table></div>
-<p>Documentation : <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">https://www.w3schools.com/jsref/jsref_obj_date.asp</a></p>
-<h3 id="selectionner-une-balise-html">Sélectionner une balise html</h3>
-<p>getElementById()</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">// Sélectionner un élément selon son id</span>
-</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">displayDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'date_display'</span><span class="p">);</span>
-</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nx">displayDate</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Ma date"</span><span class="p">;</span>
-</span></code></pre></div>
-<p>querySelector</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">// Sélectionner un élément avec un sélecteur CSS</span>
-</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">displayDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'#date_display'</span><span class="p">);</span>
-</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nx">displayDate</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Ma date"</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="lancer-une-fonction-de-maniere-periodique">Lancer une fonction de manière périodique</h3>
-<p>Comme piste de solution, regardez la fonction <a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval" target="_blank">setInterval</a>.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cm">/**</span>
-</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="cm"> * Function qui affiche l'heure</span>
-</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="cm"> */</span>
-</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="kd">function</span><span class="w"> </span><span class="nx">afficheHeure</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="p">}</span>
-</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1">// setInterval prend une fonction en paramêtre et un interval de temps en millisecondes.</span>
-</span><span id="__span-4-9"><a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="c1">// À chaque intervale la fonction sera appelée.</span>
-</span><span id="__span-4-10"><a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="nx">setInterval</span><span class="p">(</span><span class="nx">afficheHeure</span><span class="p">,</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
-</span></code></pre></div>
-<h2 id="noublions-pas-le-css">N'oublions pas le css</h2>
+<h2 id="enonce">Énoncé</h2>
+<p>On souhaite représenter les notes d’étudiants dans trois matières :</p>
 <ul>
-<li>Englobez votre horloge dans une division qui sera alignée à droite de la page (le texte sera aussi aligné à droite dans chaque division).</li>
-<li>Donnez un effet de transparence à la division de l'horloge.</li>
-<li>Ajoutez une image de fond à la page.</li>
+<li>Outils informatiques</li>
+<li>Fonctionnement de l'ordinateur</li>
+<li>Design Web</li>
+<li>Programmation 1</li>
 </ul>
-<p><img alt="ex13_part01" src="../../assets/images/ex13_part01.png"/></p>
+<p>Crée un tableau <code>notes</code> à deux dimensions contenant les données suivantes :</p>
+<div class="language-js highlight"><span class="filename">Tableau de notes</span><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">notes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="p">[</span><span class="mf">85</span><span class="p">,</span><span class="w"> </span><span class="mf">72</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">,</span><span class="w"> </span><span class="mf">85</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 1</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="p">[</span><span class="mf">60</span><span class="p">,</span><span class="w"> </span><span class="mf">68</span><span class="p">,</span><span class="w"> </span><span class="mf">75</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 2</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="p">[</span><span class="mf">95</span><span class="p">,</span><span class="w"> </span><span class="mf">88</span><span class="p">,</span><span class="w"> </span><span class="mf">90</span><span class="p">,</span><span class="w"> </span><span class="mf">91</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 3</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="p">[</span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">52</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span><span class="p">,</span><span class="w"> </span><span class="mf">65</span><span class="p">],</span><span class="w"> </span><span class="c1">// Étudiant 4</span>
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">];</span>
+</span></code></pre></div>
+<p>Chaque sous-tableau représente les notes d’un étudiant dans l’ordre : </p>
+<p><code>[Outils informatiques, Fonctionnement de l'ordinateur, Design Web, Programmation 1]</code></p>
+<hr/>
+<h3 id="partie-1-afficher-toutes-les-notes">Partie 1 - Afficher toutes les notes</h3>
+<ul>
+<li>Affiche dans la console chaque note de chaque étudiant sous le format suivant: </li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>Résultat des étudiants
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>Étudiant 1: 85 - 72 - 90 - 85
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>Étudiant 2: 60 - 68 - 75 - 80
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>Étudiant 3: 95 - 88 - 90 - 91
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>Étudiant 4: 45 - 52 - 60 - 65
+</span></code></pre></div>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>Utilise une boucle imbriquée (for dans un for) ou un <code>array.forEach()</code>.</p>
+</div>
+<hr/>
+<h3 id="partie-2-calculer-la-moyenne-de-chaque-etudiant">Partie 2 - Calculer la moyenne de chaque étudiant</h3>
+<ul>
+<li>Pour chaque étudiant, calcule sa moyenne et arrondi la.</li>
+<li>Affiche ensuite les résultats de cette façon :</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>Moyenne des étudiants
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>Étudiant 1: 83
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>Étudiant 2: 71
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>Étudiant 3: 91
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>Étudiant 4: 56
+</span></code></pre></div>
+<div class="admonition astuce">
+<p class="admonition-title">Astuce</p>
+<p>tu peux utiliser <code>array.reduce()</code> ou simplement additionner les valeurs à l’aide d’une boucle.</p>
+<p><strong>Optionnel</strong></p>
+<p>Crée une fonction nommée <code>calculMoyenne</code> qui prend un tableau de notes en paramêtre et retourne la moyenne arrondie. Tu pourras réutiliser la fonctionne dans la partie 3.</p>
+</div>
+<hr/>
+<h3 id="partie-3-suivi-de-la-reussite-des-etudiants">Partie 3 - Suivi de la réussite des étudiants</h3>
+<ul>
+<li>Crée un tableau <code>reussite</code> et un tableau <code>echec</code>.</li>
+<li>Ajoute le numéro de l'étudiant dans le tableau <code>reussite</code> si ça moyenne est supérieur ou égale à 60, sinon ajoute le dans le tableau <code>echec</code>.</li>
+<li>Affiche ensuite le résultat de cette façon</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>Étudiants ayant réussi : 1,2,3
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>Étudiants en situation d'échec : 4
+</span></code></pre></div>
+<hr/>
+<h3 id="partie-4-calculer-la-moyenne-par-cours">Partie 4 - Calculer la moyenne par cours</h3>
+<ul>
+<li>Crée un tableau <code>moyenneCours</code> qui contiendra la moyenne pour chaque cours.</li>
+<li>Tu peux "hardcoder" que le premier item du tableau de note correspond au cours outils informatiques, le deuxième fonctionnement de l'ordinateur, etc.</li>
+<li>Vous pouvez aussi prendre pour acquis qu'il y a toujours une note pour chaque cours par élève.</li>
+<li>Affiche le résultat comme ceci: </li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>Outils informatiques : 71%
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>Fonctionnement de l'ordinateur : 70%
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>Design Web : 79%
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>Programmation 1 : 80%
+</span></code></pre></div>
+<hr/>
+<h2 id="resultat-final">Résultat final</h2>
+<p>Vous devriez avoir dans votre console un résultat qui resssemble à cette image: </p>
+<figure>
+<p><img alt="Ex13_final" class="center shadow" src="../../assets/images/ex13_final.png"/>
+</p>
+<figcaption>Résultat final</figcaption>
+</figure>
 
 
 
