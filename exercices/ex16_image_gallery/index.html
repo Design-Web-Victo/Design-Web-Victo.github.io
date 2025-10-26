@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://design-web-victo.github.io/exercices/ex15_enonce/">
+        <link rel="canonical" href="https://design-web-victo.github.io/exercices/ex16_image_gallery/">
       
       
+        <link rel="prev" href="../ex15_event/">
+      
+      
+        <link rel="next" href="../bonus/bonus_calculatrice/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Compteur - Design Web 420-1E6-VI</title>
+        <title>16 - Galerie d'images - Design Web 420-1E6-VI</title>
       
     
     
@@ -78,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#compteur" class="md-skip">
+        <a href="#exercice-16-galerie-dimages" class="md-skip">
           Aller au contenu
         </a>
       
@@ -114,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compteur
+              16 - Galerie d'images
             
           </span>
         </div>
@@ -266,10 +270,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../ex01_text_structure/" class="md-tabs__link">
           
   
@@ -2211,23 +2217,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2238,7 +2249,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Exercices
@@ -2539,6 +2550,139 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex15_event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15 - Compteur de click
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    16 - Galerie d'images
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    16 - Galerie d'images
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-et-remise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialisation et remise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enonce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Énoncé
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-de-limage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sélection de l'image
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sélection de l'image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cadre-sur-la-vignette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cadre sur la vignette
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#affichage-de-limage-en-haute-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Affichage de l'image en haute résolution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2793,28 +2937,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#termine" class="md-nav__link">
+  <a href="#initialisation-et-remise" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminé?
+      Initialisation et remise
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Terminé?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enonce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Énoncé
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-de-limage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sélection de l'image
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sélection de l'image">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-1" class="md-nav__link">
+  <a href="#cadre-sur-la-vignette" class="md-nav__link">
     <span class="md-ellipsis">
-      Option 1
+      Cadre sur la vignette
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-2-avance" class="md-nav__link">
+  <a href="#affichage-de-limage-en-haute-resolution" class="md-nav__link">
     <span class="md-ellipsis">
-      Option 2 - Avancé
+      Affichage de l'image en haute résolution
     </span>
   </a>
   
@@ -2843,38 +3005,81 @@
   
 
 
-<h1 id="compteur">Compteur</h1>
-<p>Cet exercice va vous permettre de mettre en pratique différentes notions de JavaScript comme les événements, les fonctions et la modification des éléments du DOM</p>
-<p>Vous devez recréer la disposition suivante avec une balise <strong>input</strong> et deux boutons. La mise en page doit être faite avec Grid.</p>
-<figure>
-<p><img alt="exercice15_01" class="center shadow" src="../../assets/images/exercice15_01.png"/>
-</p>
-<figcaption>Disposition du compteur</figcaption>
-</figure>
-<p>Au chargement de la page, le compteur doit afficher 0. Quand on clique sur le bouton "+", on incrémente le compteur de 1. À l'inverse quand on clique sur le bouton "-" on décrémente la valeur de 1.</p>
-<p>Pour ce faire, utiliser l'attribut onClick sur les balises appropriées.</p>
-<p>Si la valeur devient négative (est inférieure à 0), le texte du <strong>input</strong> deviendra rouge.</p>
-<figure>
-<p><img alt="exercice15_02" class="center shadow" src="../../assets/images/exercice15_02.png"/>
-</p>
-<figcaption>Une valeur négative est en rouge</figcaption>
-</figure>
-<p>Une fois que votre exercice fonctionne, remplacez les attributs onClick par l'utilisation de la fonction addEventListener()</p>
-<h2 id="termine">Terminé?</h2>
-<h3 id="option-1">Option 1</h3>
+<h1 id="exercice-16-galerie-dimages">Exercice 16 - Galerie d'images</h1>
+<h2 id="initialisation-et-remise">Initialisation et remise</h2>
 <ul>
-<li>Ajoutez une deuxième balise input qui permet d'indiquer de combien incrémenter la valeur. Par défaut, la valeur est fixée à 1. Quand on clique sur le bouton +, on augmente le compteur selon la valeur présente le nouvel input. </li>
-<li>Ajoutez un bouton permettant de réinitialiser des input (remettre les valeurs par défaut).</li>
+<li>Téléchargez le projet de départ : <a href="../../assets/files/ex16_depart.zip">ex16_depart.zip</a></li>
+<li>Vous n'avez pas à faire de remise pour cet exercice</li>
 </ul>
+<h2 id="enonce">Énoncé</h2>
+<p>Dans cet exercice vous devez ajouter un script JavaScript qui va permettre, en cliquant sur une image en vignette, d'afficher cette image dans une taille plus grande. </p>
 <figure>
-<p><img alt="exercice15_3" class="center shadow" src="../../assets/images/exercice15_03.png"/>
+<p><img alt="ex16_final" class="center shadow" src="../../assets/images/ex16_final.png"/>
 </p>
-<figcaption>Le bouton + augmente maintenant la valeur de +2 <br/>et le bouton - diminue la valeur de -2</figcaption>
+<figcaption></figcaption>
 </figure>
-<h3 id="option-2-avance">Option 2 - Avancé</h3>
 <ul>
-<li>Programmez l'interface de la <a href="../bonus/bonus_calculatrice/">calculatrice</a> présentée dans la section Bonus.</li>
+<li>Le projet de départ contient déjà une page html et un script css fonctionnel. <mark>Vous ne devez pas modifier ces deux fichiers.</mark></li>
+<li>Les images proviennent du site <a href="https://unsplash.com/fr" target="_blank">Unsplash</a></li>
+<li>Toutes les informations nécessaire sont déjà inscrite dans la balise <code>&lt;img&gt;</code> de chacune des vignettes dans des attributs:</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt</td>
+<td>Le texte alternatif à utiliser</td>
+</tr>
+<tr>
+<td>data-img-full</td>
+<td>L'url de l'image en haute résolution</td>
+</tr>
+<tr>
+<td>data-auteur</td>
+<td>Le nom de l'auteur</td>
+</tr>
+<tr>
+<td>data-origin-url</td>
+<td>Un lien vers l'image sur le site Unsplash</td>
+</tr>
+</tbody>
+</table>
+<h2 id="selection-de-limage">Sélection de l'image</h2>
+<p>Quand on clique sur une des images de vignette, il y a deux événements qui se déroule: </p>
+<ul>
+<li>La vignette est entourée d'un cadre bleu pour indiquer qu'elle est sélectionnée</li>
+<li>L'image en haute résolution est affichée</li>
+</ul>
+<h3 id="cadre-sur-la-vignette">Cadre sur la vignette</h3>
+<ul>
+<li>Dans le fichier <code>style.css</code> il y a déjà une classe qui va créer le cadre bleu : <code>selected</code>.</li>
+<li>Quand on clique sur une vignette, ajoutez cette classe à la balise <code>&lt;img&gt;</code> et assurez-vous qu'elle ne soit pas présente sur les autres vignettes.</li>
+<li>Une stratégie serait d'enlever la classe à toutes les vignettes et d'ensuite l'ajouter à celle qui est sélectionnée.</li>
+<li>Vous devez utiliser <code>querySelectorAll()</code> et la classe <code>image-thumbnail</code> pour sélectionner toutes les vignettes dans un tableau.</li>
+</ul>
+<h3 id="affichage-de-limage-en-haute-resolution">Affichage de l'image en haute résolution</h3>
+<p>Modifiez les informations suivantes par les attributs de l'image de vignette.</p>
+<ul>
+<li>Dans la balise <code>&lt;img&gt;</code> avec le id <code>image-full</code>:<ul>
+<li>L'attribut <code>src</code> correspond à l'attribut <code>data-img-full</code> de la vignette</li>
+<li>L'attribut <code>alt</code> est le même que la vignette</li>
+</ul>
+</li>
+<li>Dans la balise <code>&lt;span&gt;</code> avec le id <code>auteur</code><ul>
+<li>Modifier le texte à l'intérieur de la balise avec <code>innerText</code> pour la valeur de l'attribut <code>data-auteur</code> dela vignette</li>
+</ul>
+</li>
+<li>Dans la balise <code>&lt;a&gt;</code> avec le id <code>lien-source</code><ul>
+<li>L'attribut <code>href</code> correspond à l'attribut <code>data-origin-url</code> de la vignette</li>
+</ul>
+</li>
+</ul>
+<p>Utilisez la méthode que vous souhaitez pour sélectionner les différentes balises.</p>
 
 
 
