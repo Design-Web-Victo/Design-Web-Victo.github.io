@@ -2948,6 +2948,115 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examen 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Examen 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examen2_revision_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide de révision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examen2_revision_a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Révision A
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examen2_revision_b/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Révision B
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2988,30 +3097,63 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formulaire" class="md-nav__link">
+    <nav class="md-nav" aria-label="Directives Générales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point-1-envoi-du-formulaire-10-points" class="md-nav__link">
     <span class="md-ellipsis">
-      Formulaire
+      Point 1 - Envoi du formulaire (10 points)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#validation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#point-2-validation-du-numero-de-da-30-points" class="md-nav__link">
     <span class="md-ellipsis">
-      Validation
+      Point 2 - Validation du numéro de DA (30 points)
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#point-3-modification-de-licone-selon-la-note-estimee-10-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point 3 - Modification de l'icone selon la note estimée (10 points)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#point-4-validation-du-formulaire-avant-lenvoi-50-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point 4 - Validation du formulaire avant l'envoi (50 points)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#point-5-modification-de-limage-darriere-plan-optionnel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point 5 - Modification de l'image d'arrière-plan (Optionnel)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#couleur-de-la-biere" class="md-nav__link">
+  <a href="#grille-de-correction" class="md-nav__link">
     <span class="md-ellipsis">
-      Couleur de la bière
+      Grille de correction
     </span>
   </a>
   
@@ -3038,25 +3180,216 @@
 <h1 id="examen-2-revision-c">Examen 2 - Révision C</h1>
 <h2 id="directives-generales">Directives Générales</h2>
 <p>Cliquez sur le lien Github classroom que je vais vous fournir et clonez le dépôt créé sur votre portable. Répondez de votre mieux aux points suivants et une fois terminé faites un <em>commit</em> et un <em>push</em> de votre dépôt cloné. </p>
-<p><u>Toutes les validations doivent être faites en javascript</u>. Il n'est pas nécessaire d'ajouter une validation dans les balises html de la page comme ajouter par exemple <strong>required</strong> à une balise dont on ne veut pas qu'elle soit "vide".</p>
-<h2 id="formulaire">Formulaire</h2>
+<p>Toutes les validations doivent être faites en javascript. Il n'est pas nécessaire d'ajouter une validation dans les balises html de la page comme ajouter par exemple <strong>required</strong> à une balise dont on ne veut pas qu'elle soit "vide".</p>
+<p>Dans le fichier validation.js il y a déjà des extraits de code, <mark class="critic">à vous de décider si vous les utilisez ou non.</mark></p>
+<h3 id="point-1-envoi-du-formulaire-10-points">Point 1 - Envoi du formulaire (10 points)</h3>
+<p>Configurez le formulaire pour qu'il envoie les données du formulaire de la façon suivante : </p>
 <ul>
-<li>Le formulaire doit être envoyé au fichier action.html qui est dans le projet</li>
-<li>La méthode est POST</li>
-<li>Vous devez utiliser l'événement onsubmit de la balise form pour lancer la fonction de validation.</li>
+<li>Les données seront envoyées à l'adresse suivante : </li>
 </ul>
-<h2 id="validation">Validation</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>https://designweb-production.up.railway.app/submit
+</span></code></pre></div>
 <ul>
-<li>nom de la bière : Le champ ne doit pas être vide.</li>
-<li>numéro d'identification : Il doit être au format aaa-0000 (Il y a déjà dans le script un objet regex qui comporte la bonne règle, il reste juste à bien l'utiliser).</li>
-<li>Saveur du houblon : Au moins une des cases doit être coché.</li>
+<li>La méthode d'envoie sera par requête <strong>POST</strong></li>
 </ul>
-<h2 id="couleur-de-la-biere">Couleur de la bière</h2>
+<h3 id="point-2-validation-du-numero-de-da-30-points">Point 2 - Validation du numéro de DA (30 points)</h3>
+<p>Faites les validations suivantes en Javascript sur la valeur saisie dans le input du numéro de DA. </p>
+<ol>
+<li>Le numéro de DA doit être composé uniquement de chiffre (aucunes lettres ni caractères spéciaux).</li>
+<li>Il doit être composé d'exactement 7 caractères.</li>
+<li>
+<p>Il doit débuté par les chiffres 1 ou 2</p>
+</li>
+<li>
+<p>Valide : 1542477, 1887456, 2145733</p>
+</li>
+<li>Invalide : 3245125, 213549813131681, ab52412</li>
+</ol>
+<p>La validation doit être faite <u>dès que la valeur du input est modifiée</u> : </p>
 <ul>
-<li>Quand la valeur du slider 'couleur' change, vous devez changer le texte qui est affiché dans le span 'couleur_nom'. </li>
-<li>Les valeurs du slider vont de 0 à 5</li>
-<li>Utilisez le tableau COULEURS_BIERE pour savoir quel texte afficher. La valeur du slider est égale à l'index du tableau.</li>
+<li>Ajoutez un addEventListener au input en javascript qui appellera la fonction de validation lors de l'événement 'input'.</li>
+<li>Tant que le numéro de DA n'est pas valide, affichez la balise div avec le id <strong>da_icone_erreur</strong></li>
+<li>Si le numéro de DA est valide, affichez la balise div ayant le id <strong>da_icone_succes</strong> et masquez <strong>da_icone_erreur</strong>.</li>
 </ul>
+<p><strong>Invalide</strong></p>
+<p><img alt="examen02f_01" class="center shadow" src="../../assets/images/examen02_reva_01.png"/></p>
+<p><strong>Valide</strong></p>
+<p><img alt="examen02f_02" class="center shadow" src="../../assets/images/examen02_reva_02.png"/></p>
+<h3 id="point-3-modification-de-licone-selon-la-note-estimee-10-points">Point 3 - Modification de l'icone selon la note estimée (10 points)</h3>
+<p>Dès que la valeur du input "note_estime" est modifié, vous devez depuis une fonction en javascript modifier les classes de l'icone ayant le id <strong>icone_note</strong> : </p>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>classes à utiliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entre 0 et 19</td>
+<td>"far fa-sad-cry"</td>
+</tr>
+<tr>
+<td>Entre 20 et 39</td>
+<td>"far fa-sad-tear"</td>
+</tr>
+<tr>
+<td>Entre 40 et 59</td>
+<td>"far fa-frown"</td>
+</tr>
+<tr>
+<td>Entre 60 et 79</td>
+<td>"far fa-smile"</td>
+</tr>
+<tr>
+<td>Entre 80 et 100</td>
+<td>"far fa-grin-squint-tears"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Indices</strong> : ajoutez un addEventListener sur le input avec l'événement "input" pour lancer la fonction ou bien utilisez oninput directement dans la balise html.</p>
+<p>La valeur de la note en pourcentage doit aussi être affichée et modifiée dans le titre au-dessus du contrôle.</p>
+<p>Résultat escompté</p>
+<p><img alt="examen02f_03" class="center shadow" src="../../assets/images/examen02_reva_03.png"/></p>
+<p><img alt="examen02f_04" class="center shadow" src="../../assets/images/examen02_reva_04.png"/></p>
+<h3 id="point-4-validation-du-formulaire-avant-lenvoi-50-points">Point 4 - Validation du formulaire avant l'envoi (50 points)</h3>
+<p>Validation lors du clique sur le bouton <strong>Soumettre le formulaire</strong></p>
+<ul>
+<li>Appelez une fonction Javascript depuis l'événement onsubmit de la balise <strong>form</strong>.</li>
+<li>Si le numéro de DA est invalide, affichez un message d'erreur dans la balise <strong>small</strong> situé sous le input du numéro de DA.</li>
+<li>Il faut aussi que la case "J'ai bien lu la déclaration ci-dessus" soit coché.</li>
+<li>Empêchez l'envoie du formulaire si le numéro de DA est invalide et/ou la case n'est pas coché. </li>
+</ul>
+<h3 id="point-5-modification-de-limage-darriere-plan-optionnel">Point 5 - Modification de l'image d'arrière-plan (Optionnel)</h3>
+<p>Créez une fonction Javascript qui modifiera de façon aléatoire l'image d'arrière-plan de la page. </p>
+<ul>
+<li>La fonction est déclenché lors d'un clique sur l'icône d'images superposées dans le coin inférieur gauche de la page. </li>
+<li>Les images à utiliser sont déjà présentent dans le répertoire images, background01.jpg à background05.jpg.</li>
+<li>Vous devez générer aléatoirement un nombre selon le nombre d'image et utiliser l'image correspondante.</li>
+<li>Il n'est pas nécessaire de gérer le cas où le même nombre serait généré deux fois de suite (l'image ne sera pas modifiée car ce sera la même).</li>
+</ul>
+<h2 id="grille-de-correction">Grille de correction</h2>
+<table>
+<thead>
+<tr>
+<th>ÉlÉments</th>
+<th>Critères</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td>/100</td>
+</tr>
+<tr>
+<td>Point 1 - Envoi du formulaire</td>
+<td></td>
+<td>/10</td>
+</tr>
+<tr>
+<td></td>
+<td>Les données sont envoyées à la bonne adresse.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>Les données sont envoyées selon la bonne méthode.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Point 2 - Validation du numéro de DA</td>
+<td></td>
+<td>/30</td>
+</tr>
+<tr>
+<td></td>
+<td>Le numéro de DA est composé uniquement de chiffres.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>Le numéro de DA comporte exactement 7 chiffres.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>Le numéro de DA commence par 1 ou 2.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>La fonction de validation est lancé par un addEventListener.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>L'icone d'erreur s'affiche tant que la valeur saisie n'est pas valide.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>L'icone succès s'affiche dès que la valeur est valide.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Point 3 - Modification de l'icone selon la note estimée</td>
+<td></td>
+<td>/10</td>
+</tr>
+<tr>
+<td></td>
+<td>L'icone est modifié selon la valeur sélectionnée.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td>La note en pourcentage est inscrite dans le "label" du input.</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Point 4 - Validation du formulaire avant l'envoi</td>
+<td></td>
+<td>/50</td>
+</tr>
+<tr>
+<td></td>
+<td>La fonction de validation est appelée depuis l'événement onsubmit de la balise form.</td>
+<td>10</td>
+</tr>
+<tr>
+<td></td>
+<td>Un message d'erreur est affiché dans la balise small si le numéro de DA est invalide.</td>
+<td>10</td>
+</tr>
+<tr>
+<td></td>
+<td>La case "J'ai bien lu la déclaration ci-dessus" doit être coché pour que le formulaire soit soumis.</td>
+<td>10</td>
+</tr>
+<tr>
+<td></td>
+<td>Le formulaire n'est pas envoyé si au moins une des validations échoues.</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
 
 
 
