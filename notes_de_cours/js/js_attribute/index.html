@@ -1801,6 +1801,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modifier-le-texte-a-linterieur-dun-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier le texte à l'intérieur d'un élément
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3179,6 +3188,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modifier-le-texte-a-linterieur-dun-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modifier le texte à l'intérieur d'un élément
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3287,6 +3305,19 @@
 </span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">// Récupération de la valeur de l'attribut data-key de cet élément</span>
 </span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">note</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">'data-key'</span><span class="p">));</span><span class="w"> </span><span class="c1">// 65</span>
 </span></code></pre></div>
+<h2 id="modifier-le-texte-a-linterieur-dun-element">Modifier le texte à l'intérieur d'un élément</h2>
+<p>On peut modifier le texte qui se retrouve à l'intérieur de la balise de l'élément avec les méthodes <code>.innerText()</code> ou <code>.innerHTML()</code>. La différence est qu'avec <code>.innerHTML()</code> si l'on entre une balise HTML sous forme de texte elle sera interprétée par le navigateur. C'est une méthode pour ajouter un élément HTML sans passer par la méthode <code>.createElement()</code>.</p>
+<div class="language-js highlight"><span class="filename">innerText() vs innerHTML()</span><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">titreInnerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'titreInnerText'</span><span class="p">);</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">titreInnerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'titreInnerHTML'</span><span class="p">);</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nx">titreInnerText</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"&lt;i&gt;Mon titre&lt;/i&gt;"</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="nx">titreInnerHTML</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"&lt;i&gt;Mon titre&lt;/i&gt;"</span><span class="p">;</span>
+</span></code></pre></div>
+<figure>
+<p><img alt="js_attribute_01.png" class="center shadow" src="../../../assets/images/js_attribute_01.png"/>
+</p>
+<figcaption>Résultat de l'extrait de code</figcaption>
+</figure>
 
 
 

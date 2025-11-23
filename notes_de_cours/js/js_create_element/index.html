@@ -1781,6 +1781,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creer-des-elements-imbriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer des éléments imbriqués
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#supprimer-des-elements" class="md-nav__link">
     <span class="md-ellipsis">
       Supprimer des éléments
@@ -3189,6 +3198,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creer-des-elements-imbriques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Créer des éléments imbriqués
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#supprimer-des-elements" class="md-nav__link">
     <span class="md-ellipsis">
       Supprimer des éléments
@@ -3263,12 +3281,27 @@
 </span><span id="__span-3-13"><a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1">// id containerExemple.</span>
 </span><span id="__span-3-14"><a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="nx">monContainer</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">titre</span><span class="p">);</span>
 </span></code></pre></div>
+<h3 id="creer-des-elements-imbriques">Créer des éléments imbriqués</h3>
+<p>Il est possible de créer plusieurs éléments et de les imbriqués l'un dans l'autre avant de les ajouter dans la page Web. Dans ce cas on va ajouter uniquement l'élément parent. Prenons par exemple une liste à puce qu'on voudrais créer entièrement à partir d'un tableau de string.</p>
+<div class="language-js highlight"><span class="filename">Création d'une liste à puces</span><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">tableauItems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"item1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"item2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"item3"</span><span class="p">]</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1">// Création de l'élément ul</span>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ul</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"ul"</span><span class="p">);</span>
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1">// Pour chaque item du tableau, on va créer un item de liste à puces (li)</span>
+</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1">// et l'ajouter dans celle-ci</span>
+</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">tableauItems</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">li</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"li"</span><span class="p">);</span>
+</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="nx">li</span><span class="p">.</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tableauItems</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span><span id="__span-4-9"><a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">    </span><span class="nx">ul</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+</span><span id="__span-4-10"><a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="p">}</span>
+</span><span id="__span-4-11"><a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="c1">// Finalement on ajoute l'élément ul qui contient déjà les 3 éléments li</span>
+</span><span id="__span-4-12"><a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">ul</span><span class="p">);</span>
+</span></code></pre></div>
 <h3 id="supprimer-des-elements">Supprimer des éléments</h3>
 <p>Pour supprimer un élément il suffit de le sélectionner et d'utiliser la méthode <strong>remove()</strong></p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">// Récupère l'élément avec le id containerExemple</span>
-</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">monContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"containerExemple"</span><span class="p">);</span>
-</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1">// Supprime l'élément. Attention tous les éléments qui étaient à l'intérieur de cet élément seront aussi supprimé.</span>
-</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nx">monContainer</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">// Récupère l'élément avec le id containerExemple</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">monContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"containerExemple"</span><span class="p">);</span>
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">// Supprime l'élément. Attention tous les éléments qui étaient à l'intérieur de cet élément seront aussi supprimé.</span>
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nx">monContainer</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
 </span></code></pre></div>
 
 
